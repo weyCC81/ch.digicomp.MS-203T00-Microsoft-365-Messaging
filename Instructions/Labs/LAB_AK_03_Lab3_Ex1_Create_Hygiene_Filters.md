@@ -1,6 +1,4 @@
-
-
-# Mod 3 – Lab 3 - Exercise 1 - Create Hygiene Filters
+# Module 3 – Lab 3 - Exercise 1 - Create Hygiene Filters
 
 In this lab, you will continue in your role as Holly Dickson, Adatum’s Enterprise Administrator. Adatum has experienced a recent rash of malware infections. The company's CTO has asked Holly to investigate the various options that are available in Exchange Online to fortify Adatum’s messaging environment.
 
