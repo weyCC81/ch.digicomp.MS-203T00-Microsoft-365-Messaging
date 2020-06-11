@@ -10,7 +10,7 @@ To enable and disable ActiveSync, you must first create several recipient mailbo
 
 2. After logging in, the **Server Manager** application will automatically open. Select the **X** in the upper-right corner of the screen to close it.
 
-3. To create recipient mailboxes, you must open the Exchange admin center. To do so, select the **Windows** icon on the taskbar, and in the Windows menu select the **Microsoft Exchange Server 2019** group. In the program group, select **Exchange Administrative Center**. 
+3. To create on-premises user mailboxes, you must open the on-premises Exchange admin center. To do so, select the **Windows** icon on the taskbar, and in the Windows menu select the **Microsoft Exchange Server 2019** group. In the program group, select **Exchange Administrative Center**. 
 
 4. This will open **Internet Explorer**, which will attempt to access the EAC. IE will display an error page indicating **This site is not secure**. Select **More information,** which displays a message indicating **The hostname in the website’s security certificate differs from the website you are trying to visit**.   
 ‎  
@@ -26,21 +26,21 @@ To enable and disable ActiveSync, you must first create several recipient mailbo
 
 9. In the **new user mailbox** window, enter **hollyd** in the **Alias** field. 
 
-10. Select the **New User** option**.**
+10. Select the **New User** option.
 
-11. Enter **Holly** in the **F****irst name** field.
+11. Enter **Holly** in the **First name** field.
 
 12. Leave the **Initials** field blank.
 
 13. Enter **Dickson** in the **Last name** field.
 
-14. When you tab off the **Last name** field, **Holly Dickson** will be automatically displayed in the **Display name** and **Name** fields**.**
+14. When you tab off the **Last name** field, **Holly Dickson** will be automatically displayed in the **Display name** and **Name** fields.
 
 15. For the **Organizational unit** field, select the **Browse** button. 
 
 16. In the **select an organizational unit** window, select **Users** and then select **OK**.
 
-17. Enter **hollyd** in the **U****ser logon name** field.  
+17. Enter **hollyd** in the **User logon name** field.  
 ‎  
 ‎**Note:** The domain field (to the right of the **User logon name**) is prefilled with **Adatum.com**; this is Adatum’s on-premises domain.
 
