@@ -118,5 +118,5 @@ You will now create a custom send connector in Adatum’s on-premises Exchange S
 15. Leave your browser open and the EAC tab open and proceed to the next exercise.
 
 
-# END OF LAB 1  
+# End of Lab 1  
 
