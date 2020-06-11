@@ -4,7 +4,7 @@ In this lab, you will continue in your role as Holly Dickson, Adatum’s Enterpr
 
 You will first create a mail flow rule that quarantines messages that are sent from inside the organization that have the words “Secret”, “Classified”, or “Sensitive” in the body or subject of the message. You will create a second rule will also quarantine messages that have attachments that can’t be scanned or where the scanning can’t finish. Both rules will generate a reply message that lets the sender know they have a message that is undeliverable. Finally, you will create a mail flow rule that restricts the size of emails.
 
-## Task 1: Create Mail Flow rule for sensitive material 
+## Task 1 - Create Mail Flow rule for sensitive material 
 
 In this exercise you will return to the Exchange Admin Center, but this time you will access it from your client computer (LON-CL1) through the Microsoft 365 admin center. This will be the EAC for Exchange Online. You will then create a mail flow rule that checks for sensitive information in emails sent from inside the organization. 
 
@@ -81,7 +81,7 @@ In this exercise you will return to the Exchange Admin Center, but this time you
 36. Leave the Exchange Admin Center open to the mail flow page and proceed to the next task.
 
  
-## Task 2: Create first Mail Flow rule for attachments
+## Task 2 - Create first Mail Flow rule for attachments
 
 In this exercise you will create two mail flow rules related to attachments. Adatum wants to check for emails containing attachments that were either not scanned or the scanning did not complete. You cannot include both conditions in one rule, since multiple conditions in a rule are treated in a Boolean **AND** fashion (for example, condition 1 is true AND condition 2 is true; this is similar to what you did in the prior task where you checked for specific words in the email AND the email was received from inside the organization). 
 
@@ -132,7 +132,7 @@ In this case, it does not make logical sense to check for attachments that were 
 20. Leave the Exchange Admin Center open to the mail flow page and proceed to the next task.
  
 
-## Task 3: Create second Mail Flow rule for attachments
+## Task 3 - Create second Mail Flow rule for attachments
 
 In the prior task, you created a mail flow rule for messages with attachments that were not scanned. In this task, you will create a second mail flow rule for messages with attachments; however, in this case, it will be for messages with attachments in which scanning of the attachments did not complete. Because these conditions will be defined in separate rules, the rules will be applied in a Boolean OR fashion.
 
