@@ -136,7 +136,7 @@ In this case, it does not make logical sense to check for attachments that were 
 
 In the prior task, you created a mail flow rule for messages with attachments that were not scanned. In this task, you will create a second mail flow rule for messages with attachments; however, in this case, it will be for messages with attachments in which scanning of the attachments did not complete. Because these conditions will be defined in separate rules, the rules will be applied in a Boolean OR fashion.
 
-1. You should still be logged into LON-CL1 as the **Administrator** with a password of **Pa55w.rd**; if necessary, then log in now. 
+1. You should still be logged into LON-CL1 as the **Administrator** with a password of **Pa55w.rd**; if necessary, log in now. 
 
 2. If the **Exchange admin center** is still open from the prior task, then proceed to the next step; otherwise, if necessary, log into the **Office 365 home** page, navigate to the **Exchange Admin Center**, select **mail flow**, and select the **rules** tab using the instructions in the prior task.
 
