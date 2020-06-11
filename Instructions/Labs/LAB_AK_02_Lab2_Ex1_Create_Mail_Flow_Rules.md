@@ -1,4 +1,4 @@
-# Mod 2 – Lab 2 - Exercise 1 – Create Mail Flow Rules
+# Module 2 – Lab 2 - Exercise 1 – Create Mail Flow Rules
 
 In this lab, you will continue in your role as Holly Dickson, Adatum’s Enterprise Administrator. You will use your client computer to access the Exchange Admin Center from the Microsoft 365 admin center. You will then create a series of mail flow rules that are designed to protect Adatum’s messaging environment. 
 
