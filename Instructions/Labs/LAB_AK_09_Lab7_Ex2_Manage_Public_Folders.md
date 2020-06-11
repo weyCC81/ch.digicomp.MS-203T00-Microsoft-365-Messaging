@@ -1,56 +1,35 @@
-
-
-##  
-
-# Mod 9 - Lab
-
-#  
-
-# Exercise 2: Manage Public Folders
-
- 
+# Module 9 - Lab 7 - Exercise 2 - Manage Public Folders
 
 In the prior exercise, Holly Dickson logged into the Exchange admin center for Exchange Online on LON-CL1 and created a Microsoft 365 public folder mailbox and a public folder. In this exercise, she will manage settings and permissions for each of these objects using the Exchange Online EAC. 
 
-## Task 1: Manage Public Folder Mail Settings
-
- 
+## Task 1 - Manage Public Folder Mail Settings
 
 In this task, you will continue in your role as Holly Dickson and enable the Test PF1 public folder that you created in the prior exercise so that it can receive email.
 
- 
+1. You should still be logged into LON-CL1 from the prior lab; if necessary, log in as the **Administrator** with a password of **Pa55w.rd**.
 
-	1. You should still be logged into LON-CL1 from the prior lab; if necessary, log in as the **Administrator** with a password of **Pa55w.rd**.
-
-	2. In the Internet Explorer browser, the Office 365 home page, the Microsoft 365 admin center, and the Exchange admin center tabs should still be open. If so, select the **Exchange admin center** tab.  
+2. In the Internet Explorer browser, the Office 365 home page, the Microsoft 365 admin center, and the Exchange admin center tabs should still be open. If so, select the **Exchange admin center** tab.  
 ‎  
 ‎However, if you closed your browser after the prior lab, then open Internet Explorer, navigate to [**https://portal.office.com/**](https://portal.office.com/) and sign in using the **Tenant Email** and **Password** provided by your lab hosting provider, open the **Microsoft 365 admin center**, and then navigate to the **Exchange admin center**. 
 
-	3. In the **Exchange admin center**, you should still be in the **public folders** page, and you should be in the **public folders** tab after having completed the prior task. 
+3. In the **Exchange admin center**, you should still be in the **public folders** page, and you should be in the **public folders** tab after having completed the prior task. 
 
-	4. On the **public folders** page, the **Test PF1** record that you created in the prior task should be highlighted.   
+4. On the **public folders** page, the **Test PF1** record that you created in the prior task should be highlighted.   
 ‎  
 ‎**Important:** If you closed the EAC tab at the end of the prior task and had to navigate to this page in the prior step, then select the **Test PF1** row. Do not select the **Test PF1** hyperlink as this will open the **Test PF1** public folder window. Instead, select any other portion of the **Test PF1** row to simply highlight the record. 
 
-	5. By selecting the Test PF1 record, the properties for this public folder are displayed in the detail pane on the right. Note the current **Mail settings** for Test PF1 is set to Disabled. To enable mail for this public folder, select **Enable**. 
+5. By selecting the Test PF1 record, the properties for this public folder are displayed in the detail pane on the right. Note the current **Mail settings** for Test PF1 is set to Disabled. To enable mail for this public folder, select **Enable**. 
 
-	6. A **Warning** dialog box will appear that asks whether you want to enable email for the selected public folders. Select **Yes**.
+6. A **Warning** dialog box will appear that asks whether you want to enable email for the selected public folders. Select **Yes**.
 
-	7. In the detail pane on the right, the **Mail settings** should now be **Enabled.**
+7. In the detail pane on the right, the **Mail settings** should now be **Enabled.**
 
-	8. Leave all browser tabs open and proceed to the next task.
-
- 
-
-##  
-
-## Task 2: Manage Public Folder Settings
+8. Leave all browser tabs open and proceed to the next task.
 
  
+## Task 2 - Manage Public Folder Settings
 
-In this exercise, you will manage several settings for the Test PF1 public folder.
-
- 
+In this task, you will manage several settings for the Test PF1 public folder.
 
 1. You should still be in LON-CL1 and you should be in the **Exchange admin center** tab in your browser. 
 
@@ -78,17 +57,10 @@ In this exercise, you will manage several settings for the Test PF1 public folde
 
 12. Leave all browser tabs open and proceed to the next task.
 
- 
 
- 
-
-## Task 3: Manage Public Folder Permissions
-
- 
+## Task 3 - Manage Public Folder Permissions
 
 In this task, you will manage the permissions for the Test PF1 public folder.
-
- 
 
 1. You should still be in LON-CL1 and you should be in the **Exchange admin center** tab in your browser. 
 
@@ -112,10 +84,5 @@ In this task, you will manage the permissions for the Test PF1 public folder.
 
 10. Leave all browser tabs open and proceed to the next lab.
 
- 
 
-#  
-
-# End of Lab 
-
- 
+# End of Lab 7
