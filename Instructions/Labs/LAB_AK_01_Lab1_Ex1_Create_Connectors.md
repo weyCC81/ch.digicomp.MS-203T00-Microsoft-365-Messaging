@@ -85,35 +85,37 @@ In this task, you will use the Exchange admin center on the Exchange Server VM (
 
 You will now create a custom send connector in Adatum’s on-premises Exchange Server (LON-EX1) using the on-premises EAC.
 
-1. You should still be logged into LON-EX1 as the **Administrator**, and you should have the EAC open in Internet Explorer; if not, then do so now.
+1. You should still be logged into LON-EX1 as the **Administrator** with a password of **Pa55w.rd**; however, if the log-in page appears,then log in now.
 
-2. In the **Exchange admin center**, you should still be displaying the **mail flow** tab from the left-hand navigation pane. On the menu bar at the top of the page, select **send connectors**.
+2. In your Internet Explorer browser session, the on-premises **Exchange admin center** should still be open; if not, then perform the same steps that you did in the prior task to open it now.
 
-3. On the **send connectors** window, select the **plus (+) sign** to add a new send connector.
+3. In the **Exchange admin center**, you should still be displaying the **mail flow** tab from the left-hand navigation pane. On the menu bar at the top of the page, select **send connectors**.
 
-4. In the **new send connector** window, enter **NewSendConnector1** in the **Name** field.
+4. On the **send connectors** window, select the **plus (+) sign** to add a new send connector.
 
-5. Under **Type,** select **Internet (For example, to send internet email)**, and then select **Next**.
+5. In the **new send connector** window, enter **NewSendConnector1** in the **Name** field.
 
-6. This returns a **new send connector** window in which you can update **Network settings** for the new send connector. Select the **MX record** **associated with recipient domain** option and then select **Next**.
+6. Under **Type,** select **Internet (For example, to send internet email)**, and then select **Next**.
 
-7. This returns a **new send connector** window in which you can update the connector’s **Address space**. Select the **plus (+) sign** to add a new address space record.
+7. This returns a **new send connector** window in which you can update **Network settings** for the new send connector. Select the **MX record** **associated with recipient domain** option and then select **Next**.
 
-8. In the **add domain** window, you must enter the **Full Qualified Domain Name (FQDN)**.   <br/>
+8. This returns a **new send connector** window in which you can update the connector’s **Address space**. Select the **plus (+) sign** to add a new address space record.
+
+9. In the **add domain** window, you must enter the **Full Qualified Domain Name (FQDN)**.   <br/>
 
 	**Note:** In Task 1 of this exercise, your instructor provided instruction on how to retrieve your tenant email address. Your FQDN is the value to the right of the @ sign in the **Tenant Email** (for example, **M365xZZZZZZ.onmicrosoft.com**, where ZZZZZZ is your tenant ID). Enter your FQDN in the **Full Qualified Domain Name (FQDN)** field.
 
-9. Leave the value of the **Cost** field to **1**, and then select **Save.**
+10. Leave the value of the **Cost** field to **1**, and then select **Save.**
 
-10. Your new **Address space** record for this send connector should now be displayed. Select **Next**.
+11. Your new **Address space** record for this send connector should now be displayed. Select **Next**.
 
-11. This returns a **new send connector** window in which you can update the **Source server** for the new send connector. Select the **plus (+) sign** to add a new Source server record.
+12. This returns a **new send connector** window in which you can update the **Source server** for the new send connector. Select the **plus (+) sign** to add a new Source server record.
 
-12. In the **Select a Server** window, you want to select your **Mail server**, which in this virtual lab environment is your **LON-EX1** VM. Since the LON-EX1 server is selected by default, select the **add -&gt;** button, and then select **OK**.
+13. In the **Select a Server** window, you want to select your **Mail server**, which in this virtual lab environment is your **LON-EX1** VM. Since the LON-EX1 server is selected by default, select the **add -&gt;** button, and then select **OK**.
 
-13. Your LON-EX1 VM should now appear in the Source server list for this new send connector. Select **Finish**.
+14. Your LON-EX1 VM should now appear in the Source server list for this new send connector. Select **Finish**.
 
-14. Leave your browser open and the EAC tab open and proceed to the next exercise.
+15. Leave your browser open and the EAC tab open and proceed to the next exercise.
 
 
 # END OF LAB 1  
