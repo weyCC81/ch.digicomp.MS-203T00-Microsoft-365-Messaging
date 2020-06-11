@@ -19,7 +19,7 @@ Once you launch the lab, a free trial tenant will be automatically created for y
 	- **Tenant password.** This is the password for the admin account provided by your lab hosting provider.
 
 
-## Task 2: Create a Custom Receive Connector
+## Task 2 - Create a Custom Receive Connector
 
 In this task, you will use the Exchange admin center on the Exchange Server VM (LON-EX1) to create a custom receive connector.
 
@@ -81,7 +81,7 @@ In this task, you will use the Exchange admin center on the Exchange Server VM (
 
  
 
-## Task 3: Create a Custom Send Connector
+## Task 3 - Create a Custom Send Connector
 
 You will now create a custom send connector in Adatum’s on-premises Exchange Server (LON-EX1) using the on-premises EAC.
 
