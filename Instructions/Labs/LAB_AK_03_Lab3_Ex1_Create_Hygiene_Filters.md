@@ -1,13 +1,13 @@
 
 
-# Mod 3 – Lab 3 - Exercise 1: Create Hygiene Filters
+# Mod 3 – Lab 3 - Exercise 1 - Create Hygiene Filters
 
 In this lab, you will continue in your role as Holly Dickson, Adatum’s Enterprise Administrator. Adatum has experienced a recent rash of malware infections. The company's CTO has asked Holly to investigate the various options that are available in Exchange Online to fortify Adatum’s messaging environment.
 
 You will access the Exchange admin center for Exchange Online from your client computer and create a series of hygiene filters that are designed to protect Adatum’s messaging environment. You will create a malware filter, a connection filter, and a spam filter.
 
 
-## Task 1: Create a Malware Filter  
+## Task 1 - Create a Malware Filter  
 
 In this task, you will create a malware filter that checks for attachments that have a specific file type that indicate a possible malware attachment. If an attachment is found matching one of those file types and the recipient’s domain matches Adatum’s Microsoft 365 domain, then default notification text will be applied to the message.
 
@@ -48,7 +48,7 @@ In this task, you will create a malware filter that checks for attachments that 
 17. Leave the Exchange Admin Center open and proceed to the next task.
 
 
-## Task 2: Create a Connection Filter  
+## Task 2 - Create a Connection Filter  
 
 In this task, you will modify the default connection filter to include an allowed IP address and a blocked IP address. Any messages originating from the allowed IP address will always be accepted, and any messages originating from the blocked IP address will always be blocked. 
 
@@ -73,7 +73,7 @@ In this task, you will modify the default connection filter to include an allowe
 9. Leave the Exchange Admin Center open and proceed to the next task.
 
 
-## Task 3: Create a Spam Filter
+## Task 3 - Create a Spam Filter
 
 For Office 365 customers whose mailboxes are hosted in Microsoft Exchange Online, their email messages are automatically protected against spam and malware. Office 365 has built-in malware and spam filtering capabilities that help protect inbound and outbound messages from malicious software and help protect you from spam.
 
