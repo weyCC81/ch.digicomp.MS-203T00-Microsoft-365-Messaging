@@ -8,9 +8,9 @@ In your role as Holly Dickson, Adatum’s Enterprise Administrator, you are inte
 
 In this task you will add a user account in Microsoft 365, which will create a mailbox for the user in Exchange Online. You will perform this task in the LON-CL1 VM. 
 
-1. You should still be logged into LON-CL1 as the **Administrator** account; if necessary, log in as the **Administrator** with a password of **Pa55w.rd**. 
+1. You should still be logged into LON-CL1 as the **Administrator** account with a password of **Pa55w.rd**; however, if the log-in screen appears, then log in now.
 
-2. If the **Microsoft 365 admin center** tab is still open in your browser from the prior task, then proceed to the next step; otherwise, if necessary, navigate to the **Office 365 home** page ([**https://portal.office.com**](https://portal.office.com/)), log in as **admin@M365xZZZZZZ.onmicrosoft.com,** and then navigate to the **Microsoft 365 admin center.**
+2. If the **Microsoft 365 admin center** tab is still open in your browser from the prior task, then proceed to the next step; otherwise, if necessary, navigate to the **Office 365 home** page (**https://portal.office.com**), log in as **admin@M365xZZZZZZ.onmicrosoft.com,** and then navigate to the **Microsoft 365 admin center.**
 
 3. In the **Microsoft 365 admin center**, select **Users** in the left-hand navigation pane, and then select **Active Users.** 
 
