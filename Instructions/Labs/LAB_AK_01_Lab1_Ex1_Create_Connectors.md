@@ -1,4 +1,4 @@
-# Mod 1 – Lab 1 – Exercise 1 – Create Connectors
+# Module 1 – Lab 1 – Exercise 1 – Create Connectors
 
 In this exercise, you will take on the persona of Holly Dickson, Adatum’s Enterprise Administrator. As part of her pilot project for Adatum’s Exchange deployment, Holly wants to begin by creating custom send and receive connectors in her on-premises Exchange Server using the on-premises Exchange admin center. 
 
