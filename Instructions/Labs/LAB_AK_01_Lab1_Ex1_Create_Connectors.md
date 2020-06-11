@@ -14,7 +14,7 @@ Once you launch the lab, a free trial tenant will be automatically created for y
 
 	You should write down the following information (provided by your instructor) for later use:
 
-	- **Tenant suffix ID.** This ID is for the onmicrosoft.com accounts that you will use to sign into Microsoft 365 throughout the labs. This is in the format of **{username}@M365xZZZZZZ.onmicrosoft.com**, where ZZZZZZ is your unique tenant suffix ID provided by your lab hosting provider. Record this ZZZZZZ value for later use. When any of the lab steps direct you to sign into the Office 365 or Microsoft 365 portals, you must enter the ZZZZZZ value that you obtained here.  
+	- **Tenant suffix ID.** This ID is for the onmicrosoft.com accounts that you will use to sign into Microsoft 365 throughout the labs. This is in the format of **{username}@M365xZZZZZZ.onmicrosoft.com**, where ZZZZZZ is your unique tenant suffix ID provided by your lab hosting provider. Record this ZZZZZZ value for later use. When any of the lab steps direct you to sign into the Microsoft 365 portals, you must enter the ZZZZZZ value that you obtained here.  
 ‎
 	- **Tenant password.** This is the password for the admin account provided by your lab hosting provider.
 
@@ -23,7 +23,7 @@ Once you launch the lab, a free trial tenant will be automatically created for y
 
 In this task, you will use the Exchange admin center on the Exchange Server VM (LON-EX1) to create a custom receive connector.
 
-1. Switch to the Exchange Server VM (LON-EX1) and log on as Adatum’s **A****dministrator** account with a password of **Pa55w.rd**. 
+1. Switch to the Exchange Server VM (LON-EX1) and log on as Adatum’s **Administrator** account with a password of **Pa55w.rd**. 
 
 2. After logging in, the **Server Manager** application will automatically open. Select the **X** in the upper-right corner of the screen to close it.
 
