@@ -30,7 +30,7 @@ In this task you will log into the Exchange Server (LON-EX1) virtual machine and
 
 12. In the **Members** section, since you are just adding the group now, there are no group members at this time. However, verify that the **Add group owners as members** checkbox is selected so that Holly and the Administrator account, who are the two owners, will be automatically added as members of the group. Then select the **plus (+) sign** icon to add additional group members.
 
-13. In the **Select Members** window, select Jessica Hofer, select the **add-&gt;** button**,** and then select **OK**.
+13. In the **Select Members** window, select Jessica Hofer, select the **add-&gt;** button, and then select **OK**.
 
 14. Scroll to the bottom of the window.
 
@@ -73,7 +73,7 @@ Now that Holly has experienced adding a distribution group in Adatum’s on-prem
 
 12. In the **Members** section, since you are just adding the group now, there are no group members at this time. However, verify that the **Add group owners as members** checkbox is selected so that Holly and the MOD Administrator account, who are the two owners, will be automatically added as members of the group. Then select the **plus (+) sign** icon to add additional group members.
 
-13. In the **Select Members** window, hold down your CTRL key and select **Joni Sherman**, **Megan Bowen**, and **Nestor Wilke**, select the **add-&gt;** button**,** and then select **OK**.
+13. In the **Select Members** window, hold down your CTRL key and select **Joni Sherman**, **Megan Bowen**, and **Nestor Wilke**, select the **add-&gt;** button, and then select **OK**.
 
 14. This will be a Closed group, so in the two settings at the bottom of the page (**Choose whether owner approval is required to join the group** and **Choose whether the group is open to leave**), select the **Closed** option for both settings. 
 
