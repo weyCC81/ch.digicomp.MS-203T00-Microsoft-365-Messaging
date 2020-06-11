@@ -51,7 +51,7 @@ In this task, you will manage several settings for the Test PF1 public folder.
 
 9. In the left-hand navigation pane, select **mail flow settings.**
 
-10. Under the **Display Name** field**,** select the **Require that all senders are authenticated** checkbox.
+10. Under the **Display Name** field, select the **Require that all senders are authenticated** checkbox.
 
 11. Select **Save**.
 
