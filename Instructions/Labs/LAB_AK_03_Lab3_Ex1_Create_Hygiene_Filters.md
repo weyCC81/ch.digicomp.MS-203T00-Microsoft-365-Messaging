@@ -11,9 +11,9 @@ You will access the Exchange admin center for Exchange Online from your client c
 
 In this task, you will create a malware filter that checks for attachments that have a specific file type that indicate a possible malware attachment. If an attachment is found matching one of those file types and the recipient’s domain matches Adatum’s Microsoft 365 domain, then default notification text will be applied to the message.
 
-1. You should still be logged into LON-CL1 as the **Administrator** with a password of **Pa55w.rd**; if necessary, then log in now. 
+1. You should still be logged into LON-CL1 as the **Administrator** with a password of **Pa55w.rd**. If the log-in page appears, then log in now. 
 
-2. If the **Exchange Admin Center** is still open from the prior task, then proceed to the next step; otherwise, if necessary, navigate to the **Office 365 home** page ([**https://portal.office.com**](https://portal.office.com/)), log in as **admin@M365xZZZZZZ.onmicrosoft.com,** navigate to the **Microsoft 365 admin center**, and then navigate to the **Exchange admin center****.**
+2. If the **Exchange Admin Center** is still open from the prior task, then proceed to the next step; otherwise, if necessary, navigate to the **Office 365 home** page ([**https://portal.office.com**](https://portal.office.com/)), log in as **admin@M365xZZZZZZ.onmicrosoft.com,** navigate to the **Microsoft 365 admin center**, and then navigate to the **Exchange admin center**.
 
 3. In the **Exchange admin center**, in the left-hand navigation pane, select **protection.**
 
@@ -34,6 +34,7 @@ In this task, you will create a malware filter that checks for attachments that 
 11. This filter will not generate any notifications, so scroll to the bottom of the page. Under **Applied To**, in the **If…** field, select the drop-down arrow and select **The recipient domain is.**
 
 12. If a pop-up window displaying domains appears, then skip to the next step; otherwise, to the right of the condition field that displays **The recipient domain is…,** select **A recipient’s domain is.**  
+
 ‎**Note:** The application usually displays the domain pop-up window at this point; however, if it doesn’t, then you must select the **A recipient’s domain is** to manually force it to display the domain window.
 
 13. In the domain pop-up window that appears, select the **M365xZZZZZZ.onmicrosoft.com** domain (where ZZZZZZ is your tenant suffix ID provided by your lab hosting provider), select the **add -&gt;** button, and then select **OK**.
