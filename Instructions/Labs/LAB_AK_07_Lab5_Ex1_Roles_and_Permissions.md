@@ -31,7 +31,7 @@ In this task, you are going to create a custom role group and then assign multip
 8. Under **Roles**, select the **plus (+) sign** icon to assign roles to the group.
 
 9. In the **Select a Role** window, hold down the CTRL key and select the following roles:  
-‎
+
 	- **ApplicationImpersonation**
 
 	- **Mail Recipients**
@@ -43,7 +43,7 @@ In this task, you are going to create a custom role group and then assign multip
 11. In the **new role group** window, scroll down the to the **Members** section and select the **plus (+) sign** icon to assign members to the group.
 
 12. In the **Select Members** window, hold down the CTRL key and select the following members:   
-‎
+
 	- **Admin**
 
 	- **TenantAdmins_-903670859**
@@ -59,11 +59,11 @@ In this task, you are going to create a custom role group and then assign multip
 16. Leave the Exchange Admin Center open and proceed to the next task.
 
 
-‎Task 2 - Manage an Admin Role
+## Task 2 - Manage an Admin Role
 
 In this task, you are going to add a user to a role group.
 
-1. You should still be logged into LON-CL1 as the **Administrator** account; if necessary, log in as the **Administrator** with a password of **Pa55w.rd**. 
+1. You should still be logged into LON-CL1 as the **Administrator** account with a password of **Pa55w.rd**; however, if the log-in screen appears, then log in now.  
 
 2. If the **Exchange admin center** is still open in your browser from the prior task, then proceed to the next step; otherwise, if necessary, navigate to the **Office 365 home** page ([**https://portal.office.com**](https://portal.office.com/)), log in as **admin@M365xZZZZZZ.onmicrosoft.com,** navigate to the **Microsoft 365 admin center**, navigate to the **Exchange admin center**, and then select **permissions.**
 
@@ -91,7 +91,7 @@ A mobile device mailbox policy allows you to apply a common set of security and 
 
 In this task, you will create a new Outlook Web App policy that will later be assigned to several test users in Holly’s pilot project. 
 
-1. You should still be logged into LON-CL1 as the **Administrator** account; if necessary, log in as the **Administrator** with a password of **Pa55w.rd**. 
+1. You should still be logged into LON-CL1 as the **Administrator** account with a password of **Pa55w.rd**; however, if the log-in screen appears, then log in now.  
 
 2. If the **Exchange admin center** is still open in your browser from the prior task, then proceed to the next step; otherwise, if necessary, navigate to the **Office 365 home** page ([**https://portal.office.com**](https://portal.office.com/)), log in as **admin@M365xZZZZZZ.onmicrosoft.com,** navigate to the **Microsoft 365 admin center**, navigate to the **Exchange admin center**, and then select **permissions.**
 
@@ -121,13 +121,13 @@ Assigning an Outlook on the web mailbox policy to a mailbox controls the Outlook
 
 In this task, you are going to assign the Outlook Web App policy that you created in the prior task to the mailboxes of three Adatum users who are part of Holly’s pilot project.
 
-1. You should still be logged into LON-CL1 as the **Administrator** account; if necessary, log in as the **Administrator** with a password of **Pa55w.rd**. 
+1. You should still be logged into LON-CL1 as the **Administrator** account with a password of **Pa55w.rd**; however, if the log-in screen appears, then log in now.  
 
-2. If the **Exchange admin center** is still open in your browser from the prior task, then proceed to the next step; otherwise, if necessary, navigate to the **Office 365 home** page ([**https://portal.office.com**](https://portal.office.com/)), log in as **admin@M365xZZZZZZ.onmicrosoft.com,** navigate to the **Microsoft 365 admin center**, and then navigate to the **Exchange admin center****.**
+2. If the **Exchange admin center** is still open in your browser from the prior task, then proceed to the next step; otherwise, if necessary, navigate to the **Office 365 home** page ([**https://portal.office.com**](https://portal.office.com/)), log in as **admin@M365xZZZZZZ.onmicrosoft.com,** navigate to the **Microsoft 365 admin center**, and then navigate to the **Exchange admin center**.
 
 3. In the **Exchange admin center**, in the left-hand navigation pane, select **recipients.**
 
-4. On the **recipients** page, the **m****ailboxes** tab should be selected by default; if not, select it now.
+4. On the **recipients** page, the **mailboxes** tab should be selected by default; if not, then select it now.
 
 5. The prior task indicated that by default, all user mailboxes are assigned the **OwaMailboxPolicy-Default** policy. Let’s verify this before assigning the new policy to one of the user mailboxes. In the list of mailboxes, select **Joni Sherman**. 
 
