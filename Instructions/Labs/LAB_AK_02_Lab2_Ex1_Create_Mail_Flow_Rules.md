@@ -89,7 +89,7 @@ In this case, it does not make logical sense to check for attachments that were 
 
 **Important:** Because these two conditions will be defined in separate rules, the rules will be applied in a Boolean **OR** fashion (for example, condition 1 is true OR condition 2 is true).
 
-1. You should still be logged into LON-CL1 as the **Administrator** with a password of **Pa55w.rd**; if necessary, log in now. 
+1. You should still be logged into LON-CL1 as the **Administrator** with a password of **Pa55w.rd**; however, if the log-in page appears, then log in now. 
 
 2. If the **Exchange Admin Center** is still open from the prior task, then proceed to the next step; otherwise, if necessary, navigate to the **Office 365 home** page ([**https://portal.office.com**](https://portal.office.com/)), log in as **admin@M365xZZZZZZ.onmicrosoft.com,** navigate to the **Microsoft 365 admin center**, navigate to the **Exchange admin center**, then select **mail flow** in the left-hand navigation pane and select the **rules** tab.
 
@@ -136,7 +136,7 @@ In this case, it does not make logical sense to check for attachments that were 
 
 In the prior task, you created a mail flow rule for messages with attachments that were not scanned. In this task, you will create a second mail flow rule for messages with attachments; however, in this case, it will be for messages with attachments in which scanning of the attachments did not complete. Because these conditions will be defined in separate rules, the rules will be applied in a Boolean OR fashion.
 
-1. You should still be logged into LON-CL1 as the **Administrator** with a password of **Pa55w.rd**; if necessary, log in now. 
+1. You should still be logged into LON-CL1 as the **Administrator** with a password of **Pa55w.rd**; however, if the log-in page appears, then log in now.
 
 2. If the **Exchange admin center** is still open from the prior task, then proceed to the next step; otherwise, if necessary, log into the **Office 365 home** page, navigate to the **Exchange Admin Center**, select **mail flow**, and select the **rules** tab using the instructions in the prior task.
 
@@ -183,7 +183,7 @@ After Holly reviewed the messaging environment at Adatum Corporation, she realiz
 
 Holly has discovered that mail flow rules contain a richer set of conditions, exceptions, and actions, all of which will provide her with the flexibility to implement many types of messaging policies for Adatum. She is eager to put this to the test regarding a significant issue currently affecting Adatum’s messaging environment - users who send extremely large email messages. She has decided that her first task will be to create a mail flow rule that restricts email size.
 
-1. You should still be logged into LON-CL1 as the **Administrator** with a password of **Pa55w.rd**; if necessary, then log in now. 
+1. You should still be logged into LON-CL1 as the **Administrator** with a password of **Pa55w.rd**; however, if the log-in page appears, then log in now. 
 
 2. If the **Exchange admin center** is still open from the prior task, then proceed to the next step; otherwise, if necessary, log into the **Office 365 home** page, navigate to the **Exchange Admin Center**, select **mail flow**, and select the **rules** tab using the instructions in the prior task.
 
@@ -212,6 +212,6 @@ Holly has discovered that mail flow rules contain a richer set of conditions, ex
 14. Leave the Exchange Admin Center open to the mail flow page and proceed to the next task.
 
 
-# END OF LAB 2
+# End of Lab 2
 
  
