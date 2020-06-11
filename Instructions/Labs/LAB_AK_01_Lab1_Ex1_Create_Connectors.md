@@ -85,7 +85,7 @@ In this task, you will use the Exchange admin center on the Exchange Server VM (
 
 You will now create a custom send connector in Adatum’s on-premises Exchange Server (LON-EX1) using the on-premises EAC.
 
-1. You should still be logged into LON-EX1 as the **Administrator** with a password of **Pa55w.rd**; however, if the log-in page appears,then log in now.
+1. You should still be logged into LON-EX1 as the **Administrator** with a password of **Pa55w.rd**; however, if the log-in page appears, then log in now.
 
 2. In your Internet Explorer browser session, the on-premises **Exchange admin center** should still be open; if not, then perform the same steps that you did in the prior task to open it now.
 
@@ -113,7 +113,7 @@ You will now create a custom send connector in Adatum’s on-premises Exchange S
 
 13. In the **Select a Server** window, you want to select your **Mail server**, which in this virtual lab environment is your **LON-EX1** VM. Since the LON-EX1 server is selected by default, select the **add -&gt;** button, and then select **OK**.
 
-14. Your LON-EX1 VM should now appear in the Source server list for this new send connector. Select **Finish**.
+14. LON-EX1 should now appear in the Source server list for this new send connector. Select **Finish**.
 
 15. Leave your browser open and the EAC tab open and proceed to the next exercise.
 
