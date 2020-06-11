@@ -8,7 +8,7 @@ You will first create a mail flow rule that quarantines messages that are sent f
 
 In this exercise you will return to the Exchange Admin Center, but this time you will access it from your client computer (LON-CL1) through the Microsoft 365 admin center. This will be the EAC for Exchange Online. You will then create a mail flow rule that checks for sensitive information in emails sent from inside the organization. 
 
-1. Switch to the LON-CL1 VM and log on as the **A****dministrator** using the password **Pa55w.rd**. 
+1. Switch to LON-CL1 and log in as the **Administrator** account with a password of **Pa55w.rd**. 
 
 2. Select the **Microsoft Edge** icon either on the desktop or the taskbar. Maximize your browser window when it opens.
 
@@ -20,7 +20,7 @@ In this exercise you will return to the Exchange Admin Center, but this time you
 
 6. On the **Stay signed in?** dialog box, select the **Don’t show this again** check box and then select **Yes.**
 
-7. If a **Get your work done with Office 365** dialog box appears, select the **X** to close it**.**
+7. If a **Get your work done with Office 365** dialog box appears, select the **X** to close it.
 
 8. In the **Office 365 home** page, in the **Apps** section, select the **Admin** app.
 
@@ -89,7 +89,7 @@ In this case, it does not make logical sense to check for attachments that were 
 
 **Important:** Because these two conditions will be defined in separate rules, the rules will be applied in a Boolean **OR** fashion (for example, condition 1 is true OR condition 2 is true).
 
-1. You should still be logged into LON-CL1 as the **Administrator** with a password of **Pa55w.rd**; if necessary, then log in now. 
+1. You should still be logged into LON-CL1 as the **Administrator** with a password of **Pa55w.rd**; if necessary, log in now. 
 
 2. If the **Exchange Admin Center** is still open from the prior task, then proceed to the next step; otherwise, if necessary, navigate to the **Office 365 home** page ([**https://portal.office.com**](https://portal.office.com/)), log in as **admin@M365xZZZZZZ.onmicrosoft.com,** navigate to the **Microsoft 365 admin center**, navigate to the **Exchange admin center**, then select **mail flow** in the left-hand navigation pane and select the **rules** tab.
 
@@ -193,11 +193,11 @@ Holly has discovered that mail flow rules contain a richer set of conditions, ex
 
 5. Select the drop-down arrow in the **Apply this rule if…** field. Hover over **The message…** and in the menu that appears, select **size is greater than or equal to.**
 
-6. To the right of this condition field that displays **The message size is greater than or equal to…****,** select **Enter text.**
+6. To the right of this condition field that displays **The message size is greater than or equal to…**, select **Enter text**.
 
 7. In the **specify size (KB)** window, enter **1024** and then select **OK**. 
 
-8. Select the drop-down arrow in the **Do the following…** field. Hover over **Block the message...** and in the menu that appears, select **reject the message and include an explanation****.**
+8. Select the drop-down arrow in the **Do the following…** field. Hover over **Block the message...** and in the menu that appears, select **reject the message and include an explanation**.
 
 9. In the **specify rejection reason** window that appears, enter the following text: **Your message exceeds the size limit. Please adjust the message size or compress the email content and send it as a zipped file.**
 
