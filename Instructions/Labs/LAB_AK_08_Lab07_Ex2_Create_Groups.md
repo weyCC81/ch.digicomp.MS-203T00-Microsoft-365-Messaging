@@ -1,4 +1,4 @@
-# Module 8 - Lab 6 - Exercise 2 - Create Groups
+# Module 8 - Lab 7 - Exercise 2 - Create Groups
 
 In this exercise, you will continue in your role as Holly Dickson, Adatum’s Enterprise Administrator. As part of her pilot project for deploying Microsoft 365, Holly wants to examine how creating groups in her on-premises Exchange environment differs from creating groups in Microsoft 365 for Exchange Online. She will begin by creating an on-premises distribution group and then a cloud distribution group. She will finish by creating an Office 365 group.
 
@@ -159,5 +159,5 @@ Another major difference between the two types of groups is that an Office 365 G
 
 27. Leave your browser and all the tabs open for the next exercise.
 
-# End of Lab 6
+# End of Lab 7
  
