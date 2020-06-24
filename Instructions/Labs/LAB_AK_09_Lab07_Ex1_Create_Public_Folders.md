@@ -1,4 +1,4 @@
-# Module 9 - Lab 7 - Exercise 1 - Create Public Folders
+# Module 9 - Lab 8 - Exercise 1 - Create Public Folders
 
 Holly Dickson wants to continue with her examination of messaging in Microsoft 365, and more specifically, with the use of public folders. In this lab, you will log into the Exchange admin center for Exchange Online and create a public folder mailbox and a public folder in Microsoft 365. 
 
@@ -41,4 +41,4 @@ Now that you have created a public folder mailbox, you can create a public folde
 
 6. Leave all browser tabs open and proceed to the next task, where you will enable mail settings for this **Test PF1** public folder.
 
-# Proceed to Lab 7 - Exercise 2
+# Proceed to Lab 8 - Exercise 2
