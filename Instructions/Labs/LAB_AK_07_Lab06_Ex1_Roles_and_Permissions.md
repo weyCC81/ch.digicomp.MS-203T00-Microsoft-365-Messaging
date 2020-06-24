@@ -1,4 +1,4 @@
-# Module 7 - Lab 5 - Exercise 1 - Manage Roles and Permission Policies
+# Module 7 - Lab 6 - Exercise 1 - Manage Roles and Permission Policies
 
 In this exercise you will continue in your role as Holly Dickson, Adatum’s Enterprise Administrator. Holly has been tasked with managing admin roles and permission policies for Adatum. The CTO has asked Holly to create a new management role group that allows an administrator to remotely access a mailbox without having the password. 
 
@@ -162,4 +162,4 @@ In this task, you are going to assign the Outlook Web App policy that you create
 17. Leave the Edge browser and all tabs open and proceed to the next lab.
 
 
-# End of Lab 5 
+# End of Lab 6 
