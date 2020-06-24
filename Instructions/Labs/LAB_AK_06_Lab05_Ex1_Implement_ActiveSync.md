@@ -1,4 +1,4 @@
-# Module 6 – Lab 4 - Exercise 1 - Implement ActiveSync 
+# Module 6 – Lab 5 - Exercise 1 - Implement ActiveSync 
 
 In this lab you will be guided through the process of enabling and disabling Exchange ActiveSync. ActiveSync is a client protocol that enables users to synchronize their Exchange mailbox with a mobile device. In this lab, you will log into the Exchange Server (LON-EX1) VM and set up ActiveSync for a single mailbox as well as for multiple mailboxes using the Exchange Admin Center.
 
@@ -113,4 +113,4 @@ In this task, you will begin by disabling Exchange ActiveSync for a group of mai
 8. Leave the Exchange Admin Center open for use in a future lab exercise.
 
 
-# End of Lab 4
+# End of Lab 5
