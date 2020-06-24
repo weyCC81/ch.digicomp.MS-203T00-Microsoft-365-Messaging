@@ -1,4 +1,4 @@
-# Module 9 - Lab 7 - Exercise 2 - Manage Public Folders
+# Module 9 - Lab 8 - Exercise 2 - Manage Public Folders
 
 In the prior exercise, Holly Dickson logged into the Exchange admin center for Exchange Online on LON-CL1 and created a Microsoft 365 public folder mailbox and a public folder. In this exercise, she will manage settings and permissions for each of these objects using the Exchange Online EAC. 
 
@@ -85,4 +85,4 @@ In this task, you will manage the permissions for the Test PF1 public folder.
 10. Leave all browser tabs open and proceed to the next lab.
 
 
-# End of Lab 7
+# End of Lab 8
