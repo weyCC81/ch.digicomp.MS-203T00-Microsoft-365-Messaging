@@ -1,4 +1,4 @@
-# Module 8 – Lab 6 - Exercise 1 – Create Exchange Recipients
+# Module 8 – Lab 7 - Exercise 1 – Create Exchange Recipients
 
 Adatum Corporation plans to create a hybrid Exchange deployment. They have Exchange Server 2019 and their on-premises user mailboxes installed on their on-premises Exchange Server (LON-EX1). Now that they are implementing Microsoft 365, they can also create user accounts and mailboxes in Exchange Online. 
 
@@ -77,4 +77,4 @@ In this task you will add a user account in Microsoft 365, which will create a m
 20. Leave your Edge browser open and proceed to the next exercise.
 
 
-# Proceed to Lab 6 - Exercise 2
+# Proceed to Lab 7 - Exercise 2
