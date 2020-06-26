@@ -1,6 +1,6 @@
 # Module 2 – Lab 2 - Exercise 1 – Create Mail Flow Rules
 
-In this lab, you will continue in your role as Holly Dickson, Adatum’s Enterprise Administrator. You will use your client computer to access the Exchange Admin Center from the Microsoft 365 admin center. You will then create a series of mail flow rules that are designed to protect Adatum’s messaging environment. 
+In this lab, you will continue in your role as Holly Dickson, Adatum’s Messaging Administrator. You will use your client computer to access the Exchange Admin Center from the Microsoft 365 admin center. You will then create a series of mail flow rules that are designed to protect Adatum’s messaging environment. 
 
 You will first create a mail flow rule that quarantines messages that are sent from inside the organization that have the words “Secret”, “Classified”, or “Sensitive” in the body or subject of the message. You will create a second rule will also quarantine messages that have attachments that can’t be scanned or where the scanning can’t finish. Both rules will generate a reply message that lets the sender know they have a message that is undeliverable. Finally, you will create a mail flow rule that restricts the size of emails.
 
