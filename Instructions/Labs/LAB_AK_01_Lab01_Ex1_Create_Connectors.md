@@ -1,6 +1,6 @@
 # Module 1 – Lab 1 – Exercise 1 – Create Connectors
 
-In this exercise, you will take on the persona of Holly Dickson, Adatum’s Enterprise Administrator. As part of her pilot project for Adatum’s Exchange deployment, Holly wants to begin by creating custom send and receive connectors in her on-premises Exchange Server using the on-premises Exchange admin center. 
+In this exercise, you will take on the persona of Holly Dickson, Adatum’s Messaging Administrator. As part of her pilot project for Adatum’s Exchange deployment, Holly wants to begin by creating custom send and receive connectors in her on-premises Exchange Server using the on-premises Exchange admin center. 
 
 Exchange uses connectors to enable incoming and outgoing mail flow on Exchange servers and between services in the transport pipeline on the local Exchange server. In this lab you will log into the Exchange Server (LON-EX1) VM and create custom Receive and Send connectors using the Exchange Admin Center (EAC).
 
