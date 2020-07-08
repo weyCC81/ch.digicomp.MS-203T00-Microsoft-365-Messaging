@@ -12,7 +12,7 @@ The CTO wants you to figure out why emails are not being delivered properly. Use
 **Hint:** Review the information in this course relating to message delivery. Compare that to what you did in the previous labs when you configured Adatum’s hybrid deployment to determine what needs to be fixed to solve this problem. Once you think you have solved the problem, send an email from Beth Burke’s on-premises mailbox to Alex Wilber’s Microsoft 365 mailbox to see whether the email is treated as spam and delivered into Alex’s Junk Email folder, or if it gets delivered into his Inbox.
 
 
-**Solution Guide:** If you find yourself struggling with this problem and unable to determine how to resolve it, you can download the step-by-step solution guide for this Final Assessment lab. **However, in the spirit of learning, please try to resolve the issue on your own using the knowledge you have acquired in this course before turning to the solution guide.**
+**Solution Guide:** If you find yourself struggling with this problem and unable to determine how to resolve it, you can download the [step-by-step solution guide for this Final Assessment lab](https://github.com/MicrosoftLearning/MS-203T00-Microsoft-365-Messaging/blob/master/Allfiles/MS-203T00-Lab10-Ex3-Final%20Assessment%20Solution%20Guide.pdf). **However, in the spirit of learning, please try to resolve the issue on your own using the knowledge you have acquired in this course before turning to the solution guide.**
 
  
 
