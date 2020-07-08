@@ -181,7 +181,7 @@ Your instructor will provide you with your lab hosting's provider's domain name 
 
 	- At this point you can either select **Continue** at the bottom of the **Add DNS records** page to verify the MX record that you just added, or you can optionally wait until you have added all three DNS records and then select **Continue** to verify all three records at once. <br/>
 
-	For the purposes of this lab, we will wait until we have entered all three records and then verify them all at once. The reason for this sometimes when you verify each record as you enter it, it will return an error on a record that you created previously saying that it couldn’t find it. This can be a bit confusing – one moment it verifies the record, and the next it tells you it cannot find it. So it’s simplest to just verify all three records at once after you are all done creating the three DNS records.   
+	For the purposes of this lab, you should wait until after you have entered all three DNS records and then verify them all at once. The reason for this sometimes when you verify each record as you enter it, it will return an error on a record that you created previously saying that it couldn’t find it. This can be a bit confusing – one moment it verifies the record, and the next it tells you it cannot find it. So it’s simplest to just verify all three records at once after you are all done creating the three DNS records.   
 ‎  
 ‎Do **NOT** select Continue; instead, proceed to the next step.
 
