@@ -139,7 +139,7 @@ Second, you must verify the default settings in the Microsoft 365 EAC so that em
 
 13. You are currently in the on-premises EAC. You should also have the EAC for Exchange Online open in your browser from the prior task (see the **setup – Microsoft Exchange** tab); if so, select this tab.   
 ‎  
-‎However, if you closed the EAC for Exchange Online at the end of the prior task, then open it again by entering the following URL: (this shortcut saves you from navigating to the Office 365 home page, then to the Microsoft 365 admin center, and then to the EAC): **https://****outlook.office365.com/ecp**
+‎However, if you closed the EAC for Exchange Online at the end of the prior task, then open it again by entering the following URL: (this shortcut saves you from navigating to the Office 365 home page, then to the Microsoft 365 admin center, and then to the EAC): **https://outlook.office365.com/ecp**
 
 14. In the **Exchange admin center** for Exchange Online, in the left-hand navigation pane, select **mail flow**.
 
@@ -273,7 +273,7 @@ In a real-world scenario in which you replace or add the domain just to your dom
 
 21. Once the validation is complete, select **Close**. On the **Validation Result** page, the validation will either be successful, or it will have failed. Perform the appropriate steps below depending on which result you receive.
 
-22. If the validation was successful, the two validation tasks should be displayed: **checking connectivity to the IP address** and **sending a test email to an on-premises user mailbox within this IP address****.** The status of both tasks should be **Succeeded**.   
+22. If the validation was successful, the two validation tasks should be displayed: **checking connectivity to the IP address** and **sending a test email to an on-premises user mailbox within this IP address**. The status of both tasks should be **Succeeded**.   
 ‎  
 ‎Select **Save**, and then select **OK** once the information is successfully saved. Proceed to the final step in this task.
 
