@@ -265,7 +265,7 @@ In a real-world scenario in which you replace or add the domain just to your dom
 
 18. On the **Validate this connector** page, select the **plus (+) sign** icon to enter Allan Yoo’s on-premises email address, which will be used to validate this connector. 
 
-19. On the **add email** window that appears, enter Allan Yoo’s email address of **Allan@****XXYYZZa.xxxCustomDomainxxx.xxx** (where XXYYZZa is your unique UPN Name and xxxCustomDomainxxx.xxx is the custom domain name, both of which were provided by your lab hosting provider), select **OK**, and then select **OK** once the information is successfully saved.  
+19. On the **add email** window that appears, enter Allan Yoo’s email address of **Allan@XXYYZZa.xxxCustomDomainxxx.xxx** (where XXYYZZa is your unique UPN Name and xxxCustomDomainxxx.xxx is the custom domain name, both of which were provided by your lab hosting provider), select **OK**, and then select **OK** once the information is successfully saved.  
 ‎  
 ‎**NOTE:** If it’s been less than 15 minutes since you completed the previous task in which you created the on-premises mailbox for Allan, then you may receive an error message indicating that the email address is invalid. If this occurs, select **Cancel**, then wait several more minutes and try again.
 
