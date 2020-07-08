@@ -89,7 +89,7 @@ Your instructor will provide you with your lab hosting's provider's domain name 
 
 3. You must now open **Windows PowerShell**. Select the **magnifying glass (Search)** icon on the taskbar at the bottom of the screen and enter **powershell** in the Search box that appears. 
 
-4. In the menu that appears, right-click on **Windows PowerShell** (not Windows PowerShell ISE) and select **Run as administrator** in the drop-down menu**.** 
+4. In the menu that appears, right-click on **Windows PowerShell** (not Windows PowerShell ISE) and select **Run as administrator** in the drop-down menu. 
 
 5. In **Windows PowerShell**, you should run the following command at the command prompt to create a new zone in DNS (remember to replace **XXYYZZa** with the unique UPN name assigned to your tenant by your lab hosting provider, and replace **xxxCustomDomainxxx.xxx** with your lab hosting provider's custom domain name): <br/> 
 
@@ -159,8 +159,7 @@ Your instructor will provide you with your lab hosting's provider's domain name 
 
 	- an Alias (CNAME) record
 
-	- a Text (TXT) record 
-<br/>
+	- a Text (TXT) record <br/>
 
 	You must now switch back and forth between this **Add DNS records** page and **DNS Manager** to add these three additional DNS records to your new domain. For each record that you add in DNS Manager, you will copy information from this **Add DNS records** page and then paste it into each corresponding record that you create in DNS Manager. <br/>
 
@@ -180,8 +179,7 @@ Your instructor will provide you with your lab hosting's provider's domain name 
 
 	- Switch back to the **Add DNS records** page in the Microsoft 365 admin center by selecting the **Internet Explorer** icon on the taskbar at the bottom of the page and selecting the **Microsoft 365 admin center** tab. 
 
-	- At this point you can either select **Continue** at the bottom of the **Add DNS records** page to verify the MX record that you just added, or you can optionally wait until you have added all three DNS records and then select **Continue** to verify all three records at once.
-<br/>
+	- At this point you can either select **Continue** at the bottom of the **Add DNS records** page to verify the MX record that you just added, or you can optionally wait until you have added all three DNS records and then select **Continue** to verify all three records at once. <br/>
 
 	For the purposes of this lab, we will wait until we have entered all three records and then verify them all at once. The reason for this sometimes when you verify each record as you enter it, it will return an error on a record that you created previously saying that it couldn’t find it. This can be a bit confusing – one moment it verifies the record, and the next it tells you it cannot find it. So it’s simplest to just verify all three records at once after you are all done creating the three DNS records.   
 ‎  
