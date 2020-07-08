@@ -197,7 +197,7 @@ In this task, you will test mail flow by sending an email from Allan’s new Mic
 
 9. The email that Allan just sent to Beth should appear in her **Inbox**. Open the email and reply to the message. 
 
-10. Hover over the **Internet Explorer** icon on the taskbar and select the InPrivate Browsing session that displays **Allan’s** Microsoft 365 mailbox**.** If Beth’s reply does not appear in Allan’s **Inbox**, then refresh the Inbox.   
+10. Hover over the **Internet Explorer** icon on the taskbar and select the InPrivate Browsing session that displays **Allan’s** Microsoft 365 mailbox. If Beth’s reply does not appear in Allan’s **Inbox**, then refresh the Inbox.   
 ‎  
 ‎Seeing Beth’s reply verifies that mail flow is working properly between an on-premises mailbox and Allan’s newly migrated Microsoft 365 mailbox.
 
