@@ -8,7 +8,7 @@ In this task you will log into the Exchange Server (LON-EX1) virtual machine and
 
 1. Switch to the LON-EX1 VM and, if necessary, log in with the **Administrator** account and **Pa55w.rd** password. 
 
-2. If the on-premises **Exchange admin center** is still open from a prior lab exercise, then proceed to the next step; otherwise, on the taskbar at the bottom of the page, select the **Windows** icon, select the **Microsoft Exchange Server 2019** group in the menu, and in the drop-down list, select **Exchange Administrative Center**. This will open Internet Explorer, which will attempt to access the EAC. **Note**: IE will display an error page indicating “There is a problem with this website’s security certificate”. You receive this message because a certificate for the EAC was not needed for this VM training environment. Therefore, select **Continue to this website (not recommended)** option. 
+2. If the on-premises **Exchange admin center** is still open from a prior lab exercise, then proceed to the next step; otherwise, on the taskbar at the bottom of the page, select the **Windows** icon, select the **Microsoft Exchange Server 2019** group in the menu, and in the drop-down list, select **Exchange Administrative Center**. This will open Edge browser, which will attempt to access the EAC. **Note**: IE will display an error page indicating “There is a problem with this website’s security certificate”. You receive this message because a certificate for the EAC was not needed for this VM training environment. Therefore, select **Continue to this website (not recommended)** option. 
 
 3. In the **Exchange admin center**, in the left-hand navigation pane, select **recipients**. 
 

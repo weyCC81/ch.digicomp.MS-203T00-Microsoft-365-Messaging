@@ -46,7 +46,8 @@ In this task, you are going to create a custom role group and then assign multip
 
 	- **Admin**
 
-	- **TenantAdmins_-903670859**
+	- **TenantAdmins_-##########** (**#######** represents the tenant number at the end of the TenantAdmins group)
+
 
 13. Select the **add -&gt;** button and then select **OK**. 
 

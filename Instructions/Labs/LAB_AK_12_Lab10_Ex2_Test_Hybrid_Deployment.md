@@ -17,7 +17,7 @@ In this task, you will verify that your hybrid environment is functioning proper
 
 - From your on-premises Exchange Server (LON-EX1) VM, you will first send an email from Allan Yoo’s on-premises Exchange Server mailbox to Alex Wilber, who has a cloud mailbox in Microsoft 365. 
 	
-- You will then open an InPrivate Browsing session in Internet Explorer so that you can log into Alex’s mailbox in Microsoft 365 and verify that he received the email from Allan. 
+- You will then open an InPrivate Browsing session in Edge browser so that you can log into Alex’s mailbox in Microsoft 365 and verify that he received the email from Allan. 
 	
 - You will then send a reply from Alex to Allan, and then verify that Allan received the reply in his on-premises mailbox. <br/>
 
@@ -29,7 +29,7 @@ You should note what happens when you send the email from Allan's on-premises ma
 ‎  
 ‎At the end of the prior lab exercise, if your Outbound connector validation failed and you verified that it was a false-positive error by opening Allan Yoo’s on-premises mailbox to see the test validation email in his Outlook Inbox, then skip to step 5; otherwise, perform steps 3-4 to open Allan’s on-premises mailbox.
 
-3. If Allan’s Outlook mailbox is not open, then select a new tab in **Internet Explorer** and open **Outlook Web App** by entering the following URL: **https://XXYYZZa.xxxCustomDomainxxx.xxx/owa** (where XXYYZZ is your unique UPN name assigned to your tenant by your lab hosting provider and xxxCustomDomainxxx.xxx is your lab hosting provider’s custom domain).   
+3. If Allan’s Outlook mailbox is not open, then select a new tab in **Edge browser** and open **Outlook Web App** by entering the following URL: **https://XXYYZZa.xxxCustomDomainxxx.xxx/owa** (where XXYYZZ is your unique UPN name assigned to your tenant by your lab hosting provider and xxxCustomDomainxxx.xxx is your lab hosting provider’s custom domain).   
 ‎  
 ‎**Note:** If a page is returned indicating **This site is not secure**, select **More information**, and then select **Go on to the webpage (not recommended).** This is due to the certificate issue that was explained at the start of Task 5 in the prior lab exercise.
 
@@ -43,9 +43,9 @@ You should note what happens when you send the email from Allan's on-premises ma
 
 7. At this point, you want to log into Alex Wilber’s Outlook mailbox in Microsoft 365 to verify he received the email from Allan Yoo’s on-premises mailbox. You then want to send a reply from Alex’s Microsoft 365 mailbox back to Allan’s on-premises mailbox.   
 ‎  
-‎**IMPORTANT:** Since you already have Allan’s mailbox open in Internet Explorer, you CANNOT open Alex’s mailbox in another tab in the same IE session. Doing so will block email from Allan’s on-premises account from being sent to Alex’s Microsoft 365 account. **Therefore, you must start an InPrivate Browsing session and then open Alex’s mailbox in that session.**   
+‎**IMPORTANT:** Since you already have Allan’s mailbox open in Edge browser, you CANNOT open Alex’s mailbox in another tab in the same IE session. Doing so will block email from Allan’s on-premises account from being sent to Alex’s Microsoft 365 account. **Therefore, you must start an InPrivate Browsing session and then open Alex’s mailbox in that session.**   
 ‎  
-‎To open an InPrivate Browsing session, right select the **Internet Explorer** icon on the taskbar and in the menu, select **Start InPrivate Browsing**. This will open a new, InPrivate IE session that is separate from the IE session that contains the tab with Allan’s mailbox.   
+‎To open an InPrivate Browsing session, right select the **Edge browser** icon on the taskbar and in the menu, select **Start InPrivate Browsing**. This will open a new, InPrivate IE session that is separate from the IE session that contains the tab with Allan’s mailbox.   
 ‎  
 ‎Maximize the InPrivate browser window and enter the following URL: **https://portal.office.com**  
 ‎
@@ -65,11 +65,11 @@ You should note what happens when you send the email from Allan's on-premises ma
 ‎**Important:** There is a specific reason why Allan’s email ended up in Alex’s Junk Email folder rather than his Inbox. However, the reason will not be explained here, since this is the very issue covered in the next lab exercise, which is the Final Assessment lab. Once you complete the Final Assessment lab, you will understand why this occurred. For now, simply leave Allan’s email in Alex’s Junk Email folder and send your reply back to Allan as directed earlier in this step.  
 ‎
 
-14. Hover over the **Internet Explorer** icon on the taskbar and select the session that displays **Allan’s** on-premises mailbox. Verify that Allan received the reply from Alex (you may need to refresh the Inbox if the reply is not there when you return to Allan’s mailbox).   
+14. Hover over the **Edge browser** icon on the taskbar and select the session that displays **Allan’s** on-premises mailbox. Verify that Allan received the reply from Alex (you may need to refresh the Inbox if the reply is not there when you return to Allan’s mailbox).   
 ‎  
 ‎You have just verified that your hybrid environment is functioning properly.
 
-15. Close the InPrivate Browsing session but leave your Internet Explorer browser session open. 
+15. Close the InPrivate Browsing session but leave your Edge browser browser session open. 
 
 16. There is another test that you can perform to validate that your connector worked properly, even though the validation failed. Select the **connectors – Microsoft Exchange** tab in your IE browser to display the EAC for Exchange Online.
 
@@ -95,7 +95,7 @@ You should note what happens when you send the email from Allan's on-premises ma
 
 24. Close the Message Trace Results window.
 
-25. In the Internet Explorer browser session, close the tab displaying Allan Yoo’s Outlook mailbox. Leave the two EAC tabs open and proceed to the next task.
+25. In the Edge browser browser session, close the tab displaying Allan Yoo’s Outlook mailbox. Leave the two EAC tabs open and proceed to the next task.
 
 
 
@@ -107,7 +107,7 @@ When users are cloud-hosted they do not have to use a VPN tunnel to access compa
 
 1. You should still be logged into LON-EX1 from the prior exercise; if necessary, log in as the **Administrator** with a password of **Pa55w.rd**.
 
-2. In your **Internet Explorer** browser, you should have the two **Exchange admin center** (EAC) tabs open from the prior exercise – one for the on-premises EAC and one for the EAC for Exchange Online. 
+2. In your **Edge browser** browser, you should have the two **Exchange admin center** (EAC) tabs open from the prior exercise – one for the on-premises EAC and one for the EAC for Exchange Online. 
 
 	- The first tab should be titled **send connectors – Microsoft Exchange.** This is the on-premises EAC.
 
@@ -173,9 +173,9 @@ In this task, you will test mail flow by sending an email from Allan’s new Mic
 ‎In summary, you should NOT proceed to the next task until the status on the **migration** window displays **Completed** for your batch.  
 ‎
 
-3. Since you just completed the Final Assessment lab prior to returning to this task, you should have Beth Burke’s on-premises mailbox open in your Internet Explorer session, and you should have Alex Wilber’s Microsoft 365 mailbox open in an InPrivate Browsing session. Therefore, you must close Alex’s mailbox and open Allan’s mailbox in the InPrivate Browsing session.   
+3. Since you just completed the Final Assessment lab prior to returning to this task, you should have Beth Burke’s on-premises mailbox open in your Edge browser session, and you should have Alex Wilber’s Microsoft 365 mailbox open in an InPrivate Browsing session. Therefore, you must close Alex’s mailbox and open Allan’s mailbox in the InPrivate Browsing session.   
 ‎  
-‎You should begin by logging out of Microsoft 365 as Alex Wilber. Hover your mouse over the Internet Explorer icon on the taskbar, select Alex’s mailbox tab in the InPrivate Browsing session. On Alex’s mailbox, select Alex’s user icon in the upper right corner of the screen and select **Sign out**.  
+‎You should begin by logging out of Microsoft 365 as Alex Wilber. Hover your mouse over the Edge browser icon on the taskbar, select Alex’s mailbox tab in the InPrivate Browsing session. On Alex’s mailbox, select Alex’s user icon in the upper right corner of the screen and select **Sign out**.  
 ‎  
 ‎Once you are signed out as Alex, close the Microsoft Office Home tab in your InPrivate Browsing session. 
 
@@ -191,13 +191,13 @@ In this task, you will test mail flow by sending an email from Allan’s new Mic
 
 8. At this point, you must log into Beth Burke’s on-premises mailbox to verify she received the email from Allan Yoo’s Office 365 mailbox. You then want to send a reply from Beth’s on-premises mailbox back to Allan’s Office 365 mailbox.   
 ‎  
-‎**Note:** In the Final Assessment lab that you just completed, you opened Beth’s on-premises mailbox to test your final assessment lab solution. Hover your mouse over the Internet Explorer icon on the taskbar and select Beth’s mailbox.   
+‎**Note:** In the Final Assessment lab that you just completed, you opened Beth’s on-premises mailbox to test your final assessment lab solution. Hover your mouse over the Edge browser icon on the taskbar and select Beth’s mailbox.   
 ‎  
-‎However, if you closed Beth’s mailbox after the Final Assessment lab, then open it again in your Internet Explorer browser session (not in the InPrivate Browsing session that has Allan’s mailbox open) by navigating to **https://XXYYZZa.xxxCustomDomainxxx.xxx/owa** and signing in as **adatum\beth** with a Password of **Pa55w.rd.**
+‎However, if you closed Beth’s mailbox after the Final Assessment lab, then open it again in your Edge browser browser session (not in the InPrivate Browsing session that has Allan’s mailbox open) by navigating to **https://XXYYZZa.xxxCustomDomainxxx.xxx/owa** and signing in as **adatum\beth** with a Password of **Pa55w.rd.**
 
 9. The email that Allan just sent to Beth should appear in her **Inbox**. Open the email and reply to the message. 
 
-10. Hover over the **Internet Explorer** icon on the taskbar and select the InPrivate Browsing session that displays **Allan’s** Microsoft 365 mailbox. If Beth’s reply does not appear in Allan’s **Inbox**, then refresh the Inbox.   
+10. Hover over the **Edge browser** icon on the taskbar and select the InPrivate Browsing session that displays **Allan’s** Microsoft 365 mailbox. If Beth’s reply does not appear in Allan’s **Inbox**, then refresh the Inbox.   
 ‎  
 ‎Seeing Beth’s reply verifies that mail flow is working properly between an on-premises mailbox and Allan’s newly migrated Microsoft 365 mailbox.
 
@@ -209,11 +209,11 @@ In this task, you will test mail flow by sending an email from Allan’s new Mic
 
 14. Both Allan and Beth’s calendars will be displayed, and they should both show that their respective user is free. Select **Done** to accept the time and then select **Send** to send the meeting request to Beth. 
 
-15. Hover over the **Internet Explorer** icon on the taskbar and select **Beth’s** on-premises mailbox. 
+15. Hover over the **Edge browser** icon on the taskbar and select **Beth’s** on-premises mailbox. 
 
 16. In Beth’s Inbox, **Accept** the meeting request and select **Send the response now**. 
 
-17. Hover over the **Internet Explorer** icon on the taskbar and select the InPrivate Session that’s displaying **Allan’s** calendar. Select the **email** icon in the bottom left-corner of the window and verify that Allan received the accepted meeting request from Beth.
+17. Hover over the **Edge browser** icon on the taskbar and select the InPrivate Session that’s displaying **Allan’s** calendar. Select the **email** icon in the bottom left-corner of the window and verify that Allan received the accepted meeting request from Beth.
 
 18. Create another meeting request with a subject of **Test 2**. Add **Beth Burke** as a meeting attendee again, then select **Scheduling Assistant**.   
 ‎  

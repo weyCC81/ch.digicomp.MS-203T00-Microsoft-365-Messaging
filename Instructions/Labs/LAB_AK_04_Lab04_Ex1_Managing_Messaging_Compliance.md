@@ -17,7 +17,7 @@ Therefore, in this task you will assign Nestor Wilke (a Global Admin) the Compli
 
 1. Switch to LON-EX1 and, if necessary, log in as the **Administrator** account with a password of **Pa55w.rd**. 
 
-2. In your Internet Explorer browser navigate to the **Office 365 home page** by entering the following URL: [**https://portal.office.com/**](https://portal.office.com/) 
+2. In your Edge browserbrowser navigate to the **Office 365 home page** by entering the following URL: [**https://portal.office.com/**](https://portal.office.com/) 
 
 3. In the **Sign in** dialog box, copy and paste in the **Tenant Email** account provided by your lab hosting provider (**admin@M365xZZZZZZ.onmicrosoft.com**, where ZZZZZZ is your unique tenant suffix ID provided by your lab hosting provider) and then select **Next**.
 
@@ -27,7 +27,7 @@ Therefore, in this task you will assign Nestor Wilke (a Global Admin) the Compli
 
 6. If a **Get your work done with Office 365** dialog box appears, select the **X** to close it**.**
 
-7. In the **Office 365 home** page, in the **Apps** section, select the **Admin** app.
+7. In the **Office 365 home** page, in the **Apps** section locate on the left hand side of the page, select the **Admin** app.
 
 8. In the **Microsoft 365 admin center**, in the left-hand navigation bar, select Users and then Active Users. 
 
@@ -50,7 +50,7 @@ In this task your you will create a custom DLP Policy that prevents financial da
 
 1. You should still be logged into LON-EX1 from the prior task; if necessary, log in as the **Administrator** with a password of **Pa55w.rd**. 
 
-2. In your Internet Explorer browser, you should still have the **Microsoft 365 admin center** open from the prior task; if so, select that tab now. If you closed your browser session or the **Microsoft 365 admin center** tab, perform the steps necessary to navigate to the admin center.
+2. In your Edge browserbrowser, you should still have the **Microsoft 365 admin center** open from the prior task; if so, select that tab now. If you closed your browser session or the **Microsoft 365 admin center** tab, perform the steps necessary to navigate to the admin center.
 
 3. In the **Microsoft 365 admin center**, in the left-hand navigation bar, select **Show All** (if necessary) to display all the navigation menu options, and then under the **Admin centers** section, select **Compliance.**
 
@@ -68,11 +68,15 @@ In this task your you will create a custom DLP Policy that prevents financial da
 
 9. On the **Choose locations to apply the policy** page, all the existing locations are turned **ON**. Select the toggle switches for the following locations to turn them **OFF** (only the Exchange email location should be turned ON): 
 
+	- **Exchange email**
+
 	- **SharePoint sites**
 
 	- **OneDrive account**
 
 	- **Teams chat and channel messages**  
+
+	- **Microsoft Cloud App Security**
 ‎
 
 	Select **Next.**
@@ -111,15 +115,15 @@ In this task your you will create a custom DLP Policy that prevents financial da
 
 18. This returns you to the **Create rule** window. Scroll down and under the **Action** group, select **+Add an action**. In the drop-down menu that appears, select **Restrict access or encrypt the content**. 
 
-19. In the **Restrict access or encrypt the content group**, select the **Restrict access or encrypt the content** check box.
+19. In the **Restrict access or encrypt the content group**, select the **Restrict access or encrypt the content in Microsoft 365 locations** check box.
 
 20. In the options that appear, verify the **Block** **people from sharing and restrict access to shared content** option is selected.  
 ‎  
-‎Under the **Block these people from accessing SharePoint, OneDrive, and Teams content** group, select the **Everyone. Only the content owner, the last modifier and the site admin will continue to have access** option. 
+‎Under the **Block users from accessing shared SharePoint, OneDrive, and Teams content** group, select the **Block everyone. Only the content owner, the last modifier and the site admin will continue to have access** option. 
 
 21. Continue to scroll down on the **Create rule** window. Under the User notification group, select the toggle button to turn **ON** user notifications
 
-22. Under the **Email notifications** group, select the **Notify these people** option.
+22. Under the **User notifications** group, turn it to the **on** position and select the **Notify these people** option.
 
 23. Under the **Notify these people** option, only **The person who sent, shared, or modified the content** check box is selected. Select the other two check boxes as well (**Owner of the SharePoint site or OneDrive account**, and **Owner of the SharePoint site or OneDrive content**).
 
@@ -187,7 +191,7 @@ In the prior task, you created a custom DLP policy. The task also indicated that
 
 7. Minimize the Windows PowerShell window as you will use it in a later task.
 
-8. Leave your Internet Explorer browser open and proceed to the next task.  
+8. Leave your Edge browserbrowser open and proceed to the next task.  
 ‎
 
  
@@ -198,7 +202,7 @@ In this task, Holly Dickson plans to test Microsoft 365’s message tracing func
 
 1. You should still be logged into LON-EX1 from the prior task; if necessary, log in as the **Administrator** with a password of **Pa55w.rd**. 
 
-2. In Internet Explorer, if you still have tabs open for the **Microsoft Office Home** page and the **Microsoft 365 admin center**, then proceed to the next step; otherwise, navigate to **https://portal.office.com**, log in as **admin@M365xZZZZZZ.onmicrosoft.com** with the tenant email password, and then select **Admin**. 
+2. In Edge browser, if you still have tabs open for the **Microsoft Office Home** page and the **Microsoft 365 admin center**, then proceed to the next step; otherwise, navigate to **https://portal.office.com**, log in as **admin@M365xZZZZZZ.onmicrosoft.com** with the tenant email password, and then select **Admin**. 
 
 3. Select the **Microsoft Office Home** tab and then select **Outlook** to open **Outlook on the web** for the MOD Administrator’s account.
 
@@ -325,23 +329,19 @@ In your role as Holly Dickson, Adatum’s Messaging Administrator, you will cont
 
 1. You should still be logged into LON-EX1 from the prior task; if necessary, log in as the **Administrator** with a password of **Pa55w.rd**. 
 
-2. In your **Internet Explorer** browser, you should still have the **Office 365 Security &amp; Compliance center** tab open from the previous task in which you performed a message trace; if so, proceed to the next step. If you closed your browser or the Security & Compliance center tab, then in your **Microsoft 365 admin center** tab, select **Security** under the **Admin centers** group (or you can enter the following URL: **https://protection.office.com**). 
+2. In your **Edge browser** browser, you should still have the **Microsoft 365 Complaince admin center** tab open from the previous task in which you performed a message trace; if so, proceed to the next step. If you closed your browser or the Security & Compliance center tab, then in your **Microsoft 365 admin center** tab, select **Compliance** under the **Admin centers** group (or you can enter the following URL: **https:/compliance.microsoft.com**
 
-3. In the **Office 365 Security &amp; Compliance center**, in the left-hand navigation pane, select **Home**.
+3. In the **Microsoft 365 Complaince admin center**, in the left-hand navigation pane, select **Catalog**.
 
-4. On the **Home** page, in the **Microsoft 365** section at the top of the page, note that Microsoft is in the process of splitting the Security & Compliance center into a separate Microsoft 365 security center and a Microsoft 365 compliance center.   
+4. On the **Catalog** page, select view under **Information governance**. then select the **open solution** button.
 ‎  
-‎Select the link to the **Microsoft 365 security center**.
+5. In the **Information governance** solution, select **Create a label**.
 
-5. in the **Microsoft 365 security center**, in the left-hand navigation pane, select **Classification** and then select **Retention labels**.
+6. On the **Name your label** page, enter **30-day delete** in the **Name** field, and enter **This label will delete email after 30 days** in the **Description for admins** field. Copy this description and paste it into the **Description for users** field. Select **Next**. 
 
-6. On the **Retention labels** page, select **+Create a label** on the menu bar. This will initiate a wizard that walks you through the steps of creating a retention label.
+7. On the **File plan descriptors** page, select **Next**.
 
-7. On the **Name your label** page, enter **30-day delete** in the **Name** field, and enter **This label will delete email after 30 days** in the **Description for admins** field. Copy this description and paste it into the **Description for users** field. Select **Next**. 
-
-8. On the **File plan descriptors** page, select **Next**.
-
-9. On the **Label settings** page, select the toggle switch to turn retention **On**. This will enable several additional settings. Configure these settings as follows: 
+8. On the **Label settings** page, select the toggle switch to turn retention **On**. This will enable several additional settings. Configure these settings as follows: 
 
 	- Retain the content: **For this long – 30 Days**
 
@@ -349,13 +349,13 @@ In your role as Holly Dickson, Adatum’s Messaging Administrator, you will cont
 
 	- Retain or delete the content based on: **when it was created**
 
-10. Select **Next**.
+9. Select **Next**.
 
-11. On the **Review your settings** page, review your settings and if any require correction, select the corresponding **Edit** option to fix the setting. When all settings are correct, select **Create this Label**.
+10. On the **Review your settings** page, review your settings and if any require correction, select the corresponding **Edit** option to fix the setting. When all settings are correct, select **Create this Label**.
 
-12. It will take a minute or two to create the retention label, at which point the **Retention labels** window will appear and your new **30-day delete** label will appear in the list of labels.
+11. It will take a minute or two to create the retention label, at which point the **Retention labels** window will appear and your new **30-day delete** label will appear in the list of labels.
 
-13. Leave your browser and all tabs open and proceed to the next task.
+12. Leave your browser and all tabs open and proceed to the next task.
 
  
 
@@ -365,15 +365,13 @@ In your role as Holly Dickson, Adatum’s Messaging Administrator, you will cont
 
 1. You should still be logged into LON-EX1 from the prior task; if necessary, log in as the **Administrator** with a password of **Pa55w.rd**. 
 
-2. In your **Internet Explorer** browser, you should still have the **Microsoft 365 security center** tab open from the previous task in which you created the **30-day delete** retention label; if so, proceed to the next step.   
-‎  
-‎However, if you closed this tab, then you can either perform the same steps as in the prior task to navigate to the **Microsoft 365 security center**, or you can enter the following URL: **https://security.microsoft.com** 
+2. In your **Edge browser** browser, you should still have the **Microsoft 365 Complaince admin center** tab open from the previous task in which you performed a message trace; if so, proceed to the next step. If you closed your browser or the Security & Compliance center tab, then in your **Microsoft 365 admin center** tab, select **Compliance** under the **Admin centers** group (or you can enter the following URL: **https:/compliance.microsoft.com**
 
-3. On the **Microsoft 365 security center**, you should still have the **Retention labels** window open from the prior task; otherwise, in the left-hand navigation pane, select **Classification** and then select **Retention labels.**
+3. In the **Microsoft 365 Complaince admin center**, in the left-hand navigation pane, select **Catalog**.
 
-4. On the **Retention labels** window, the **Labels** tab at the top of the page is selected by default. Select the **Label policies** tab that appears next to it.
+4. On the **Catalog** page, select view under **Information governance**. then select the **open solution** button.
 
-5. On the **Retention labels** window, in the **Label policies** tab, select **Publish labels** that appears on the menu bar. This will initiate a new wizard that walks you through the steps of publishing a label.
+5. On the **Information governance** window, select the **Label policies** tab, select **Publish labels** that appears on the menu bar. This will initiate a new wizard that walks you through the steps of publishing a label.
 
 6. On the **Choose labels to publish** page, select the **Choose labels to publish** link**.**
 
@@ -409,7 +407,7 @@ Back in Task 1, Holly assigned the Compliance data administrator role to Nestor 
 
 1. You should still be logged into LON-EX1 from the prior task; if necessary, log in as the **Administrator** with a password of **Pa55w.rd**. 
 
-2. In your **Internet Explorer** browser, select the **Microsoft Office Home** tab, then select the MOD Administrator user icon in the upper right corner of the screen (the circle with **MA** in it) and select **Sign out** in the menu that appears. 
+2. In your **Edge browser** browser, select the **Microsoft Office Home** tab, then select the MOD Administrator user icon in the upper right corner of the screen (the circle with **MA** in it) and select **Sign out** in the menu that appears. 
 
 3. Close all the tabs in your browser session except for the **Sign out** tab. 
 

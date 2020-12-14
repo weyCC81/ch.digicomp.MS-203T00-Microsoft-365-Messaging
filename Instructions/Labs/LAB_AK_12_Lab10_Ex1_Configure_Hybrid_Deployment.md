@@ -22,7 +22,7 @@ In this task, you will download and install the Hybrid Configuration Wizard (HCW
 
 2. You may have the on-premises Exchange admin center open from a prior lab; however, in this task, you must run the Hybrid Configuration Wizard through the EAC for Exchange Online.   
 ‎  
-‎In your Internet Explorer browser, if you have the **Microsoft 365 admin center** open, then proceed to the next step; otherwise, select a new tab, navigate to **https://portal.office.com**, sign into Microsoft 365 as **admin@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your tenant ID provided by your lab hosting provider), enter your tenant email password provided by your lab hosting provider, and then on the **Microsoft Office Home** page, select **Admin**.
+‎In your Edge browser browser, if you have the **Microsoft 365 admin center** open, then proceed to the next step; otherwise, select a new tab, navigate to **https://portal.office.com**, sign into Microsoft 365 as **admin@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your tenant ID provided by your lab hosting provider), enter your tenant email password provided by your lab hosting provider, and then on the **Microsoft Office Home** page, select **Admin**.
 
 3. In the **Microsoft 365 admin center**, select **Show all** in the left-hand navigation pane (if necessary) and under **Admin centers**, select **Exchange**. This will open the EAC for Exchange Online.
 
@@ -34,9 +34,9 @@ In this task, you will download and install the Hybrid Configuration Wizard (HCW
 
 6. Selecting the first configure button should initiate the **Application Install** wizard. If the wizard begins and a **Do you want to install this application?** window appears, then proceed to the next step.   
 ‎  
-‎However, because of security features in the VMs within your lab hosting environment, this wizard may not appear. Instead, when you select the **configure** button, the system will open a new tab, try to access a site, then close the tab and return to the **setup** page with the two **configure** buttons. If this occurs, then you must perform the following steps to open an **InPrivate Browsing** session within Internet Explorer to bypass the security constraints built into your training lab environment (this would not occur in a real world scenario). You will then open the Microsoft 365 admin center and initiate the hybrid deployment process. 
+‎However, because of security features in the VMs within your lab hosting environment, this wizard may not appear. Instead, when you select the **configure** button, the system will open a new tab, try to access a site, then close the tab and return to the **setup** page with the two **configure** buttons. If this occurs, then you must perform the following steps to open an **InPrivate Browsing** session within Edge browser to bypass the security constraints built into your training lab environment (this would not occur in a real world scenario). You will then open the Microsoft 365 admin center and initiate the hybrid deployment process. 
 
-	- To open an InPrivate Browsing session, right-click the **Internet Explorer** icon on the taskbar and in the menu, select **Start InPrivate Browsing**. This will open a new, InPrivate IE session that is separate from the IE session that you were just in. 
+	- To open an InPrivate Browsing session, right-click the **Edge browser** icon on the taskbar and in the menu, select **Start InPrivate Browsing**. This will open a new, InPrivate IE session that is separate from the IE session that you were just in. 
 
 	- Maximize the InPrivate browser window (if necessary), repeat steps 2 through 5, and then continue with the next step to install the Hybrid Configuration Wizard.  
 ‎
@@ -113,7 +113,7 @@ Second, you must verify the default settings in the Microsoft 365 EAC so that em
 
 1. You should still be logged into LON-EX1; if necessary, log in as the **Administrator** with a password of **Pa55w.rd**. 
 
-2. In your Internet Explorer browser session, the on-premises **Exchange admin center** should still be open in a browser tab from the prior task (see the **accepted domains – Microsoft Exchange** tab); if so, skip to the next step. However, if you closed the on-premises EAC at the end of the prior task, then perform the same steps that you performed in previous tasks to open the on-premises **Exchange Administrative Center**. 
+2. In your Edge browser browser session, the on-premises **Exchange admin center** should still be open in a browser tab from the prior task (see the **accepted domains – Microsoft Exchange** tab); if so, skip to the next step. However, if you closed the on-premises EAC at the end of the prior task, then perform the same steps that you performed in previous tasks to open the on-premises **Exchange Administrative Center**. 
 
 3. In the on-premises **Exchange admin center**, select **mail flow** in the left-hand navigation pane, and then select the **accepted domains** tab at the top of the page.  
 ‎  
@@ -173,7 +173,7 @@ In this task, you will remain in your Exchange Server (LON-EX1) VM, navigate to 
 
 1. You should still be logged into LON-EX1; if necessary, log in as the **Administrator** with a password of **Pa55w.rd**. 
 
-2. In your **Internet Explorer** browser, you should have the two **Exchange admin center** (EAC) tabs open from the earlier task in this exercise – one for the on-premises EAC and one for the EAC for Exchange Online. 
+2. In your **Edge browser** browser, you should have the two **Exchange admin center** (EAC) tabs open from the earlier task in this exercise – one for the on-premises EAC and one for the EAC for Exchange Online. 
 
 	- The first EAC tab should be titled **send connectors – Microsoft Exchange.** This is the on-premises EAC. Select this tab and note that in the left-hand side of the blue bar at the top of the page, it displays **Enterprise** and **Office 365**. This will help you identify this as the on-premises EAC.
 	
@@ -219,7 +219,7 @@ In a real-world scenario in which you replace or add the domain just to your dom
 
 1. You should still be in LON-EX1 after having completed the prior task; if necessary, log into LON-EX1 as the **Administrator** with a password of **Pa55w.rd**.
 
-2. In your **Internet Explorer** browser, you should still have the two EAC tabs open from the earlier task – one for the on-premises EAC and one for the EAC for Exchange Online. 
+2. In your **Edge browser** browser, you should still have the two EAC tabs open from the earlier task – one for the on-premises EAC and one for the EAC for Exchange Online. 
 
 3. In your browser, select the **connectors – Microsoft Exchange** tab in your browser. This tab displays the EAC for Exchange Online. 
 
@@ -285,7 +285,7 @@ In a real-world scenario in which you replace or add the domain just to your dom
 ‎  
 ‎To verify this, select **Close** to close the detail window, and then on the **Validation Result** window, select **Save**. You should save the connector even though the validation failed. This will display a **Warning** dialog box confirming whether you want to save the connector even though the validation failed. Select **Yes**, and then select **OK** once the information is successfully saved.
 
-26. To verify whether Allan received the validation email, select a new tab in **Internet Explorer** and open **Outlook Web App** by entering the following URL: **https://XXYYZZa.xxxCustomDomainxxx.xxx/owa** (where XXYYZZ is your unique UPN name assigned to your tenant by your lab hosting provider and xxxCustomDomainxxx.xxx is your lab hosting provider’s custom domain).   
+26. To verify whether Allan received the validation email, select a new tab in **Edge browser** and open **Outlook Web App** by entering the following URL: **https://XXYYZZa.xxxCustomDomainxxx.xxx/owa** (where XXYYZZ is your unique UPN name assigned to your tenant by your lab hosting provider and xxxCustomDomainxxx.xxx is your lab hosting provider’s custom domain).   
 ‎  
 ‎**Note:** If a page is returned indicating **This site is not secure**, select **More information**, and then select **Go on to the webpage (not recommended).** This is due to the certificate issue that was explained at the start of Task 5 in the prior lab exercise.
 

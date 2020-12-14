@@ -32,7 +32,7 @@ Before you begin setting up Adatum’s hybrid deployment, you must first configu
 
 1. Switch to LON-EX1 and if necessary, log in as the **Administrator** account with a password of **Pa55w.rd**. 
 
-2. If your Internet Explorer browser is still open from the prior task, minimize the browser now (do not close it).
+2. If your Edge browser browser is still open from the prior task, minimize the browser now (do not close it).
 
 3. You need to open the **Network and Sharing Center**. To do so, select the network icon on the right-side of the system tray at the bottom of the screen (which displays **Adatum.com Internet access**), and in the menu that appears, select **Network &amp; Internet settings**. 
 
@@ -97,7 +97,7 @@ Your instructor will provide you with your lab hosting's provider's domain name 
 
 6. After the command has completed successfully, minimize your Windows PowerShell window (do NOT close it as you will use it later).
 
-7. You will now access the **Microsoft 365 admin center** from LON-DC1. Select the **Internet Explorer** icon on your taskbar and enter the following URL in the address bar: **https://portal.office.com.**
+7. You will now access the **Microsoft 365 admin center** from LON-DC1. Select the **Edge browser** icon on your taskbar and enter the following URL in the address bar: **https://portal.office.com.**
 
 8. On the **Sign in** page, enter **admin@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is the tenant ID provided by your lab hosting provider), and then enter the tenant email password provided by your lab hosting provider on the **Enter password** page. Select **Sign in.** 
 
@@ -137,7 +137,7 @@ Your instructor will provide you with your lab hosting's provider's domain name 
 
 22. In the **Resource Record Type** window, select **Done**. Note how this Text (TXT) record appears in the details pane on the right for the XXYYZZa.xxxCustomDomainxxx.xxx domain that you previously created. Leave your DNS Manager window open as you will return to it in a later step in this task.
 
-23. You are now ready to return to the Microsoft 365 admin center and resume adding the domain record. In your Internet Explorer browser, select the **Microsoft 365 admin center** tab that displays the **Verify you own this domain** page.
+23. You are now ready to return to the Microsoft 365 admin center and resume adding the domain record. In your Edge browser browser, select the **Microsoft 365 admin center** tab that displays the **Verify you own this domain** page.
 
 24. If you’ll recall, when you were earlier adding the domain in the Microsoft 365 admin center, you indicated that you wanted to verify the domain using a TXT record. At that point you had to switch to DNS Manger and add the TXT record. Now that you’ve added the TXT record, you can go back to the Microsoft 365 admin center and proceed with the domain verification process. <br/>
 
@@ -177,7 +177,7 @@ Your instructor will provide you with your lab hosting's provider's domain name 
 
 	- Select **OK**. Note how this Mail Exchanger (MX) record appears in the list of DNS records for the XXYYZZa.xxxCustomDomainxxx.xxx domain. Leave your DNS Manager window open as you will return to it in a later step in this task.
 
-	- Switch back to the **Add DNS records** page in the Microsoft 365 admin center by selecting the **Internet Explorer** icon on the taskbar at the bottom of the page and selecting the **Microsoft 365 admin center** tab. 
+	- Switch back to the **Add DNS records** page in the Microsoft 365 admin center by selecting the **Edge browser** icon on the taskbar at the bottom of the page and selecting the **Microsoft 365 admin center** tab. 
 
 	- At this point you can either select **Continue** at the bottom of the **Add DNS records** page to verify the MX record that you just added, or you can optionally wait until you have added all three DNS records and then select **Continue** to verify all three records at once. <br/>
 
@@ -223,7 +223,7 @@ Your instructor will provide you with your lab hosting's provider's domain name 
 
 	- On the **Resource Record Type** window, select **Done**. In **DNS Manager**, you should now see the TXT record that you originally created to verify the domain, along with the MX, CNAME, and TXT records that you created for the Exchange service to work within this domain. 
 
-	- Switch back to the **Add DNS records** page in the Microsoft 365 admin center by selecting the **Internet Explorer** icon on the taskbar at the bottom of the page and selecting the **Microsoft 365 admin center** tab.  
+	- Switch back to the **Add DNS records** page in the Microsoft 365 admin center by selecting the **Edge browser** icon on the taskbar at the bottom of the page and selecting the **Microsoft 365 admin center** tab.  
 ‎
 
 31. On the **Add DNS records** page, select **Continue** to verify the three DNS records that you just added. If you selected **Continue** after adding the MX and CNAME records, and if each validated successfully, then only the TXT record will be validated at this point. However, if you did not select **Continue** after adding the MX and CNAME records, then all three records will be validated at this point.   
@@ -252,7 +252,7 @@ Your instructor will provide you with your lab hosting's provider's domain name 
 
 35. Close DNS Manager.
 
-36. Remain logged into the LON-DC1 VM with both **Internet Explorer** and **Windows PowerShell** left open for the next task.
+36. Remain logged into the LON-DC1 VM with both **Edge browser** and **Windows PowerShell** left open for the next task.
 
  
 
@@ -386,7 +386,7 @@ In this task, you will log into the on-premises Exchange Server (LON-EX1) VM and
 
 18. To enable Exchange for the custom domain, you must identify the Exchange services that you want to assign to the *.xxxCustomDomainxxx.xxx certificate.  
 ‎  
-‎If you have a tab open in your Internet Explorer browser for the on-premises **Exchange admin center,** then proceed to the next step; otherwise, select the **Windows** icon on the taskbar, select the **Microsoft Exchange Server 2019** group, select **Exchange Administrative Center**, then log in as **adatum\Administrator** with a password of **Pa55w.rd**. 
+‎If you have a tab open in your Edge browser browser for the on-premises **Exchange admin center,** then proceed to the next step; otherwise, select the **Windows** icon on the taskbar, select the **Microsoft Exchange Server 2019** group, select **Exchange Administrative Center**, then log in as **adatum\Administrator** with a password of **Pa55w.rd**. 
 
 19. In the on-premises **Exchange admin center**, select **servers** in the left-hand navigation pane, and then select the **certificates** tab.
 
@@ -404,7 +404,7 @@ In this task, you will log into the on-premises Exchange Server (LON-EX1) VM and
 ‎  
 ‎In the list of domains, the **A.Datum** domain should now be listed as the **default domain** and the **Domain Type** should be **Authoritative**.
 
-26. Leave the on-premises Exchange admin center tab open in your Internet Explorer browser and proceed to the next task.
+26. Leave the on-premises Exchange admin center tab open in your Edge browser browser and proceed to the next task.
 
  
 
@@ -415,7 +415,7 @@ In this lab, you will log into the Domain Controller (LON-DC1) VM and enable dir
 
 1. Switch to LON-DC1 and, if necessary, log in as the **Administrator** with a password of **Pa55w.rd**. 
 
-2. In your Internet Explorer browser session, the **Microsoft Office Home** tab and the **Microsoft 365 admin center** tab should still be open; if not, then navigate to them now.  
+2. In your Edge browser browser session, the **Microsoft Office Home** tab and the **Microsoft 365 admin center** tab should still be open; if not, then navigate to them now.  
 ‎  
 ‎Select the **Microsoft 365 admin center** tab. 
 
@@ -498,7 +498,7 @@ In this lab, you will log into the Domain Controller (LON-DC1) VM and enable dir
 ‎  
 ‎You have just verified that the Full Synchronization process migrated Adatum’s on-premises user accounts to the new accepted domain.
 
-27. Leave your Internet Explorer browser and all tabs open as it will be used in the next lab.
+27. Leave your Edge browser browser and all tabs open as it will be used in the next lab.
 
  
 

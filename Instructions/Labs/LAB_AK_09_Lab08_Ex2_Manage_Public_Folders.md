@@ -8,9 +8,9 @@ In this task, you will continue in your role as Holly Dickson and enable the Tes
 
 1. You should still be logged into LON-CL1 from the prior lab; if necessary, log in as the **Administrator** with a password of **Pa55w.rd**.
 
-2. In the Internet Explorer browser, the Office 365 home page, the Microsoft 365 admin center, and the Exchange admin center tabs should still be open. If so, select the **Exchange admin center** tab.  
+2. In the Edge browser browser, the Office 365 home page, the Microsoft 365 admin center, and the Exchange admin center tabs should still be open. If so, select the **Exchange admin center** tab.  
 ‎  
-‎However, if you closed your browser after the prior lab, then open Internet Explorer, navigate to [**https://portal.office.com/**](https://portal.office.com/) and sign in using the **Tenant Email** and **Password** provided by your lab hosting provider, open the **Microsoft 365 admin center**, and then navigate to the **Exchange admin center**. 
+‎However, if you closed your browser after the prior lab, then open Edge browser, navigate to [**https://portal.office.com/**](https://portal.office.com/) and sign in using the **Tenant Email** and **Password** provided by your lab hosting provider, open the **Microsoft 365 admin center**, and then navigate to the **Exchange admin center**. 
 
 3. In the **Exchange admin center**, you should still be in the **public folders** page, and you should be in the **public folders** tab after having completed the prior task. 
 

@@ -12,7 +12,7 @@ To enable and disable ActiveSync, you must first create several recipient mailbo
 
 3. To create on-premises user mailboxes, you must open the on-premises Exchange admin center. To do so, select the **Windows** icon on the taskbar, and in the Windows menu select the **Microsoft Exchange Server 2019** group. In the program group, select **Exchange Administrative Center**. 
 
-4. This will open **Internet Explorer**, which will attempt to access the EAC. IE will display an error page indicating **This site is not secure**. Select **More information,** which displays a message indicating **The hostname in the website’s security certificate differs from the website you are trying to visit**.   
+4. This will open **Edge browser**, which will attempt to access the EAC. IE will display an error page indicating **This site is not secure**. Select **More information,** which displays a message indicating **The hostname in the website’s security certificate differs from the website you are trying to visit**.   
 ‎  
 ‎You received this message because a certificate for the EAC was not needed for this VM training environment. Therefore, select **Go on to the webpage (not recommended)**. 
 
@@ -65,7 +65,7 @@ By default, Exchange ActiveSync is enabled for all user mailboxes; therefore, al
 
 In this task, you will disable Exchange ActiveSync for Holly Dickson’s mailbox. You will then repeat the process to enable ActiveSync for Holly. This provides you with experience in both disabling and enabling ActiveSync for a single mailbox.
 
-1. You should still be logged into LON-EX1 as the **Administrator**, and you should have the EAC open in Internet Explorer; if not, then do so now.
+1. You should still be logged into LON-EX1 as the **Administrator**, and you should have the EAC open in Edge browser; if not, then do so now.
 
 2. In the **Exchange admin center**, you should still be displaying the **recipients** tab from the left-hand navigation pane, and you should be displaying the **mailboxes** tab at the top of the page; if not, then do so now. 
 
@@ -96,7 +96,7 @@ In this task, you will disable Exchange ActiveSync for Holly Dickson’s mailbox
 
 In this task, you will begin by disabling Exchange ActiveSync for a group of mailboxes. You will then repeat the process, but this time you will enable ActiveSync for this same set of mailboxes. This provides you with experience in both disabling and enabling ActiveSync for multiple mailboxes at one time.  
 
-1. You should still be logged into LON-EX1 as the **Administrator**, and you should have the EAC open in Internet Explorer; if not, then do so now.
+1. You should still be logged into LON-EX1 as the **Administrator**, and you should have the EAC open in Edge browser; if not, then do so now.
 
 2. In the **Exchange admin center**, you should still be displaying the **recipients** tab from the left-hand navigation pane, and you should be displaying the **mailboxes** tab at the top of the page; if not, then do so now. 
 

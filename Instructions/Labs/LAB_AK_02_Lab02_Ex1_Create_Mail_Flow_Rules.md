@@ -1,8 +1,8 @@
-# Module 2 – Lab 2 - Exercise 1 – Create Mail Flow Rules
+﻿# Module 2 – Lab 2 - Exercise 1 – Create Mail Flow Rules
 
-In this lab, you will continue in your role as Holly Dickson, Adatum’s Messaging Administrator. You will use your client computer to access the Exchange Admin Center from the Microsoft 365 admin center. You will then create a series of mail flow rules that are designed to protect Adatum’s messaging environment. 
+In this lab, you will continue in your role as Holly Dickson, Adatum’s Messaging Administrator. You will use your client computer to access the Exchange Admin Center from the Microsoft 365 admin center. You will then create a series of mail flow rules designed to protect Adatum’s messaging environment. 
 
-You will first create a mail flow rule that quarantines messages that are sent from inside the organization that have the words “Secret”, “Classified”, or “Sensitive” in the body or subject of the message. You will create a second rule will also quarantine messages that have attachments that can’t be scanned or where the scanning can’t finish. Both rules will generate a reply message that lets the sender know they have a message that is undeliverable. Finally, you will create a mail flow rule that restricts the size of emails.
+You will first create a mail flow rule that quarantines messages sent from inside the organization that have the words “Secret”, “Classified”, or “Sensitive” in the body or subject of the message. You will create a second rule that quarantine messages that have attachments that are unscanned, or where the  message scan can’t finish. Both rules will generate a reply message that lets the sender know they have a message that is undeliverable. Finally, you will create a mail flow rule that restricts the size of emails.
 
 ## Task 1 - Create Mail Flow rule for sensitive material 
 
@@ -22,15 +22,15 @@ In this exercise you will return to the Exchange Admin Center, but this time you
 
 7. If a **Get your work done with Office 365** dialog box appears, select the **X** to close it.
 
-8. In the **Office 365 home** page, in the **Apps** section, select the **Admin** app.
+8. In the **Office 365 home** page, select the **Admin icon** on the left-hand side at the bottom of the page.
 
 9. In the **Microsoft 365 admin center**, in the left-hand navigation bar, select **Show All** to display all the navigation menu options.
 
 10. On the left-hand navigation bar, in the **Admin centers** section, select **Exchange**. 
 
-11. In the **Exchange admin center, i**n the left-hand navigation pane, select **mail flow.**
+11. In the **Exchange admin center**, in the left-hand navigation pane, select **mail flow.**
 
-12. At the top of the page, the **rules** tab is displayed by default. Stay in this tab.
+12. At the top of the page, the **rules** tab displays by default. Stay in this tab.
 
 13. The first mail flow rule that you create will check for emails sent from inside the organization that have sensitive words in the email subject line or body. Select the **plus sign (+)** icon in the menu bar, and in the drop-down menu that appears, select **Modify messages.**
 
@@ -44,9 +44,9 @@ In this exercise you will return to the Exchange Admin Center, but this time you
 
 18. In the text field, enter **classified** and select the plus sign, then repeat this step and enter **sensitive**. 
 
-19. The three words should be displayed below the text field. Select **OK**.
+19. The three words should display below the text field. Select **OK**.
 
-20. In the **new rule** window, the three words should be displayed to the right of the **The subject or body includes…** condition. Select the **add condition** button to add another condition.
+20. In the **new rule** window, the three words should display to the right of the **The subject or body includes…** condition. Select the **add condition** button to add another condition.
 
 21. Select the drop-down arrow in the second condition field that appears (Note how this creates a Boolean **And** condition). Hover over **The sender…** and in the menu that appears, select **is external/internal**.
 
@@ -66,7 +66,7 @@ In this exercise you will return to the Exchange Admin Center, but this time you
 
 29. To the right of the second action field that displays **Append the disclaimer…,** select **Select one.**
 
-30. In the **specify fallback action** window, **Wrap** is displayed as the default fallback option. This is the option you want to select as the fallback option (Wrap means if the disclaimer cannot be inserted into the original email, it will attach the message to a new disclaimer email) so select **OK**.
+30. In the **specify fallback action** window, **Wrap** displays as the default fallback option. This is the option you want to select as the fallback option (Wrap means if the disclaimer cannot be inserted into the original email, it will attach the message to a new disclaimer email) so select **OK**.
 
 31. Scroll down in the **new rule** window and under **Properties of this rule**, verify the **Audit this rule with severity level:** checkbox is selected. If it’s not checked, then select it now.
 
@@ -76,7 +76,7 @@ In this exercise you will return to the Exchange Admin Center, but this time you
 
 34. Select **Save.**
 
-35. This returns you to the **rules** tab in the Exchange admin center. The new **Sensitive material** rule should be displayed in the list of rules. This rule should be selected, and a **Sensitive material** pane should appear that displays the conditions and actions of this rule. Verify the conditions and actions are correct; if any corrections are needed, select the **pencil (Edit)** icon in the menu bar and make the necessary corrections. 
+35. This returns you to the **rules** tab in the Exchange admin center. The new **Sensitive material** rule should display in the list of rules. This rule should be selected, and a **Sensitive material** pane should appear that displays the conditions and actions of this rule. Verify the conditions and actions are correct; if corrections are needed, select the **pencil (Edit)** icon in the menu bar and make the necessary corrections. 
 
 36. Leave the Exchange Admin Center open to the mail flow page and proceed to the next task.
 

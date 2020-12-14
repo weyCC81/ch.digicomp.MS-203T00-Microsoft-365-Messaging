@@ -29,9 +29,9 @@ In this task, you will use the Exchange admin center on the Exchange Server VM (
 
 3. Holly wants to create custom connectors using the on-premises **Exchange Admin Center (EAC)**. To do so, select the **Windows** icon on the taskbar, and in the Windows menu select the **Microsoft Exchange Server 2019** group. In the program group, select **Exchange Administrative Center**. 
 
-4. This will open **Internet Explorer**, which will attempt to access the EAC. IE will display an error page indicating **This site is not secure**. Select **More information,** which displays a message indicating **The hostname in the website’s security certificate differs from the website you are trying to visit**.   <br/>
+4. This will open **Edge browser**, which will attempt to access the EAC. IE will display an error page indicating **Your connection isn't private**. Select **Advanced,** which displays a message indicating **the server couldn't prove that it's localhost; it's security certificate is from LON-EX1. This may be cause by a misconfiguration or an attacker intercepting your connection**.   <br/>
  
-	You received this message because a certificate for the EAC was not needed for this VM training environment. Therefore, select **Go on to the webpage (not recommended)**. 
+	You received this message because a certificate for the EAC was not needed for this VM training environment. Therefore, select **continue to localhost (unsafe)**. 
 
 5. Maximize your browser window, and then log into the EAC as **adatum\Administrator** and password **Pa55w.rd.**
 
@@ -87,7 +87,7 @@ You will now create a custom send connector in Adatum’s on-premises Exchange S
 
 1. You should still be logged into LON-EX1 as the **Administrator** with a password of **Pa55w.rd**; however, if the log-in page appears, then log in now.
 
-2. In your Internet Explorer browser session, the on-premises **Exchange admin center** should still be open; if not, then perform the same steps that you did in the prior task to open it now.
+2. In your Edge Browser browser session, the on-premises **Exchange admin center** should still be open; if not, then perform the same steps that you did in the prior task to open it now.
 
 3. In the **Exchange admin center**, you should still be displaying the **mail flow** tab from the left-hand navigation pane. On the menu bar at the top of the page, select **send connectors**.
 
