@@ -25,7 +25,7 @@ In this task, you will create a malware filter that checks for attachments that 
 
 7. In the **Description** field, enter **This policy has been created to protect the messaging environment.** Then select **next**.
 
-8. Under **Malware Detection Response**, select **Yes and use the default notification text**then select **next**.
+8. Under **Malware Detection Response**, select **Yes and use the default notification text** then select **next**.
 
 9. Under **Common Attachment Types Filter**, select **On - Emails with attachments of filtered files types will trigger the Malware Detection Response (recommended).**
 
