@@ -41,7 +41,7 @@ In this task, you will create a malware filter that checks for attachments that 
 
 15. Select **next.**
 
-16. Once the update is finished review the Malware policy, select **create this policy**.
+16. Once the update is finished review the Malware policy, select **create this policy**. <br/>
 
 **Note**: A **security and complaince** window will appear stating your  organziation settings need to be update. Do you want to continue? Select **yes** and proceed
 
