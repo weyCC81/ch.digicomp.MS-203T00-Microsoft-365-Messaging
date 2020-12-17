@@ -1,6 +1,6 @@
 # Module 1 – Lab 1 – Lab Introduction
 
-Adatum Corporation runs their legacy applications (such as Microsoft Exchange) in an on-premises deployment. However, they recently subscribed to Microsoft 365, thereby creating a hybrid deployment in which they must synchronize their on-premises and cloud deployments. 
+Adatum Corporation runs their legacy applications (such as Microsoft Exchange Server 2019) in an on-premises deployment. However, they recently subscribed to Microsoft 365, thereby creating a hybrid deployment in which they must synchronize their on-premises and cloud deployments. 
 
 Throughout the labs in this course, you will take on the persona of Holly Dickson, Adatum's Messaging Administrator. You have been tasked with integrating Adatum's on-premises Exchange environment with Microsoft 365 and Exchange Online. Adatum's project team has decided to implement Microsoft 365 in a pilot project that will not only provide them with experience using the product, but also enable them to match their messaging requirements with the Microsoft 365 feature set.
 
@@ -18,7 +18,7 @@ In your lab environment, your lab hosting provider has already:
 
 As part of her pilot project for Adatum’s Exchange deployment, Holly wants to begin by creating custom send and receive connectors in her on-premises Exchange Server using the on-premises Exchange admin center. 
 
-Exchange uses connectors on Exchange servers to enable incoming and outgoing mail flow between services in the transport pipeline on the local Exchange server. In this lab you will log into the Exchange Server VM (LON-EX1) and create custom Receive and Send connectors using the Exchange Admin Center (EAC).
+Exchange uses connectors on Exchange servers to enable incoming and outgoing mail flow between services in the transport pipeline on the local Exchange server. In this lab you will log into the Exchange Server VM (LON-EX1) and create custom Receive and Send connectors using the on-premises Exchange Admin Center (EAC) for Adatum's Exchange Server 2019 deployment.
 
 As you complete each task, you should leave the EAC open in your browser for the next lab. This will save you from having to open the EAC at the start of each lab.
 
@@ -40,7 +40,7 @@ You should write down the following information (provided by your instructor) fo
 
 ### Task 2 - Create a Custom Receive Connector
 
-In this task, you will use the Exchange admin center on the Exchange Server VM (LON-EX1) to create a custom receive connector.
+Adatum has Microsoft Exchange Server 2019 installed on the Exchange Server VM (LON-EX1). In this task, you will use the Exchange admin center for Exchange Server 2019 to create a custom receive connector for Adatum's on-premises Exchange deployment.
 
 1. Switch to the Exchange Server VM (LON-EX1) and log on as Adatum’s **Administrator** account with a password of **Pa55w.rd**. 
 
