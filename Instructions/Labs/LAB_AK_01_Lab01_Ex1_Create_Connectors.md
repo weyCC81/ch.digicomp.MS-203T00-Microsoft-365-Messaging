@@ -50,9 +50,11 @@ Adatum has Microsoft Exchange Server 2019 installed on the Exchange Server VM (L
 
 4. This will open **Microsoft Edge**, which will attempt to access the EAC. Maximize your browser window. <br/>
 
-	Edge will display an error page indicating **Your connection isn't private**. Select **Advanced**, which displays a message indicating **This server couldn't prove that it's localhost; its security certificate is from LON-EX1. This may be caused by a misconfiguration or an attacker intercepting your connection.**   <br/>
- 
-	You received this message because a certificate for the EAC was not needed, and therefore not included in your VM lab training environment. Select **Continue to localhost (unsafe)**. 
+	Edge will display an error page indicating **Your connection isn't private**. <br/>
+	
+	Select **Advanced**, which displays a message indicating **This server couldn't prove that it's localhost; its security certificate is from LON-EX1. This may be caused by a misconfiguration or an attacker intercepting your connection.** You received this message because a certificate for the EAC was not included in your VM lab training environment. In a real-world deployment, this certificate would be required. <br/>
+	
+	Select **Continue to localhost (unsafe)**. 
 
 5. In the **Exchange Admin Center** log-in page, enter **adatum\Administrator** in the **Domain\user name** field and **Pa55w.rd** in the **Password** field, and then select **sign in**.
 
