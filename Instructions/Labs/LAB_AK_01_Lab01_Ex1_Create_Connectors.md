@@ -92,7 +92,7 @@ Adatum has Microsoft Exchange Server 2019 installed on the Exchange Server VM (L
 
 14. In the **edit IP address** window, under the **Address** field, select the **Specify an IPv4 address or an IPv6 address** option. 
 
-15. After receiving the previous error, Holly met with Adatum’s IT Administrator, who has identified **172.16.0.11** as the IP address he wants bound to this receive connector (for port 25); therefore, enter this value in the **Address** field.
+15. After receiving the previous error, Holly met with Adatum’s IT Administrator, who has identified **172.16.0.11** as the IP address he wants bound to this new receive connector (for port 25); therefore, enter this value in the **Address** field.
 
 16. Leave the **Port** at **25**, and then select **Save**. Note how the Network adapter binding for this new receive connector now points to this IP address and port number.   
 ‎  
