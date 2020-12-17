@@ -35,7 +35,7 @@ In this exercise you will access the Exchange Admin Center for Exchange Online u
 
 10. On the left-hand navigation bar, in the **Admin centers** section, select **Exchange**. This opens the classic Exchange admin center for Exchange Online. <br/>
 
- **Important:** As of this writing, Microsoft is in the process of developing a new Exchange admin center. However, for the purposes of this lab, you will use the classic Exchange admin center that currently appears because the new Exchange admin center does not currently include the entire Exchange Online feature set. Therefore, while you can select the **New Exchange admin center** option in the left-hand navigation pane to see how the new admin center will appear, you should return to the classic Exchange admin center to complete this lab.
+    **Important:** As of this writing, Microsoft is in the process of developing a new Exchange admin center. However, for the purposes of this lab, you will use the classic Exchange admin center that currently appears because the new Exchange admin center does not currently include the entire Exchange Online feature set. Therefore, while you can select the **New Exchange admin center** option in the left-hand navigation pane to see how the new admin center will appear, you should return to the classic Exchange admin center to complete this lab.
 
 11. In the (classic) **Exchange admin center**, in the left-hand navigation pane, select **mail flow.**
 
