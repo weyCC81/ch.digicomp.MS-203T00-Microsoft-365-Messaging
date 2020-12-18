@@ -1,161 +1,301 @@
 # Module 3 – Lab 3 - Exercise 1 - Create Hygiene Filters
 
-In this lab, you will continue in your role as Holly Dickson, Adatum’s Messaging Administrator. Adatum has experienced a recent rash of malware infections. The company's CTO has asked Holly to investigate the various options that are available in Exchange Online to fortify Adatum’s messaging environment. Holly will begin by creating a series of hygiene filters that are designed to protect Adatum’s messaging environment. You will create a malware filter, a connection filter, and a spam filter.
+In this lab, you will continue in your role as Holly Dickson, Adatum’s Messaging
+Administrator. Adatum has experienced a recent rash of malware infections. The
+company's CTO has asked Holly to investigate the various options that are
+available in Exchange Online to fortify Adatum’s messaging environment. Holly
+will begin by creating a series of hygiene filters that are designed to protect
+Adatum’s messaging environment. You will create a malware filter, a connection
+filter, and a spam filter.
 
-**Note**: During the next series of task you will be moving to the **Anti-malware** page in the **Office 365 Security and Compliance center**. Protection services will no longer reside in the EAC for Exchange Online.
+**Note**: In this lab exercise, you will use the **Office 365 Security and
+Compliance center** to create hygiene filters. Protection services no longer
+reside in the EAC for Exchange Online, and instead have been moved to the
+Security and Compliance center.
 
+## Task 1 - Create a Malware Filter
 
-## Task 1 - Create a Malware Filter  
+In this task, you will create a malware filter that checks for attachments that
+have a specific file type that indicate a possible malware attachment. If an
+attachment is found matching one of those file types and the recipient’s domain
+matches Adatum’s Microsoft 365 domain, then a notification message will be
+applied to the email.
 
-In this task, you will create a malware filter that checks for attachments that have a specific file type that indicate a possible malware attachment. If an attachment is found matching one of those file types and the recipient’s domain matches Adatum’s Microsoft 365 domain, then a notification message will be applied to the email.
+1.  You should still be logged into LON-CL1 as the **Administrator** with a
+    password of **Pa55w.rd**; however, if the log-in page appears, then log in
+    now.
 
-1. You should still be logged into LON-CL1 as the **Administrator** with a password of **Pa55w.rd**; however, if the log-in page appears, then log in now. 
+2.  In your **Edge** browser, you should still have a tab open for the
+    **Microsoft 365 admin center**. If so, then select this tab and proceed to
+    the next step; otherwise, navigate to the **Office 365 home** page, log in
+    as your tenant admin account, navigate to the **Microsoft 365 admin
+    center**, and then in the left-hand navigation pane, select **Show all**.
 
-2. In your **Edge** browser, you should still have a tab open for the **Microsoft 365 admin center**. If so, then select this tab and proceed to the next step; otherwise, navigate to the **Office 365 home** page, log in as your tenant admin account, navigate to the **Microsoft 365 admin center**, and then in the left-hand navigation pane, select **Show all**.
+3.  In the **Microsoft 365 admin center**, in the left-hand navigation pane
+    under **Admin centers**, select **Security**.
 
-3. In the **Microsoft 365 admin center**, in the left-hand navigation pane under **Admin centers**, select **Security**.
+4.  In the **Office 365 Security & Compliance center**, in the left-hand
+    navigation pane, select **Threat Management** and then select **Policy**.
 
-4. In the **Office 365 Security & Compliance center**, in the left-hand navigation pane, select **Threat Management** and then select **Policy**.
+5.  In the **Home \> Policy** page, select the **Anti-Malware** tile under the
+    **Policies** section.
 
-5. In the **Home > Policy** page, select the **Anti-Malware** tile under the **Policies** section.
+6.  In the **Home \> Policy \> Anti-malware** page, on the menu bar at the top
+    of the window, select **+Create** to add a new malware filter. This
+    initiates the **Create an anti-malware policy** wizard.
 
-6. In the **Home > Policy > Anti-malware** page, on the menu bar at the top of the window, select **+Create** to add a new malware filter. This initiates the **Create an anti-malware policy** wizard.
+7.  In the **Name your policy** page, enter **Malware Policy** in the **Name**
+    field.
 
-7. In the **Name your policy** page, enter **Malware Policy** in the **Name** field.
+8.  In the **Description** field, enter **This policy has been created to
+    protect the messaging environment** and then select **Next**.
 
-8. In the **Description** field, enter **This policy has been created to protect the messaging environment** and then select **Next**.
+9.  On the **Malware detection response** page, select **Yes and use the default
+    notification text** then select **next**.
 
-9. On the **Malware detection response** page, select **Yes and use the default notification text** then select **next**.
+10. On the **Common attachment types filter** page, select **On - Emails with
+    attachments of filtered files types will trigger the malware detection
+    response (recommended).**
 
-10. On the **Common attachment types filter** page, select **On - Emails with attachments of filtered files types will trigger the malware detection response (recommended).**
+11. The filter will check for all the file types that appear in the **File
+    Types** list. You do not need to add any additional file types, so proceed
+    to the next step by selecting **Next**.
 
-11. The filter will check for all the file types that appear in the **File Types** list. You do not need to add any additional file types, so proceed to the next step by selecting **Next**.
+12. On the **Malware Zero-hour Auto Purge** page, confirm that the **On
+    (recommended)** option is selected and then select **Next**.
 
-12. On the **Malware Zero-hour Auto Purge** page, confirm that the **On (recommended)** option is selected and then select **Next**.
+13. On the **Notifications** page, since this filter will not generate any
+    notifications, do not select any of the notification options, and instead
+    select **Next**.
 
-13. On the **Notifications** page, since this filter will not generate any notifications, do not select any of the notification options, and instead select **Next**.
+14. On the **Applied To** page, select the **Add a condition** button and in the
+    drop-down menu that appears, select **The recipient domain is**.
 
-14. On the **Applied To** page, select the **Add a condition** button and in the drop-down menu that appears, select **The recipient domain is**.
+15. If a pop-up window displaying domains appears, then skip to the next step;
+    otherwise, to the right of the condition field that displays **The recipient
+    domain is…,** select **A recipient’s domain is.**
 
-15. If a pop-up window displaying domains appears, then skip to the next step; otherwise, to the right of the condition field that displays **The recipient domain is…,** select **A recipient’s domain is.** 
+16. In the **The recipient’s domain is** field, select **Choose**.
 
-16. In the **The recipient’s domain is** field, select **Choose**. 
+17. In the **The recipient domain is** page, select the **+Add** button. In the
+    list of Adatum domains that appears, select the check box for the
+    **xxxxxZZZZZZ.onmicrosoft.com** domain (where xxxxxZZZZZZ is the tenant
+    prefix provided by your lab hosting provider), select the **Add** button,
+    and then select **Done**.
 
-17. In the **The recipient domain is** page, select the **+Add** button. In the list of Adatum domains that appears, select the check box for the **xxxxxZZZZZZ.onmicrosoft.com** domain (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider), select the **Add** button, and then select **Done**.
+18. On the **Applied To** page, the **xxxxxZZZZZZ.onmicrosoft.com** domain
+    should appear in the **The recipient’s domain is** field. Select **Next.**
 
-18. On the **Applied To** page, the **xxxxxZZZZZZ.onmicrosoft.com** domain should appear in the **The recipient’s domain is** field. Select **Next.**
+19. On the **Review your settings** page, review the settings that you just
+    configured. If anything needs to be corrected, select the corresponding
+    **Edit** option to make the necessary fix. If everything is correct, select
+    the **Create this policy** button at the bottom of the page.
 
-19. On the **Review your settings** page, review the settings that you just configured. If anything needs to be corrected, select the corresponding **Edit** option to make the necessary fix. If everything is correct, select the **Create this policy** button at the bottom of the page. <br/>
+**Note**: A **Security & Compliance** window will appear with a message that
+indicates your organization settings need to be updated. Select **Yes** to
+continue.
 
-**Note**: A **Security & Complaince** window will appear with a message that indicates your organization settings need to be updated. Select **Yes** to continue.
+1.  It may take a minute or so for your organization settings to be updated.
+    Once the update is complete and you are back on the **Home \> Policy \>
+    Anti-malware** page, you can proceed to the next task. Do not close any of
+    the browser tabs.
 
-20. It may take a minute or so for your organization settings to be updated. Once the update is complete and you are back on the **Home > Policy > Anti-malware** page, you can proceed to the next task. Do not close any of the browser tabs. 
+## Task 2 - Create a Connection Filter
 
+In this task, you will modify the default connection filter to include an
+allowed IP address and a blocked IP address. Any messages originating from the
+allowed IP address will always be accepted, and any messages originating from
+the blocked IP address will always be blocked.
 
-## Task 2 - Create a Connection Filter  
+1.  You should still be logged into LON-CL1 as the **Administrator** with a
+    password of **Pa55w.rd**; however, if the log-in page appears, then log in
+    now.
 
-In this task, you will modify the default connection filter to include an allowed IP address and a blocked IP address. Any messages originating from the allowed IP address will always be accepted, and any messages originating from the blocked IP address will always be blocked. 
+2.  In your **Edge** browser, you should still be in the **Office 365 Security &
+    Compliance center** (SCC). If so, then proceed to the next step; otherwise,
+    perform the steps from the prior task to navigate to the SCC now.
 
-1. You should still be logged into LON-CL1 as the **Administrator** with a password of **Pa55w.rd**; however, if the log-in page appears, then log in now. 
+3.  In the **Office 365 Security & Compliance admin center**, in the left-hand
+    navigation pane, select **Threat Management** and then select **Policy**.
 
-2. In your **Edge** browser, you should still be in the **Office 365 Security & Compliance center** (SCC). If so, then proceed to the next step; otherwise, perform the steps from the prior task to navigate to the SCC now. 
+4.  In the **Home \> Policy** page, select the **Anti-spam** tile under the
+    **Policies** section.
 
-3. In the **Office 365 Security & Complaince admin center**, in the left-hand navigation pane, select **Threat Management** and then select **Policy**.
+5.  In the **Anti-spam settings** window, in the list of policies, select the
+    drop-down arrow to the left of **Connect filter policy (always ON)** and
+    then select the **Edit policy** button that appears.
 
-4. In the **Home > Policy** page, select the **Anti-spam** tile under the **Policies** section.
+6.  On the **Connection filter policy** pane, you can identify the IP Addresses
+    that can send messages to your environment and the IP addresses will be
+    blocked from sending messages.
 
-5. In the **Anti-spam settings** window, in the list of policies, select the drop-down arrow to the left of **Connect filter policy (always ON)** and then select the **Edit policy** button that appears.
+    **Note:** At this time, you will NOT be adding IP addresses to the allow or
+    block lists. You can do this if you have a known IP address you would like
+    to test against. However, it typically takes up to 1 hour to propagate the
+    change within the system. For this lab, simply review the fact that you can
+    create allowed and blocked lists of IP addresses in this **Connection filter
+    policy** pane.
 
-6. On the **Connection filter policy** pane, you can identify the IP Addresses that can send messages to your environment and the IP addresses will be blocked from sending messages. <br/>
+    On the **Connection filter policy** pane, select the **Turn on safe list**
+    check box at the bottom of the page.
 
-	**Note:** At this time, you will NOT be adding IP addresses to the allow or block lists. You can do this if you have a known IP address you would like to test against. However, it typically takes up to 1 hour to propagate the change within the system. For this lab, simply review the fact that you can create allowed and blocked lists of IP addresses in this **Connection filter policy** pane. <br/>
-	
-	On the **Connection filter policy** pane, select the **Turn on safe list** check box at the bottom of the page. <br/>
-	
-	**Important:** Selecting the **Turn on safe list** check box is a best practice that enables for your Microsoft 365 tenant the most common third-party sources of trusted senders to which Microsoft subscribes. Selecting this check box skips spam filtering on messages sent from these senders, ensuring that they are never mistakenly marked as spam.
+    **Important:** Selecting the **Turn on safe list** check box is a best
+    practice that enables for your Microsoft 365 tenant the most common
+    third-party sources of trusted senders to which Microsoft subscribes.
+    Selecting this check box skips spam filtering on messages sent from these
+    senders, ensuring that they are never mistakenly marked as spam.
 
-7. Select **Save**.
+7.  Select **Save**.
 
-8. Leave the Office 365 Security & Compliance center open in your browser and proceed to the next task.
-
+8.  Leave the Office 365 Security & Compliance center open in your browser and
+    proceed to the next task.
 
 ## Task 3 - Create a Spam Filter
 
-For Microsoft 365 customers whose mailboxes are hosted in Microsoft Exchange Online, their email messages are automatically protected against spam and malware. Microsoft 365 has built-in malware and spam filtering capabilities that help protect inbound and outbound messages from malicious software and help protect you from spam.
+For Microsoft 365 customers whose mailboxes are hosted in Microsoft Exchange
+Online, their email messages are automatically protected against spam and
+malware. Microsoft 365 has built-in malware and spam filtering capabilities that
+help protect inbound and outbound messages from malicious software and help
+protect users from receiving spam messages.
 
-As Adatum’s Messaging Administrator, Holly doesn't need to set up or maintain the filtering technologies, which are enabled by default. However, she can make company-specific filtering customizations in the Exchange admin center. She has decided to test this out by configuring a spam policy to grant or deny an email by focusing on the language of the email and the location of the email's origin.
+As Adatum’s Messaging Administrator, Holly doesn't need to set up or maintain
+the filtering technologies, which are enabled by default. However, she can make
+company-specific filtering customizations in the Exchange admin center. She has
+decided to test this out by configuring a spam policy to grant or deny an email
+by focusing on the language of the email and the location of the email's origin.
 
-1. You should still be logged into LON-CL1 as the **Administrator** with a password of **Pa55w.rd**; however, if the log-in page appears, then log in now. 
+1.  You should still be logged into LON-CL1 as the **Administrator** with a
+    password of **Pa55w.rd**; however, if the log-in page appears, then log in
+    now.
 
-2. In your **Edge** browser, you should still be in the **Office 365 Security & Compliance center** (SCC). If so, then proceed to the next step; otherwise, perform the steps from the prior task to navigate to the SCC now. 
+2.  In your **Edge** browser, you should still be in the **Office 365 Security &
+    Compliance center** (SCC). If so, then proceed to the next step; otherwise,
+    perform the steps from the prior task to navigate to the SCC now.
 
-3. In the **Office 365 Security & Compliance center**, you should still be on the **Anti-spam settings** page after completing the prior task. If so, then proceed to the next step; otherwise, in the left-hand navigation pane, select **Threat Management**, select **Policy** and then select the **Anti-spam** tile under the **Policies** section.
+3.  In the **Office 365 Security & Compliance center**, you should still be on
+    the **Anti-spam settings** page after completing the prior task. If so, then
+    proceed to the next step; otherwise, in the left-hand navigation pane,
+    select **Threat Management**, select **Policy,** and then select the
+    **Anti-spam** tile under the **Policies** section.
 
-4. In the **Anti-spam settings** window, in the list of policies, select the drop-down arrow to the left of **Default spam filter policy (always ON)** and then select the **Edit policy** button that appears. 
+4.  In the **Anti-spam settings** window, in the list of policies, select the
+    drop-down arrow to the left of **Default spam filter policy (always ON)**
+    and then select the **Edit policy** button that appears.
 
-5. In the **Default spam filter policy (always ON)** pane, you will be presented a variety of options on how you would like spam to be handled and what rating will be triggered depending on the severity of the spam. The following steps will guide you through these settings so that you can update them per Adatum's requirements.
+5.  In the **Default spam filter policy (always ON)** pane, you will be
+    presented a variety of options on how you would like spam to be handled and
+    what rating will be triggered depending on the severity of the spam. The
+    following steps will guide you through these settings so that you can update
+    them per Adatum's requirements.
 
-6. Select the **Spam and bulk actions** drop-down arrow and update the following settings:
+6.  Select the **Spam and bulk actions** drop-down arrow and update the
+    following settings:
 
-	- Spam: **Move message to Junk Email folder**
+    -   Spam: **Move message to Junk Email folder**
 
-	- High confidence spam: **Prepend subject line with text**
+    -   High confidence spam: **Prepend subject line with text**
 
-	- Phishing email: **Move message to Junk Email folder**
-	
-	- Bulk email: **No Action**
+    -   Phishing email: **Move message to Junk Email folder**
 
-	- Select the threshold: **5**
+    -   Bulk email: **No Action**
 
-	- Quarantine - Retain spam for (days): **10**
+    -   Select the threshold: **5**
 
-	- Prepend subject line with this text: enter **QUARANTINED: This message contains potential spam!**
+    -   Quarantine - Retain spam for (days): **10**
 
-9. Select the **International spam** drop-down arrow and update the following settings:
+    -   Prepend subject line with this text: enter **QUARANTINED: This message
+        contains potential spam!**
 
-	**Note:** This section allows you to automatically tag as spam those messages sent from countries that are blocked, as well as messages written in a specific language.
+7.  Select the **International spam** drop-down arrow and update the following
+    settings:
 
-	- Filter email messages written in the following languages: perform the following steps:
-		- Select **Edit**
-		- On the **International spam settings** pane, select the check box next to **Filter email messages written in the following languages**
-		- Type the letter **"A"** in the **Language** field to display the list of languages
-		- Select any language you want to restrict
-		- If you want to restrict an additional language, repeat the prior two steps (you can restrict as many languages as you wish)
-		- Once you have selected all the languages that you want to restrict, select **Save**
+    **Note:** This section allows you to automatically tag as spam those
+    messages sent from countries that are blocked, as well as messages written
+    in a specific language.
 
-13. Below the listed of languages that you selected, select the check box that says **Filter email messages sent from the following countries or regions**.
+    -   Filter email messages written in the following languages:
 
-14. Select the **edit** button then select the check box to add the countries or regions.
+        -   Select **Edit.**
 
-15. Type the letter **"AB"** and select any country or regions. Thne select **save**.
+            -   On the **International spam settings** pane, select the check
+                box next to **Filter email messages written in the following
+                languages.**
 
+            -   Type the letter **"a"** in the **Language** field to display the
+                list of languages starting with the letter “a” or that include
+                an “a”.
 
-16. Scroll down the navigation pane, then select **Spam properties**. 
+            -   Select any language you want to restrict.
 
-	**Note:** This section allows you to automatically tag messages as spam that have embedded URL’s with specific attributes or that have embedded HTML in the message.
+            -   If you want to restrict an additional language, repeat the prior
+                two steps.
 
-17. Under the **Increase Spam Score** section, turn **On** the following options:
+            -   Once you have selected all the languages that you want to
+                restrict, select **Save.**
 
-	- **URL redirect to other port**
+            -   Note how the value of the **Status** field has changed from
+                **OFF** to **ON**.
 
-	- **URL to .biz or .info websites**
+    -   Filter email messages sent from the following counties or regions:
 
-18. Under the **Mark as Spam** section, turn **On** the following options:
+        -   Select **Edit.**
 
-	- **Empty messages**
+            -   On the **International spam settings** pane, select the check
+                box next to **Filter email messages sent from the following
+                countries or regions.**
 
-	- **Conditional Sender ID filtering: hard fail**
+            -   Type the letters **"ab"** in the **Language** field to display
+                the list of languages starting with the letters “ab” or that
+                include an “ab”. You can enter any letter or letters that you
+                wish.
 
-19. Select **Save** and then select **OK** once the changes are successfully saved.
+            -   Select any country/region you want to restrict.
 
-20. In the list of spam filters, the **Default spam filter policy** filter that you just edited is selected and a summary of the filter is now displayed in the right-hand pane. Scroll down in the right-hand pane and note how **End-user spam notifications** are disabled. Below this option, select **Configure end-user spam notifications**.
+            -   If you want to restrict an additional country/region, repeat the
+                prior two steps.
 
-21. In the **edit end-user spam notifications** window, select the **Enable end-user spam notifications** check box, and then change the **Send end-user spam notifications every (days)** value to **5**.
+            -   Once you have selected all the countries/regions that you want
+                to restrict, select **Save.**
 
-22. Select **Save** and then select **OK** once the changes are successfully saved.
+            -   Note how the value of the **Status** field has changed from
+                **OFF** to **ON**.
 
-23. Leave the Office 365 Security and Complaince admin center open and proceed to the next exercise.
+8.  Select the **Spam properties** drop-down arrow and update the following
+    settings:
 
+    **Note:** This section allows you to automatically tag messages as spam that
+    have embedded URL’s with specific attributes or that have embedded HTML in
+    the message.
+
+    -   Select the **Increase Spam Score** drop-down arrow and turn **On** the
+        following options:
+
+        -   **URL redirect to other port**
+
+        -   **URL to .biz or .info websites**
+
+-   Select the **Mark as Spam** drop-down arrow and turn **On** the following
+    options:
+
+    -   **Empty messages**
+
+        -   **Conditional Sender ID filtering: hard fail**
+
+1.  Select **Save**.
+
+2.  In the list of spam filters, select the drop-down arrow to the left of the
+    **Default spam filter policy (always ON)** filter that you just edited. In
+    the middle column of settings for this filter, note how **End-user spam
+    notifications** are disabled (it status is **Off**).  
+      
+    Below this option, select **Configure end-user spam notifications**.
+
+3.  In the **Default** window that appears, select the **Enable end-user spam
+    notifications** check box, and then change the **Send end-user spam
+    notifications every (days)** value to **5**.
+
+4.  Select **Save**.
+
+5.  Leave all the tabs open in your Edge browser and proceed to the next lab.
 
 # End of Lab 3
-
