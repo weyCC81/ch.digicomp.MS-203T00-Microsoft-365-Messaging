@@ -89,7 +89,9 @@ applied to the email.
 19. On the **Review your settings** page, review the settings that you just
     configured. If anything needs to be corrected, select the corresponding
     **Edit** option to make the necessary fix. If everything is correct, select
-    the **Create this policy** button at the bottom of the page.**Note**: A **Security & Compliance** window will appear with a message that indicates your organization settings need to be updated. Select **Yes** to continue.
+    the **Create this policy** button at the bottom of the page.
+
+    **Note**: A **Security & Compliance** window will appear with a message that indicates your organization settings need to be updated. Select **Yes** to continue.
     
 20.  It may take a minute or so for your organization settings to be updated.
     Once the update is complete and you are back on the **Home \> Policy \>
@@ -270,10 +272,10 @@ by focusing on the language of the email and the location of the email's origin.
 
         -   **URL to .biz or .info websites**
 
--   Select the **Mark as Spam** drop-down arrow and turn **On** the following
+    -   Select the **Mark as Spam** drop-down arrow and turn **On** the following
     options:
 
-    -   **Empty messages**
+        -   **Empty messages**
 
         -   **Conditional Sender ID filtering: hard fail**
 
@@ -282,8 +284,7 @@ by focusing on the language of the email and the location of the email's origin.
 10.  In the list of spam filters, select the drop-down arrow to the left of the
     **Default spam filter policy (always ON)** filter that you just edited. In
     the middle column of settings for this filter, note how **End-user spam
-    notifications** are disabled (it status is **Off**).  
-      
+    notifications** are disabled (it status is **Off**). 
     Below this option, select **Configure end-user spam notifications**.
 
 11.  In the **Default** window that appears, select the **Enable end-user spam
