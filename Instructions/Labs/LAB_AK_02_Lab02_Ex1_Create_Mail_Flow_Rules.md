@@ -1,4 +1,4 @@
-﻿\# Module 2 – Lab 2 - Exercise 1 – Create Mail Flow Rules
+# Module 2 – Lab 2 - Exercise 1 – Create Mail Flow Rules
 
 In this lab, you will continue in your role as Holly Dickson, Adatum’s Messaging
 Administrator. In the prior lab, you created new send and receive connectors for
@@ -41,12 +41,11 @@ checks for sensitive information in emails sent from inside the organization.
 2.  Select the **Microsoft Edge** icon either on the desktop or the taskbar.
     Maximize your browser window when it opens.
 
-3.  In your browser navigate to the **Office 365 Home** page by entering the
-    following URL in the address bar: **https://portal.office.com/**
+3.  In your browser navigate to the **Office 365 Home** page by entering the following URL in the address bar: **https://portal.office.com/**
 
 4.  In the **Sign in** dialog box, copy and paste in the **Tenant Email**
     account provided by your lab hosting provider
-    (**admin\@xxxxxZZZZZZ.onmicrosoft.com**, where xxxxxZZZZZZ is your unique
+    (**admin@xxxxxZZZZZZ.onmicrosoft.com**, where xxxxxZZZZZZ is your unique
     tenant prefix provided by your lab hosting provider) and then select
     **Next**.
 
@@ -419,16 +418,5 @@ address this issue by creating a mail flow rule that restricts email size.
 14. Leave the Exchange Admin Center open to the mail flow page and proceed to
     the next lab.
 
-15. This is a test step. I want to **bold this word** and then create an
-    indented step.  
-      
-    **Important:** This is a test.  
-      
-    - indented step 1  
-    - indented step 2  
-    - indented step 3
-
-16. Test step 2.  
-    
 
 # End of Lab 2
