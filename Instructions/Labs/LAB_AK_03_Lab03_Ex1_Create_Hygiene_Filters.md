@@ -284,7 +284,7 @@ by focusing on the language of the email and the location of the email's origin.
 10.  In the list of spam filters, select the drop-down arrow to the left of the
     **Default spam filter policy (always ON)** filter that you just edited. In
     the middle column of settings for this filter, note how **End-user spam
-    notifications** are disabled (it status is **Off**). 
+    notifications** are disabled (it status is **Off**). <br/><br/>
     Below this option, select **Configure end-user spam notifications**.
 
 11.  In the **Default** window that appears, select the **Enable end-user spam
