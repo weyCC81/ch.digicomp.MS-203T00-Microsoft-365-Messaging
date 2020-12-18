@@ -89,13 +89,9 @@ applied to the email.
 19. On the **Review your settings** page, review the settings that you just
     configured. If anything needs to be corrected, select the corresponding
     **Edit** option to make the necessary fix. If everything is correct, select
-    the **Create this policy** button at the bottom of the page.
-
-**Note**: A **Security & Compliance** window will appear with a message that
-indicates your organization settings need to be updated. Select **Yes** to
-continue.
-
-1.  It may take a minute or so for your organization settings to be updated.
+    the **Create this policy** button at the bottom of the page.**Note**: A **Security & Compliance** window will appear with a message that indicates your organization settings need to be updated. Select **Yes** to continue.
+    
+20.  It may take a minute or so for your organization settings to be updated.
     Once the update is complete and you are back on the **Home \> Policy \>
     Anti-malware** page, you can proceed to the next task. Do not close any of
     the browser tabs.
@@ -296,6 +292,6 @@ by focusing on the language of the email and the location of the email's origin.
 
 12.  Select **Save**.
 
-13.  In your Edge browser, leave the **Office 365 Home** tab open as well as the **Microsoft 365 admin center** tab. Close any of the **Security & Compliance center** tabs, and then proceed to the next lab.
+13.  In your Edge browser, leave the **Office 365 Home** tab open as well as the **Microsoft 365 admin center** tab. Close all other tabs and proceed to the next lab.
 
 # End of Lab 3
