@@ -138,7 +138,7 @@ You will now create a custom send connector in Adatum’s on-premises Exchange S
 
 14. LON-EX1 should now appear in the Source server list for this new send connector. Select **Finish**.
 
-15. Leave your browser open and the EAC tab open and proceed to the next lab.
+15. Close your Edge browser and proceed to the next lab.
 
 
 # End of Lab 1  
