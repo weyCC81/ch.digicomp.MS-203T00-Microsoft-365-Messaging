@@ -281,21 +281,21 @@ by focusing on the language of the email and the location of the email's origin.
 
         -   **Conditional Sender ID filtering: hard fail**
 
-1.  Select **Save**.
+9.  Select **Save**.
 
-2.  In the list of spam filters, select the drop-down arrow to the left of the
+10.  In the list of spam filters, select the drop-down arrow to the left of the
     **Default spam filter policy (always ON)** filter that you just edited. In
     the middle column of settings for this filter, note how **End-user spam
     notifications** are disabled (it status is **Off**).  
       
     Below this option, select **Configure end-user spam notifications**.
 
-3.  In the **Default** window that appears, select the **Enable end-user spam
+11.  In the **Default** window that appears, select the **Enable end-user spam
     notifications** check box, and then change the **Send end-user spam
     notifications every (days)** value to **5**.
 
-4.  Select **Save**.
+12.  Select **Save**.
 
-5.  Leave all the tabs open in your Edge browser and proceed to the next lab.
+13.  In your Edge browser, leave the **Office 365 Home** tab open as well as the **Microsoft 365 admin center** tab. Close any of the **Security & Compliance center** tabs, and then proceed to the next lab.
 
 # End of Lab 3
