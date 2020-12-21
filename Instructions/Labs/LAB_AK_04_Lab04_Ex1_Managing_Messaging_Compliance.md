@@ -303,7 +303,7 @@ is active.
     commands, especially with the longer commands. Your instructor will guide
     you on how to copy and paste text into your particular VM environment.  
     ‎  
-    ‎ Set-ExecutionPolicy RemoteSigned  
+    ‎`Set-ExecutionPolicy RemoteSigned`  
     ‎  
     ‎**Note:** You will be prompted as to whether you want to change the
     execution policy. Enter **A** for **Yes to All.**
@@ -311,7 +311,7 @@ is active.
 4.  At the command prompt, run the following command to prompt you for your user
     credentials:  
     ‎  
-    ‎ \$UserCredential = Get-Credential  
+    ‎ `$UserCredential = Get-Credential`  
     ‎  
     ‎**Note:** This will open a dialog box to enter your credentials. Enter
     **admin\@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant
@@ -321,7 +321,7 @@ is active.
 5.  At the command prompts, run the following two commands to establish your
     connection to the Security and Compliance center: ‎  
       
-    ‎ \$Session = New-PSSession -ConfigurationName Microsoft.Exchange
+    ‎\$Session = New-PSSession -ConfigurationName Microsoft.Exchange
     -ConnectionUri
     https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential
     \$UserCredential -Authentication Basic -AllowRedirection
