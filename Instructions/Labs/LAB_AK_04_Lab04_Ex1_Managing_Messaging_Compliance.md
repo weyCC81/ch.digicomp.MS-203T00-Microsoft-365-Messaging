@@ -52,8 +52,8 @@ approximate idea as to how long you must wait before trying again.
     admin center.**
 
 3.  In the **Microsoft 365 admin center**, in the left-hand navigation pane,
-    select **Users** and then select **Active users**.  
-      
+    select **Users** and then select **Active users**.
+
     **Note:** In the **Active users** list, you will see the list of existing
     user accounts that were created for you by your lab hosting provider. In
     this course, you are taking on the role of Holly Dickson, who uses the
@@ -61,8 +61,8 @@ approximate idea as to how long you must wait before trying again.
     tenant admin account of <admin@xxxxxZZZZZZ.onmicrosoft.com>**)**. The MOD
     Administrator account has been assigned the Microsoft 365 Global admin role.
 
-4.  In the **Active users** window, select **Nestor Wilke’s** account.  
-      
+4.  In the **Active users** window, select **Nestor Wilke’s** account.
+
     **Note:** Select Nestor’s name; do not select the circle to the left of his
     name. The circle with the check mark is typically used for selecting
     multiple users when you want to perform one of the user-related actions on
@@ -76,8 +76,8 @@ approximate idea as to how long you must wait before trying again.
 
 6.  On the **Manage roles** pane, note that Nestor is already assigned the
     Global admin role. The roles that appear under the **Admin center access**
-    option are the most commonly assigned roles.  
-      
+    option are the most commonly assigned roles.
+
     Since the **Compliance data admin** role that you want to assign to Nestor
     does not appear in this list of the most commonly assigned roles, scroll
     down and select **Show all by category**.
@@ -102,8 +102,8 @@ numbers, and ABA routing numbers.
     log in as the **Administrator** with a password of **Pa55w.rd**.
 
 2.  In your Edge browser, you should still have the **Microsoft 365 admin
-    center** open from the prior task.  
-      
+    center** open from the prior task.
+
     In the left-hand navigation pane, select **Show All** (if necessary) to
     display all the navigation menu options, and then under the **Admin
     centers** section, select **Compliance.**
@@ -130,16 +130,22 @@ numbers, and ABA routing numbers.
 8.  Read the information provided in the **U.S. Financial Data** column that
     describes this template, and then select **Next.**
 
-9.  In the **Name your DLP policy** window, **U.S. Financial Data** is entered
-    by default in the **Name** field, and a default description is entered in
-    the **Description** field.  
-      
+9.  In the **Name your DLP policy** window, the template name of **U.S.
+    Financial Data** is entered by default in the **Name** field, and a default
+    description is entered in the **Description** field.
+
     While this DLP policy uses the U.S. Financial Data template, Holly wants to
-    change the name to a more accurate value, since the rule will be checking
-    for non-financial data as well.  
+    change the name to a more accurate value, since you will be modifying the
+    rule that is created from this template to check for non-financial data as
+    well (such as Driver’s License Number and Passport Number).
+
+    Change the value in the **Name** field to **U.S. PII Policy.**  
       
-    Change the value in the **Name** field to **U.S. Financial and Personal
-    Data** and then select **Next**.
+    **Note:** PII stands for Personally Identifiable Information. It’s a common
+    IT industry acronym for the type of personal information tracked in this
+    policy.  
+      
+    Select **Next**.
 
 10. On the **Choose locations to apply the policy** page, all the existing
     locations are turned **ON**. You only want the **Exchange email** location
@@ -152,8 +158,8 @@ numbers, and ABA routing numbers.
     ‎  
     ‎However, Adatum also wants to include U.S. Driver’s License Number, U.S.
     Social Security Number (SSN), U.S. / U.K. Passport Number, and U.S.
-    Individual Taxpayer Identification Number (ITIN) in this DLP policy.  
-      
+    Individual Taxpayer Identification Number (ITIN) in this DLP policy.
+
     To include these additional settings in this DLP policy, select the **Create
     or customize advanced DLP rules** option and then select **Next**.
 
@@ -223,13 +229,13 @@ numbers, and ABA routing numbers.
 27. This returns you to the **Create rule** window. Below the **Add or remove
     people** option that you previously selected are two check boxes, one to
     **Customize the email text** and the other to **Customize the email
-    subject**.  
-      
+    subject**.
+
     Select the **Customize the email text** check box.
 
 28. Copy the following text and paste it into the field that appears below the
-    **Customize the email text** check box:  
-      
+    **Customize the email text** check box:
+
     **WARNING: This email contains sensitive personal and/or corporate
     information that is not allowed to be included in emails. Please remove the
     sensitive information. Thank you.**
@@ -255,8 +261,8 @@ numbers, and ABA routing numbers.
 35. On the **Review your policy and create it** page, review all your settings.
     If any setting needs correction, select **Back** as many times as needed to
     return to the page that requires correction, make your updates, and then
-    select **Next** as needed to bring you back to this page.  
-      
+    select **Next** as needed to bring you back to this page.
+
     Once everything on this **Review your policy and create it** page is
     correct, select **Submit**.
 
@@ -265,9 +271,9 @@ numbers, and ABA routing numbers.
 37. In the **Data loss prevention** window, the new policy that you just created
     should be displayed in the list of data loss prevention policies.  
     ‎  
-    ‎**Important:** Although the status of the policy is **Enabled**, it can take
+    ‎**IMPORTANT:** Although the status of the policy is **Enabled**, it can take
     up to 24 hours for the policy to propagate through the system and become
-    fully operational. Therefore, we cannot test the policy at this time to
+    fully operational. Therefore, you cannot test the policy at this time to
     validate that it is working properly.
 
 ## Task 3: Confirming the Status of the Custom DLP policy
@@ -283,7 +289,9 @@ is active.
 
 2.  Select the magnifying glass on the taskbar at the bottom of the screen and
     enter **Powershell** in the Search box. In the menu that appears,
-    right-click on **Windows PowerShell** and select **Run as administrator**.
+    right-click on **Windows PowerShell** (do NOT select Windows PowerShell ISE)
+    and select **Run as administrator**.  
+      
     Maximize your Windows PowerShell window.
 
 3.  At the command prompt, run the following command to change the PowerShell
@@ -292,11 +300,10 @@ is active.
     ‎**Note:** Instead of typing each command, it will be quicker to copy each
     command and paste it into PowerShell at the command prompt. Copy and pasting
     the commands will also avoid any errors that can occur when typing in the
-    commands, especially with the longer commands. In some VM environments, you
-    simply need to right-click at the command prompt to paste in the copied
-    command.  
+    commands, especially with the longer commands. Your instructor will guide
+    you on how to copy and paste text into your particular VM environment.  
     ‎  
-    ‎Set-ExecutionPolicy RemoteSigned  
+    ‎ Set-ExecutionPolicy RemoteSigned  
     ‎  
     ‎**Note:** You will be prompted as to whether you want to change the
     execution policy. Enter **A** for **Yes to All.**
@@ -304,15 +311,16 @@ is active.
 4.  At the command prompt, run the following command to prompt you for your user
     credentials:  
     ‎  
-    ‎\$UserCredential = Get-Credential  
+    ‎ \$UserCredential = Get-Credential  
     ‎  
     ‎**Note:** This will open a dialog box to enter your credentials. Enter
-    **admin\@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your unique tenant
-    ID provided by your lab hosting provider) in the **User name** field and
+    **admin\@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant
+    prefix provided by your lab hosting provider) in the **User name** field and
     enter your tenant email password in the **Password** field. Select **OK**.
 
 5.  At the command prompts, run the following two commands to establish your
     connection to the Security and Compliance center: ‎  
+      
     ‎ \$Session = New-PSSession -ConfigurationName Microsoft.Exchange
     -ConnectionUri
     https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential
@@ -323,26 +331,25 @@ is active.
 
 6.  At the command prompt, run the following command to display the Distribution
     Status of the DLP policy that you created in the prior task titled **U.S.
-    Financial Data:**  
-    ‎
+    PII Policy:**  
+      
+    Get-DlpCompliancePolicy "U.S. PII Policy"\| select DistributionStatus  
+      
+    **Note:** At this moment, the **Distribution Status** of the DLP policy
+    should be **Pending**, since it can take up to 24 hours before the policy
+    becomes fully operational. In a real-world environment, you should check the
+    status from time to time to verify when the Distribution Status changes to
+    **Success**, which indicates the policy is active.
 
-‎Get-DlpCompliancePolicy "U.S. Financial Data"\| select DistributionStatus  
-‎  
-‎**Note:** At this moment, the **Distribution Status** of the DLP policy should
-be **Pending**, since it can take up to 24 hours before the policy becomes fully
-operational. In a real-world environment, you should check the status from time
-to time to verify when the Distribution Status changes to **Success**, which
-indicates the policy is active.
+7.  Minimize the Windows PowerShell window as you will use it in a later task.
 
-1.  Minimize the Windows PowerShell window as you will use it in a later task.
-
-2.  Leave your Edge browser open and proceed to the next task.  
+8.  Leave your Edge browser open and proceed to the next task.  
     ‎
 
 ## Task 4: Performing a Message Trace
 
 In this task, Holly Dickson plans to test Microsoft 365’s message tracing
-functionality. Messages traces are used to track and monitor where the message
+functionality. Message traces are used to track and monitor where the message
 has traveled and what type of anti-spam and regulatory policies are enacted upon
 the message.
 
