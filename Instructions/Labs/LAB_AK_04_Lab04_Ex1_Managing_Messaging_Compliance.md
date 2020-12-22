@@ -595,7 +595,6 @@ active MRM policies in Adatum’s Exchange environment.
     tenant prefix provided by your lab hosting provider) and your tenant admin
     password. If your PowerShell session was still open, then you should not
     receive this **Sign in** window.  
-    ‎
 
 7.  At the command prompt, run the following command to validate that you are
     connected to Exchange Online by displaying 5 mailboxes:  
@@ -621,7 +620,6 @@ active MRM policies in Adatum’s Exchange environment.
     `(Get-RetentionPolicy "Default MRM Policy").RetentionPolicyTagLinks |
     Format-Table name`  
     
-
 10. Close the Windows PowerShell window.
 
 ## Task 6: Creating a Retention Label
