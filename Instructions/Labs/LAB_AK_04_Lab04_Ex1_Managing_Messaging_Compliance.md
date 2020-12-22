@@ -321,19 +321,19 @@ is active.
 5.  At the command prompts, run the following two commands to establish your
     connection to the Security and Compliance center: ‎  
       
-    ‎\$Session = New-PSSession -ConfigurationName Microsoft.Exchange
+    `‎$Session = New-PSSession -ConfigurationName Microsoft.Exchange
     -ConnectionUri
     https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential
-    \$UserCredential -Authentication Basic -AllowRedirection
+    $UserCredential -Authentication Basic -AllowRedirection`
 
-    Import-PSSession \$Session -DisableNameChecking  
+    `Import-PSSession $Session -DisableNameChecking`  
     ‎
 
 6.  At the command prompt, run the following command to display the Distribution
     Status of the DLP policy that you created in the prior task titled **U.S.
     PII Policy:**  
       
-    Get-DlpCompliancePolicy "U.S. PII Policy"\| select DistributionStatus  
+    `Get-DlpCompliancePolicy "U.S. PII Policy"| select DistributionStatus`  
       
     **Note:** At this moment, the **Distribution Status** of the DLP policy
     should be **Pending**, since it can take up to 24 hours before the policy
@@ -353,127 +353,203 @@ functionality. Message traces are used to track and monitor where the message
 has traveled and what type of anti-spam and regulatory policies are enacted upon
 the message.
 
+While you can start a trace at any time, it can be more efficient to run a trace
+based on an existing query so that you don’t have to define the query parameters
+each time you run it. As part of her pilot project, Holly wants to begin by
+selecting a default query, which she will then customize.
+
+Holly wants to send an email to Alex Wilber and then create a custom query that
+checks for emails sent in the past day to Alex from within the Adatum domain.
+After creating this custom query, you will run the query which will write the
+search results to a Message trace report and download the message trace results
+to a CSV file that will be sent in an email to the MOD Administrator.
+
+**Note:** Message trace functionality was originally in the Office 365 Security
+and Compliance Center (SCC). It was then moved to the classic Exchange (Online)
+admin center (EAC), and from there it has been moved to the New Exchange Online
+admin center. It is in the process of being retired from the SCC and the classic
+EAC. For the purpose of this labs, you will use the message trace functionality
+in the New EAC.
+
 1.  You should still be logged into LON-CL1 from the prior task; if necessary,
     log in as the **Administrator** with a password of **Pa55w.rd**.
 
 2.  In Edge browser, if you still have tabs open for the **Microsoft Office
     Home** page and the **Microsoft 365 admin center**, then proceed to the next
     step; otherwise, navigate to **https://portal.office.com**, log in as
-    **admin\@M365xZZZZZZ.onmicrosoft.com** with the tenant email password, and
+    **admin\@xxxxxZZZZZZ.onmicrosoft.com** with the tenant email password, and
     then select **Admin**.
 
 3.  Select the **Microsoft Office Home** tab and then select **Outlook** to open
     **Outlook on the web** for the MOD Administrator’s account.
 
-4.  In the upper left corner of the screen, select **New message**.
+4.  You will begin by sending an email to Alex Wilber. In the upper left corner
+    of the screen, select **New message**.
 
 5.  In the message pane that appears on the right-side of the screen, enter the
     following information:
 
     -   To: start typing **Alex** and a drop-down menu displays with users whose
-        name begins with that. Select **Alex Wilber**.
+        name begins with Alex. Select **Alex Wilber**.
 
     -   Add a subject: **Confidential message tracing test**
 
     -   Message area: **This message will be used to test the message trace tool
-        located in the Security admin center.**
+        located in the new Exchange admin center when you search for the words
+        confidential, sensitive, and secret in emails.**  
+          
+        **Important:** In a later task, you will search for emails that include
+        the words Confidential, Sensitive, and Secret. Therefore, enter (or copy
+        and paste) in the message included above so that that you can test
+        whether it is captured in the search.
 
 6.  Select **Send**.
 
-7.  Select the **Microsoft 365 Admin center** tab in your browser.
+7.  You will now create a custom message trace query and report in the New
+    Exchange admin center. In your **Edge** browser, select the **Microsoft 365
+    admin center** tab.
 
 8.  In the **Microsoft 365 admin center**, in the left-hand navigation pane,
-    select **show all** (if necessary) and under **Admin centers,** select
-    **Security**.
+    select **Show all** (if necessary) and under **Admin centers,** select
+    **Exchange**.
 
-9.  In the **Office 365 Security \&amp; Compliance center**, in the left-hand
-    navigation pane, select **Mail flow**, and then select **Message trace**.
+9.  The Message Trace functionality has been moved to the **New Exchange admin
+    center**. Therefore, in the (classic) **Exchange admin center**, in the
+    left-hand navigation pane, select **New Exchange admin center.**
 
-10. On the **Message trace** page, in the list of queries, select the default
-    query titled: **Messages sent from my primary domain in the last day.**
+10. In the (New) **Exchange admin center**, in the left-hand navigation pane,
+    select **Mail flow** and then select **Message trace**.
 
-11. In the **Messages sent from my primary domain in the last day** pane that
-    appears, you want to refine the search to only see messages going out from
-    the primary domain to Alex Wilber.  
+11. On the **Message trace** page, the **Default queries** tab at the top of the
+    page is displayed by default. In the list of queries and reports in this
+    tab, select **Messages sent from my primary domain in the last day.**
+
+12. In the **New message trace** pane that appears, the default values for the
+    **Messages sent from my primary domain in the last day** query are
+    displayed. You can control which messages are selected based on who sent and
+    received the messages and how many days ago the messages were sent.  
+      
+    Starting with this default query as a template, Holly will now customize its
+    settings to create a custom query that checks for emails sent to Alex Wilber
+    in the past day.  
+      
+    - You can customize the **Senders** field to search for messages that were
+    sent from a specific domain. By default, the query will select messages sent
+    from all Adatum user accounts in its Microsoft 365 tenant; that is, from all
+    user accounts whose primary domain matches Adatum’s tenant of
+    **\@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the unique tenant
+    prefix provided by your lab hosting provider). Therefore, do NOT change this
+    value.  
     ‎  
-    ‎In the **By these people** field, it already displays the primary domain of
-    **\@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your unique tenant ID
-    provided by your lab hosting provider), so leave this value as is.  
-    ‎  
-    ‎However, in the **To these people** field, enter **Alex**, and then in the
-    menu of users that appears, select **Alex Wilber** (you may have to select
-    it twice)**.**
+    ‎- You can customize the **Recipients** field to search for messages that
+    were sent to specific users. By default, the query will select messages sent
+    to all recipients. However, Holly wants to modify the query to only select
+    messages sent to Alex Wilber. Therefore, enter **Alex** in the
+    **Recipients** field, and then in the menu of users that appears, select
+    **Alex Wilber.**
 
-12. To avoid issues with the starting time for the search, on the **Within this
-    time range** slider tool, drag the slider to the left so that it specifies
-    **Last 2 day(s)** (actually, you can select any value greater than 1 day).
+13. To avoid issues with the starting time for the search, on the **Time range**
+    slider tool, drag the slider to the left so that it specifies sometime in
+    the **Last 2 days** (actually, you can select any value greater than 1 day).
 
-13. Select the **Search** button at the bottom of the pane.  
-    ‎  
-    ‎**Note:** This should initiate the message trace, which should display the
-    **Confidential message tracing test** message that you just sent from the
-    Mod Administrator (**admin\@M365xZZZZZZ.onmicrosoft.com**) to Alex Wilber
-    (**alexw\@M365xZZZZZZ.onmicrosoft.com**). Verify the **Status** as
-    **Delivered**.
+14. Under the **Report type** section, select the **Extended report** option and
+    then select **Next**.
 
-14. Select this message (do NOT select the check box to the left of the message;
-    rather, select the message itself). This will open a **Message trace
-    details** pane for this message.
+15. On the **Prepare message trace report** page, review the information for the
+    report you just configured.  
+      
+    Select the **Prepare report** button at the bottom of the pane.
 
-15. In the **Message trace details** pane, scroll down and select the down-arrow
-    next to **Message events.** This will display the summarized view of events
-    related to this message and the date and time in which the events occurred.
+16. On the **Your request has been submitted** page, review the information and
+    then select **Close**.
 
-16. Scroll to the bottom of the pane and select **Close**.
+17. On the **New message trace** window, select **Save**.
 
-17. Select **Close** in the **Message trace search results** window\*\*.\*\*
+18. In the dialog box that appears, change the **Name** of the report to
+    **Messages sent to Alex Wilber in the past day**, select **Save**, and then
+    select **Done**.
 
-18. From the **Messages sent from my primary domain in the last day** pane
-    (which may be renamed with the date and time stamp assigned to the search),
-    select the down-arrow to the left of **Choose report type.**
+19. In the **New message trace** pane, select the **X** in the upper right-hand
+    corner to close the pane.
 
-19. In the list of report types, select the **Extended report** option and then
-    select **Next**.
+20. On the **Message trace** window, note how the **Custom queries** tab is now
+    displayed, and it includes the **Messages sent to Alex Wilber in the past
+    day** query that you just created. Holly has now created a custom query that
+    she can run at any time in the future.  
+      
+    Since Holly wants to test this custom query, select the **Messages sent to
+    Alex Wilber in the past day** query (select the **Name** and not the circle
+    with the check mark to the left of the name).
 
-20. In the **Prepare message trace report** pane that appears, select the
-    **Prepare report** button at the bottom of the pane. This will send a .csv
-    file to the MOD administrator’s email account
-    (admin\@M365xZZZZZZ.onmicrosoft.com).  
-    ‎  
-    ‎**Note:** This may take a few minutes to compile the report depending on how
-    large it is. Note the following message that is displayed on this page:
-    **When the report is ready to download, we'll send a notification message
-    to: admin\@M365xZZZZZZ.onmicrosoft.com**
+21. In the **New message trace** window, note how the query values are prefilled
+    for you. Select **Next**.
 
-21. Select **Close.**
+22. On the **Prepare message trace report** pane, select the **Prepare report**
+    button at the bottom of the window.
 
-22. On the **Message trace** page, select the **Refresh** button to refresh the
-    list of message trace reports.  
-    ‎  
-    ‎**Note:** Select the **Refresh** button every couple of minutes till the
-    status of the report is **Done**.
+23. On the **Your request has been submitted** pane, review the information on
+    the page, including the following messages:  
+      
+    **You can check progress at any time from the “Downloadable reports” section
+    on the Message Trace home page.**  
+    and  
+    **When the report is ready to download the email below will be notified:**
+    <admin@xxxxxZZZZZZ.onmicrosoft.com>  
+      
+    Select **Close.**
 
-23. You will receive a notification once the report is Done. You should notice
-    this in the **notification bell** that appears at the top right of the
-    screen (it will display a number that indicates the number of notifications
-    you have).  
+24. Close the **New message trace** window.
+
+25. On the **Message trace** page, the **Downloadable reports** tab will be
+    displayed. This will display the **Message trace report** that you just ran.
+    Note that its **Status** will initially be **Not started**.  
+      
+    Select the **Refresh** icon on the address bar every minute or so to check
+    on the report’s status (the status should transition from **Not started** to
+    **In progress** to **Complete**).  
+      
+    **Note:** Refreshing the page will cause it to display the **Default
+    queries** tab; therefore, each time you refresh the page, you must select
+    the **Downloadable reports** tab to check the report status.  
+      
+    **WARNING:** In the testing of this lab, the message trace report sometimes
+    took up to an hour or more to complete. If the report does not finish after
+    a few minutes, review the remaining steps in this task so that you can see
+    what you would have done, and then perform the final step in this task
+    before proceeding to the next task.
+
+26. You will receive a notification once the report is complete. You should
+    notice this in the **notification bell** that appears at the top right of
+    the screen (it will display a number that indicates the number of
+    notifications you have).  
     ‎  
     ‎When you see a 1 in the notification bell, select the bell to display the
     **Notifications** pane. In the **Notifications** pane, select the email
     entry.
 
-24. In the email window that appears, in the middle of the email you should see
-    a statement that says **You can access the report here** (where “**here**”
-    is hyperlinked). Select this hyperlinked “**here**” to view the results.
+27. The query that you created was designed to send an email to the MOD
+    Administrator that included a link to the Message trace report. In the email
+    window that appears, in the middle of the email you should see a statement
+    that says **You can access the report here** (where “**here**” is
+    hyperlinked). Select this hyperlinked “**here**” to view the results.
 
-25. As the system attempts to open the report, it will display a notification
+28. As the system attempts to open the report, it will display a notification
     bar that asks whether you want to open or save the .csv file associated with
     the report. Select **Save.**  
     ‎  
     ‎This file contains all corresponding information from the email, including
     but not limited to: SCL, Number of hops, source IP address, what connector
     used, delivery priority. Most of the information will be located in the
-    custom data column.
+    custom data column.  
+      
+    Congratulation! You have just verified the message trace report was created,
+    the MOD Administrator was notified in an email that the report was complete,
+    and the CSV file with the report results was made available for downloaded
+    by the MOD Administrator.
+
+29. In your Edge browser, leave the **Office 365 Home** tab open, as well as the
+    **Microsoft 365 admin center** tab. Close all other tabs and proceed to the
+    next task.
 
 ## Task 5: Reviewing Active MRM Policies with PowerShell
 
@@ -496,58 +572,57 @@ active MRM policies in Adatum’s Exchange environment.
     ‎**Note:** Instead of typing each command, it will be quicker to copy each
     command and paste it into PowerShell at the command prompt. Copy and pasting
     the commands will also avoid any errors that can occur when typing in the
-    commands, especially with the longer commands. In some VM environments, you
-    simply need to right-click at the command prompt to paste in the copied
-    command.  
+    commands, especially with the longer commands. Your instructor will guide
+    you on how to copy and paste text into your particular VM environment.  
     ‎  
-    ‎Install-Module -Name ExchangeOnlineManagement  
-    ‎  
-    ‎**Note:** You will be prompted whether you want PowerShell to install and
-    import the NuGet provider. Enter **Y** for **Yes**.  
-    ‎  
-    ‎You will then be prompted whether you want PowerShell to install the modules
-    from PSGallery, which is an untrusted repository. Enter **A** for **Yes to
-    All**.  
-    ‎
+    ‎`Install-Module -Name ExchangeOnlineManagement`
 
-4.  At the command prompt, run the following command to connect you to the
+4.  You will be prompted whether you want PowerShell to install and import the
+    NuGet provider. Enter **Y** for **Yes**.
+
+5.  ‎You will then be prompted whether you want PowerShell to install the modules
+    from PSGallery, which is an Untrusted Repository. Enter **A** for **Yes to
+    All**.‎
+
+6.  At the command prompt, run the following command to connect you to the
     Exchange admin center for Exchange Online:  
     ‎  
-    ‎Connect-ExchangeOnline -Credential \$UserCredential -ShowProgress \$true  
+    ‎`Connect-ExchangeOnline -Credential $UserCredential -ShowProgress $true`  
     ‎  
-    ‎**Note:** This will open a **Sign in** dialog box to enter your credentials.
-    Enter **admin\@M365xZZZZZZ.onmicrosoft.com** (where ZZZZZZ is your unique
-    tenant ID provided by your lab hosting provider) and select **Next**, and
-    then in the **Enter password** dialog box, enter the tenant email password
-    provided by your lab hosting provider, and then select **Sign in**.  
+    ‎**Note:** If you closed PowerShell after running it in the earlier task, you
+    will receive a **Sign in** dialog box to enter your credentials. Enter
+    **admin\@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the unique
+    tenant prefix provided by your lab hosting provider) and your tenant admin
+    password. If your PowerShell session was still open, then you should not
+    receive this **Sign in** window.  
     ‎
 
-5.  At the command prompt, run the following command to validate that you are
+7.  At the command prompt, run the following command to validate that you are
     connected to Exchange Online by displaying 5 mailboxes:  
     ‎  
-    ‎Get-EXOMailbox -ResultSize 5  
+    ‎`Get-EXOMailbox -ResultSize 5`  
     ‎  
     ‎**Note:** Review the **User Principal name** assigned to each mailbox to
     confirm you are connected to the right tenant.
 
-6.  At the command prompt, run the following command to display all the
+8.  At the command prompt, run the following command to display all the
     Retention Policies that are active in your environment:  
-    ‎
+      
+    `‎Get-RetentionPolicy | out-Gridview`  
+    ‎  
+    ‎**Note:** This command opens a separate window that displays the active
+    retention policies. After reviewing the policies, select the **X** in the
+    upper right corner of the window to close it and return to the PowerShell
+    command prompt.
 
-‎Get-RetentionPolicy \| out-Gridview  
-‎  
-‎**Note:** This command opens a separate window that displays the active
-retention policies. After reviewing the policies, select the **X** in the upper
-right corner of the window to close it and return to the PowerShell command
-prompt.
-
-1.  At the command prompt, run the following command to display all the
+9.  At the command prompt, run the following command to display all the
     retention policy tags that are associated to the Default MRM Policy:  
-    ‎
+      
+    `(Get-RetentionPolicy "Default MRM Policy").RetentionPolicyTagLinks |
+    Format-Table name`  
+    
 
-‎(Get-RetentionPolicy "Default MRM Policy").RetentionPolicyTagLinks \|
-Format-Table name  
-‎ 8. Close the Windows PowerShell window.
+10. Close the Windows PowerShell window.
 
 ## Task 6: Creating a Retention Label
 
@@ -558,32 +633,31 @@ creating a Retention label through the Security and Compliance portal.
 1.  You should still be logged into LON-CL1 from the prior task; if necessary,
     log in as the **Administrator** with a password of **Pa55w.rd**.
 
-2.  In your **Edge browser**, you should still have the **Microsoft 365
-    Compliance admin center** tab open from the previous task in which you
-    performed a message trace; if so, proceed to the next step. If you closed
-    your browser or the Security & Compliance center tab, then in your
-    **Microsoft 365 admin center** tab, select **Compliance** under the **Admin
-    centers** group (or you can enter the following URL:
-    **https:/compliance.microsoft.com**
+2.  In your **Edge browser**, select the **Microsoft 365 admin center** tab, and
+    then in the left-hand navigation pane under **Admin centers**, select
+    **Compliance.**
 
-3.  In the **Microsoft 365 Compliance admin center**, in the left-hand
-    navigation pane, select **Catalog**.
+3.  In the **Microsoft 365 compliance** center, in the left-hand navigation
+    pane, select **Catalog**.
 
-4.  On the **Catalog** page, select view under **Information governance**. then
-    select the **open solution** button. ‎
+4.  On the **Solution catalog** page, in the **Information protection &
+    governance** section, select the **View** button under **Information
+    governance**.
 
-5.  In the **Information governance** solution, select **Create a label**.
+5.  In the **Information governance** window, select **Open solution**.
 
-6.  On the **Name your label** page, enter **30-day delete** in the **Name**
+6.  In the **Information governance** window, the **Labels** tab at the top of
+    the page is displayed by default. In this tab, select +**Create a label**
+    that appears on the menu bar. This initiates the **Create a label** wizard.
+
+7.  On the **Name your label** page, enter **30-day delete** in the **Name**
     field, and enter **This label will delete email after 30 days** in the
     **Description for admins** field. Copy this description and paste it into
     the **Description for users** field. Select **Next**.
 
-7.  On the **File plan descriptors** page, select **Next**.
-
-8.  On the **Label settings** page, select the toggle switch to turn retention
-    **On**. This will enable several additional settings. Configure these
-    settings as follows:
+8.  On the **Label settings** page, select the **Retention** toggle switch to
+    turn it **On**. This turns on retention settings for this label, and it
+    displays several additional settings. Configure these settings as follows:
 
     -   Retain the content: **For this long – 30 Days**
 
@@ -599,8 +673,8 @@ creating a Retention label through the Security and Compliance portal.
     setting. When all settings are correct, select **Create this Label**.
 
 11. It will take a minute or two to create the retention label, at which point
-    the **Retention labels** window will appear and your new **30-day delete**
-    label will appear in the list of labels.
+    the **Information governance** window will display your new **30-day
+    delete** label.
 
 12. Leave your browser and all tabs open and proceed to the next task.
 
@@ -613,57 +687,46 @@ previously created.
 1.  You should still be logged into LON-CL1 from the prior task; if necessary,
     log in as the **Administrator** with a password of **Pa55w.rd**.
 
-2.  In your **Edge browser**, you should still have the **Microsoft 365
-    Compliance admin center** tab open from the previous task in which you
-    performed a message trace; if so, proceed to the next step. If you closed
-    your browser or the Security & Compliance center tab, then in your
-    **Microsoft 365 admin center** tab, select **Compliance** under the **Admin
-    centers** group (or you can enter the following URL:
-    **https:/compliance.microsoft.com**
+2.  In your **Edge browser**, you should still have the **Information
+    governance** page open from the previous task. This page should be
+    displaying the **Labels** tab, and in the list of labels, it should display
+    the **30-day delete** label that you just created.  
+      
+    Once you create a label, your next step is to publish it. You can either
+    publish multiple labels at one time by selecting the **Publish labels**
+    option on the menu bar, or you can publish a specific label by selecting the
+    label and then publishing just that label.  
+      
+    In this task, you will publish a specific label; therefore, in the list of
+    labels, select the **30-day delete** label.
 
-3.  In the **Microsoft 365 Compliance admin center**, in the left-hand
-    navigation pane, select **Catalog**.
+3.  In the **30-day delete** window that appears, select the **Publish labels**
+    button at the top of window. This will initiate the **Publish labels**
+    wizard that walks you through the steps of publishing a label.
 
-4.  On the **Catalog** page, select view under **Information governance**. then
-    select the **open solution** button.
+4.  On the **Choose labels to publish** page, the **30-day delete** label is
+    already displayed under the **Publish these labels** section since you
+    previously selected this label; therefore, select **Next**.
 
-5.  On the **Information governance** window, select the **Label policies** tab,
-    select **Publish labels** that appears on the menu bar. This will initiate a
-    new wizard that walks you through the steps of publishing a label.
-
-6.  On the **Choose labels to publish** page, select the **Choose labels to
-    publish** link\*\*.\*\*
-
-7.  On the **Choose labels** page, select **+Add**.
-
-8.  The **Choose labels** page displays the existing retention labels. Select
-    the **30-day delete** label that you created in the prior task, and then
-    select **Add**.
-
-9.  Select **Done**.
-
-10. On the **Choose labels to publish** page, select **Next.**
-
-11. On the **Choose locations** page, select the **All locations. Includes
+5.  On the **Choose locations** page, select the **All locations. Includes
     content in Exchange email, Office 365 groups, OneDrive and SharePoint
-    documents** option, and then select **Next**.
+    documents** option and then select **Next**.
 
-12. On the **Name your policy** page, enter **30-Day delete policy** in the
-    **Name** field\*\*.\*\* Leave the **Description** field blank, and then
-    select **Next**.
+6.  On the **Name your policy** page, enter **30-day delete policy** in the
+    **Name** field. Leave the **Description** field blank and select **Next**.
 
-13. On the **Review you settings** page, review your settings and if any require
+7.  On the **Review you settings** page, review your settings and if any require
     correction, select the corresponding **Edit** option to fix the setting.
     When all settings are correct, select **Publish labels**.  
     ‎  
-    ‎**Important:** Note the warning message that indicates it can take up to 24
-    to propagate a new retention label policy throughout the system once the
+    ‎**Important:** Note the warning message that indicates it can take up to 1
+    day to propagate a new retention label policy throughout the system once the
     policy is published.
 
-14. Once the retention label policy has been created, it will be displayed in
+8.  Once the retention label policy has been created, it will be displayed in
     the list of label policies on the **Retention labels** window.
 
-15. Leave your browser and all tabs open and proceed to the next task.
+9.  Leave your browser and all tabs open and proceed to the next task.
 
 ## Task 8: Creating an eDiscovery Case
 
@@ -691,22 +754,30 @@ since you completed Task 1 and then perform the search again.
 1.  You should still be logged into LON-CL1 from the prior task; if necessary,
     log in as the **Administrator** with a password of **Pa55w.rd**.
 
-2.  In your **Edge browser**, select the **Microsoft Office Home** tab, then
+2.  You must begin this task by signing out of Microsoft 365 as the MOD
+    Administrator and then signing back in as Nestor Wilke.  
+      
+    In your **Edge browser**, select the **Microsoft Office Home** tab, then
     select the MOD Administrator user icon in the upper right corner of the
     screen (the circle with **MA** in it) and select **Sign out** in the menu
     that appears.
 
-3.  Close all the tabs in your browser session except for the **Sign out** tab.
+3.  Close all the tabs in your browser session except for the tab in which you
+    signed out.
 
-4.  In the **Sign out** tab, enter the following URL in the address bar to go
-    directly to the Office 365 Security & Compliance center:
+4.  In your Edge browser, enter the following URL in the address bar to go
+    directly to the Office 365 Security & Compliance center (Note: While you
+    could have logged into the Office 365 Home page and then navigated to the
+    Microsoft 365 admin center and then to the Security and Compliance center
+    just as you did in the prior lab, this approach will give you experience
+    navigating directly to the Security and Compliance center):
     **https://protection.office.com**
 
 5.  In the **Pick an account** window, select **Use another account**.
 
-6.  In the **Sign in** window, enter **NestorW\@M365xZZZZZZ.onmicrosoft.com**
-    (where ZZZZZZ is the tenant ID provided by your lab hosting provider) and
-    then select **Sign in**.
+6.  In the **Sign in** window, enter **NestorW\@xxxxxZZZZZZ.onmicrosoft.com**
+    (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting
+    provider) and then select **Next.**
 
 7.  In the **Enter password** window, enter the tenant email password provided
     by your lab hosting provider and then select **Sign in**.
@@ -715,11 +786,13 @@ since you completed Task 1 and then perform the search again.
     navigation pane, select **eDiscovery**, and then in the expanded group,
     select **eDiscovery.**
 
-9.  In the **eDiscovery pane,** select the **+Create a case** button.
+9.  In the **eDiscovery** pane**,** select the **+Create a case** button.
 
 10. In the **New case** pane that appears, enter **AlexWilber-case01** in the
-    **Case name** field. In the **Case description** field enter the following:
-    **This case queries emails to Alex Wilber that have been disseminated with
+    **Case name** field.  
+      
+    In the **Case description** field enter (copy and paste) the following
+    description: **This case searches for emails to Alex Wilber that include
     confidential information.**
 
 11. Select **Save.**
@@ -732,7 +805,11 @@ since you completed Task 1 and then perform the search again.
 
 14. In the **Holds** tab for this case, select the **+Create** button. This will
     initiate a **Create a new hold** wizard that walks you through the steps to
-    create a new hold.
+    create a new hold.  
+      
+    You will begin by placing a hold on Alex Wilber’s account that will retain
+    any emails that contain **Sensitive, Confidential, Secret** anywhere in the
+    email as well as in the Subject line.
 
 15. In the **Create a new hold** window, in the **Name your hold** page, enter
     **AlexW** in the **Name** field, leave the **Description** blank, and then
@@ -744,12 +821,14 @@ since you completed Task 1 and then perform the search again.
 17. In the **Edit locations** page, under **Exchange email**, select the
     **Choose users, groups, or teams** button.
 
-18. In the **Search** field that appears, enter **Alex** and select the
-    **Search** icon to the right. Scroll to the bottom of the **Edit locations**
-    pane to view the search results (all users whose name starts with Alex).
+18. In the **Edit locations** page, enter **Alex** in the **Search** field that
+    appears and select the **Search** (magnifying glass) icon to the right of
+    the field. This will initiate a search of all users whose name starts with
+    Alex. Scroll to the bottom of the **Edit locations** pane to view the search
+    results.
 
-19. Select the check box next to **Alex Wilber** and then select **Choose** at
-    the bottom of the window.
+19. Select the check box next to **Alex Wilber** and then select the **Choose**
+    button at the bottom of the window.
 
 20. On the **Edit locations** page, select **Done**.
 
@@ -777,12 +856,15 @@ since you completed Task 1 and then perform the search again.
 
 28. In the **AlexW** pane, select **Close**.  
     ‎  
-    ‎**Note: Y**ou have just placed a hold on Alex Wilber’s account that will
+    ‎**Note:** You have just placed a hold on Alex Wilber’s account that will
     retain any emails that contain **Sensitive, Confidential, Secret** anywhere
     in the email as well as in the Subject line.
 
 29. In the **AlexWilber-case01 \&gt; Core ED \&gt; Hold** page, select the
-    **Searches** tab at the top of the page.
+    **Searches** tab at the top of the page.  
+      
+    You will now create a new search that checks for emails that contain
+    **Sensitive, Confidential, Secret** in the email and in the Subject line.
 
 30. In the **Searches** tab, select the **+Guided Search** button. This will
     initiate a **New search** wizard that walks you through the steps to create
@@ -810,7 +892,8 @@ since you completed Task 1 and then perform the search again.
     In the **Type subject** field, enter the following: **Sensitive,
     Confidential, Secret**
 
-37. Select **Finish**. This initiates the search.
+37. Select **Finish**. This initiates the search. It may take several minutes
+    for the Search to complete.
 
 38. Review the search results.  
     ‎  
