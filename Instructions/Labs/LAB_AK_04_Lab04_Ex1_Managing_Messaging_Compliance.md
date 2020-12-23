@@ -51,8 +51,8 @@ approximate idea as to how long you must wait before trying again.
     lab to navigate to the **Office 365 home** page and the **Microsoft 365
     admin center.**
 
-3.  In the **Microsoft 365 admin center**, in the left-hand navigation pane,
-    select **Users** and then select **Active users**.
+3.  In the **Microsoft 365 admin center**, select **Users** in the left-hand navigation pane,
+     and then in the expanded group select **Active users**.
 
     **Note:** In the **Active users** list, you will see the list of existing
     user accounts that were created for you by your lab hosting provider. In
@@ -780,9 +780,8 @@ since you completed Task 1 and then perform the search again.
 7.  In the **Enter password** window, enter the tenant email password provided
     by your lab hosting provider and then select **Sign in**.
 
-8.  On the **Office 365 Security \&amp; Compliance** center, in the left-hand
-    navigation pane, select **eDiscovery**, and then in the expanded group,
-    select **eDiscovery.**
+8.  On the **Office 365 Security \&amp; Compliance** center, select **eDiscovery** in the left-hand
+    navigation pane, and then in the expanded group select **eDiscovery.**
 
 9.  In the **eDiscovery** pane**,** select the **+Create a case** button.
 
