@@ -34,8 +34,8 @@ applied to the email.
 3.  In the **Microsoft 365 admin center**, in the left-hand navigation pane
     under **Admin centers**, select **Security**.
 
-4.  In the **Office 365 Security & Compliance center**, in the left-hand
-    navigation pane, select **Threat Management** and then select **Policy**.
+4.  In the **Office 365 Security & Compliance center**, select **Threat Management** in the left-hand
+    navigation pane, and then in the expanded group select **Policy**.
 
 5.  In the **Home \> Policy** page, select the **Anti-Malware** tile under the
     **Policies** section.
@@ -113,8 +113,8 @@ the blocked IP address will always be blocked.
     Compliance center** (SCC). If so, then proceed to the next step; otherwise,
     perform the steps from the prior task to navigate to the SCC now.
 
-3.  In the **Office 365 Security & Compliance admin center**, in the left-hand
-    navigation pane, select **Threat Management** and then select **Policy**.
+3.  In the **Office 365 Security & Compliance admin center**, select **Threat Management** in the left-hand
+    navigation pane, and then in the expanded group select **Policy**.
 
 4.  In the **Home \> Policy** page, select the **Anti-spam** tile under the
     **Policies** section.
