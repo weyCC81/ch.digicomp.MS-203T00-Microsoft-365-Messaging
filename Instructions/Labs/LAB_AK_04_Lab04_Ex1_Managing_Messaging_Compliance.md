@@ -17,7 +17,7 @@ that searches email messages for sensitive data. Once you create the case and
 perform a search associated with the case, you will attempt to view the search
 results.  
 ‎  
-‎eDiscovery cases can oftentimes hold sensitive information that may not be suitable for every administrator to review. To support this scenario, some Microsoft 365 administrator roles provide permission for users to create cases, but they do not include permission to view the search results. For example, a Compliance Administrator can create an eDiscovery case and run an eDiscovery search, but unless the user is also assigned the new eDiscovery Manager role in the Security and Compliance center, he or she will be unable to view the search results. You will create this scenario in this lab excerise to verify this permission design. 
+‎eDiscovery cases can oftentimes hold sensitive information that may not be suitable for every administrator to review. To support this scenario, some Microsoft 365 administrator roles provide permission for users to create cases, but they do not include permission to view the search results. For example, a Compliance administrator can create an eDiscovery case and run an eDiscovery search, but unless the user is also assigned the new eDiscovery Manager role in the Security and Compliance center, he or she will be unable to view the search results. You will create this scenario in this lab excerise to verify this eDiscovery permission design. 
 
 In this task you will assign Nestor Wilke the Compliance administrator role. While this will enable Nestor to create an eDiscovery case for compliance purposes, it will not allow him to view the results of the corresponding search. To view the corresponding search results, Nestor would need to be assigned the eDiscovery Manager role. 
 
@@ -718,13 +718,13 @@ continue in your pilot project that examines Microsoft 365’s compliance
 functionality. In this task, you will create an eDiscovery case that searches
 for confidential information being disseminated through email.
 
-Because eDiscovery cases can oftentimes hold sensitive information that may not be suitable for every administrator to review, many organizations want to control who has permission to view eDiscovery search results. To support this scenario, some Microsoft 365 administrator roles provide permission for users to create eDiscovery cases, but they do not include permission to view the search results. Only the new eDiscovery Manager role that is assigned in the Security and Complianc center provides permission to view search results. 
+Because eDiscovery cases can oftentimes hold sensitive information that may not be suitable for every administrator to review, many organizations want to control who has permission to view eDiscovery search results. To support this scenario, some Microsoft 365 administrator roles provide permission for users to create eDiscovery cases, but they do not include permission to view the search results. Only the new eDiscovery Manager role that is assigned in the Security and Compliance center provides permission to view search results. 
 
 Back in Task 1, you assigned the Compliance administrator role to Nestor
 Wilke. While a Compliance admin can create an eDiscovery case and
 perform a corresponding search, the admin is not able to view the search results unless
-he or she is assigned the eDiscovery Manager role in the Security and Compliance center. Because you assigned Nestor the Compliance admin role, he now has permission to create an eDiscovery case and initiate an eDiscovery search; however, since you did not assign him the eDiscovery Manager role, he does not have permission to view the search results. In this task, you will verify this permission design by logging in as
-Nestor, creating an eDiscovery case, initiating the search, and then seeing what happens with the search
+he or she is also assigned the eDiscovery Manager role. Because you assigned Nestor the Compliance admin role, he now has permission to create an eDiscovery case and initiate an eDiscovery search; however, since you did not assign him the eDiscovery Manager role, he does not have permission to view the search results. In this task, you will verify this permission design by logging in as
+Nestor, creating an eDiscovery case, initiating the search, and then validating what happens with the search
 results.
 
 **Note:** It normally takes about 60 minutes for a new role assignment to fully
