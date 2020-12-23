@@ -718,21 +718,20 @@ continue in your pilot project that examines Microsoft 365’s compliance
 functionality. In this task, you will create an eDiscovery case that searches
 for confidential information being disseminated through email.
 
-Back in Task 1, Holly assigned the Compliance data administrator role to Nestor
-Wilke. While a Global Admin such as Holly could create an eDiscovery case and
-perform a corresponding search, she would not be able to view the results unless
-she was assigned the Compliance data administrator role. Since an admin cannot
-assign admin roles to themselves, Holly assigned the Compliance data admin role
-to Nestor Wilke, who is also a Global Admin. In this task, you will log in as
-Nestor, create an eDiscovery case, perform the search, and view the search
+Because eDiscovery cases can oftentimes hold sensitive information that may not be suitable for every administrator to review, many organizations want to control who has permission to view eDiscovery search results. To support this scenario, some Microsoft 365 administrator roles provide permission for users to create eDiscovery cases, but they do not include permission to view the search results. Only the new eDiscovery Manager role that is assigned in the Security and Complianc center provides permission to view search results. 
+
+Back in Task 1, you assigned the Compliance administrator role to Nestor
+Wilke. While a Compliance admin can create an eDiscovery case and
+perform a corresponding search, the admin is not able to view the search results unless
+he or she is assigned the eDiscovery Manager role in the Security and Compliance center. Because you assigned Nestor the Compliance admin role, he now has permission to create an eDiscovery case and initiate an eDiscovery search; however, since you did not assign him the eDiscovery Manager role, he does not have permission to view the search results. In this task, you will verify this permission design by logging in as
+Nestor, creating an eDiscovery case, initiating the search, and then seeing what happens with the search
 results.
 
 **Note:** It normally takes about 60 minutes for a new role assignment to fully
-propagate through the system. By the time you get to the point of viewing the
-search results at the end of this task, if the role assignment you performed in
-Task 1 has not fully propagated, you will be unable to view the search results.
+propagate through the system. This is why you assigned Nestor the Compliance admin role in Task 1. By the time you reach this task, enough time should have passed for Nestor's new permissions to have propagated through the system, enabling him to create an eDiscovery case. If the role assignment you performed in
+Task 1 has not fully propagated, Nestor will be unable to create the eDiscovery case.
 If this occurs, determine how much longer you must wait until you reach an hour
-since you completed Task 1 and then perform the search again.
+since you completed Task 1 and then perform this task again.
 
 1.  You should still be logged into LON-CL1 from the prior task; if necessary,
     log in as the **Administrator** with a password of **Pa55w.rd**.
@@ -758,7 +757,7 @@ since you completed Task 1 and then perform the search again.
 
 5.  In the **Pick an account** window, select **Use another account**.
 
-6.  In the **Sign in** window, enter **NestorW\@xxxxxZZZZZZ.onmicrosoft.com**
+6.  In the **Sign in** window, enter **NestorW@xxxxxZZZZZZ.onmicrosoft.com**
     (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting
     provider) and then select **Next.**
 
@@ -774,8 +773,7 @@ since you completed Task 1 and then perform the search again.
     **Case name** field.  
       
     In the **Case description** field enter (copy and paste) the following
-    description: **This case searches for emails to Alex Wilber that include
-    confidential information.**
+    description: **This case searches for emails to Alex Wilber that include confidential information**.
 
 11. Select **Save.**
 
@@ -827,13 +825,12 @@ since you completed Task 1 and then perform the search again.
 
 25. On the **Query conditions** page, in the **Subject** section, select the
     drop-down arrow in the first operator field and select **Contains any of**.
-    In the **Type subject** field, enter the following: **Sensitive,
-    Confidential, Secret**
+    In the **Type subject** field, enter the following: **Sensitive, Confidential, Secret**
 
 26. Select **Next**.
 
 27. On the **Review your settings** page, review the settings and if any need to
-    be adjusted, select **Edit** next to the setting and make the correction.
+    be adjusted, select **Edit** next to the setting and make the necessary correction.
     Once all settings are correct, select **Create this hold**.
 
 28. In the **AlexW** pane, select **Close**.  
@@ -877,11 +874,8 @@ since you completed Task 1 and then perform the search again.
 37. Select **Finish**. This initiates the search. It may take several minutes
     for the Search to complete.
 
-38. Review the search results.  
-    ‎  
-    ‎**Note:** If the Compliance data admin role has not fully propagated through
-    the system since you assigned it to Nestor Wilke’s account in Task 1, you
-    will receive a warning message that indicates: **To preview search results,
-    please ask your Compliance admin to grant you Preview permission.**
+38. Review the search results. Because Nestor was not assigned the eDiscovery Manager role, he is unable to view the search results. Therefore, the following message should appear at the top of the screen: **To preview search results, please ask your Compliance admin to grant you Preview permission.**
+
+39. Leave the Edge browser open and proceed to the next lab.
 
 # End of Lab 4
