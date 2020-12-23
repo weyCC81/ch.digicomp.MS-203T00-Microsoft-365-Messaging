@@ -15,31 +15,16 @@ is the ability to perform eDiscovery searches on information gathered in the
 system. In the final task in this exercise, you will create an eDiscovery case
 that searches email messages for sensitive data. Once you create the case and
 perform a search associated with the case, you will attempt to view the search
-results. However, only users who have been assigned the Compliance data
-administrator role can view search results associated with an eDiscovery case.  
+results.  
 ‎  
-‎Users who have been assigned the Global Administrator role in Microsoft 365
-basically have access to all system functionality. However, that does not mean
-they can view all the data in the system. This is the case with eDiscovery. A
-Global Admin can create an eDiscovery case and run an eDiscovery search, but
-unless the user is also assigned the Compliance data administrator role, he or
-she will not be able view the search results. Therefore, in this task you will
-assign Nestor Wilke (a Global Admin) the Compliance data administrator role.
+‎eDiscovery cases can oftentimes hold sensitive information that may not be suitable for every administrator to review. To support this scenario, some Microsoft 365 administrator roles provide permission for users to create cases, but they do not include permission to view the search results. For example, a Compliance Administrator can create an eDiscovery case and run an eDiscovery search, but unless the user is also assigned the new eDiscovery Manager role in the Security and Complianc center, he or she will be unable to view the search results. You will create this scenario in this lab excerise to verify this permission design. 
 
-**Note:** The VM environment provided by your lab hosting provider comes with
-ten existing Microsoft 365 user accounts, one of which is Nestor Wilke. Several
-of these user accounts will be used throughout the labs in this course.
+In this task you will assign Nestor Wilke the Compliance administrator role. While this will enable Nestor to create an eDiscovery case for compliance purposes, it will not allow him to view the results of the corresponding search. To view search results, Nestor would need to be assigned the eDiscovery Manager role. 
 
-**Warning:** The reason you will assign Nestor this role now in Task 1 rather
-than later in Task 8 when you log in as Nestor and create an eDiscovery case is
-that it takes roughly 60 minutes for role assignments to fully propagate through
+**Warning:** The reason you will assign Nestor the Compliance administrator role now in Task 1 rather
+than later in Task 8 when you log in as Nestor is that it takes roughly 60 minutes for role assignments to fully propagate through
 the system. So hopefully by the time you get to Task 8, the role will be fully
-propagated, and you will be able to view the search results.
-
-Therefore, you should keep track of what time it is when you complete this task
-so that when you get to Task 8, if the system tells you that you do not have the
-necessary permission to view the eDiscovery search results, you will have an
-approximate idea as to how long you must wait before trying again.
+propagated, and you will be able to create an eDiscovery case.
 
 1.  You should still be logged into LON-CL1 as the **Administrator** with a
     password of **Pa55w.rd**; however, if the log-in page appears, then log in
@@ -78,12 +63,12 @@ approximate idea as to how long you must wait before trying again.
     Global admin role. The roles that appear under the **Admin center access**
     option are the most commonly assigned roles.
 
-    Since the **Compliance data admin** role that you want to assign to Nestor
+    Since the **Compliance admin** role that you want to assign to Nestor
     does not appear in this list of the most commonly assigned roles, scroll
     down and select **Show all by category**.
 
 7.  In the list of roles that are sorted by category, scroll down to the
-    **Security & Compliance** category, select **Compliance data admin**, and
+    **Security & Compliance** category, select **Compliance admin**, and
     then select **Save changes**.
 
 8.  Select the **X** in the upper right corner of the **Manage roles** pane to
