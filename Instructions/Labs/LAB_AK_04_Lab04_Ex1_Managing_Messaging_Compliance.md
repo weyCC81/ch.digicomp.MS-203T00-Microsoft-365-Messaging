@@ -17,9 +17,9 @@ that searches email messages for sensitive data. Once you create the case and
 perform a search associated with the case, you will attempt to view the search
 results.  
 ‎  
-‎eDiscovery cases can oftentimes hold sensitive information that may not be suitable for every administrator to review. To support this scenario, some Microsoft 365 administrator roles provide permission for users to create cases, but they do not include permission to view the search results. For example, a Compliance Administrator can create an eDiscovery case and run an eDiscovery search, but unless the user is also assigned the new eDiscovery Manager role in the Security and Complianc center, he or she will be unable to view the search results. You will create this scenario in this lab excerise to verify this permission design. 
+‎eDiscovery cases can oftentimes hold sensitive information that may not be suitable for every administrator to review. To support this scenario, some Microsoft 365 administrator roles provide permission for users to create cases, but they do not include permission to view the search results. For example, a Compliance Administrator can create an eDiscovery case and run an eDiscovery search, but unless the user is also assigned the new eDiscovery Manager role in the Security and Compliance center, he or she will be unable to view the search results. You will create this scenario in this lab excerise to verify this permission design. 
 
-In this task you will assign Nestor Wilke the Compliance administrator role. While this will enable Nestor to create an eDiscovery case for compliance purposes, it will not allow him to view the results of the corresponding search. To view search results, Nestor would need to be assigned the eDiscovery Manager role. 
+In this task you will assign Nestor Wilke the Compliance administrator role. While this will enable Nestor to create an eDiscovery case for compliance purposes, it will not allow him to view the results of the corresponding search. To view the corresponding search results, Nestor would need to be assigned the eDiscovery Manager role. 
 
 **Warning:** The reason you will assign Nestor the Compliance administrator role now in Task 1 rather
 than later in Task 8 when you log in as Nestor is that it takes roughly 60 minutes for role assignments to fully propagate through
