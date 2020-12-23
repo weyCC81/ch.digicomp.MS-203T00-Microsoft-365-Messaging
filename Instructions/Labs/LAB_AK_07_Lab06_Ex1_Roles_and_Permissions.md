@@ -28,12 +28,12 @@ then assign two specific administrators to this role.
     with a password of **Pa55w.rd**.
 
 2.  The Microsoft Edge browser should still be open from Lab 4 where you were
-    logged into Microsoft 365 as Nestor Wilke and you had the Office 365
+    logged into Microsoft 365 as Allan Deyoung and you had the Office 365
     Security & Compliance center open. You must log out of Microsoft 365 as
-    Nestor and log back in as the MOD Administrator account so that Holly can
+    Allan and log back in as the MOD Administrator account so that Holly can
     manage the Exchange admin roles and permissions.  
       
-    On the **Office 365 Security & Compliance** center tab, select Nestor’s
+    On the **Office 365 Security & Compliance** center tab, select Allan’s
     picture in the upper right-hand corner of the screen, and in the menu that
     appears, select **Sign out**.
 
@@ -43,7 +43,7 @@ then assign two specific administrators to this role.
     **https://portal.office.com**
 
 5.  On the **Pick an account** window, select
-    **admin\@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant
+    **admin@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant
     prefix provided by your lab hosting provider). On the **Enter password**
     window, enter the tenant admin password provided by your lab hosting
     provider and then select **Sign in**.
@@ -51,7 +51,7 @@ then assign two specific administrators to this role.
 6.  On the **Office 365 home** page, select the **Admin** icon in the column of
     Microsoft 365 app icons on the left-side of the screen.
 
-7.  On the [](https://portal.office.com/)**Microsoft 365 admin center**, select
+7.  On the **Microsoft 365 admin center**, select
     **Show all** in the left-hand navigation pane, and then under **Admin
     centers**, select **Exchange.**
 
