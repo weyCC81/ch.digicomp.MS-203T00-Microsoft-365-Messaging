@@ -331,8 +331,8 @@ locate the UPN name.
     check box is also selected by default. To see the other two services, select
     **Advanced Options**. Note that under **Advanced Options**, neither the
     **Skype for Business** nor the **Intune and Mobile Device Management for
-    Microsoft 365** check boxes are selected.  
-      
+    Microsoft 365** check boxes are selected.
+
     This is sufficient for Adatum; you should NOT select either of these two
     check boxes. Only the **Exchange and Exchange Online Protection** check box
     should be selected.
@@ -373,8 +373,8 @@ locate the UPN name.
         **xxxUPNxxx.xxxCustomDomainxxx.xxx** domain should be selected from when
         you earlier left off. If not, select this zone now. You should see the
         **TXT** record that you created earlier. You must now create a **Mail
-        Exchanger (MX)** record for this domain.  
-          
+        Exchanger (MX)** record for this domain.
+
         Under **Forward Lookup Zones**, right-click the
         **xxxUPNxxx.xxxCustomDomainxxx.xxx** domain and select **New Mail
         Exchanger (MX)...**
@@ -684,8 +684,8 @@ Exchange Admin Center.
     below and paste them into the Notepad document (to make it easy, copy all
     the text for steps 5-15 and not just the PowerShell commands; that way you
     can do one Copy statement rather than 11 Copy statements of just the
-    PowerShell commands).  
-      
+    PowerShell commands).
+
     **Warning:** Some lab hosting providers’ VM environments limits the amount
     of text that can be copy and pasted at one time into a VM. If this occurs
     within your VM environment, you may have to copy and paste steps 5-15 in
@@ -715,8 +715,8 @@ Exchange Admin Center.
 4.  To open the **Exchange Management Shell**, select the Windows icon on the
     bottom left corner of the taskbar, and then in the menu select **Microsoft
     Exchange Server 2019** to expand this program group, and then in the group,
-    select **Exchange Management Shell**.  
-      
+    select **Exchange Management Shell**.
+
     Maximize the **Exchange Management Shell** window once it opens. Wait for
     the command prompt to appear before proceeding.
 
@@ -848,8 +848,8 @@ Exchange Admin Center.
     ‎If you have a tab open in your Edge browser for the on-premises **Exchange
     admin center,** then proceed to the next step; otherwise, select the
     **Windows** icon on the taskbar, select the **Microsoft Exchange Server
-    2019** group, select **Exchange Administrative Center.**  
-      
+    2019** group, select **Exchange Administrative Center.**
+
     **Note:** If you receive a page indicating **This site is not secure**, this
     is due to a certificate issue in the VM environment that you can ignore for
     the purpose of this lab. To bypass this error, select **More information**,
@@ -892,8 +892,8 @@ Exchange Admin Center.
     ‎In the list of domains, the **A.Datum** domain should now be listed as the
     **default domain** and the **Domain Type** should be **Authoritative**.
 
-28. Leave the Exchange admin center tab open in your Edge browser and proceed to
-    the next task.
+28. Close the Edge browser so that you close the Exchange admin center and
+    proceed to the next task.
 
 ## Task 5: Migrate On-premises User Accounts to the Custom Domain
 
@@ -904,8 +904,8 @@ installation wizard to enable and configure directory synchronization. This will
 perform a full synchronization that migrates all of Adatum’s on-premises user
 accounts to the new accepted domain in Microsoft 365.
 
-1.  Switch to LON-DC1 and, if necessary, log in as the **Administrator** with a
-    password of **Pa55w.rd**.
+1.  Switch to **LON-DC1** and, if necessary, log in as the **Administrator**
+    with a password of **Pa55w.rd**.
 
 2.  In your Edge browser session, the **Microsoft Office Home** tab and the
     **Microsoft 365 admin center** tab should still be open; if not, then
@@ -948,8 +948,8 @@ accounts to the new accepted domain in Microsoft 365.
     file.
 
 8.  This initiates the installation of the **Microsoft Azure Active Directory
-    Connect Tool**.  
-      
+    Connect Tool**.
+
     **Note:** After the wizard begins, the **Microsoft Azure AD Connect Tool**
     window may disappear. If this occurs, find the icon for it on the task bar
     and select it.
@@ -968,15 +968,15 @@ accounts to the new accepted domain in Microsoft 365.
     (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting
     provider) in the **USERNAME** field, enter (or copy and paste) the tenant
     email password provided by your lab hosting provider in the **PASSWORD**
-    field, and then select **Next.**  
-      
+    field, and then select **Next.**
+
     **Note:** You may have to tab out of the **PASSWORD** field to enable the
     **Next** button.
 
 11. On the **Connect to AD DS** page, enter **adatum\\Administrator** in the
     **USERNAME** field, enter **Pa55w.rd** in the **PASSWORD** field, and then
-    select **Next.**  
-      
+    select **Next.**
+
     **Note:** You may have to tab out of the **PASSWORD** field to enable the
     **Next** button.
 
@@ -1025,13 +1025,13 @@ accounts to the new accepted domain in Microsoft 365.
 
     -   In the **Export Errors** section on the right, note the two errors that
         appear. Select the link for the first error that appears under the
-        **Export Errors** column.  
-          
+        **Export Errors** column.
+
         The first error is an “add user”” error for user **Ngoc Bich Tran**.
         Review the error and then close the window. Select the link for the
         second error, which is an “add user” error for user **An Dung Dao**.
-        Review this error and then close the window.  
-          
+        Review this error and then close the window.
+
         These are users whose on-premises accounts have an invalid UPN, which in
         turn caused UPN validation errors during the synchronization process;
         therefore, these users were not synchronized by the Azure AD Connect
