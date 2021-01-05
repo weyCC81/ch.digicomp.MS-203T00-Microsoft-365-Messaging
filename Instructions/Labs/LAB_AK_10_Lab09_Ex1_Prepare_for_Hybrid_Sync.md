@@ -933,8 +933,7 @@ accounts to the new accepted domain in Microsoft 365.
     navigate directly to the **Azure AD Connect** page in the **Microsoft
     Download Center** by opening a new tab in your Edge browser and entering the
     following URL in the address bar (if you navigate directly to this URL, you
-    can skip the next step):
-    **https://www.microsoft.com/en-us/download/details.aspx?id=47594**[](https://www.microsoft.com/en-us/download/details.aspx?id=47594)
+    can skip the next step): **https://www.microsoft.com/en-us/download/details.aspx?id=47594**
 
 5.  In the **Azure Active Directory preparation** window, select **Go to the
     Download center to get the Azure AD Connect tool**. This opens a new tab in
