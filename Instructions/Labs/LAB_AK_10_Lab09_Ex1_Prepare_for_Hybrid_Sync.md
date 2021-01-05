@@ -383,8 +383,7 @@ locate the UPN name.
         tab, leave the **Host or child domain** field blank, but right-click in
         the **Fully qualified domain name (FQDN) of mail server** field and
         select **Paste** from the menu that appears. This will paste in the
-        expected **Points to address or value** that you copied to the clipboard
-        in **step a** above.
+        expected **Points to address or value** that you just copied to the clipboard.
 
     -   Select **OK**. Note how this Mail Exchanger (MX) record appears in the
         details pane on the right for the xxxUPNxxx.xxxCustomDomainxxx.xxx
