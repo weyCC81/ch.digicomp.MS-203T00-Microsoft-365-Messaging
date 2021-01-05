@@ -520,11 +520,11 @@ locate the UPN name.
     point. However, if you did not select **Continue** after adding the MX and
     CNAME records, then all three records will be validated at this point.
 
-    If all three records have been successfully validated, then the **Domain
+    - If all three records have been successfully validated, then the **Domain
     setup is complete** page will appear. If this occurs, then select the
     **Done** button to complete the domain setup process.
 
-    However, if any of the three records did not validate successfully, then the
+    - However, if any of the three records did not validate successfully, then the
     **Add DNS records** window will return, and it will display either a check
     mark or an exclamation point next to each record type to indicate which ones
     validated successfully and which ones did not. An exclamation point in a red
