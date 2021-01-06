@@ -32,7 +32,7 @@ Exchange Online. Running the HCW will create Adatum’s hybrid deployment.
     account with a password of **Pa55w.rd**.
 
 2.  ‎Select the Microsoft Edge icon on the taskbar to open a new browser session,
-    then enter the following URL in the address bar: <https://portal.office.co>
+    then enter the following URL in the address bar: **https://portal.office.com**
 
 3.  In the **Sign in** window, enter your tenant admin username
     (admin\@xxxxxZZZZZZ.onmicrosoft.com, where xxxxxZZZZZZ is the tenant prefix
@@ -44,7 +44,7 @@ Exchange Online. Running the HCW will create Adatum’s hybrid deployment.
 4.  In the **Stay signed in?** window, select the **Don’t show this again**
     check box and select **Yes**.
 
-5.  In the **Microsoft Office Home** page, in the column of Microsoft apps icon
+5.  In the **Microsoft Office Home** page, in the column of Microsoft app icons
     on the left-side of the screen, select the **Admin** icon.
 
 6.  In the **Microsoft 365 admin center**, select **Show all** in the left-hand
@@ -53,11 +53,13 @@ Exchange Online. Running the HCW will create Adatum’s hybrid deployment.
 
 7.  In the **Exchange admin center** for Exchange Online, the **dashboard** tab
     in the left-hand navigation pane is displayed by default, which displays the
-    **Welcome** page. Scroll to the bottom of the **Welcome** page and under the
+    **Welcome** page. 
+    
+    Scroll to the bottom of the **Welcome** page and under the
     **hybrid** section, select **setup**.
 
 8.  On the **setup** page there are two **configure** buttons. The first button
-    configures an Exchange hybrid deployment, while the second button configures
+    configures an Exchange hybrid deployment, while the second button downloads the Exchange Online PowerShell module for supporting 
     Multi-factor authentication.  
     ‎  
     ‎Select the first **configure** button to configure Adatum’s hybrid
@@ -65,16 +67,10 @@ Exchange Online. Running the HCW will create Adatum’s hybrid deployment.
 
 9.  A new tab will open in your Edge browser, and in the **Open this file?**
     window that appears at the top of the page, select **Open**.
+    
+    This will initiate the **Application Install** wizard, which will download and install the Hybrid Configuration Wizard.
 
-10. In the **How do you want to open this?** dialog box that appears, select
-    **Microsoft Edge** and then select **OK**.
-
-11. A new tab will open in your Edge browser, and in the **Open this file?**
-    window that appears at the top of the page, select **Open**.  
-      
-    This will initiate the **Application Install** wizard.
-
-12. If the wizard begins and a **Do you want to install this application?**
+10. If the wizard begins and a **Do you want to install this application?**
     window appears, then proceed to the next step.  
     ‎  
     ‎However, because of security features in the VMs within your lab hosting
@@ -82,7 +78,7 @@ Exchange Online. Running the HCW will create Adatum’s hybrid deployment.
     **configure** button, the system may open a new tab, try to access a site,
     then close the tab and return to the **setup** page with the two
     **configure** buttons. If this occurs, then you must perform the following
-    steps to open an **InPrivate Browsing** session within Edge browser to
+    steps to open an **InPrivate Browsing** session within Edge to
     bypass the security constraints built into your training lab environment
     (this would not occur in a real world scenario). You will then open the
     Microsoft 365 admin center and initiate the hybrid deployment process.
@@ -93,21 +89,21 @@ Exchange Online. Running the HCW will create Adatum’s hybrid deployment.
         separate from the Edge session that you were just in.
 
     -   Maximize the InPrivate browser window (if necessary), repeat steps 2
-        through 5, and then continue with the next step to install the Hybrid
+        through 9, and then continue with the next step to install the Hybrid
         Configuration Wizard.  
         ‎
 
-13. In the **Application Install** wizard, on the **Do you want to install this
+11. In the **Application Install** wizard, on the **Do you want to install this
     application?** window, select **Install** to download the Hybrid
     Configuration Wizard.
 
-14. After the download completes, on the **Hybrid Configuration Wizard** window,
+12. After the download completes, on the **Hybrid Configuration Wizard** window,
     select **next** to run the wizard.  
     ‎  
     ‎This starts the **Hybrid Configuration Wizard** (it can sometimes take up to
     a minute or so for the setup wizard to start, so please be patient).
 
-15. The wizard begins by trying to detect the on-premises Exchange Server. Wait
+13. The wizard begins by trying to detect the on-premises Exchange Server. Wait
     for the server detection to complete, which then displays the **On-premises
     Exchange Server Organization** window. The **Detect the optimal Exchange
     server** option will be selected by default, and the wizard will detect the
@@ -115,13 +111,13 @@ Exchange Online. Running the HCW will create Adatum’s hybrid deployment.
     ‎  
     ‎Accept the default settings by selecting **next**.
 
-16. The next page displays the **On-premises Exchange Account** and the **Office
+14. The next page displays the **On-premises Exchange Account** and the **Office
     365 Exchange Online Account**.  
       
     Under the **Office 365 Exchange Online Account** section, select the **sign
     in…** button.
 
-17. In the **Sign in** window, enter the tenant email account provided by your
+15. In the **Sign in** window, enter the tenant email account provided by your
     lab hosting provider (**admin\@xxxxxZZZZZZ.onmicrosoft.com**; in a
     real-world scenario, this must be a Microsoft 365 user who has been assigned
     the Global Admin role) and then select **Next**.  
@@ -129,19 +125,21 @@ Exchange Online. Running the HCW will create Adatum’s hybrid deployment.
     ‎In the **Enter password** window, enter the tenant email password provided
     by your lab hosting provider and then select **Sign in**.
 
-18. This returns you to the **On-premises Exchange Account** page, which now
+16. This returns you to the **On-premises Exchange Account** page, which now
     displays the **Tenant Email** account that you entered for the **Office 365
-    Exchange Online Account**. Select **next**.
+    Exchange Online Account**. 
+    
+    Once the account appears (which may take a few seconds), select **next**.
 
-19. On the **Gathering Configuration Information** page, wait until the
+17. On the **Gathering Configuration Information** page, wait until the
     information gathering process is complete for both **Exchange**
     (on-premises) and **Office 365** (Exchange Online). Once both indicate they
     have **Succeeded** (which may take a minute or two), select **next**.
 
-20. On the **Hybrid Features** page, select the **Full Hybrid Configuration**
+18. On the **Hybrid Features** page, select the **Full Hybrid Configuration**
     option and then select **next**.
 
-21. On the **Hybrid Topology** page, the **Use Exchange Classic Hybrid
+19. On the **Hybrid Topology** page, the **Use Exchange Classic Hybrid
     Topology** option is selected by default.  
     ‎  
     ‎**Note:** We want you to use this **Classic** option instead of the
@@ -156,42 +154,42 @@ Exchange Online. Running the HCW will create Adatum’s hybrid deployment.
     ‎Verify the **Use Exchange Classic Hybrid Topology** option is selected and
     then select **next**.
 
-22. On the **On-premises Account for Migration** page, select the **enter…**
+20. On the **On-premises Account for Migration** page, select the **enter…**
     button to enter the credentials to your on-premises Exchange Web Service.
 
-23. In the **Office 365** window that appears, the **Domain\\username** is
-    already prefilled with the **ADATUM\\Administrator** account. Enter
+21. In the **Office 365** window that appears, the **Domain\\username** is
+    already prefilled with the **ADATUM\Administrator** account. Enter
     **Pa55w.rd** in the **Password** field and then select **ok.**
 
-24. On the **On-premises Account for Migration** page, the
-    **ADATUM\\Administrator** is displayed, so select **next**.
+22. On the **On-premises Account for Migration** page, the
+    **ADATUM\Administrator** account is displayed, so select **next**.
 
-25. On the **Hybrid Configuration** page, verify the **Configure my Client
+23. On the **Hybrid Configuration** page, verify the **Configure my Client
     Access and Mailbox servers for secure mail transport (typical)** option is
-    selected by default and then select **next**.
+    selected by default (select it if necessary) and then select **next**.
 
-26. On the **Receive Connector Configuration** page, select the drop-down arrow.
+24. On the **Receive Connector Configuration** page, select the drop-down arrow.
     This displays the **LON-EX1** server. Select the check box for this server
     and then select **next**.
 
-27. On the **Send Connector Configuration** page, select the drop-down arrow.
+25. On the **Send Connector Configuration** page, select the drop-down arrow.
     This displays the **LON-EX1** server. Select the check box for this server
     and then select **next**.
 
-28. On the **Transport Certificate** page, select the drop-down arrow. This
+26. On the **Transport Certificate** page, select the drop-down arrow. This
     displays several existing certificates. Select the
     \***.xxxCustomDomainxxx.xxx** certificate (where xxxCustomDomainxxx.xxx is
     the lab hosting provider’s custom domain name) and then select **next.**
 
-29. On the **Organization FQDN** page, enter
+27. On the **Organization FQDN** page, enter
     **xxxUPNxxx.xxxCustomDomainxxx.xxx** (where xxxUPNxxx is your unique UPN
     name assigned to your tenant by your lab hosting provider and
     xxxCustomDomainxxx.xxx is your lab hosting provider’s custom domain) and
     then select **next**.
 
-30. On the **Ready for Update** page, select **update.**
+28. On the **Ready for Update** page, select **update.**
 
-31. This initiates the configuration process, which usually takes a few minutes
+29. This initiates the configuration process, which usually takes a few minutes
     to complete.
 
     -   If the configuration is successful, you will receive a
@@ -217,11 +215,11 @@ Exchange Online. Running the HCW will create Adatum’s hybrid deployment.
         without negatively affecting the system.  
         ‎
 
-32. If you had to open an InPrivate browsing session to run the HCW, then close
+30. If you had to open an InPrivate browsing session to run the HCW, then close
     the InPrivate session.
 
-33. In your Edge browser, close all tabs except for the **Microsoft Office
-    Home** tab, the **Microsoft 365 admin center** tab, and then **Exchange
+31. In your Edge browser, close all tabs except for the **Microsoft Office
+    Home** tab, the **Microsoft 365 admin center** tab, and the **Exchange
     admin center** tab.
 
 ## Task 2: Configure Mail Flow Settings
@@ -247,13 +245,15 @@ for future tasks in this exercise.
 2.  Select the **Windows** icon on the taskbar and in the menu that appears,
     select the **Microsoft Exchange Server 2019** group. In the expanded group,
     select **Exchange Administrative Center**.  
+    
+    This will open a new tab in your current Edge browser session that will display the on-premises Exchange admin center.
       
     **Note:** If you receive a page indicating **Your connection isn’t
     private**, this is due to a certificate issue in the VM environment that you
     can ignore for the purpose of this lab. To bypass this error, select the
     **Advanced** button, and then select **Continue to localhost (unsafe)**.
 
-3.  In the **Exchange Admin Center**, log in as **adatum\\Administrator** with a
+3.  In the on-premises **Exchange Admin Center**, log in as **adatum\\Administrator** with a
     password of **Pa55w.rd**.
 
 4.  In the on-premises **Exchange admin center**, select **mail flow** in the
@@ -264,11 +264,11 @@ for future tasks in this exercise.
     **xxxxxZZZZZZ.mail.onmicrosoft.com** domain (where xxxxxZZZZZZ is the tenant
     prefix provided by the lab hosting provider).
 
-6.  Note that the **Domain Type** is set to **Authoritative**. You must change
+6.  Note the **Domain Type** for this onmicrosoft.com domain is set to **Authoritative**. You must change
     it to **Internal relay**. To do so, select the **pencil (Edit)** icon on the
     menu bar above the list of domains.
 
-7.  In the **xxxxxZZZZZZ.mail.onmicrosoft.com** window, under the **This
+7.  In the **xxxxxZZZZZZ.mail.onmicrosoft.com** window that appears, under the **This
     accepted domain is:** setting, select the **Internal relay** option and then
     select **Save**.
 
@@ -278,7 +278,7 @@ for future tasks in this exercise.
 9.  In the list of send connectors, select the **Outbound to Office 365**
     connector and then select the **pencil (Edit)** icon on the menu bar.
 
-10. On the **Outbound to Office 365** send connector page, select the
+10. On the **Outbound to Office 365** send connector window that appears, select the
     **scoping** tab in the left-hand navigation pane.
 
 11. Under the **Address space** group at the top of the page, select the **plus
@@ -291,7 +291,7 @@ for future tasks in this exercise.
 13. In the **Outbound to Office 365** send connector page, select **Save**.
 
 14. You are currently in the on-premises EAC. You should also have the EAC for
-    Exchange Online open in your browser from the prior task (see the **setup –
+    Exchange Online open in your Edge browser from the prior task (see the **setup –
     Microsoft Exchange** tab); if so, select this tab.  
     ‎  
     ‎However, if you closed the EAC for Exchange Online at the end of the prior
@@ -319,9 +319,9 @@ for future tasks in this exercise.
     page.  
     ‎  
     ‎**Note:** There are several differences between the on-premises EAC and the
-    EAC for Exchange Online. In this case, in the on-premises EAC, the
+    EAC for Exchange Online. In the on-premises EAC, the
     **connectors** tab is split out into a separate **receive connectors** tab
-    and a separate **send connectors** tab. In this EAC for Exchange Online,
+    and a separate **send connectors** tab. In the EAC for Exchange Online that you are currently viewing,
     only one **connectors** tab is available.
 
 20. In the **connectors** tab, the list of connectors displays an **Inbound**
@@ -329,11 +329,11 @@ for future tasks in this exercise.
     **Inbound** connector, which is already selected by default. Therefore,
     simply select the **pencil (Edit)** icon.
 
-21. On the **Edit Connector** page that displays the name and description of the
-    Inbound connector, select **Next**.
+21. On the **Edit Connector** window that appears, the name and description of the
+    Inbound connector is displayed. Select **Next**.
 
 22. On the **Edit Connector** page that asks **How should Office 365 identify
-    email from your email server**?, verify that the option is selected that
+    email from your email server**?, verify the option is selected that
     asks: **By verifying that the subject name on the certificate that the
     sending server uses to authenticate with Office 365 matches this domain name
     (recommended).**  
@@ -362,7 +362,7 @@ deployment.
     **Administrator** with a password of **Pa55w.rd**.
 
 2.  In your **Edge browser**, you should have the two **Exchange admin center**
-    (EAC) tabs open from the earlier task in this exercise – one for the
+    (EAC) tabs open from the earlier tasks in this exercise – one for the
     on-premises EAC and one for the EAC for Exchange Online.
 
     -   One EAC tab should be titled **send connectors – Microsoft Exchange.**
@@ -417,10 +417,11 @@ deployment.
 9.  Repeat steps 4 through 8 to create an on-premises mailbox for **Beth
     Burke**. You will use Beth’s on-premises mailbox when testing mailbox
     migration in the next lab exercise.
+    
+    Allan and Beth's mailboxes should now appear in the list of mailboxes along with the Administrator's mailbox.
 
 10. Leave your browser and all its tabs open and proceed to the next task.
 
-‎
 
 ## Task 4: Create a new Outbound Connector
 
@@ -446,16 +447,17 @@ So how does this affect the Outbound connector? Well, normally at this point in
 the hybrid configuration process, you would validate the existing Outbound
 connector by using the primary domain name to route message traffic. However,
 because one of the two domain names isn’t a registered point for your Microsoft
-Exchange Server, the validation of the Outbound connector will fail because of
-the third-party certificate domain for the xxxCustomDomainxxx.xxx domain has not
+Exchange Server, the validation of the Outbound connector will fail because the third-party certificate domain for the xxxCustomDomainxxx.xxx domain has not
 been validated to this Exchange Server.
 
 In a real-world scenario in which you replace or add the domain just to your
 domain controller, you would update your Microsoft Exchange server certificate
 to point to the new domain. Unfortunately, the VM lab environment has a
-dependency to using Adatum.com as the primary domain and changing the domain
+dependency to using Adatum.com as the primary domain; therefore, changing the domain
 would cause several communication issues with all the existing domain PC’s and
-servers. As a result, you must perform this workaround in the VM lab environment
+servers. 
+
+As a result, you must perform this workaround in the VM lab environment
 in which you delete the existing Outbound connector and then create a new one
 that routes email messages to the IP address associated with the Microsoft 365
 tenant provided by your lab hosting provider. This removes the dependency
