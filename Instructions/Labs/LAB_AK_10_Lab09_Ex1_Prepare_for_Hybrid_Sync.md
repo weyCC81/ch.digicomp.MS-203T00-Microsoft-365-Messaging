@@ -584,7 +584,7 @@ users’ email addresses from \@adatum.com to \@ xxxUPNxxx.xxxCustomDomainxxx.xx
 2.  In this task, you will run two PowerShell commands. To save you from having
     to type in the commands (which are quite lengthy), you will copy the
     commands from these instructions and then paste them into Notepad. You will
-    then replace the custom domain name placeholder in the commands with the
+    then use the "Replace" functionality in Notepad to find and replace the custom domain name placeholder in the commands with the
     actual domain name, and then you will copy and paste each command from
     Notepad into PowerShell.  
     ‎  
@@ -600,10 +600,12 @@ users’ email addresses from \@adatum.com to \@ xxxUPNxxx.xxxCustomDomainxxx.xx
     PowerShell commands.  
     ‎  
     ‎Therefore, copy the PowerShell commands from **steps 7 and 8** below and
-    paste them into Notepad (**Hint:** to make it easy, copy all the text for
+    paste them into Notepad.
+    
+    **Hint:** To simplify this process, copy all the text for
     steps 7 and 8 and not just the PowerShell commands; that way you can do one
-    Copy statement rather than 2 Copy statements of just the PowerShell
-    commands).
+    Copy statement rather than two Copy statements of just the PowerShell
+    commands.
 
 4.  Once you have copied steps 7 and 8 into Notepad, select **Edit** on the
     Notepad menu bar and then select **Replace**.
