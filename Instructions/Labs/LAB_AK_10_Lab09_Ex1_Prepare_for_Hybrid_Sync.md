@@ -868,7 +868,7 @@ To save you from having to manually type in the commands (which are quite length
     certificate (where xxxCustomDomainxxx_xxx is the name of your accepted
     domain) and then select the **pencil (Edit)** icon on the menu bar.
 
-23. In the **wildcard_xxxCustomDomainxxx_xxx** window, select **services** in
+23. You will now specify the Exchange services that you want to assign to this certificate for your accepted domain. In the **wildcard_xxxCustomDomainxxx_xxx** window, select **services** in
     the left-hand pane.
 
 24. In the list of services, select the **SMTP** check box and the **IIS** check
