@@ -539,7 +539,7 @@ will fail.**
     Select **Next**.
 
 16. On the next **New Connector** page that asks **How should Office 365 connect
-    to your server**?, accept the default settings (if necessary, select them):
+    to your email server**?, accept the default settings (if necessary, select them):
 
     -   The **Always use Transport Layer Security (TLS) to secure the connection
         (recommended)** check box should be selected.
@@ -547,7 +547,7 @@ will fail.**
     -   The **Issued by a trusted certificate authority (CA)** option should be
         selected.
 
-        ‎Below the **Issued by a trusted certificate authority (CA)** option,
+    -   Below the **Issued by a trusted certificate authority (CA)** option,
         select the **And the subject name or subject alternative name (SAN)
         matches this domain name** check box, and then enter \***.
         xxxCustomDomainxxx.xxx** (where xxxCustomDomainxxx.xxx is your accepted
@@ -564,7 +564,7 @@ will fail.**
     validate this connector.
 
 19. On the **add email** window that appears, enter Allan Yoo’s email address of
-    **Allan\@xxxUPNxxx.xxxCustomDomainxxx.xxx** (where xxxUPNxxx is the unique
+    **Allan@xxxUPNxxx.xxxCustomDomainxxx.xxx** (where xxxUPNxxx is the unique
     UPN Name and xxxCustomDomainxxx.xxx is the custom domain name, both of which
     were provided by your lab hosting provider), select **OK**, and then select
     **OK** once the information is successfully saved.  
@@ -589,7 +589,7 @@ will fail.**
     both tasks should be **Succeeded**.  
     ‎  
     ‎Select **Save**, and then select **OK** once the information is successfully
-    saved. Proceed to the final step in this task.
+    saved. Proceed to the final step in this task; you can skip the remaining steps, which provide instruction on what to do if the validation failed. Since your validation was successful, you can skip to the final step.
 
 23. If either of the validation tasks failed, select the failed task and then
     select the **pencil** icon to display the **Details** about that task. This
