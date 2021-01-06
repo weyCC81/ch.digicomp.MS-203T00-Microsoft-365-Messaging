@@ -942,8 +942,8 @@ accounts to the new accepted domain in Microsoft 365.
 6.  In the **Microsoft Download Center**, scroll down to the **Microsoft Azure
     Active Directory Connect** section and select the **Download** button.
 
-7.  Once the download is complete, in the notification bar at the bottom of the
-    page, select **Open file** that appears below the **AzureADConnect.msi**
+7.  The notification bar at the bottom of the
+    page will display the status of the download operation. Once the download is complete, select **Open file** that appears below the **AzureADConnect.msi**
     file.
 
 8.  This initiates the installation of the **Microsoft Azure Active Directory
@@ -1031,20 +1031,25 @@ accounts to the new accepted domain in Microsoft 365.
         second error, which is an “add user” error for user **An Dung Dao**.
         Review this error and then close the window.
 
-        These are users whose on-premises accounts have an invalid UPN, which in
-        turn caused UPN validation errors during the synchronization process;
-        therefore, these users were not synchronized by the Azure AD Connect
-        tool.
+    -   So why did synchronization fail for these two users? 
+        
+        Select the **DataValidationFailed** link for the first error (under the **2 Error(s)** column). In the window that appears, select the **Detail** button. The **Error Information** window that appears indicates Ngoc Bich Tran's on-premises user account has an invalid UPN, which in
+        turn caused a UPN validation error during the synchronization process;
+        therefore, Ngoc's on-premises user account was not synchronized to Microsoft 365 by the Azure AD Connect
+        tool. Select **Close** to close this window, and then select **Close** to close the Error Information window. 
+        
+        If you select the **DataValidationFailed** link for the second error and then select the **Detail** button, you will note that An Dung Dao experienced the same UPN validation error. 
 
-        **Note:** Because a synchronization had not been performed prior to
+    -   **IMPORTANT:** Because a synchronization had not been performed prior to
         this, the initial synchronization was a **Full Synchronization** (see
         the **Profile Name** column in the **Connector Operations** pane at the
         top of the page). Because the synchronization process will continue to
         run automatically every 30 minutes, any subsequent synchronizations will
-        display **Delta Synchronization** as its **Profile Name**. If you leave
-        the **Synchronization Service Manager** window open, after 30 minutes
+        display **Delta Synchronization** as its **Profile Name**. 
+        
+        If you leave the **Synchronization Service Manager** window open, after 30 minutes
         you will see that it attempts to synchronize the two users who were not
-        synchronized during the initial synchronization. These will display as a
+        synchronized during the initial synchronization. This operation will display as a
         **Delta Synchronization**.
 
 20. Close the **Synchronization Service Manager**.
@@ -1062,7 +1067,9 @@ accounts to the new accepted domain in Microsoft 365.
 
 22. On the **Active users** page, note that all the existing Microsoft 365 user
     accounts are the predefined users that were created in your tenant by your
-    lab hosting provider. Select the **Refresh** icon on the menu bar to see all
+    lab hosting provider. 
+    
+    Select **Refresh** on the menu bar to see all
     the on-premises user accounts that were migrated to the new accepted domain
     in Microsoft 365.  
     ‎  
