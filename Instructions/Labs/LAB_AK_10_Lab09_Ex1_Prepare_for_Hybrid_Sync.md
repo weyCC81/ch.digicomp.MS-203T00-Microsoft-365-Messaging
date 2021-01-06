@@ -671,6 +671,8 @@ prior tasks. You will run a series of PowerShell commands in the Exchange
 Management Shell, and you will update additional settings in the on-premises
 Exchange Admin Center.
 
+To save you from having to type in the commands (which are quite lengthy), you will copy the commands from these instructions and then paste them into Notepad, just as you did in the prior task. You will then use the "Replace" functionality in Notepad to find and replace the custom domain name placeholder in the commands with the actual domain name, and then you will copy and paste each command from Notepad into PowerShell.
+
 1.  Switch to **LON-EX1** and, if necessary, log in as the **Administrator**
     with a password of **Pa55w.rd**. If you had to log in and the **Server
     Manager** application automatically opened, then close it now.
