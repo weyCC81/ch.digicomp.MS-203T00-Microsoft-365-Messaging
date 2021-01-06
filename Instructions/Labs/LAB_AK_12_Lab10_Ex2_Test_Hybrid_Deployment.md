@@ -3,21 +3,19 @@
 In the prior exercise, you configured Adatum’s Exchange environment for a hybrid
 deployment. In this exercise, you will test your new hybrid deployment. This
 will require that you:  
-‎
 
 -   Test the hybrid configuration by sending emails between on-premises and
-    cloud users
+    cloud users in Task 1
 
 -   Migrate a user mailbox from Exchange on-premises to Exchange Online to test
-    your connectors
+    your connectors in Task 2
 
--   Test the newly migrated mailbox
+-   Test the newly migrated mailbox in Task 3
 
-**IMPORTANT:** Migrating an on-premises mailbox to Microsoft 365 can take up to
-an hour to complete. Once you have started the migration at the end of Task 2,
-proceed to the final assessment lab. You cannot test the newly migrated mailbox
-in Task 3 until the migration is complete; therefore, once you have finished the
-final assessment, then return to this lab and perform Task 3 to test the newly
+**IMPORTANT:** Migrating an on-premises mailbox to Microsoft 365 in Task 2 can take up to
+an hour to complete. Instead of waiting around for an hour before you can do Task 3,
+proceed to the Final Assessment lab once you start the migration at the end of Task 2. By the time you finish the Final Assessment lab, the migration process in Task 2 should hopefully be complete, at which time you can 
+return to this lab and perform Task 3 to test the newly
 migrated mailbox.
 
 ## Task 1: Test the Hybrid topology
@@ -27,19 +25,18 @@ properly by performing the following validation steps that send emails between
 an on-premises Exchange mailbox and a Microsoft 365 cloud mailbox:
 
 -   From your on-premises Exchange Server (LON-EX1) VM, you will first send an
-    email from Allan Yoo’s on-premises Exchange Server mailbox to Alex Wilber,
-    who has a cloud mailbox in Microsoft 365.
+    email from Allan Yoo’s on-premises Exchange Server mailbox to Alex Wilber's cloud mailbox in Microsoft 365.
 
 -   You will then open an InPrivate Browsing session in Edge browser so that you
     can log into Alex’s mailbox in Microsoft 365 and verify that he received the
     email from Allan.
 
--   You will then send a reply from Alex to Allan, and then verify that Allan
-    received the reply in his on-premises mailbox.
+-   You will then send a reply from Alex's cloud mailbox to Allan's on-premises mailbox, and then verify that Allan
+    received the reply.
 
-You should note what happens when you send the email from Allan's on-premises
-mailbox to Alex's Microsoft 365 mailbox; or more specifically, where the email
-is delivered. This situation provides the basis of the Final Assessment lab.
+**Important:** In this task, note what happens when you send the email from Allan's on-premises
+mailbox to Alex's Microsoft 365 mailbox; or more specifically, note where the email
+is delivered. This situation provides the basis for the Final Assessment lab.
 
 1.  You should still be logged into LON-EX1 from the prior exercise; if
     necessary, log in as the **Administrator** with a password of **Pa55w.rd**.
@@ -51,11 +48,13 @@ is delivered. This situation provides the basis of the Final Assessment lab.
     ‎At the end of the prior lab exercise, if your Outbound connector validation
     failed and you verified that it was a false-positive error by opening Allan
     Yoo’s on-premises mailbox to see the test validation email in his Outlook
-    Inbox, then skip to step 5; otherwise, perform steps 3-4 to open Allan’s
+    Inbox, then skip to step 5. 
+    
+    However, if your Outbound connector validation succeeded in the prior lab exercise, then perform steps 3-4 to open Allan’s
     on-premises mailbox.
 
-3.  If Allan’s Outlook mailbox is not open, then select a new tab in **Edge
-    browser** and open **Outlook Web App** by entering the following URL:
+3.  If your Outbound connector validation succeeded in the prior lab exercise, then select a new tab in your **Edge
+    browser** and open **Outlook Web App** by entering the following URL in the address bar:
     **https://xxxUPNxxx.xxxCustomDomainxxx.xxx/owa** (where xxxUPNxxx is the
     unique UPN name assigned to your tenant by your lab hosting provider and
     xxxCustomDomainxxx.xxx is your lab hosting provider’s custom domain).  
