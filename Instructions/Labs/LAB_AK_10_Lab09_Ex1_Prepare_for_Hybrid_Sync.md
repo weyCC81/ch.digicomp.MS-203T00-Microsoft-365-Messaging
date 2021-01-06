@@ -806,9 +806,7 @@ To save you from having to manually type in the commands (which are quite length
     -ExternalUrl https://xxxUPNxxx.xxxCustomDomainxxx.xxx/ews/exchange.asmx
     -InternalUrl https://xxxUPNxxx.xxxCustomDomainxxx.xxx/ews/exchange.asmx  
     ‎  
-    ‎**NOTE:** For this **Set-WebServicesVirtualDirectory** command, if you
-    receive a prompt that indicates the InternalURL parameter can’t be resolved,
-    enter **A** for **Yes to All** to continue and then press **Enter**.
+    ‎**NOTE:** This command takes a little time to process once you hit Enter. After several seconds (possibly up to 10-20 seconds), you will receive a prompt that indicates the InternalURL parameter can’t be resolved. At the prompt, enter **A** for **Yes to All** to continue and then press **Enter**.
 
 13. Copy the following command from Notepad, paste it into the Exchange
     Management Shell at the command prompt, and then run it. This command will
@@ -839,8 +837,7 @@ To save you from having to manually type in the commands (which are quite length
     Set-OutlookProvider EXPR -CertPrincipalName:\*.xxxCustomDomainxxx.xxx  
     ‎
 
-16. Close your Exchange Management Shell window by selecting the **X** in the
-    upper-right hand corner.
+16. Close your Exchange Management Shell window.
 
 17. Close Notepad (do not save the untitled document).
 
@@ -868,7 +865,7 @@ To save you from having to manually type in the commands (which are quite length
     list of tabs across the top of the page. Select the **certificates** tab.
 
 22. In the list of certificates, select the **wildcard_xxxCustomDomainxxx_xxx**
-    certificate (where xxxCustomDomainxxx_xxx is the name of you accepted
+    certificate (where xxxCustomDomainxxx_xxx is the name of your accepted
     domain) and then select the **pencil (Edit)** icon on the menu bar.
 
 23. In the **wildcard_xxxCustomDomainxxx_xxx** window, select **services** in
