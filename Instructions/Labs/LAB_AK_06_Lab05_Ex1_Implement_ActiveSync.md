@@ -70,7 +70,7 @@ and two new team employees, Paul Wimmer and Jessica Hofer.
 17. Select **Save.** The new user mailbox that was created for Holly Dickson
     should be displayed in the list of mailboxes.
 
-18. Repeat steps 8-20 for the following two users:
+18. Repeat steps 5-17 for the following two users:
 
     -   **Paul Wimmer**; alias and user log on name: **paulw**
 
