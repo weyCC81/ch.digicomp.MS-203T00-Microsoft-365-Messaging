@@ -169,7 +169,7 @@ is delivered. This situation provides the basis for the Final Assessment lab.
     All the default settings on this page are sufficient for this message trace that you want to perform, so none of the settings need to be changed:
     
     - **Senders.** You want to view email from all senders from the xxxUPNxxx.xxxCustomDomainxxx.xxx domain.
-    - **Recipients.** You want to view email sent to all receipients.
+    - **Recipients.** You want to view email sent to all recipients.
     - **Time range.** You want to view all email sent in the past day.
     - **Report type.** You want to view the Summary report, which provides instant online access to the message trace search results.
     
