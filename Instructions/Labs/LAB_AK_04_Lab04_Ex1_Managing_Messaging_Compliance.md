@@ -350,9 +350,9 @@ search results to a Message trace report and download the message trace results
 to a CSV file that will be sent in an email to the MOD Administrator.
 
 **Note:** Message trace functionality was originally in the Office 365 Security
-and Compliance Center (SCC). It was then moved to the classic Exchange (Online)
-admin center (EAC), and from there it has been moved to the New Exchange Online
-admin center. It is in the process of being retired from the SCC and the classic
+and Compliance Center (SCC) and the classic Exchange (Online)
+admin center (EAC). It has since been moved to the New Exchange Online
+admin center, and it's in the process of being retired from the SCC and the classic
 EAC. For the purpose of this labs, you will use the message trace functionality
 in the New EAC.
 
