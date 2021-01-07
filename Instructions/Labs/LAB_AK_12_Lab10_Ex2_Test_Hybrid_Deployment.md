@@ -151,7 +151,7 @@ is delivered. This situation provides the basis for the Final Assessment lab.
     Select the **connectors – Microsoft Exchange** tab in your Edge browser to display the EAC for
     Exchange Online.
     
-17. The Message Trace functionality has been moved to the **New Exchange admin
+17. If you recall from an earlier lab in this course, the Message Trace functionality has been moved from the classic EAC to the **New Exchange admin
     center**. Therefore, in the (classic) **Exchange admin center**, in the
     left-hand navigation pane, select **New Exchange admin center.**
 
