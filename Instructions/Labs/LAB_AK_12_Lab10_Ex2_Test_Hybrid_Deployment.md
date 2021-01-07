@@ -173,7 +173,7 @@ is delivered. This situation provides the basis for the Final Assessment lab.
     - **Time range.** You want to view all email sent in the past day.
     - **Report type.** You want to view the Summary report, which provides instant online access to the message trace search results.
     
-    Since none of the settings need to be changed, simply select the **Search** button at the bottom of the message trace page to initiate the message trace.
+    Since none of the settings need to be changed, simply select the **Search** button at the bottom of the page to initiate the message trace.
 
 21. On the **Message trace search results** window, you should see each of the emails
     that have been sent and received:
