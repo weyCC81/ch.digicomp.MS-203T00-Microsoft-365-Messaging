@@ -95,7 +95,7 @@ is delivered. This situation provides the basis for the Final Assessment lab.
     Browsing session and then open Alex’s mailbox in that session.**  
     ‎  
     ‎To open an InPrivate Browsing session, right select the **Edge browser**
-    icon on the taskbar and in the menu, select **Start InPrivate Browsing**.
+    icon on the taskbar and in the menu, select **New InPrivate window**.
     This will open a new, InPrivate Edge session that is separate from the Edge
     session that contains the tab with Allan’s mailbox.  
     ‎  
