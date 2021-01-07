@@ -212,15 +212,8 @@ data secure.
 2.  In your **Edge browser**, you should have the two **Exchange admin center**
     (EAC) tabs open from the prior exercise – one for the on-premises EAC and
     one for the EAC for Exchange Online.
-
-    -   The first tab should be titled **send connectors – Microsoft Exchange.**
-        This is the on-premises EAC.
-
-    -   The second tab should be titled **message trace – Microsoft Exchange**.
-        This is the EAC for Exchange Online.
-
-        Select the **send connectors – Microsoft Exchange** tab to display the
-        on-premises EAC.
+    
+    Select the **send connectors – Microsoft Exchange** tab to display the on-premises EAC.
 
 3.  In the on-premises **Exchange admin center**, in the left-hand navigation
     pane, select **recipients**, which displays the **mailboxes** tab by
