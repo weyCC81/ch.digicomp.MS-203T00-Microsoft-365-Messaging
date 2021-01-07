@@ -46,7 +46,7 @@ performed to configure the hosted virtual machines used in this training lab so
 that email can be sent locally between on-premises and cloud users when testing
 your hybrid deployment.
 
-1.  Switch to LON-EX1 and if necessary, log in as the **Administrator** account
+1.  Switch to **LON-EX1** and if necessary, log in as the **Administrator** account
     with a password of **Pa55w.rd**.
 
 2.  If your Edge browser is still open from Lab 1, then minimize the browser now
@@ -325,19 +325,21 @@ locate the UPN name.
 26. In the **Add DNS records** window, it enables you to add DNS records for
     three services that DNS supports - Exchange and Exchange Online Protection,
     Skype for Business, and Intune and Mobile Device Management for Microsoft
-    365.
-
-    **Exchange and Exchange Online Protection** is displayed by default and its
-    check box is also selected by default. To see the other two services, select
+    365. **Exchange and Exchange Online Protection** is displayed by default and its
+    check box is also selected by default. 
+    
+    To see the other two services, select
     **Advanced Options**. Note that under **Advanced Options**, neither the
     **Skype for Business** nor the **Intune and Mobile Device Management for
     Microsoft 365** check boxes are selected.
 
-    This is sufficient for Adatum; you should NOT select either of these two
-    check boxes. Only the **Exchange and Exchange Online Protection** check box
-    should be selected.
-
-    Under the **Exchange and Exchange Online Protection** service, the
+    **Important:** Only the **Exchange and Exchange Online Protection** check box
+    should be selected; this is sufficient for Adatum. 
+    
+    **Do NOT select either of these other two check boxes.** We had you select
+    **Advanced Options** just to see where you would select these other two services in the event you would need to do so in your real-world deployment.
+ 
+27. Under the **Exchange and Exchange Online Protection** service, the
     description indicates that 3 DNS records are needed for it to work properly:
     a Mail Exchanger (MX) record, an Alias (CNAME) record, and an additional
     Text (TXT) record. You must now switch back and forth between this **Add DNS
@@ -355,7 +357,7 @@ locate the UPN name.
     Then select the arrow (**\>**) in the **CNAME Records** section and the
     **TXT Records** section. All three record types should now be expanded.
 
-27. You will begin by adding the **MX record** required by the **Exchange and
+28. You will begin by adding the **MX record** required by the **Exchange and
     Exchange Online Protection** service.
 
     -   In the **MX Records** section, under the **Points to address or value**
@@ -407,7 +409,7 @@ locate the UPN name.
         then review the record to ensure you entered the proper information,
         make any necessary corrections, and then select **Continue** again.
 
-28. Once a check mark appears next to **MX Records**, you must perform the
+29. Once a check mark appears next to **MX Records**, you must perform the
     following steps to add the **CNAME record** required by Exchange and
     Exchange Online Protection service.
 
@@ -477,7 +479,7 @@ locate the UPN name.
         the proper information, make any necessary corrections, and then select
         **Continue** again.
 
-29. Once a check mark appears next to **CNAME Records**, you will finish by
+30. Once a check mark appears next to **CNAME Records**, you will finish by
     adding the **TXT record** required by Exchange and Exchange Online
     Protection service.
 
@@ -507,13 +509,13 @@ locate the UPN name.
 
     -   On the **Resource Record Type** window, select **Done**.
 
-30. In **DNS Manager**, you should now see the TXT record that you originally
+31. In **DNS Manager**, you should now see the TXT record that you originally
     created to verify the domain, along with the MX, CNAME, and TXT records that
     you created for the Exchange service to work within this domain.
 
     Minimize the DNS Manager window.
 
-31. This should return you to the **Add DNS records** window in your Edge
+32. This should return you to the **Add DNS records** window in your Edge
     browser. Select **Continue** to complete the new domain setup. If you
     selected **Continue** after adding the MX and CNAME records, and if each
     validated successfully, then only the TXT record will be validated at this
@@ -535,12 +537,12 @@ locate the UPN name.
     this process until all three records have successfully validated and the
     **Domain setup is complete** page appears.
 
-32. Once the domain setup process is complete and the three DNS records
+33. Once the domain setup process is complete and the three DNS records
     validated successfully for the **Exchange and Exchange Online Protection**
     service, the **Domains** page will be displayed. Verify the **Domain
     status** for your new domain is **Healthy**.
 
-33. Remain logged into the LON-DC1 VM with both **Microsoft Edge** and **Windows
+34. Remain logged into the LON-DC1 VM with both **Microsoft Edge** and **Windows
     PowerShell** left open for the next task.
 
 ## Task 3: Configure the UPN name for custom domain
