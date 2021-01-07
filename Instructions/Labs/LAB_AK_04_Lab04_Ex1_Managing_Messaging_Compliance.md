@@ -43,7 +43,7 @@ propagated, and you will be able to create an eDiscovery case.
     user accounts that were created for you by your lab hosting provider. In
     this course, you are taking on the role of Holly Dickson, who uses the
     generic **MOD Administrator** account to sign into Microsoft 365 (using the
-    tenant admin account of <admin@xxxxxZZZZZZ.onmicrosoft.com>**)**. The MOD
+    tenant admin account of admin@xxxxxZZZZZZ.onmicrosoft.com). The MOD
     Administrator account has been assigned the Microsoft 365 Global admin role.
 
 4.  In the **Active users** window, select **Nestor Wilke’s** account.
@@ -767,7 +767,7 @@ since you completed Task 1 and then perform this task again.
 8.  On the **Office 365 Security \&amp; Compliance** center, select **eDiscovery** in the left-hand
     navigation pane, and then in the expanded group select **eDiscovery.**
 
-9.  In the **eDiscovery** pane**,** select the **+Create a case** button.
+9.  In the **eDiscovery** pane, select the **+Create a case** button.
 
 10. In the **New case** pane that appears, enter **AlexWilber-case01** in the
     **Case name** field.  
