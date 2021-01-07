@@ -113,9 +113,9 @@ is delivered. This situation provides the basis for the Final Assessment lab.
 10. If a **Get your work done with Office 365** window appears, select **X** to
     close it.
 
-11. In Alex’s **Office 365 portal**, note all the applications that are listed.
+11. In Alex’s **Office 365 Home** page, note all the applications that are displayed in the column of Microsoft 365 apps on the left-siode of the screen.
     These are the apps that are enabled for Alex given his Office 365 E5 product
-    license. Select **Outlook**.
+    license. Select the **Outlook** icon.
 
 12. Alex’s Microsoft 365 mailbox will open in **Outlook**. If a **Welcome**
     window appears, select **X** in the upper-right corner to close it.
@@ -135,7 +135,7 @@ is delivered. This situation provides the basis for the Final Assessment lab.
     as directed earlier in this step.  
     ‎
 
-14. Hover over the **Edge browser** icon on the taskbar and select the session
+14. After sending Alex's reply back to Allan, hover over the **Edge browser** icon on the taskbar and select the session
     that displays **Allan’s** on-premises mailbox. Verify that Allan received
     the reply from Alex (you may need to refresh the Inbox if the reply is not
     there when you return to Allan’s mailbox).  
@@ -146,7 +146,7 @@ is delivered. This situation provides the basis for the Final Assessment lab.
     open.
 
 16. There is another test that you can perform to validate that your connector
-    worked properly, even though the validation failed. This test is a message trace. 
+    worked properly, even though the validation may have failed. This test is a message trace. 
     
     Select the **connectors – Microsoft Exchange** tab in your Edge browser to display the EAC for
     Exchange Online.
