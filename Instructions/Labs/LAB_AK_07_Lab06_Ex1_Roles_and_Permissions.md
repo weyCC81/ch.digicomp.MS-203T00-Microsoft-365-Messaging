@@ -107,7 +107,7 @@ then assign two specific administrators to this role.
 
     -   **Admin**
 
-    -   **TenantAdmins_-\#\#\#\#\#\#\#\#\#\#** (**\#\#\#\#\#\#\#** represents
+    -   **TenantAdmins_-##########** (where ########## represents
         the tenant number at the end of the TenantAdmins group)
 
 18. Select the **add -\&gt;** button, verify that both users appear in the
