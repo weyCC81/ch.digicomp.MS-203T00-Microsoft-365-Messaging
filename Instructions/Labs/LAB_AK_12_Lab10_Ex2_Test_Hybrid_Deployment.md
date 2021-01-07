@@ -166,17 +166,17 @@ is delivered. This situation provides the basis for the Final Assessment lab.
     displayed. You can control which messages are selected based on who sent and
     received the messages and how many days ago the messages were sent.  
       
-    All the default settings on this page are sufficient for this message trace that you want to perform:
+    All the default settings on this page are sufficient for this message trace that you want to perform, so none of the settings need to be changed:
     
-    - **Senders.** You want to view email from all senders from the xxxUPNxxx.xxxCustomDomainxxx.xxx domain, so the default value in this field does not need to be changed.
-    - **Recipients.** You want to view email sent to all receipients, so the default value in this field does not need to be changed.
-    - **Time range.** You want to view all email sent in the past day, so the default setting of the Time range slider tool does not need to be changed.
-    - **Report type.** You want to view the Summary report (which provides instant online access), so the default value in this field does not need to be changed.
+    - **Senders.** You want to view email from all senders from the xxxUPNxxx.xxxCustomDomainxxx.xxx domain.
+    - **Recipients.** You want to view email sent to all receipients.
+    - **Time range.** You want to view all email sent in the past day.
+    - **Report type.** You want to view the Summary report, which provides instant online access to the message trace search results.
+    
+    Since none of the settings need to be changed, simply select the **Search** button at the bottom of the message trace page to initiate the message trace.
 
-21. Select the **Search** button at the bottom of the message trace page to initiate the message trace.
-
-22. On the **Message trace search results** window, you should see each of the emails
-    that have been sent:
+21. On the **Message trace search results** window, you should see each of the emails
+    that have been sent and received:
 
     -   the O365ConnectorValidation email from the Outbound connector validation
         process to Allan Yoo
@@ -187,9 +187,9 @@ is delivered. This situation provides the basis for the Final Assessment lab.
 
     -   the reply that you sent from Alex Wilber back to Allan Yoo
 
-23. Close this **Exchange admin center** tab (for the New Exchange admin center) in your Edge browser.
+22. Close this **Exchange admin center** tab (for the New Exchange admin center) in your Edge browser.
 
-24. In the Edge browser session, close the tab displaying Allan Yoo’s Outlook
+23. In the Edge browser session, close the tab displaying Allan Yoo’s Outlook
     mailbox. Leave the two EAC tabs open (for the classic EAC and the on-premises EAC) and proceed to the next task.
 
 ## Task 2: Migrate an on-premises mailbox to test your connectors
