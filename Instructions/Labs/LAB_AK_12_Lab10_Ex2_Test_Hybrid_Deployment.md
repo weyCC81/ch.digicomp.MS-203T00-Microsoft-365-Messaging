@@ -146,28 +146,36 @@ is delivered. This situation provides the basis for the Final Assessment lab.
     open.
 
 16. There is another test that you can perform to validate that your connector
-    worked properly, even though the validation failed. Select the **connectors
-    – Microsoft Exchange** tab in your Edge browser to display the EAC for
+    worked properly, even though the validation failed. This test is a message trace. 
+    
+    Select the **connectors – Microsoft Exchange** tab in your Edge browser to display the EAC for
     Exchange Online.
+    
+17. The Message Trace functionality has been moved to the **New Exchange admin
+    center**. Therefore, in the (classic) **Exchange admin center**, in the
+    left-hand navigation pane, select **New Exchange admin center.**
 
-17. In the **Exchange admin center** for Exchange Online, on the **mail flow**
-    page, select the **message trace** tab at the top of the page.
+18. In the (New) **Exchange admin center**, select **Mail flow** in the left-hand navigation pane, and then in the expanded group, select **Message trace**.
 
-18. On the **message trace** page, in the **Data range** field, select the
-    drop-down arrow and then select **Custom** from the menu that appears.
+19. On the **Message trace** window, the **Default queries** tab at the top of the
+    page is displayed by default. In the list of queries and reports in this
+    tab, select **Messages sent from my primary domain in the last day.**
 
-19. In the **Start date and time** field, select yesterday’s date and select any
-    time.
+20. In the **New message trace** pane that appears, the default values for the
+    **Messages sent from my primary domain in the last day** query are
+    displayed. You can control which messages are selected based on who sent and
+    received the messages and how many days ago the messages were sent.  
+      
+    All the default settings on this page are sufficient for this message trace that you want to perform:
+    
+    - **Senders.** You want to view email from all senders from the xxxUPNxxx.xxxCustomDomainxxx.xxx domain, so the default value in this field does not need to be changed.
+    - **Recipients.** You want to view email sent to all receipients, so the default value in this field does not need to be changed.
+    - **Time range.** You want to view all email sent in the past day, so the default setting of the Time range slider tool does not need to be changed.
+    - **Report type.** You want to view the Summary report (which provides instant online access), so the default value in this field does not need to be changed.
 
-20. In the **End date and time** field, select today’s date and select any time
-    past the current time.
+21. Select the **Search** button at the bottom of the message trace page to initiate the message trace.
 
-21. In the **Delivery status** field, select the drop-down arrow and then select
-    **All** from the menu that appears.
-
-22. Select the **search** button at the bottom of the message trace page.
-
-23. On the **Message Trace Results** window, you should see each of the emails
+22. On the **Message trace search results** window, you should see each of the emails
     that have been sent:
 
     -   the O365ConnectorValidation email from the Outbound connector validation
@@ -179,10 +187,10 @@ is delivered. This situation provides the basis for the Final Assessment lab.
 
     -   the reply that you sent from Alex Wilber back to Allan Yoo
 
-24. Close the Message Trace Results window.
+23. Close this **Exchange admin center** tab (for the New Exchange admin center) in your Edge browser.
 
-25. In the Edge browser session, close the tab displaying Allan Yoo’s Outlook
-    mailbox. Leave the two EAC tabs open and proceed to the next task.
+24. In the Edge browser session, close the tab displaying Allan Yoo’s Outlook
+    mailbox. Leave the two EAC tabs open (for the classic EAC and the on-premises EAC) and proceed to the next task.
 
 ## Task 2: Migrate an on-premises mailbox to test your connectors
 
