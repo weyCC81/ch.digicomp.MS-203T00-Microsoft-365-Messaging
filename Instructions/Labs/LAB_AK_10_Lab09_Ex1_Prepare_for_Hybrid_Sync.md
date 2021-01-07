@@ -334,19 +334,19 @@ locate the UPN name.
     Microsoft 365** check boxes are selected.
 
     **Important:** Only the **Exchange and Exchange Online Protection** check box
-    should be selected; this is sufficient for Adatum. 
+    should be selected for the purpose of this lab; this is sufficient for Adatum. 
     
-    **Do NOT select either of these other two check boxes.** We had you select
+    **Do NOT select either of the other two check boxes.** We had you select
     **Advanced Options** just to see where you would select these other two services in the event you would need to do so in your real-world deployment.
  
 27. Under the **Exchange and Exchange Online Protection** service, the
-    description indicates that 3 DNS records are needed for it to work properly:
+    description indicates that three DNS records are needed for it to work properly:
     a Mail Exchanger (MX) record, an Alias (CNAME) record, and an additional
     Text (TXT) record. You must now switch back and forth between this **Add DNS
     records** page and **DNS Manager** to add these three additional DNS records
     for the new domain. For each DNS record that you add in DNS Manager, you
     will copy information from this **Add DNS records** page and then paste it
-    into each corresponding record that you create in DNS Manager.
+    into each corresponding DNS record that you create in DNS Manager.
 
     On the **Add DNS records** page, under the **Exchange and Exchange Online
     Protection** section, select the arrow (**\>**) in the **MX Records**
@@ -627,8 +627,8 @@ users’ email addresses from \@adatum.com to \@ xxxUPNxxx.xxxCustomDomainxxx.xx
     **Run as administrator)**.
 
 7.  You will now begin the process of copying each of the PowerShell commands
-    (from this step through step 8) from Notepad and pasting and running them in
-    Windows PowerShell.  
+    (from this step through step 8) from Notepad and pasting them one at a time into
+    Windows PowerShell and then running them.  
     ‎  
     ‎‎In the following PowerShell command, the **Set-ADForest** cmdlet modifies
     the properties of an Active Directory forest, and the **-identity**
@@ -637,7 +637,7 @@ users’ email addresses from \@adatum.com to \@ xxxUPNxxx.xxxCustomDomainxxx.xx
     ‎Select the **Notepad** icon on the taskbar and then copy the following
     command from Notepad (select the command, right-click on it, and then select
     **Copy**), paste it into PowerShell at the command prompt (right click on
-    the command prompt and select **Paste).**  
+    the command prompt and select **Paste**), and then hit ENTER to run it.  
     ‎  
     ‎**Note:** Traditionally, you must right-click at the command prompt, select
     Paste, and then hit ENTER on the keyboard to run a command. However, in some
@@ -684,14 +684,14 @@ To save you from having to manually type in the commands (which are quite length
     enable your on-premises Exchange environment for the new
     **xxxUPNxxx.xxxCustomDomainxxx.xxx** accepted domain.  
     ‎  
-    ‎To expedite running these commands, open **Notepad just as you did in the
-    prior task**, maximize the Notepad window, and then copy **steps 5-15**
+    ‎To expedite running these commands, open **Notepad** just as you did in the
+    prior task, maximize the Notepad window, and then copy **steps 5-15**
     below and paste them into the Notepad document (to make it easy, copy all
     the text for steps 5-15 and not just the PowerShell commands; that way you
     can do one Copy statement rather than 11 Copy statements of just the
     PowerShell commands).
 
-    **Warning:** Some lab hosting providers’ VM environments limits the amount
+    **Warning:** Some lab hosting providers’ VM environments limit the amount
     of text that can be copy and pasted at one time into a VM. If this occurs
     within your VM environment, you may have to copy and paste steps 5-15 in
     chunks to get all 11 steps copied into Notepad.
@@ -1035,7 +1035,7 @@ accounts to the new accepted domain in Microsoft 365.
 
     -   So why did synchronization fail for these two users? 
         
-        Select the **DataValidationFailed** link for the first error (under the **2 Error(s)** column). In the window that appears, select the **Detail** button. The **Error Information** window that appears indicates Ngoc Bich Tran's on-premises user account has an invalid UPN, which in
+        To find out, select the **DataValidationFailed** link for the first error (under the **2 Error(s)** column). In the window that appears, select the **Detail** button. The **Error Information** window that appears indicates Ngoc Bich Tran's on-premises user account has an invalid UPN, which in
         turn caused a UPN validation error during the synchronization process;
         therefore, Ngoc's on-premises user account was not synchronized to Microsoft 365 by the Azure AD Connect
         tool. Select **Close** to close this window, and then select **Close** to close the Error Information window. 
