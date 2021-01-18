@@ -46,7 +46,7 @@ performed to configure the hosted virtual machines used in this training lab so
 that email can be sent locally between on-premises and cloud users when testing
 your hybrid deployment.
 
-1.  Switch to **LON-EX1** and if necessary, log in as the **Administrator** account
+1.  Switch to LON-EX1 and if necessary, log in as the **Administrator** account
     with a password of **Pa55w.rd**.
 
 2.  If your Edge browser is still open from Lab 1, then minimize the browser now
@@ -325,28 +325,26 @@ locate the UPN name.
 26. In the **Add DNS records** window, it enables you to add DNS records for
     three services that DNS supports - Exchange and Exchange Online Protection,
     Skype for Business, and Intune and Mobile Device Management for Microsoft
-    365. **Exchange and Exchange Online Protection** is displayed by default and its
-    check box is also selected by default. 
-    
-    To see the other two services, select
+    365.
+
+    **Exchange and Exchange Online Protection** is displayed by default and its
+    check box is also selected by default. To see the other two services, select
     **Advanced Options**. Note that under **Advanced Options**, neither the
     **Skype for Business** nor the **Intune and Mobile Device Management for
     Microsoft 365** check boxes are selected.
 
-    **Important:** Only the **Exchange and Exchange Online Protection** check box
-    should be selected for the purpose of this lab; this is sufficient for Adatum. 
-    
-    **Do NOT select either of the other two check boxes.** We had you select
-    **Advanced Options** just to see where you would select these other two services in the event you would need to do so in your real-world deployment.
- 
-27. Under the **Exchange and Exchange Online Protection** service, the
-    description indicates that three DNS records are needed for it to work properly:
+    This is sufficient for Adatum; you should NOT select either of these two
+    check boxes. Only the **Exchange and Exchange Online Protection** check box
+    should be selected.
+
+    Under the **Exchange and Exchange Online Protection** service, the
+    description indicates that 3 DNS records are needed for it to work properly:
     a Mail Exchanger (MX) record, an Alias (CNAME) record, and an additional
     Text (TXT) record. You must now switch back and forth between this **Add DNS
     records** page and **DNS Manager** to add these three additional DNS records
     for the new domain. For each DNS record that you add in DNS Manager, you
     will copy information from this **Add DNS records** page and then paste it
-    into each corresponding DNS record that you create in DNS Manager.
+    into each corresponding record that you create in DNS Manager.
 
     On the **Add DNS records** page, under the **Exchange and Exchange Online
     Protection** section, select the arrow (**\>**) in the **MX Records**
@@ -357,7 +355,7 @@ locate the UPN name.
     Then select the arrow (**\>**) in the **CNAME Records** section and the
     **TXT Records** section. All three record types should now be expanded.
 
-28. You will begin by adding the **MX record** required by the **Exchange and
+27. You will begin by adding the **MX record** required by the **Exchange and
     Exchange Online Protection** service.
 
     -   In the **MX Records** section, under the **Points to address or value**
@@ -385,7 +383,8 @@ locate the UPN name.
         tab, leave the **Host or child domain** field blank, but right-click in
         the **Fully qualified domain name (FQDN) of mail server** field and
         select **Paste** from the menu that appears. This will paste in the
-        expected **Points to address or value** that you just copied to the clipboard.
+        expected **Points to address or value** that you copied to the clipboard
+        in **step a** above.
 
     -   Select **OK**. Note how this Mail Exchanger (MX) record appears in the
         details pane on the right for the xxxUPNxxx.xxxCustomDomainxxx.xxx
@@ -409,7 +408,7 @@ locate the UPN name.
         then review the record to ensure you entered the proper information,
         make any necessary corrections, and then select **Continue** again.
 
-29. Once a check mark appears next to **MX Records**, you must perform the
+28. Once a check mark appears next to **MX Records**, you must perform the
     following steps to add the **CNAME record** required by Exchange and
     Exchange Online Protection service.
 
@@ -479,7 +478,7 @@ locate the UPN name.
         the proper information, make any necessary corrections, and then select
         **Continue** again.
 
-30. Once a check mark appears next to **CNAME Records**, you will finish by
+29. Once a check mark appears next to **CNAME Records**, you will finish by
     adding the **TXT record** required by Exchange and Exchange Online
     Protection service.
 
@@ -509,24 +508,24 @@ locate the UPN name.
 
     -   On the **Resource Record Type** window, select **Done**.
 
-31. In **DNS Manager**, you should now see the TXT record that you originally
+30. In **DNS Manager**, you should now see the TXT record that you originally
     created to verify the domain, along with the MX, CNAME, and TXT records that
     you created for the Exchange service to work within this domain.
 
     Minimize the DNS Manager window.
 
-32. This should return you to the **Add DNS records** window in your Edge
+31. This should return you to the **Add DNS records** window in your Edge
     browser. Select **Continue** to complete the new domain setup. If you
     selected **Continue** after adding the MX and CNAME records, and if each
     validated successfully, then only the TXT record will be validated at this
     point. However, if you did not select **Continue** after adding the MX and
     CNAME records, then all three records will be validated at this point.
 
-    - If all three records have been successfully validated, then the **Domain
+    If all three records have been successfully validated, then the **Domain
     setup is complete** page will appear. If this occurs, then select the
     **Done** button to complete the domain setup process.
 
-    - However, if any of the three records did not validate successfully, then the
+    However, if any of the three records did not validate successfully, then the
     **Add DNS records** window will return, and it will display either a check
     mark or an exclamation point next to each record type to indicate which ones
     validated successfully and which ones did not. An exclamation point in a red
@@ -537,12 +536,12 @@ locate the UPN name.
     this process until all three records have successfully validated and the
     **Domain setup is complete** page appears.
 
-33. Once the domain setup process is complete and the three DNS records
+32. Once the domain setup process is complete and the three DNS records
     validated successfully for the **Exchange and Exchange Online Protection**
     service, the **Domains** page will be displayed. Verify the **Domain
     status** for your new domain is **Healthy**.
 
-34. Remain logged into the LON-DC1 VM with both **Microsoft Edge** and **Windows
+33. Remain logged into the LON-DC1 VM with both **Microsoft Edge** and **Windows
     PowerShell** left open for the next task.
 
 ## Task 3: Configure the UPN name for custom domain
@@ -584,9 +583,9 @@ users’ email addresses from \@adatum.com to \@ xxxUPNxxx.xxxCustomDomainxxx.xx
     password of **Pa55w.rd**; if necessary, log in now.
 
 2.  In this task, you will run two PowerShell commands. To save you from having
-    to manually type in the commands (which are quite lengthy) into PowerShell, you will copy the
+    to type in the commands (which are quite lengthy), you will copy the
     commands from these instructions and then paste them into Notepad. You will
-    then use the "Replace" functionality in Notepad to find and replace the custom domain name placeholder in the commands with the
+    then replace the custom domain name placeholder in the commands with the
     actual domain name, and then you will copy and paste each command from
     Notepad into PowerShell.  
     ‎  
@@ -602,12 +601,10 @@ users’ email addresses from \@adatum.com to \@ xxxUPNxxx.xxxCustomDomainxxx.xx
     PowerShell commands.  
     ‎  
     ‎Therefore, copy the PowerShell commands from **steps 7 and 8** below and
-    paste them into Notepad.
-    
-    **Hint:** To simplify this process, copy all the text for
+    paste them into Notepad (**Hint:** to make it easy, copy all the text for
     steps 7 and 8 and not just the PowerShell commands; that way you can do one
-    Copy statement rather than two Copy statements of just the PowerShell
-    commands.
+    Copy statement rather than 2 Copy statements of just the PowerShell
+    commands).
 
 4.  Once you have copied steps 7 and 8 into Notepad, select **Edit** on the
     Notepad menu bar and then select **Replace**.
@@ -627,8 +624,8 @@ users’ email addresses from \@adatum.com to \@ xxxUPNxxx.xxxCustomDomainxxx.xx
     **Run as administrator)**.
 
 7.  You will now begin the process of copying each of the PowerShell commands
-    (from this step through step 8) from Notepad and pasting them one at a time into
-    Windows PowerShell and then running them.  
+    (from this step through step 8) from Notepad and pasting and running them in
+    Windows PowerShell.  
     ‎  
     ‎‎In the following PowerShell command, the **Set-ADForest** cmdlet modifies
     the properties of an Active Directory forest, and the **-identity**
@@ -637,7 +634,7 @@ users’ email addresses from \@adatum.com to \@ xxxUPNxxx.xxxCustomDomainxxx.xx
     ‎Select the **Notepad** icon on the taskbar and then copy the following
     command from Notepad (select the command, right-click on it, and then select
     **Copy**), paste it into PowerShell at the command prompt (right click on
-    the command prompt and select **Paste**), and then hit ENTER to run it.  
+    the command prompt and select **Paste).**  
     ‎  
     ‎**Note:** Traditionally, you must right-click at the command prompt, select
     Paste, and then hit ENTER on the keyboard to run a command. However, in some
@@ -671,9 +668,7 @@ enable your Exchange on-premises environment for the accepted domain
 (**xxxUPNxxx.xxxCustomDomainxxx.xxx**) that you added and configured in the
 prior tasks. You will run a series of PowerShell commands in the Exchange
 Management Shell, and you will update additional settings in the on-premises
-Exchange Admin Center. In the prior task, you ran the PowerShell commands in Windows PowerShell on LON-DC1. In this task, you will run Exchange-specific PowerShell commands on LON-EX1; therefore, you will use the Exchange Management Shell rather than Windows PowerShell.
-
-To save you from having to manually type in the commands (which are quite lengthy) into the Exchange Management Shell, you will copy the commands from these instructions and then paste them into Notepad, just as you did in the prior task. You will then use the "Replace" functionality in Notepad to find and replace the custom domain name placeholder in the commands with the actual domain name, and then you will copy and paste each command from Notepad into the Exchange Management Shell.
+Exchange Admin Center.
 
 1.  Switch to **LON-EX1** and, if necessary, log in as the **Administrator**
     with a password of **Pa55w.rd**. If you had to log in and the **Server
@@ -684,14 +679,14 @@ To save you from having to manually type in the commands (which are quite length
     enable your on-premises Exchange environment for the new
     **xxxUPNxxx.xxxCustomDomainxxx.xxx** accepted domain.  
     ‎  
-    ‎To expedite running these commands, open **Notepad** just as you did in the
-    prior task, maximize the Notepad window, and then copy **steps 5-15**
+    ‎To expedite running these commands, open **Notepad just as you did in the
+    prior task**, maximize the Notepad window, and then copy **steps 5-15**
     below and paste them into the Notepad document (to make it easy, copy all
     the text for steps 5-15 and not just the PowerShell commands; that way you
     can do one Copy statement rather than 11 Copy statements of just the
     PowerShell commands).
 
-    **Warning:** Some lab hosting providers’ VM environments limit the amount
+    **Warning:** Some lab hosting providers’ VM environments limits the amount
     of text that can be copy and pasted at one time into a VM. If this occurs
     within your VM environment, you may have to copy and paste steps 5-15 in
     chunks to get all 11 steps copied into Notepad.
@@ -808,7 +803,9 @@ To save you from having to manually type in the commands (which are quite length
     -ExternalUrl https://xxxUPNxxx.xxxCustomDomainxxx.xxx/ews/exchange.asmx
     -InternalUrl https://xxxUPNxxx.xxxCustomDomainxxx.xxx/ews/exchange.asmx  
     ‎  
-    ‎**NOTE:** This command takes a little time to process once you hit Enter. After several seconds (possibly up to 10-20 seconds), you will receive a prompt that indicates the InternalURL parameter can’t be resolved. At the prompt, enter **A** for **Yes to All** to continue and then press **Enter**.
+    ‎**NOTE:** For this **Set-WebServicesVirtualDirectory** command, if you
+    receive a prompt that indicates the InternalURL parameter can’t be resolved,
+    enter **A** for **Yes to All** to continue and then press **Enter**.
 
 13. Copy the following command from Notepad, paste it into the Exchange
     Management Shell at the command prompt, and then run it. This command will
@@ -839,7 +836,8 @@ To save you from having to manually type in the commands (which are quite length
     Set-OutlookProvider EXPR -CertPrincipalName:\*.xxxCustomDomainxxx.xxx  
     ‎
 
-16. Close your Exchange Management Shell window.
+16. Close your Exchange Management Shell window by selecting the **X** in the
+    upper-right hand corner.
 
 17. Close Notepad (do not save the untitled document).
 
@@ -850,12 +848,12 @@ To save you from having to manually type in the commands (which are quite length
     ‎If you have a tab open in your Edge browser for the on-premises **Exchange
     admin center,** then proceed to the next step; otherwise, select the
     **Windows** icon on the taskbar, select the **Microsoft Exchange Server
-    2019** group, select **Exchange Administrative Center.**
-
-    **Note:** If you receive a page indicating **This site is not secure**, this
-    is due to a certificate issue in the VM environment that you can ignore for
-    the purpose of this lab. To bypass this error, select **More information**,
-    and then select **Go on to the webpage (not recommended)**.
+    2019** group, and then select **Exchange Administrative Center.**  
+      
+    **Note:** If you receive a page indicating **Your connection isn’t
+    private**, this is due to a certificate issue in the VM environment that you
+    can ignore for the purpose of this lab. To bypass this error, select the
+    **Advanced** button, and then select **Continue to localhost (unsafe)**.
 
 19. In the **Exchange Admin Center**, log in as **adatum\\Administrator** with a
     password of **Pa55w.rd**.
@@ -867,10 +865,10 @@ To save you from having to manually type in the commands (which are quite length
     list of tabs across the top of the page. Select the **certificates** tab.
 
 22. In the list of certificates, select the **wildcard_xxxCustomDomainxxx_xxx**
-    certificate (where xxxCustomDomainxxx_xxx is the name of your accepted
+    certificate (where xxxCustomDomainxxx_xxx is the name of you accepted
     domain) and then select the **pencil (Edit)** icon on the menu bar.
 
-23. You will now specify the Exchange services that you want to assign to this certificate for your accepted domain. In the **wildcard_xxxCustomDomainxxx_xxx** window, select **services** in
+23. In the **wildcard_xxxCustomDomainxxx_xxx** window, select **services** in
     the left-hand pane.
 
 24. In the list of services, select the **SMTP** check box and the **IIS** check
@@ -935,7 +933,8 @@ accounts to the new accepted domain in Microsoft 365.
     navigate directly to the **Azure AD Connect** page in the **Microsoft
     Download Center** by opening a new tab in your Edge browser and entering the
     following URL in the address bar (if you navigate directly to this URL, you
-    can skip the next step): **https://www.microsoft.com/en-us/download/details.aspx?id=47594**
+    can skip the next step):
+    **https://www.microsoft.com/en-us/download/details.aspx?id=47594**[](https://www.microsoft.com/en-us/download/details.aspx?id=47594)
 
 5.  In the **Azure Active Directory preparation** window, select **Go to the
     Download center to get the Azure AD Connect tool**. This opens a new tab in
@@ -944,8 +943,8 @@ accounts to the new accepted domain in Microsoft 365.
 6.  In the **Microsoft Download Center**, scroll down to the **Microsoft Azure
     Active Directory Connect** section and select the **Download** button.
 
-7.  The notification bar at the bottom of the
-    page will display the status of the download operation. Once the download is complete, select **Open file** that appears below the **AzureADConnect.msi**
+7.  Once the download is complete, in the notification bar at the bottom of the
+    page, select **Open file** that appears below the **AzureADConnect.msi**
     file.
 
 8.  This initiates the installation of the **Microsoft Azure Active Directory
@@ -1033,25 +1032,20 @@ accounts to the new accepted domain in Microsoft 365.
         second error, which is an “add user” error for user **An Dung Dao**.
         Review this error and then close the window.
 
-    -   So why did synchronization fail for these two users? 
-        
-        To find out, select the **DataValidationFailed** link for the first error (under the **2 Error(s)** column). In the window that appears, select the **Detail** button. The **Error Information** window that appears indicates Ngoc Bich Tran's on-premises user account has an invalid UPN, which in
-        turn caused a UPN validation error during the synchronization process;
-        therefore, Ngoc's on-premises user account was not synchronized to Microsoft 365 by the Azure AD Connect
-        tool. Select **Close** to close this window, and then select **Close** to close the Error Information window. 
-        
-        If you select the **DataValidationFailed** link for the second error and then select the **Detail** button, you will note that An Dung Dao experienced the same UPN validation error. 
+        These are users whose on-premises accounts have an invalid UPN, which in
+        turn caused UPN validation errors during the synchronization process;
+        therefore, these users were not synchronized by the Azure AD Connect
+        tool.
 
-    -   **IMPORTANT:** Because a synchronization had not been performed prior to
+        **Note:** Because a synchronization had not been performed prior to
         this, the initial synchronization was a **Full Synchronization** (see
         the **Profile Name** column in the **Connector Operations** pane at the
         top of the page). Because the synchronization process will continue to
         run automatically every 30 minutes, any subsequent synchronizations will
-        display **Delta Synchronization** as its **Profile Name**. 
-        
-        If you leave the **Synchronization Service Manager** window open, after 30 minutes
+        display **Delta Synchronization** as its **Profile Name**. If you leave
+        the **Synchronization Service Manager** window open, after 30 minutes
         you will see that it attempts to synchronize the two users who were not
-        synchronized during the initial synchronization. This operation will display as a
+        synchronized during the initial synchronization. These will display as a
         **Delta Synchronization**.
 
 20. Close the **Synchronization Service Manager**.
@@ -1069,9 +1063,7 @@ accounts to the new accepted domain in Microsoft 365.
 
 22. On the **Active users** page, note that all the existing Microsoft 365 user
     accounts are the predefined users that were created in your tenant by your
-    lab hosting provider. 
-    
-    Select **Refresh** on the menu bar to see all
+    lab hosting provider. Select the **Refresh** icon on the menu bar to see all
     the on-premises user accounts that were migrated to the new accepted domain
     in Microsoft 365.  
     ‎  
