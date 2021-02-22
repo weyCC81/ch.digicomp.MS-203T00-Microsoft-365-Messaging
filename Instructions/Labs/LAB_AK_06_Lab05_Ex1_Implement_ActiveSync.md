@@ -114,9 +114,7 @@ mailbox.
 7.  A **Warning** dialog box appears asking whether you’re sure you want to
     disable Exchange ActiveSync for this mailbox. Select **Yes**.
 
-8.  Select **Save**.
-
-9.  Repeat steps 4-8 for Holly’s mailbox, but this time under the **Mobile
+8.  Repeat steps 4-8 for Holly’s mailbox, but this time under the **Mobile
     Devices** section, note that **Disable Exchange ActiveSync** has now been
     changed to **Enable Exchange ActiveSync**. This indicates that ActiveSync is
     now disabled for Holly’s mailbox. When repeating these steps, this time
@@ -129,9 +127,7 @@ mailbox.
     verify that you wanted to enable it. That’s the only difference between
     enabling and disabling ActiveSync.
 
-10. Select **Save.**
-
-11. Leave the Exchange Admin Center open for use in the next task.
+9. Leave the Exchange Admin Center open for use in the next task.
 
 ## Task 3 - Maintain ActiveSync For a Multiple Mailboxes
 
