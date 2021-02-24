@@ -65,7 +65,7 @@ herself the Exchange Admin role. You will perform this task in the LON-CL1 VM.
         After configuring this field, Holly’s username should appear as:
         **Holly\@xxxxxZZZZZZ.onmicrosoft.com**
 
-    -   Password settings: select the **Let me create the password** option
+    -   Clear (uncheck) the **Automatically create a password** 
 
     -   Password: **Pa55w.rd**
 
@@ -97,7 +97,7 @@ herself the Exchange Admin role. You will perform this task in the LON-CL1 VM.
     in this list of most commonly used roles. If you are interested in seeing
     what additional admin roles are available, select **Show all by category**.
 
-11. In the list of most commonly used roles, select **Exchange admin** and then
+11. In the list of most commonly used roles, select **Exchange Administrator** and then
     select **Next**.
 
 12. On the **Review and finish** page, review your selections. If anything needs
