@@ -51,12 +51,11 @@ Exchange Online. Running the HCW will create Adatum’s hybrid deployment.
     navigation pane and under **Admin centers**, select **Exchange**. This will
     open the EAC for Exchange Online.
 
-7.  In the **Exchange admin center** for Exchange Online, the **dashboard** tab
-    in the left-hand navigation pane is displayed by default, which displays the
+7.  In the **Exchange admin center** for Exchange Online, select **Classic Exchange admin center** from the left-hand navigation pane, this will display the **dashboard** tab
+    in the left-hand navigation pane by default, which displays the
     **Welcome** page. 
     
-    Scroll to the bottom of the **Welcome** page and under the
-    **hybrid** section, select **setup**.
+    Scroll to the bottom of the **Welcome** page and select **hybrid**.
 
 8.  On the **setup** page there are two **configure** buttons. The first button
     configures an Exchange hybrid deployment, while the second button downloads the Exchange Online PowerShell module for supporting 
