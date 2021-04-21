@@ -91,39 +91,24 @@ access the Exchange admin center for Exchange Online.
     prior lab exercise: the **Office 365 Home** tab, the **Microsoft 365 admin
     center** tab, and the **Exchange admin center** tab.  
       
-    Select the **Exchange admin center** tab, and in the left-hand navigation
-    bar, select **New Exchange admin center**. You want to use the New Exchange
-    admin center for managing distribution lists and groups.
+    Make sure you are using the **Classic Exchange admin center**, if you have a **Try the new Exchange admin center** option in the top right, then your are in the **Classic Exchange admin center**.  If not, select **Classic Exchange admin center** from the bottom of the left navigation pane.
 
-3.  On the **New Exchange admin** center, select **recipients** (if necessary)
-    to expand the group, and then in the expanded group, select **Groups**.
+3.  On the **Exchange admin center**, select **recipients**, then select the **Groups** tab.
 
-4.  On the **Groups** window, the **Microsoft 365** tab is displayed by default.
-    Since you want to add a distribution group, select the **Distribution list**
-    tab.
+4.  On the **Groups** window, select the down arrow next to **New Microsoft 365 group** and select **Distribution list**.
 
-5.  On the **Distribution list** tab, select **Add a group** on the menu bar.
+5.  On the **Distribution list** page, select **Add a group** on the menu bar.
     This initiates the **Add a group** wizard.
 
-6.  In the **Choose a group type** page, select the **Distribution** option and
-    then select **Next**.
+7.  In the **new distribution list** page, enter **Marketing** in the **Name**, **Alias**, and **Email address** fields, enter **This is the Marketing team** in the **Notes** field.
+     
+8.  In the **Assign owners** page, **MOD Administrator** should be listed by default
 
-7.  In the **Set up the basics** page, enter **Marketing** in the **Name**
-    field, enter **This is the Marketing team** in the **Description** field,
-    and then select **Next**.
+9. In the **Add members** page, do not add any members yet, you will do this in a later step.
 
-8.  In the **Edit settings** page, enter **Marketing** in the **Group email
-    address** field.
+10.  This will be a closed group, so select the **Closed** option for both the **Choose whether owner approval is required to join the group** setting, and **Choose whether the group is open to leave** setting then select **Save**.
 
-9.  This will be a Closed group, so select the **Closed** option for both the
-    **Joining the group** setting and the **Leaving the group** setting, and
-    then select **Next**.
-
-10. In the **Review and finish adding group** page, review the current settings
-    and if any need to be corrected, select the corresponding **Edit** option.
-    When everything looks correct, select **Create group**.
-
-11. On the **Marketing is created** page, select **Close**.  
+11. On the **Saving completed successfully** page, select **OK**.  
       
     **Important:** Note the message that appears at the top of this page. It can
     take up to an hour for the Marketing group to appear in your groups list.
@@ -137,36 +122,29 @@ access the Exchange admin center for Exchange Online.
     of distribution groups.
 
 13. Once the Marketing group appears in the list of distribution groups, select
-    the **Marketing** group.
+    the **Marketing** group, then select the **Edit (pencil)** button.
 
 14. In the **Marketing** pane that appears, the **General** tab is displayed by
-    default. Select the **Members** tab.
+    default. Select the **ownership** navigation item.
 
 15. Under the **Owners** section, the **MOD Administrator** account is already
     displayed by default as an owner, since this is who you were logged in as in
     Microsoft 365 when you created the group.  
       
-    Below the MOD Administrator account, select **View all and manage owners**.
+16. Select **+** to add additional owners.
 
-16. In the **Manage group owners** pane that appears, select in the **Add group
-    owners** field. In the list of Microsoft 365 user accounts that appears,
-    select **Holly Dickson**, and then select **Save changes**.
+16. In the pane that, in the list of Microsoft 365 user accounts that appears,
+    select **Holly Dickson**, and then select **Add**, then select **OK**.
 
-17. Select the back arrow in the upper left-hand corner of the **Manage group
-    owners** pane to return to the **Marketing** pane.
+17. Select the **membership** navigation item.
+   
+18. On the **Members** window, select **+** to add new members.
 
-18. On the **Members** tab, under the **Members** section, select **View all and
-    manage members**.
-
-19. In the **Manage group members** pane that appears, select in the **Add
-    members** field. In the list of Microsoft 365 user accounts that appears,
-    select **Joni Sherman**.  
-      
-    Repeat this step to add **Megan Bowen** and **Nestor Wilke** as additional
+19. In the pane that appears, on the list of Microsoft 365 user accounts that appears,
+    select **Joni Sherman**, while holding the **CTL** key select **Megan Bowen** and **Nestor Wilke** and select **add**, then select **OK**.
     members of the group, and then select **Save changes**.
 
-20. Select the X in the upper right-hand corner of the **Manage group members**
-    pane to close it.
+20. Verify the **Members** page includes **Joni Sherman**, **Megan Bowen**, and **Nestor Wilke** and select **Save**. Then select **OK** in the confirmation window.
 
 21. Leave your browser and all the tabs open and proceed to the next task.
 
@@ -225,8 +203,7 @@ Planner, and PowerBI, all of which allows teams to seamlessly work together.
 8.  In the **Edit settings** page, enter **sales** in the **Group email
     address** field.
 
-9.  Under the **Privacy** section, select the **Private – Only members can see
-    group content** option.
+9.  Under the **Privacy** section, select the **Private** option.
 
 10. Under the **Add Microsoft Teams to your group** section, verify the **Create
     a team for this group** check box is selected (select it if need be).
@@ -268,10 +245,9 @@ Planner, and PowerBI, all of which allows teams to seamlessly work together.
     list of current Microsoft 365 users.
 
 19. In the list of users, select the check boxes for **Diego Siciliani** and
-    **Lynne Robbins**, and then scroll to the bottom and select **Save**.
+    **Lynne Robbins**, and then scroll to the bottom and select **Add (2)**.
 
-20. In the **Sales** window, select **Close**. This displays the list of users
-    for this group. Select **Close** again.
+20. In the **Members** window, verify that Diego and Lynne appear as members and select the left arrow to return to the **Sales** properties window.
 
 21. On the **Sales** window, Diego and Lynne should now appear as members of the
     group. If they do not appear, select the **Refresh** icon in the upper
