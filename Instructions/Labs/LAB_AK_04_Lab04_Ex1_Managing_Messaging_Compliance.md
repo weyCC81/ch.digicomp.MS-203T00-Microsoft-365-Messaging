@@ -638,28 +638,25 @@ creating a Retention label through the Security and Compliance portal.
     **Description for admins** field. Copy this description and paste it into
     the **Description for users** field. Select **Next**.
 
-8.  On the **Label settings** page, select the **Retention** toggle switch to
-    turn it **On**. This turns on retention settings for this label, and it
-    displays several additional settings. Configure these settings as follows:
+8.  On the **Define retention settings** page, configure these settings as follows:
 
-    -   Retain the content: **For this long – 30 Days**
+    -   Retention period: **Custom – 0 years 0 months 30 Days**
 
-    -   What do you want to do after this time? **Delete the content
-        automatically**
+    -   Start the retention period based on: **When items were created**
 
-    -   Retain or delete the content based on: **when it was created**
+    -   At the end of the retention period: **Delete items automatically**
 
 9.  Select **Next**.
 
 10. On the **Review your settings** page, review your settings and if any
     require correction, select the corresponding **Edit** option to fix the
-    setting. When all settings are correct, select **Create this Label**.
+    setting. When all settings are correct, select **Create label**.
 
 11. It will take a minute or two to create the retention label, at which point
     the **Information governance** window will display your new **30-day
     delete** label.
 
-12. Leave your browser and all tabs open and proceed to the next task.
+12. Once the retention label has been created, you have the option of publishing the label, we will do that in the next task.  On the **Your retention label is created** screen select **Just save the label for now** and select **Done**.
 
 ## Task 7: Creating a Retention Label Policy
 
@@ -678,7 +675,7 @@ previously created.
     Once you create a label, your next step is to publish it. You can either
     publish multiple labels at one time by selecting the **Publish labels**
     option on the menu bar, or you can publish a specific label by selecting the
-    label and then publishing just that label.  
+    label and then publishing just that label, then select **Choose labels**.  
       
     In this task, you will publish a specific label; therefore, in the list of
     labels, select the **30-day delete** label.
@@ -687,9 +684,7 @@ previously created.
     button at the top of window. This will initiate the **Publish labels**
     wizard that walks you through the steps of publishing a label.
 
-4.  On the **Choose labels to publish** page, the **30-day delete** label is
-    already displayed under the **Publish these labels** section since you
-    previously selected this label; therefore, select **Next**.
+4.  On the **Choose a label** page, select the **30-day delete** checkbox, and select **Add**, then select **Next**.
 
 5.  On the **Choose locations** page, select the **All locations. Includes
     content in Exchange email, Office 365 groups, OneDrive and SharePoint
@@ -700,14 +695,14 @@ previously created.
 
 7.  On the **Review you settings** page, review your settings and if any require
     correction, select the corresponding **Edit** option to fix the setting.
-    When all settings are correct, select **Publish labels**.  
+    When all settings are correct, select **Submit**.  
     ‎  
     ‎**Important:** Note the warning message that indicates it can take up to 1
     day to propagate a new retention label policy throughout the system once the
     policy is published.
 
-8.  Once the retention label policy has been created, it will be displayed in
-    the list of label policies on the **Retention labels** window.
+8.  Once the retention label policy has been created, select **Done** in the **Your policy was created** page. The policy will be displayed in
+    the list of label policies on the **Information governance** window.
 
 9.  Leave your browser and all tabs open and proceed to the next task.
 
@@ -764,7 +759,7 @@ since you completed Task 1 and then perform this task again.
 7.  In the **Enter password** window, enter the tenant email password provided
     by your lab hosting provider and then select **Sign in**.
 
-8.  On the **Office 365 Security \&amp; Compliance** center, select **eDiscovery** in the left-hand
+8.  On the **Office 365 Security &amp; Compliance** center, select **eDiscovery** in the left-hand
     navigation pane, and then in the expanded group select **eDiscovery.**
 
 9.  In the **eDiscovery** pane, select the **+Create a case** button.
@@ -801,7 +796,7 @@ since you completed Task 1 and then perform this task again.
 17. In the **Edit locations** page, under **Exchange email**, select the
     **Choose users, groups, or teams** button.
 
-18. In the **Edit locations** page, enter **Alex** in the **Search** field that
+18. In the **Edit locations** page, select **Choose users, groups, or teams**, enter **Alex** in the **Search** field that
     appears and select the **Search** (magnifying glass) icon to the right of
     the field. This will initiate a search of all users whose name starts with
     Alex. Scroll to the bottom of the **Edit locations** pane to view the search

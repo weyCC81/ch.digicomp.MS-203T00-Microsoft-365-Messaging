@@ -53,7 +53,7 @@ then assign two specific administrators to this role.
 
 7.  On the **Microsoft 365 admin center**, select
     **Show all** in the left-hand navigation pane, and then under **Admin
-    centers**, select **Exchange.**
+    centers**, select **Exchange.** Once the page loads for the Exchange admin center, select **Classic Exchange admin center** from the bottom of the left navigation pane. 
 
 8.  In the **Exchange admin center** tab, in the left-hand navigation pane,
     select **permissions.**
@@ -203,7 +203,7 @@ assigned to several test users in Holly’s pilot project.
     Mailbox policy** in the **Policy name** field.
 
 6.  In the **Communication Management** group, all features are selected by
-    default. Select the **Unified Messaging** check box to unselect it.
+    default. Select the **Text Messaging** check box to unselect it.
 
 7.  In the **Information management** group, un-check **Journaling**.
 
