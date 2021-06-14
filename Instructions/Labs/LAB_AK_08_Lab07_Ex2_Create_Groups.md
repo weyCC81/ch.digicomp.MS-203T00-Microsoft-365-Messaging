@@ -97,9 +97,6 @@ access the Exchange admin center for Exchange Online.
 
 4.  On the **Groups** window, select the down arrow next to **New Microsoft 365 group** and select **Distribution list**.
 
-5.  On the **Distribution list** page, select **Add a group** on the menu bar.
-    This initiates the **Add a group** wizard.
-
 7.  In the **new distribution list** page, enter **Marketing** in the **Name**, **Alias**, and **Email address** fields, enter **This is the Marketing team** in the **Notes** field.
      
 8.  In the **Assign owners** page, **MOD Administrator** should be listed by default
