@@ -387,8 +387,9 @@ deployment.
     by the on-premises user accounts that you previously synchronized into
     Microsoft 365), only one of those users had an on-premises mailbox set up in
     Exchange Server 2019 by your lab hosting provider. This user was the
-    **Administrator** account, which is the only on-premises mailbox in the
-    list.  
+    **Administrator** account, which was the only on-premises mailbox at the 
+    beginning of the labs, then you created three additional user mailboxes in 
+    the Module 6 lab, so now there are four mailboxes in the list.  
     ‎  
     ‎In the remaining steps in this task, you will add on-premises mailboxes for
     two additional on-premises user accounts.
