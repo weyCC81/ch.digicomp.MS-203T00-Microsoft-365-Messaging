@@ -99,8 +99,7 @@ numbers, and ABA routing numbers.
 4.  On the **Policies** page, under the **Data** section, select **Data loss
     prevention**.
 
-5.  On the **Data loss prevention** page, the **Policies** tab is displayed by
-    default. On this tab, select **+Create policy** in the menu bar. This
+5.  On the **Data loss prevention** page, navigate to the **Policies** tab, then select **+Create policy** in the menu bar. This
     initiates the **Create policy** wizard.
 
 6.  In the **Start with a template or create a custom policy** page, the
@@ -240,7 +239,7 @@ numbers, and ABA routing numbers.
 33. This returns you to the **Customize advanced DLP rules** page. Select
     **Next**.
 
-34. On the **Test or turn on the policy page**, select the **Yes, turn it on
+34. On the **Test or turn on the policy page**, select the **Turn it on
     right away** option and then select **Next**.
 
 35. On the **Review your policy and create it** page, review all your settings.
