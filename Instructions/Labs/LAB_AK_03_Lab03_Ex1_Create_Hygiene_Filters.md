@@ -36,64 +36,56 @@ applied to the email.
 
 4.  In the **Office 365 Security & Compliance center**, select **Threat Management** in the left-hand
     navigation pane, and then in the expanded group select **Policy**.
+    
+6.  In the **Office 365 Security & Compliance center**, select **Threat Management** in the left-hand
+    navigation pane, and then in the expanded group select **Permissions**.
+    
+7.  In the **Home \> permissions** page in the **search** field, type **Org** then select the search glass.
 
-5.  In the **Home \> Policy** page, select the **Anti-Malware** tile under the
+8.  On the **Home \> permissions** page list, select the **Organization Management** role.
+
+9.  On the **Organization Management**page under the **members**section, select the **Edit** icon.
+
+10. On the **editing choose members** page. Select **choose members**.
+
+11. On the **choose members** page, Select the **add** icon.
+
+12. On the **choose members** list. Select the **Mod Administrator** account.Then select the **add** icon.
+
+13. on the **choose members** page. Select the**done** icon.
+
+14. on the **editing choose members** page, select the **save** icon.
+
+     **Note**: the organization management role may take a minute or two to update the microsoft tenant. If the policy doesn't update within a few minutes proceed to the connection filter task. 
+     
+16.  In the **Home \> Policy** page, select the **Anti-Malware** tile under the
     **Policies** section.
 
-6.  In the **Home \> Policy \> Anti-malware** page, on the menu bar at the top
+17.  In the **Home \> Policy \> Anti-malware** page, on the menu bar at the top
     of the window, select **+Create** to add a new malware filter. This
     initiates the **Create an anti-malware policy** wizard.
 
-7.  In the **Name your policy** page, enter **Malware Policy** in the **Name**
+18.  In the **Name your policy** page, enter **Malware Policy** in the **Name**
     field.
+    
+19.  In the **Description** field, enter **This policy has been created to
+    protect the messaging environment** and then select **Next**.   
 
-8.  In the **Description** field, enter **This policy has been created to
-    protect the messaging environment** and then select **Next**.
+19.  In the **users and domains**section under domains, enter **onmicrosoft.com** and then select **Next**.
 
-9.  On the **Malware detection response** page, select **Yes and use the default
-    notification text** then select **next**.
+20.  On the **protection settins** page, select the checkboxes for **enable the common attachements filter** and **enable zero-hour auto purge for malware (recommended)**.
 
-10. On the **Common attachment types filter** page, select **On - Emails with
-    attachments of filtered files types will trigger the malware detection
-    response (recommended).**
-
-11. The filter will check for all the file types that appear in the **File
-    Types** list. You do not need to add any additional file types, so proceed
-    to the next step by selecting **Next**.
-
-12. On the **Malware Zero-hour Auto Purge** page, confirm that the **On
-    (recommended)** option is selected and then select **Next**.
-
-13. On the **Notifications** page, since this filter will not generate any
+21. On the **Notifications** section, since this filter will not generate any
     notifications, do not select any of the notification options, and instead
     select **Next**.
 
-14. On the **Applied To** page, select the **Add a condition** button and in the
-    drop-down menu that appears, select **The recipient domain is**.
+22. on the **reivew** section, confirm that all the information is correct, then select the submit icon.
 
-15. If a pop-up window displaying domains appears, then skip to the next step;
-    otherwise, to the right of the condition field that displays **The recipient
-    domain is…,** select **A recipient’s domain is.**
-
-16. In the **The recipient’s domain is** field, select **Choose**.
-
-17. In the **The recipient domain is** page, select the **+Add** button. In the
-    list of Adatum domains that appears, select the check box for the
-    **xxxxxZZZZZZ.onmicrosoft.com** domain (where xxxxxZZZZZZ is the tenant
-    prefix provided by your lab hosting provider), select the **Add** button,
-    and then select **Done**.
-
-18. On the **Applied To** page, the **xxxxxZZZZZZ.onmicrosoft.com** domain
-    should appear in the **The recipient’s domain is** field. Select **Next.**
-
-19. On the **Review your settings** page, review the settings that you just
-    configured. If anything needs to be corrected, select the corresponding
-    **Edit** option to make the necessary fix. If everything is correct, select
-    the **Create this policy** button at the bottom of the page.
+23. congratulations, the New ant-malware policy has been created. Select the done icon.
 
     **Note**: A **Security & Compliance** window will appear with a message that indicates your organization settings need to be updated. Select **Yes** to continue.
     
-20.  It may take a minute or so for your organization settings to be updated.
+24.  It may take a minute or so for your organization settings to be updated.
     Once the update is complete and you are back on the **Home \> Policy \>
     Anti-malware** page, you can proceed to the next task. Do not close any of
     the browser tabs.
