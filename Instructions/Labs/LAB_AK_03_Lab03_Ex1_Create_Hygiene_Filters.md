@@ -148,6 +148,12 @@ malware. Microsoft 365 has built-in malware and spam filtering capabilities that
 help protect inbound and outbound messages from malicious software and help
 protect users from receiving spam messages.
 
+For Microsoft 365 customers whose mailboxes are hosted in Microsoft Exchange
+Online, their email messages are automatically protected against spam and
+malware. Microsoft 365 has built-in malware and spam filtering capabilities that
+help protect inbound and outbound messages from malicious software and help
+protect users from receiving spam messages.
+
 As Adatum’s Messaging Administrator, Holly doesn't need to set up or maintain
 the filtering technologies, which are enabled by default. However, she can make
 company-specific filtering customizations in the Exchange admin center. She has
@@ -168,108 +174,51 @@ by focusing on the language of the email and the location of the email's origin.
     select **Threat Management**, select **Policy,** and then select the
     **Anti-spam** tile under the **Policies** section.
 
-4.  In the **Anti-spam settings** window, in the list of policies, select the
-    drop-down arrow to the left of **Default spam filter policy (always ON)**
-    and then select the **Edit policy** button that appears.
+4.  In the **Anti-spam policies** windows in the list of policies, select the
+    **Anti-spam inbound policy(defualt)**.
 
-5.  In the **Default spam filter policy (always ON)** pane, you will be
+5.  In the **Anti-spam inbound policy (default)** pane, you will be
     presented a variety of options on how you would like spam to be handled and
     what rating will be triggered depending on the severity of the spam. The
     following steps will guide you through these settings so that you can update
     them per Adatum's requirements.
 
-6.  Select the **Spam and bulk actions** drop-down arrow and update the
+6.  Select the **edit spam threshhold and properties** link, under the **bulk email threashold & spam properties** section. Update the
     following settings:
 
-    -   Spam: **Move message to Junk Email folder**
+    -   set the threshold: **5** 
+   
+    -   **mark as spam** 
+    -   empty messages: **Off**
+    -   Embedded tags in HTML: **On**
+    -   JavaScript or VBScript in HTML :**On**
+    -   SPF record hard fail: **On**
+    -   Sender ID filtering hard fail: **On**
+    -   from these counties:
 
-    -   High confidence spam: **Prepend subject line with text**
-
-    -   Phishing email: **Move message to Junk Email folder**
-
-    -   Bulk email: **No Action**
-
-    -   Select the threshold: **5**
-
-    -   Quarantine - Retain spam for (days): **10**
-
-    -   Prepend subject line with this text: enter **QUARANTINED: This message
-        contains potential spam!**
-
-7.  Select the **International spam** drop-down arrow and update the following
-    settings:
-
-    **Note:** This section allows you to automatically tag as spam those
-    messages sent from countries that are blocked, as well as messages written
-    in a specific language.
-
-    -   Filter email messages written in the following languages:
-
-        -   Select **Edit.**
-
-            -   On the **International spam settings** pane, select the check
-                box next to **Filter email messages written in the following
-                languages.**
-
-            -   Type the letter **"a"** in the **Language** field to display the
-                list of languages starting with the letter “a” or that include
-                an “a”.
-
-            -   Select any language you want to restrict.
-
-            -   If you want to restrict an additional language, repeat the prior
-                two steps.
-
-            -   Once you have selected all the languages that you want to
-                restrict, select **Save.**
-
-            -   Note how the value of the **Status** field has changed from
-                **OFF** to **ON**.
-
-    -   Filter email messages sent from the following counties or regions:
-
-        -   Select **Edit.**
-
-            -   On the **International spam settings** pane, select the check
-                box next to **Filter email messages sent from the following
-                countries or regions.**
-
-            -   Type the letters **"ab"** in the **Language** field to display
-                the list of languages starting with the letters “ab” or that
+           -   Type the letters **"ab"** in the **from theses countries** field to display
+                the list of countries starting with the letters “ab” or that
                 include an “ab”. You can enter any letter or letters that you
                 wish.
 
-            -   Select any country/region you want to restrict.
+           -   Select any country/region you want to restrict.
 
-            -   If you want to restrict an additional country/region, repeat the
+           -   If you want to restrict an additional country, repeat the
                 prior two steps.
+                
+                
+7.  Once you have selected all the countries/regions that you want to restrict. Select **save**.             
 
-            -   Once you have selected all the countries/regions that you want
-                to restrict, select **Save.**
-
-            -   Note how the value of the **Status** field has changed from
-                **OFF** to **ON**.
-
-8.  Select the **Spam properties** drop-down arrow and update the following
+8.  Select the **edit actions** icon under the **actions** section to update the following
     settings:
 
-    **Note:** This section allows you to automatically tag messages as spam that
-    have embedded URL’s with specific attributes or that have embedded HTML in
-    the message.
+    **Note:** This section determines what happens to emails that have been tagged as spam.
 
-    -   Select the **Increase Spam Score** drop-down arrow and turn **On** the
-        following options:
+    -   Select the **spam** drop-down arrow and select the **Move message to junk email folder**.
 
-        -   **URL redirect to other port**
+    -   Select the **phishing** drop-down arrow and select **quarrantine message**.
 
-        -   **URL to .biz or .info websites**
-
-    -   Select the **Mark as Spam** drop-down arrow and turn **On** the following
-    options:
-
-        -   **Empty messages**
-
-        -   **Conditional Sender ID filtering: hard fail**
+     -  change **retain spam in quarantine for this many days** to **10** days.
 
 9.  Select **Save**.
 
