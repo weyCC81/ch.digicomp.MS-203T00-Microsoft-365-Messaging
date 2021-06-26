@@ -52,36 +52,36 @@ applied to the email.
 
 12. On the **choose members** list. Select the **Mod Administrator** account.Then select the **add** icon.
 
-13. on the **choose members** page. Select the**done** icon.
+13. On the **choose members** page. Select the**done** icon.
 
-14. on the **editing choose members** page, select the **save** icon.
+14. On the **editing choose members** page, select the **save** icon.
 
      **Note**: the organization management role may take a minute or two to update the microsoft tenant. If the policy doesn't update within a few minutes proceed to the connection filter task. 
      
 16.  In the **Home \> Policy** page, select the **Anti-Malware** tile under the
     **Policies** section.
 
-17.  In the **Home \> Policy \> Anti-malware** page, on the menu bar at the top
+17. In the **Home \> Policy \> Anti-malware** page, on the menu bar at the top
     of the window, select **+Create** to add a new malware filter. This
     initiates the **Create an anti-malware policy** wizard.
 
-18.  In the **Name your policy** page, enter **Malware Policy** in the **Name**
+18. In the **Name your policy** page, enter **Malware Policy** in the **Name**
     field.
     
-19.  In the **Description** field, enter **This policy has been created to
+19. In the **Description** field, enter **This policy has been created to
     protect the messaging environment** and then select **Next**.   
 
-19.  In the **users and domains**section under domains, enter **onmicrosoft.com** and then select **Next**.
+19. In the **users and domains**section under domains, enter **onmicrosoft.com** and then select **Next**.
 
-20.  On the **protection settins** page, select the checkboxes for **enable the common attachements filter** and **enable zero-hour auto purge for malware (recommended)**.
+20. On the **protection settins** page, select the checkboxes for **enable the common attachements filter** and **enable zero-hour auto purge for malware (recommended)**.
 
 21. On the **Notifications** section, since this filter will not generate any
     notifications, do not select any of the notification options, and instead
     select **Next**.
 
-22. on the **reivew** section, confirm that all the information is correct, then select the submit icon.
+22. On the **reivew** section, confirm that all the information is correct, then select the submit icon.
 
-23. congratulations, the New ant-malware policy has been created. Select the done icon.
+23. Congratulations, the New ant-malware policy has been created. Select the done icon.
 
     **Note**: A **Security & Compliance** window will appear with a message that indicates your organization settings need to be updated. Select **Yes** to continue.
     
