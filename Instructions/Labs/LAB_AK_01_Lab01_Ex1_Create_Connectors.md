@@ -14,6 +14,36 @@ In your lab environment, your lab hosting provider has already:
 - Created a custom Microsoft 365 domain in Microsoft Azure
 - Created the DNS records in Microsoft Azure that are required to support the custom domain and the selected Microsoft 365 services
 
+1. On LON-CL1, you must open an elevated instance of **Windows PowerShell**. Select the magnifying glass (Search) icon on the taskbar
+   at the bottom of the screen ad type **powershell** in the Search box that appears. In the list of search results, right-click on **Windows
+   PowerShell** (do NOT select Windows PowerShell ISE) and select **Run as administrator** in the drop-down menu.
+
+ 2.  Maximize your PowerShell window. In Windows PowerShell, at the command prompt, type the following command and press Enter:
+ 
+ 	Install-Module -name Exchangeonlinemanagement
+
+ 3. If you are prompted to confirm whether you want to install the module from an untrusted repository (PSGallery), enter **A** to select **[A] Yes to
+    All.**
+
+ 4. At the command prompt, type the following command and press Enter:
+
+
+		Connect-exchangeonline
+
+ 5.  A **Microsoft 365 Sign in** window will appear. Enter in the username for the **Mod Administrator** account provided by your learning provider
+    (admin@M365xZZZZZZ.onmicrosoft.com) and then select **Next**.
+
+ 6.  In the **Enter password** window, enter the password for this admin account provided by your learning provider, and then select **Sign in**. It may take
+    a moment to sign in before it returns a command prompt.
+
+ 7.  At the command prompt, type the following command and press Enter (**Note:** This command may fail the first time. If it fails, re-run this step until it
+     returns a successful result (the command prompt appears with no errors); testing shows that it sometimes takes two attempts):
+
+	Enable-OrganizationCustomization
+
+  8.  Close the PowerShell window.
+
+
 ## Exercise 1 - Create Connectors
 
 As part of her pilot project for Adatum’s Exchange deployment, Holly wants to begin by creating custom send and receive connectors in her on-premises Exchange Server using the on-premises Exchange admin center. 
