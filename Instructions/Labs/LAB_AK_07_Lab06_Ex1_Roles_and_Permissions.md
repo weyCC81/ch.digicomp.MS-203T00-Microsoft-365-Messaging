@@ -53,12 +53,12 @@ then assign two specific administrators to this role.
 
 7.  On the **Microsoft 365 admin center**, select
     **Show all** in the left-hand navigation pane, and then under **Admin
-    centers**, select **Exchange.** Once the page loads for the Exchange admin center, select **Classic Exchange admin center** from the bottom of the left navigation pane. 
-
+    centers**, select **Exchange.**
+    
 8.  In the **Exchange admin center** tab, in the left-hand navigation pane,
-    select **permissions.**
+    select **Roles.**
 
-9.  At the top of the **permissions** page, the **admin roles** tab should be
+9.  At the top of the **Roles** page, the **admin roles** tab should be
     displayed by default; if not, then select it now.
 
 10. The **admin roles** window displays the existing role groups. Each of these
@@ -71,23 +71,17 @@ then assign two specific administrators to this role.
     In this task, you are going to create a custom role group and then assign
     multiple roles to it, as well as several existing members.  
     ‎  
-    ‎Select the **plus (+) sign** icon on the menu bar to create a new role
+    ‎Select the **Add role group** icon on the menu bar to create a new role
     group.
 
-11. In the **new role group** window, enter **Application Impersonation** in the
+11. In the **add role group** window, enter **Application Impersonation** in the
     **Name** field.
 
 12. Enter (copy and paste) the following text into the **Description** field:
     **This role group allows an administrator to remotely access a mailbox
-    without having the mailbox owner’s password.**
+    without having the mailbox owner’s password.** Then select **Next**.
 
-13. Under **Roles**, select the **plus (+) sign** icon to assign roles to the
-    group.
-
-14. In the **Select a Role** window, you want to add the following roles to this
-    role group. The easiest way to do this is to select the first role
-    (ApplicationImpersonation), then hold down the CTRL key and select the
-    remaining two roles:
+13. Under **Add permissions**section, either scroll or search for the following roles and select them:
 
     -   **ApplicationImpersonation**
 
@@ -95,34 +89,21 @@ then assign two specific administrators to this role.
 
     -   **UserApplication**
 
-15. Select the **add -\&gt;** button, verify that all three roles appear in the
-    field, and then select **OK**.
+15. Select the **Next** button, 
 
-16. In the **new role group** window, scroll down the to the **Members** section
-    and select the **plus (+) sign** icon to assign members to the group.
-
-17. In the **Select Members** window, you want to add the following users to
-    this role group. The easiest way to do this is to select the first user
-    (Admin), then hold down the CTRL key and select the remaining user:
+16. In the **Assign admins** window, in the **Members** section
+    Enter the following then select the names:
 
     -   **Admin**
 
     -   **TenantAdmins_-##########** (where ########## represents
         the tenant number at the end of the TenantAdmins group)
 
-18. Select the **add -\&gt;** button, verify that both users appear in the
-    field, and then select **OK**.
+18. Select the **Next** button.
 
-19. Select **Save**.
+19. In the **Review role group and finish** section, confirm that all the information is present and select the  **Add role group** button.
 
-20. This returns you to the **admin roles** tab in the Exchange admin center.
-    The new **Application Impersonation** role group should be displayed in the
-    list of groups. This role group should be selected, and an **Application
-    Impersonation** pane should appear on the right-side of the page that
-    displays the details of this group.  
-      
-    Verify the information is correct; if any corrections are needed, select the
-    **pencil (Edit)** icon in the menu bar and make the necessary corrections.
+20. The page will return a notification screen stating, **Application Impersonation role group has been added**. select the **Done** button.
 
     **Important:** Even though the **Application Impersonation** group appears
     in the list of role groups, it typically takes 24 to 48 hours to fully
@@ -146,30 +127,18 @@ group. In this task, you are going to add a user to a role group.
     In the list of admin role groups, select the **Discovery Management** role
     group.
 
-3.  Select the **pencil (Edit)** icon to on the menu bar to edit this group.
+3.  The **Discovery Management** pane will open. Select the **Assigned** tab.
 
-4.  In the **Discovery Management** window, scroll down to the **Members**
-    section and then select the **plus (+) sign** icon to add new members to
-    this role group.
+4.  In the **Assigned** window, select the  **(+) Add** button.
 
-5.  In the **Select Members** window, select **admin** (this is the MOD
+5.  In the **Add admins** window, Enter **admin** inside the search field.(this is the MOD
     Administrator user account).
 
-6.  Select the **add -\&gt;** button and then select **OK**.
+6.  Select the **Mod Administrator** account and then select **Add**.
 
-7.  Select **Save**.
+7.  In the **Assigned** tab displays a banner  stating that **1 member added to this role group.** select the **X** to close the **Discovery Management** pane.
 
-8.  This returns you to the **admin roles** tab on the **permissions** page. The
-    **Discovery Management** role group should be displayed in the list of
-    groups. This role group should be selected, and a **Discovery Management**
-    pane should appear that displays the details of this group.  
-      
-    Verify the **MOD Administrator** user account appears under the list of
-    **Members**; if any corrections are needed, select the **pencil (Edit)**
-    icon in the menu bar and make the necessary corrections.
-
-9.  Leave the Exchange Admin Center open in your Edge browser and proceed to the
-    next task.
+8.  Leave the Exchange Admin Center open in your Edge browser and proceed to the next task.
 
 ## Task 3 -Create an Outlook Web App Policy
 
@@ -186,7 +155,7 @@ assigned to several test users in Holly’s pilot project.
 1.  You should still be logged into LON-CL1 as the **Administrator** account
     with a password of **Pa55w.rd**; however, if the log-in screen appears, then
     log in now.
-
+2.  In the **Exchange admin center** select the 
 2.  The **Exchange admin center** for Exchange Online should still be open in
     your Edge browser. You should still be on the **permissions** page from the
     prior task. At the top of the **permissions** page, select the **Outlook Web
