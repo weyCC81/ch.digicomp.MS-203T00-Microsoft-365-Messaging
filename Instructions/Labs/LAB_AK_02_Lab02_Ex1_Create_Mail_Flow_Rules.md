@@ -69,15 +69,7 @@ checks for sensitive information in emails sent from inside the organization.
     **Exchange**. This opens the classic Exchange admin center for Exchange
     Online.
 
-    **IMPORTANT:** As of this writing, Microsoft is in the process of developing
-    a new Exchange admin center. However, for the purposes of this lab, you will
-    use the classic Exchange admin center because the new Exchange admin center
-    does not yet include the entire Exchange Online feature set. Therefore,
-    while you can select the **New Exchange admin center** option in the
-    left-hand navigation pane to preview the new admin center, you should return
-    to the classic Exchange admin center to complete this lab.
-
-11. In the (classic) **Exchange admin center**, in the left-hand navigation
+11. In the **Exchange admin center**, in the left-hand navigation
     pane, select **mail flow.**
 
 12. At the top of the page, the **rules** tab displays by default. Stay in this
@@ -212,9 +204,7 @@ This task will create the first rule; the next task will create the second rule.
     that appears, review the available options. Note that in the default list of
     menu options, the only attachment-related option is **Any attachment’s
     content includes**; there is no option related to the status of an
-    attachment.  
-    ‎  
-    ‎Therefore, select inside the field to collapse the menu and then scroll down
+    attachment. Therefore, select inside the field to collapse the menu and then scroll down
     in the **new rule** window and select **More options…**
 
 6.  Scroll up to the top of the window. Select the drop-down arrow in the
