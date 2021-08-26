@@ -155,10 +155,9 @@ assigned to several test users in Holly’s pilot project.
 1.  You should still be logged into LON-CL1 as the **Administrator** account
     with a password of **Pa55w.rd**; however, if the log-in screen appears, then
     log in now.
-2.  In the **Exchange admin center** select the 
-2.  The **Exchange admin center** for Exchange Online should still be open in
-    your Edge browser. You should still be on the **permissions** page from the
-    prior task. At the top of the **permissions** page, select the **Outlook Web
+2.  In the **Exchange admin center** select the **Classic Exchange Admin center**.
+  
+3.  In the **Classic Exchange Admin Center**, select the **permissions** section. Then select the **Outlook Web
     App policies** tab.
 
 3.  In the list of Outlook Web App policies, the **OwaMailboxPolicy-Default**
