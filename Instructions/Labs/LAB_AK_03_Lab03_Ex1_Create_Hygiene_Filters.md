@@ -25,14 +25,9 @@ applied to the email.
     password of **Pa55w.rd**; however, if the log-in page appears, then log in
     now.
 
-2.  In your **Edge** browser, you should still have a tab open for the
-    **Microsoft 365 admin center**. If so, then select this tab and proceed to
-    the next step; otherwise, navigate to the **Office 365 home** page, log in
-    as your tenant admin account, navigate to the **Microsoft 365 admin
-    center**, and then in the left-hand navigation pane, select **Show all**.
+2.  In your **Edge** browser, enter **protection.office.com** as URL
 
-3.  In the **Microsoft 365 admin center**, in the left-hand navigation pane
-    under **Admin centers**, select **Security**.
+3.  In the left-hand navigation pane, select **Security**.
     
 4.  In the **Office 365 Security & Compliance center**, select **Permissions**.
     
@@ -48,7 +43,7 @@ applied to the email.
 
 10. On the **Choose members** list. Select the **Mod Administrator** account.Then select the **Add** icon.
 
-11. On the **Choose members** page. Select the**Done** icon.
+11. On the **Choose members** page. Select the **Done** icon.
 
 12. On the **Editing choose members** page, select the **Save** icon.
 
@@ -70,9 +65,9 @@ applied to the email.
 17. In the **Description** field, enter **This policy has been created to
     protect the messaging environment** and then select **Next**.   
 
-18. In the **users and domains**section under domains, enter **onmicrosoft.com** and then select **Next**.
+18. In the **users and domains** section under domains, enter **onmicrosoft.com** and then select **Next**.
 
-19. On the **protection settins** page, select the checkboxes for **enable the common attachements filter** and **enable zero-hour auto purge for malware (recommended)**.
+19. On the **protection settings** page, select the checkboxes for **enable the common attachements filter** and **enable zero-hour auto purge for malware (recommended)**.
 
 20. On the **Notifications** section, since this filter will not generate any
     notifications, do not select any of the notification options, and instead
