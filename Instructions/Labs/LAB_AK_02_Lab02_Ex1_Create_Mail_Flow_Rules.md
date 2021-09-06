@@ -103,8 +103,8 @@ checks for sensitive information in emails sent from inside the organization.
 19. The three words should display below the text field. Select **OK**.
 
 20. In the **new rule** window, the three words should display to the right of
-    the **The subject or body includes…** condition. Select the **add
-    condition** button to add another condition.
+    the **The subject or body includes…** condition. Click on **more options** 
+    at the bottom then select the **add condition** button to add another condition.
 
 21. Select the drop-down arrow in the second condition field that appears (Note
     how this creates a Boolean **And** condition). Hover your mouse over **The
