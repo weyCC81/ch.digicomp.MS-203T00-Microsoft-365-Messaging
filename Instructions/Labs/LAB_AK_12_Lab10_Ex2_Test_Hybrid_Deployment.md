@@ -262,7 +262,7 @@ data secure.
         steps 3 and 4, and then continue with the next step.
 
 7.  In the **new migration batch** window, if a sign in page appears (if it does
-    not appear, then skip to the next step), enter **adatum\\Administrator** in
+    not appear, then skip to the next step/**try in internet explorer**), enter **adatum\\Administrator** in
     the **Account with privileges (domain\\user name)** field, enter
     **Pa55w.rd** in the **Password of account with privileges** field, and then
     select **Next**.
