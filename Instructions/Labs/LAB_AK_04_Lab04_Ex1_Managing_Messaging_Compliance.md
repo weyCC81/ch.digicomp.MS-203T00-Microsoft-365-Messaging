@@ -775,7 +775,7 @@ since you completed Task 1 and then perform this task again.
     button that appears next to **AlexWilber-case01.**
 
 13. A new tab will open in your browser that displays this case. On the menu bar
-    at the top of the page, select the **Holds** tab.
+    at the top of the page, select the **Hold** tab.
 
 14. In the **Holds** tab for this case, select the **+Create** button. This will
     initiate a **Create a new hold** wizard that walks you through the steps to
@@ -792,7 +792,7 @@ since you completed Task 1 and then perform this task again.
 16. In the **Choose locations** page, to the right of the **Exchange email**
     location, select **Choose users, groups, or teams.**
 
-17. In the **Edit locations** page, under **Exchange email**, select the
+17. In the **Edit locations** page, under **Exchange mailboxes**, select the
     **Choose users, groups, or teams** button.
 
 18. In the **Edit locations** page, select **Choose users, groups, or teams**, enter **Alex** in the **Search** field that
@@ -825,7 +825,7 @@ since you completed Task 1 and then perform this task again.
 
 27. On the **Review your settings** page, review the settings and if any need to
     be adjusted, select **Edit** next to the setting and make the necessary correction.
-    Once all settings are correct, select **Create this hold**.
+    Once all settings are correct, select **Submit**.
 
 28. In the **AlexW** pane, select **Close**.  
     ‎  
@@ -849,7 +849,7 @@ since you completed Task 1 and then perform this task again.
 
 32. In the **Locations** page, select the **Specific locations** option and then
     select the **Select all** toggle switch that appears to the right of
-    **Exchange email** to turn it **On.** Select **Next**.
+    **Exchange mailboxes** to turn it **On.** Select **Next**.
 
 33. In the **Condition card** page, in the **Enter keywords** field, enter the
     following: **Sensitive, Confidential, Secret**
@@ -865,7 +865,7 @@ since you completed Task 1 and then perform this task again.
     In the **Type subject** field, enter the following: **Sensitive,
     Confidential, Secret**
 
-37. Select **Finish**. This initiates the search. It may take several minutes
+37. Select **Next and Submit**. This initiates the search. It may take several minutes
     for the Search to complete.
 
 38. Review the search results. Because Nestor was not assigned the eDiscovery Manager role, he is unable to view the search results. Therefore, the following message should appear at the top of the screen: **To preview search results, please ask your Compliance admin to grant you Preview permission.**
