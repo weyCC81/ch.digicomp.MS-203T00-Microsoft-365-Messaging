@@ -287,7 +287,7 @@ locate the UPN name.
     adding the domain record. If you’ll recall, when you were earlier adding the
     domain in the Microsoft 365 admin center, you indicated that you wanted to
     verify the domain using a TXT record. At that point you had to switch to DNS
-    Manger and add the TXT record. Now that you’ve added the TXT record, you can
+    Manager and add the TXT record. Now that you’ve added the TXT record, you can
     go back to the Microsoft 365 admin center and proceed with the domain
     verification process.
 

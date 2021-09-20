@@ -22,26 +22,28 @@ In your lab environment, your lab hosting provider has already:
  
  	Install-Module -name Exchangeonlinemanagement
 
- 3. If you are prompted to confirm whether you want to install the module from an untrusted repository (PSGallery), enter **A** to select **[A] Yes to
+ 3. You might be prompted "NuGet provider is required to continue", enter [Y] Yes [N] No [S] Suspend [?], enter **Y** to select **[Y] Yes**
+ 
+ 4. If you are prompted to confirm whether you want to install the module from an untrusted repository (PSGallery), enter **A** to select **[A] Yes to
     All.**
 
- 4. At the command prompt, type the following command and press Enter:
+ 5. At the command prompt, type the following command and press Enter:
 
 
 		Connect-exchangeonline
 
- 5.  A **Microsoft 365 Sign in** window will appear. Enter in the username for the **Mod Administrator** account provided by your learning provider
+ 6.  A **Microsoft 365 Sign in** window will appear. Enter in the username for the **Mod Administrator** account provided by your learning provider
     (admin@M365xZZZZZZ.onmicrosoft.com) and then select **Next**.
 
- 6.  In the **Enter password** window, enter the password for this admin account provided by your learning provider, and then select **Sign in**. It may take
+ 7.  In the **Enter password** window, enter the password for this admin account provided by your learning provider, and then select **Sign in**. It may take
     a moment to sign in before it returns a command prompt.
 
- 7.  At the command prompt, type the following command and press Enter (**Note:** This command may fail the first time. If it fails, re-run this step until it
+ 8.  At the command prompt, type the following command and press Enter (**Note:** This command may fail the first time. If it fails, re-run this step until it
      returns a successful result (the command prompt appears with no errors); testing shows that it sometimes takes two attempts):
 
 	Enable-OrganizationCustomization
 
-  8.  Close the PowerShell window.
+ 9.  Close the PowerShell window.
 
 
 ## Exercise 1 - Create Connectors
