@@ -41,8 +41,6 @@ In your lab environment, your lab hosting provider has already:
  8.  At the command prompt, type the following command and press Enter (**Note:** This command may fail the first time. If it fails, re-run this step until it
      returns a successful result (the command prompt appears with no errors); testing shows that it sometimes takes two attempts):
 
-	Enable-OrganizationCustomization
-
  9.  Close the PowerShell window.
 
 
