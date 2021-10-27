@@ -55,7 +55,7 @@ your hybrid deployment.
 3.  You need to open the **Network and Sharing Center**. To do so, select the
     network icon on the right-side of the system tray at the bottom of the
     screen (which displays **Adatum.com Internet access**), and in the menu that
-    appears, select **Network \&amp; Internet settings**.
+    appears, select **Open Network & Internet settings**.
 
 4.  In the **Settings** window, scroll to the bottom of the **Status** pane on
     the right and select **Network and Sharing Center**.
