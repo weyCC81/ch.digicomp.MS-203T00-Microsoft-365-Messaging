@@ -38,7 +38,7 @@ herself the Exchange Admin role. You will perform this task in the LON-CL1 VM.
 3.  In the **Microsoft 365 admin center**, select **Users** in the left-hand
     navigation pane, and then in the expanded group select **Active Users.**
 
-4.  In the **Active Users** window, note the 10 existing user accounts in the
+4.  In the **Active Users** window, note the existing user accounts in the
     **Active Users** list. These accounts were added to Adatum’s Microsoft 365
     tenant by your lab hosting provider. Since Holly is not familiar with adding
     a new user in Microsoft 365, she wants to create a user account for herself.  
