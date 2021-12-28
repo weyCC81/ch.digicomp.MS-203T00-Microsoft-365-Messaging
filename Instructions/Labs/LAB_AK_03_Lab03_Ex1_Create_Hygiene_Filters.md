@@ -27,59 +27,57 @@ applied to the email.
 
 2.  In your **Edge** browser, enter **protection.office.com** as URL
 
-3.  In the left-hand navigation pane, select **Security**.
+3.  In the **Office 365 Security & Compliance center**, select **Permissions**.
     
-4.  In the **Office 365 Security & Compliance center**, select **Permissions**.
-    
-5.  In the **Home \> permissions** page in the **search** field, type **Org** then select the search glass.
+4.  In the **Home \> permissions** page in the **search** field, type **Org** then select the search glass.
 
-6.  On the **Home \> permissions** page list, select the **Organization Management** role.
+5.  On the **Home \> permissions** page list, select the **Organization Management** role.
 
-7.  On the **Organization Management**page under the **Members**section, select the **Edit** icon.
+6.  On the **Organization Management** page under the **Members** section, select the **Edit** link.
 
-8. On the **Editing choose members** page. Select **Choose members**.
+7. On the **Editing choose members** page. Select **Choose members**.
 
-9. On the **Choose members** page, Select the **Add** icon.
+8. On the **Choose members** page, Select the **Add** icon.
 
-10. On the **Choose members** list. Select the **Mod Administrator** account.Then select the **Add** icon.
+9. On the **Choose members** list. Select the **Mod Administrator** account.Then select the **Add** icon.
 
-11. On the **Choose members** page. Select the **Done** icon.
+10. On the **Choose members** page. Select the **Done** icon.
 
-12. On the **Editing choose members** page, select the **Save** icon.
+11. On the **Editing choose members** page, select the **Save** icon.
 
      **Note**: the organization management role may take a minute or two to update the microsoft tenant. If the policy doesn't update within a few minutes proceed to the connection filter task. 
      
-13. In the **Office 365 Security & Compliance center**, select **Threat Management** in the left-hand
+12. In the **Office 365 Security & Compliance center**, select **Threat Management** in the left-hand
     navigation pane, and then in the expanded group select **Policy**.     
      
-14.  In the **Home \> Policy** page, select the **Anti-Malware** tile under the
+13.  In the **Home \> Policy** page, select the **Anti-Malware** tile under the
     **Policies** section.
 
-15. In the **Home \> Policy \> Anti-malware** page, on the menu bar at the top
+14. In the **Home \> Policy \> Anti-malware** page, on the menu bar at the top
     of the window, select **+Create** to add a new malware filter. This
     initiates the **Create an anti-malware policy** wizard.
 
-16. In the **Name your policy** page, enter **Malware Policy** in the **Name**
+15. In the **Name your policy** page, enter **Malware Policy** in the **Name**
     field.
     
-17. In the **Description** field, enter **This policy has been created to
+16. In the **Description** field, enter **This policy has been created to
     protect the messaging environment** and then select **Next**.   
 
-18. In the **users and domains** section under domains, enter **onmicrosoft.com** and then select **Next**.
+17. In the **users and domains** section under domains, enter **onmicrosoft.com** and then select **Next**.
 
-19. On the **protection settings** page, select the checkboxes for **enable the common attachements filter** and **enable zero-hour auto purge for malware (recommended)**.
+18. On the **protection settings** page, select the checkboxes for **enable the common attachements filter** and **enable zero-hour auto purge for malware (recommended)**.
 
-20. On the **Notifications** section, since this filter will not generate any
+19. On the **Notifications** section, since this filter will not generate any
     notifications, do not select any of the notification options, and instead
     select **Next**.
 
-21. On the **reivew** section, confirm that all the information is correct, then select the **Submit** icon.
+20. On the **reivew** section, confirm that all the information is correct, then select the **Submit** icon.
 
-22. Congratulations, the New Anti-Malware policy has been created. Select the **Done** icon.
+21. Congratulations, the New Anti-Malware policy has been created. Select the **Done** icon.
 
     **Note**: A **Security & Compliance** window will appear with a message that indicates your organization settings need to be updated. Select **Yes** to continue.
     
-23.  It may take a minute or so for your organization settings to be updated.
+22.  It may take a minute or so for your organization settings to be updated.
     Once the update is complete and you are back on the **Home \> Policy \>
     Anti-malware** page, you can proceed to the next task. Do not close any of
     the browser tabs.
