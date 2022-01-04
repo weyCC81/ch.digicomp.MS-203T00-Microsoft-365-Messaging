@@ -148,7 +148,7 @@ is delivered. This situation provides the basis for the Final Assessment lab.
 16. There is another test that you can perform to validate that your connector
     worked properly, even though the validation may have failed. This test is a message trace. 
     
-    Select the **connectors – Microsoft Exchange** tab in your Edge browser to display the EAC for
+    Select the **Exchange Admin Center** tab in your Edge browser to display the EAC for
     Exchange Online.
     
 17. If you recall from an earlier lab in this course, the Message Trace functionality has been moved from the classic EAC to the **New Exchange admin
@@ -184,9 +184,7 @@ is delivered. This situation provides the basis for the Final Assessment lab.
     -   the email you sent from Allan Yoo to Alex Wilber that was received into
         Alex’s Junk Email folder (note the **Status** of this email, which is
         **FilteredAsSpam**)
-
-    -   the reply that you sent from Alex Wilber back to Allan Yoo
-
+    
 22. Close this **Exchange admin center** tab (for the New Exchange admin center) in your Edge browser.
 
 23. In the Edge browser session, close the tab displaying Allan Yoo’s Outlook
@@ -260,6 +258,24 @@ data secure.
         ‎If it is not selected at the top, close your browser and start again at
         step 1 of this task. However, if **Enterprise** is selected, then repeat
         steps 3 and 4, and then continue with the next step.
+
+Note: If you continue to get the critical error, you can perform the following migration from the **Online Exchange Admin Center** using the following steps:
+
+    - From the **Online Exchange Admin Center** select **Migration** and **Add migration batch**.
+    
+    - Under **Give migration batch a unique name** enter **Migrating Allan Yoo**. Under **Select the migration path**, select **Migration to Exchange Online** and **Next**.
+    
+    - Under **Select the migration type**, select **Remote move migration** and **Next** twice.
+    
+    - Under **Select migration point**, select **Hybrid migration endpoint** and **Next**.
+    
+    - Under **Manually add users to migrate**, add in the Allan You user and select **Next**.
+    
+    - Under the **Target delivery domain**, select your online domain and then select **Next**.
+    
+    - Select **Automatically start the batch** and **Automatically complete the migration batch** and then select **Save** and **Done**.
+    
+    - If you used the workaround in this Note, then you skip ahead to the next task.
 
 7.  In the **new migration batch** window, if a sign in page appears (if it does
     not appear, then skip to the next step/**try in internet explorer**), enter **adatum\\Administrator** in
