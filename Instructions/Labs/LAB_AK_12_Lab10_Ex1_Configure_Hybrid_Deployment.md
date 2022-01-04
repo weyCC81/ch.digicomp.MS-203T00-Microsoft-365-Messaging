@@ -55,7 +55,7 @@ Exchange Online. Running the HCW will create Adatum’s hybrid deployment.
     in the left-hand navigation pane by default, which displays the
     **Welcome** page. 
     
-    Scroll to the bottom of the **Welcome** page and select **hybrid**.
+    Scroll to the bottom of the **Welcome** page and select **setup** under **hybrid**.
 
 8.  On the **setup** page there are two **configure** buttons. The first button
     configures an Exchange hybrid deployment, while the second button downloads the Exchange Online PowerShell module for supporting 
@@ -291,7 +291,7 @@ for future tasks in this exercise.
 
 14. You are currently in the on-premises EAC. You should also have the EAC for
     Exchange Online open in your Edge browser from the prior task (see the **setup –
-    Microsoft Exchange** tab); if so, select this tab.  
+    Microsoft Exchange** tab); if so, select this tab (which should be the New Exchange Admin center).
     ‎  
     ‎However, if you closed the EAC for Exchange Online at the end of the prior
     task, then open it again by entering the following URL (this shortcut saves
@@ -306,13 +306,11 @@ for future tasks in this exercise.
 
 17. In the list of accepted domains, select the
     **xxxUPNxxx.xxxCustomDomainxxx.xxx** domain (this is the accepted domain
-    that you added in the prior lab exercise) and then select the **pencil
-    (Edit)** icon.
+    that you added in the prior lab exercise) and then select the domain.
 
 18. In the **xxxUPNxxx.xxxCustomDomainxxx.xxx** window, under the **This
     accepted domain is:** setting, select the **Internal relay** option, select
-    **Save**, and then select **OK** once the information has been successfully
-    saved.
+    **Save**, and then close the window.
 
 19. On the **mail flow** page, select the **connectors** tab at the top of the
     page.  
@@ -326,25 +324,20 @@ for future tasks in this exercise.
 20. In the **connectors** tab, the list of connectors displays an **Inbound**
     and **Outbound** connector. You must validate the settings for the
     **Inbound** connector, which is already selected by default. Therefore,
-    simply select the **pencil (Edit)** icon.
+    simply select the connector.
 
-21. On the **Edit Connector** window that appears, the name and description of the
-    Inbound connector is displayed. Select **Next**.
+21. Under the **How to identify email sent from your email server**, select **Edit sent email identity**.
 
-22. On the **Edit Connector** page that asks **How should Office 365 identify
-    email from your email server**?, verify the option is selected that
-    asks: **By verifying that the subject name on the certificate that the
-    sending server uses to authenticate with Office 365 matches this domain name
-    (recommended).**  
+22. On the **Authenticating sent email** page, verify the option is selected that states: **By verifying that the subject name on the certificate that the
+    sending server uses to authenticate with Office 365 matches the domain entered in the text bos below (recommended).**  
     ‎  
     ‎You should also verify that \***.xxxCustomDomainxxx.xxx** is displayed in
     the corresponding domain name field below this **“By verifying…”** option
     (where xxxCustomDomainxxx.xxx is the lab hosting provider’s custom domain
     name); if not, you should enter this \***.xxxCustomDomainxxx.xxx** now.
-    Select **Next**.
+    Select **Save**.
 
-23. On the **Confirm your settings** page, select **Save**, and then select
-    **OK** once the information is successfully saved.‎
+23. Close the connector window.
 
 24. Leave the two Exchange admin center tabs open in your Edge browser session
     and proceed to the next task.  
@@ -364,20 +357,11 @@ deployment.
     (EAC) tabs open from the earlier tasks in this exercise – one for the
     on-premises EAC and one for the EAC for Exchange Online.
 
-    -   One EAC tab should be titled **send connectors – Microsoft Exchange.**
-        This is the on-premises EAC. Select this tab and note that in the
-        left-hand side of the blue bar at the top of the page, it displays
-        **Enterprise** and **Office 365**. This will help you identify this as
-        the on-premises EAC.
+    -   One EAC tab should be titled **send connectors – Microsoft Exchange**. This is the on-premises EAC. Select this tab and note that in the left-hand side of the blue bar at the top of the page, it displays **Enterprise** and **Office 365**. This will help you identify this as the on-premises EAC.
 
-    -   The second EAC tab should be titled **connectors – Microsoft Exchange**.
-        This is the EAC for Exchange Online. Select this tab and note that it
-        does not include the blue bar with the **Enterprise** and **Office 365**
-        options. This will help you identify this as the EAC for Exchange
-        Online.
+    -   The second EAC tab should be titled **Exchange admin center**. This is the EAC for Exchange Online. Select this tab and note that it does not include the blue bar with the Enterprise and Office 365 options. This will help you identify this as the EAC for Exchange Online.
 
-        Select the **send connectors – Microsoft Exchange** tab to display the
-        on-premises EAC.
+    Select the **send connectors – Microsoft Exchange** tab to display the on-premises EAC.
 
 3.  In the on-premises **Exchange admin center**, select **recipients** in the
     left-hand navigation pane. The **mailboxes** tab at the top of the page is
@@ -480,7 +464,7 @@ will fail.**
     the earlier task – one for the on-premises EAC and one for the EAC for
     Exchange Online.
 
-3.  In your browser, select the **connectors – Microsoft Exchange** tab in your
+3.  In your browser, select the **Exchange admin center** tab in your
     browser. This tab displays the EAC for Exchange Online.
 
 4.  In the **Exchange admin center** for Exchange Online, in the left-hand
@@ -501,32 +485,28 @@ will fail.**
 7.  With the **Outbound** connector highlighted, select the **trash can
     (Remove)** icon on the menu bar.
 
-8.  On the **Warning** dialog box, select **Yes** to confirm that you want to
+8.  On the warning dialog box, select **Confirm** to confirm that you want to
     delete this outbound connector. This will delete the outbound connector,
-    which will be removed from the list of connectors.
+    which will be removed from the list of connectors. Close the window.
 
 9.  You must now add a new Outbound connector. On the menu bar, select the
     **plus (+) sign** icon to add a new connector.
 
-10. On the **Select your mail flow scenario** page, select the drop-down arrow
-    in the **From** field and select **Office 365**.  
+10. On the **New connector** page, under **Connection from**, select **Office 365**.  
     ‎  
-    ‎Then select the drop-down arrow in the **To** field and select **Your
-    organization’s email server**. Select **Next**.
+    ‎Then, under **Connection to**, select **Your organization’s email server**. Select **Next**.
 
 11. On the **New connector** page, enter **Outbound connector to LON-EX1** in
     the **Name** field and then select **Next**.
 
-12. On the next **New connector** page that asks **When do you want to use this
-    connector?,** select the **For email messages sent to all accepted domains
+12. On the next **New connector** page for **Use of connector**, select the **For email messages sent to all accepted domains
     in your organization** option and then select **Next**.
 
-13. On the next **New connector** page that asks **How do you want to route
-    email messages?,** select the **plus (+) sign** icon.
-
-14. In the **add smart host** window that appears, enter the **IP address**
+13. On the next **New connector** page for **Routing**, enter the **IP address**
     provided by your lab hosting provider (for example, 64.64.221.224) for your
-    Microsoft 365 domain and then select **Save**.  
+    Microsoft 365 domain, select the **plus (+) sign** icon. 
+
+14. Once the IP address has been added, select **Next**.  
     ‎  
     ‎**Note:** In a real-world environment, you would typically enter a Fully
     qualified domain name (FQDN) here. However, given the settings of the VM lab
@@ -534,18 +514,15 @@ will fail.**
     bypass an internal conflict that appears to exist between Microsoft 365, the
     new xxxUPNxxx.xxxCustomDomainxxx.xxx domain, and the adatum.com domain.
 
-15. On the **New connector** page that asks **How do you want to route email
-    messages?,** the IP address should be displayed in the smart host list.
-    Select **Next**.
-
-16. On the next **New Connector** page that asks **How should Office 365 connect
-    to your email server**?, accept the default settings (if necessary, select them):
+15. On the **New connector** page for **Security restrictions**, accept the default settings (if necessary, select them):
 
     -   The **Always use Transport Layer Security (TLS) to secure the connection
         (recommended)** check box should be selected.
 
     -   The **Issued by a trusted certificate authority (CA)** option should be
         selected.
+
+16. On the next **New Connector** page for **Security restrictions**, accept the default settings (if necessary, select them):
 
     -   Below the **Issued by a trusted certificate authority (CA)** option,
         select the **And the subject name or subject alternative name (SAN)
@@ -554,20 +531,13 @@ will fail.**
         domain name) in the domain name field that appears below this check box,
         and then select **Next**.
 
-17. On the **Confirm your settings** page, review the settings. If any settings
-    need to be changed, select **Back** and then proceed back through the pages
-    to fix whatever needs to be corrected. When all the settings are correct,
-    select **Next**.
-
-18. On the **Validate this connector** page, select the **plus (+) sign** icon
-    to enter Allan Yoo’s on-premises email address, which will be used to
+17. On the **Validate email** page, you will enter Allan Yoo’s on-premises email address, which will be used to
     validate this connector.
 
-19. On the **add email** window that appears, enter Allan Yoo’s email address of
+18. On the **Validate email** window that appears, enter Allan Yoo’s email address of
     **Allan@xxxUPNxxx.xxxCustomDomainxxx.xxx** (where xxxUPNxxx is the unique
     UPN Name and xxxCustomDomainxxx.xxx is the custom domain name, both of which
-    were provided by your lab hosting provider), select **OK**, and then select
-    **OK** once the information is successfully saved.  
+    were provided by your lab hosting provider), select **+**.
     ‎  
     ‎**NOTE:** If it’s been less than 15 minutes since you completed the previous
     task in which you created the on-premises mailbox for Allan, then you may
@@ -575,23 +545,22 @@ will fail.**
     this occurs, select **Cancel**, then wait several more minutes and try
     again.
 
-20. Allan’s email address should now appear on the **Validate this connector**
+19. Allan’s email address should now appear on the **Validate email**
     page. Select **Validate**.
 
-21. Once the validation is complete, select **Close**. On the **Validation
+20. Once the validation is complete, select **Close**. On the **Validation
     Result** page, the validation will either be successful, or it will have
     failed. Perform the appropriate steps below depending on which result you
     receive.
 
-22. If the validation was successful, the two validation tasks should be
+21. If the validation was successful, the two validation tasks should be
     displayed: **checking connectivity to the IP address** and **sending a test
     email to an on-premises user mailbox within this IP address**. The status of
     both tasks should be **Succeeded**.  
     ‎  
-    ‎Select **Save**, and then select **OK** once the information is successfully
-    saved. Proceed to the final step in this task; you can skip the remaining steps, which provide instruction on what to do if the validation failed. Since your validation was successful, you can skip to the final step.
+    ‎Select **Next**, and then select **Create connector** and **Done**. Proceed to the final step in this task; you can skip the remaining steps, which provide instruction on what to do if the validation failed. Since your validation was successful, you can skip to the final step.
 
-23. If either of the validation tasks failed, select the failed task and then
+22. If either of the validation tasks failed, select the failed task and then
     select the **pencil** icon to display the **Details** about that task. This
     will help you troubleshoot the issue that caused the task failure.
 
@@ -616,7 +585,7 @@ will fail.**
         even though the validation failed. Select **Yes**, and then select
         **OK** once the information is successfully saved.
 
-24. To verify whether Allan received the validation email, select a new tab in
+23. To verify whether Allan received the validation email, select a **New InPrivate window** in
     your **Edge browser** and open **Outlook Web App** by entering the following
     URL: **https://xxxUPNxxx.xxxCustomDomainxxx.xxx/owa** (where xxxUPNxxx is
     the unique UPN name assigned to your tenant by your lab hosting provider and
@@ -627,12 +596,12 @@ will fail.**
     can ignore for the purpose of this lab. To bypass this error, select the
     **Advanced** button, and then select **Continue to localhost (unsafe)**.
 
-25. In the **Outlook** sign in window, enter **adatum\\Allan** in the
+24. In the **Outlook** sign in window, enter **adatum\\Allan** in the
     **Domain\\username** field, enter **Pa55w.rd** in the **Password** field,
     and then select **sign in**. If necessary, select your Language and Time
     Zone and select **Save**.
 
-26. In Allan’s Inbox, you may or may not see an email from
+25. In Allan’s Inbox, you may or may not see an email from
     **O365ConnectorValidation\@xxxUPNxxx.xxxCustomDomainxxx.xxx**.
 
     -   If you see this email, then open it. The message in the email indicates
@@ -668,6 +637,6 @@ will fail.**
         should have finished its configuration, so the mail should be delivered
         (even though from a validation standpoint, it does not think it did).
 
-27. Leave your browser and all its tabs open and proceed to the next exercise.
+26. Leave your browser and all its tabs open and proceed to the next exercise.
 
 # Proceed to Lab 10 - Exercise 2
