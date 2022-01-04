@@ -583,6 +583,8 @@ users’ email addresses from \@adatum.com to \@ xxxUPNxxx.xxxCustomDomainxxx.xx
 1.  You should still be logged into LON-DC1 as the **Administrator** with a
     password of **Pa55w.rd**; if necessary, log in now.
 
+    **Note: your lab provider may have already updated the PowerShell commands in Steps 7 and 8 with the correct custom domain name so you can simply copy and paste the PowerShell commands.**
+
 2.  In this task, you will run two PowerShell commands. To save you from having
     to manually type in the commands (which are quite lengthy) into PowerShell, you will copy the
     commands from these instructions and then paste them into Notepad. You will
@@ -695,6 +697,8 @@ To save you from having to manually type in the commands (which are quite length
     of text that can be copy and pasted at one time into a VM. If this occurs
     within your VM environment, you may have to copy and paste steps 5-15 in
     chunks to get all 11 steps copied into Notepad.
+    
+    **Note: your lab provider may have already updated the PowerShell commands in Steps 5-15 with the correct custom domain name so you can simply copy and paste the PowerShell commands.**
 
 3.  In the prior task, after you copied the two steps into Notepad, you did one
     mass replace on xxxUPNxxx.xxxCustomDomainxxx.xxx. However, in this task, one
@@ -870,8 +874,7 @@ To save you from having to manually type in the commands (which are quite length
     certificate (where xxxCustomDomainxxx_xxx is the name of your accepted
     domain) and then select the **pencil (Edit)** icon on the menu bar.
 
-23. You will now specify the Exchange services that you want to assign to this certificate for your accepted domain. In the **wildcard_xxxCustomDomainxxx_xxx** window, select **services** in
-    the left-hand pane.
+23. You will now specify the Exchange services that you want to assign to this certificate for your accepted domain. In the **wildcard_xxxCustomDomainxxx_xxx** window, select **services** in the left-hand pane.
 
 24. In the list of services, select the **SMTP** check box and the **IIS** check
     box, and then select **Save**. Select **Yes** in the **Warning** dialog box
