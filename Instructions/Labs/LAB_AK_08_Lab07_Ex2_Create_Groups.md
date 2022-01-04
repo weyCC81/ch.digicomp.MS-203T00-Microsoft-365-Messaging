@@ -173,8 +173,8 @@ Planner, and PowerBI, all of which allows teams to seamlessly work together.
     using the **Tenant Email** and **Password** provided by your lab hosting
     provider, and then navigate to the **Microsoft 365 admin center**.
 
-3.  In the **Microsoft 365 admin center**, select **Groups** in the left-hand
-    navigation pane, and then in the expanded group select **Active Groups**.
+3.  In the **Microsoft 365 admin center**, select **Teams & Groups** in the left-hand
+    navigation pane, and then in the expanded group select **Active teams & groups**.
 
 4.  In the **Active Groups** window, select **Add a group** on the menu bar.
     This initiates the **Add a group** wizard.
@@ -232,8 +232,7 @@ Planner, and PowerBI, all of which allows teams to seamlessly work together.
     the Groups list; whereas Microsoft 365 groups and Security groups usually
     take just a matter of minutes to appear.
 
-16. You’re now ready to add members to the Sales group. In the list of **Active
-    groups**, select the **Sales** group.
+16. You’re now ready to add members to the Sales group. In the list of **Active teams & groups**, select the **Sales** group.
 
 17. In the **Sales** pane that appears, the **General** tab is displayed by
     default. Select the **Members** tab.
