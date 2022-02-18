@@ -1,4 +1,4 @@
-# Module 10 - Lab 9 - Exercise 1 - Prepare Azure AD for Hybrid Synchronization
+# Module 9 - Lab 9 - Exercise 1 - Prepare Azure AD for Hybrid Synchronization
 
 In this lab you will continue in your role as Holly Dickson, Adatum’s Messaging
 Administrator. Adatum has decided to transition from their current Microsoft
