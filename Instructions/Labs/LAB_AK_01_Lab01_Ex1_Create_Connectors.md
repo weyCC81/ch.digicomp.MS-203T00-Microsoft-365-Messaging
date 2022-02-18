@@ -20,7 +20,7 @@ In your lab environment, your lab hosting provider has already:
 
  2.  Maximize your PowerShell window. In Windows PowerShell, at the command prompt, type the following command and press Enter:
  
- 	Install-Module -name Exchangeonlinemanagement
+         Install-Module -name Exchangeonlinemanagement
 
  3. You might be prompted "NuGet provider is required to continue", enter [Y] Yes [N] No [S] Suspend [?], enter **Y** to select **[Y] Yes**
  
@@ -41,7 +41,7 @@ In your lab environment, your lab hosting provider has already:
  8.  At the command prompt, type the following command and press Enter (**Note:** This command may fail the first time. If it fails, re-run this step until it
      returns a successful result (the command prompt appears with no errors); testing shows that it sometimes takes two attempts):
 
-        get-mailbox 
+         get-mailbox 
  
  9.  Close the PowerShell window.
 
@@ -67,6 +67,7 @@ You should write down the following information (provided by your instructor) fo
 - **Tenant password.** This is the password provided by your lab hosting provider for the tenant admin account.
 
 - **Custom Domain name.** Your lab hosting provider has created a custom domain name for Adatum that you will use when adding a custom domain into Microsoft 365 in a later lab exercise. The domain name is in the format **xxxUPNxxx.xxxCustomDomainxxx.xxx.** You must replace **xxxUPNxxx** with the UPN name provided by your lab hosting provider, and you must replace **xxxCustomDomainxxx.xxx** with the lab hosting provider's domain name. For example, let's assume your lab hosting provider is Fabrikam Inc. If the UPN number it assigns to your tenant is AMPVU3a and its custom domain name is fabrikam.us, then the domain name for your new custom domain would be AMPVU3a.fabrikam.us. Your instructor will provide you with your lab hosting provider's UPN number and custom domain name.  
+- **Network IP address.** Write down the IP Address value (this is the IP Address of your parent domain; for example, 64.64.206.13).
 
 ### Task 2 - Create a Custom Receive Connector
 
