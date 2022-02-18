@@ -259,24 +259,6 @@ data secure.
         step 1 of this task. However, if **Enterprise** is selected, then repeat
         steps 3 and 4, and then continue with the next step.
 
-Note: If you continue to get the critical error, you can perform the following migration from the **Online Exchange Admin Center** using the following steps:
-
-    - From the **Online Exchange Admin Center** select **Migration** and **Add migration batch**.
-    
-    - Under **Give migration batch a unique name** enter **Migrating Allan Yoo**. Under **Select the migration path**, select **Migration to Exchange Online** and **Next**.
-    
-    - Under **Select the migration type**, select **Remote move migration** and **Next** twice.
-    
-    - Under **Select migration point**, select **Hybrid migration endpoint** and **Next**.
-    
-    - Under **Manually add users to migrate**, add in the Allan You user and select **Next**.
-    
-    - Under the **Target delivery domain**, select your online domain and then select **Next**.
-    
-    - Select **Automatically start the batch** and **Automatically complete the migration batch** and then select **Save** and **Done**.
-    
-    - If you used the workaround in this Note, then you skip ahead to the next task.
-
 7.  In the **new migration batch** window, if a sign in page appears (if it does
     not appear, then skip to the next step/**try in internet explorer**), enter **adatum\\Administrator** in
     the **Account with privileges (domain\\user name)** field, enter
