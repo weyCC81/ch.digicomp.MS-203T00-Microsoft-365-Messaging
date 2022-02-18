@@ -262,7 +262,7 @@ data secure.
         steps 3 and 4, and then continue with the next step.
 
 7.  In the **new migration batch** window, if a sign in page appears (if it does
-    not appear, then skip to the next step), enter **adatum\\Administrator** in
+    not appear, then skip to the next step/**try in internet explorer**), enter **adatum\\Administrator** in
     the **Account with privileges (domain\\user name)** field, enter
     **Pa55w.rd** in the **Password of account with privileges** field, and then
     select **Next**.
@@ -416,7 +416,7 @@ This task will verify whether your connectors are correctly set up.
 
 11. You will now test whether Calendar functionality is working properly in
     Allan’s new Microsoft 365 mailbox. In Allan’s mailbox, select the
-    **calendar** icon in the bottom-left corner of the window.
+    **calendar** icon in the upper-left corner of the window.
 
 12. Create a new meeting with a subject **Test meeting**.
 
@@ -433,10 +433,7 @@ This task will verify whether your connectors are correctly set up.
 16. In Beth’s Inbox, **Accept** the meeting request and select **Send the
     response now**.
 
-17. Hover over the **Edge browser** icon on the taskbar and select the InPrivate
-    Session that’s displaying **Allan’s** calendar. Select the **email** icon in
-    the bottom left-corner of the window and verify that Allan received the
-    accepted meeting request from Beth.
+17. Hover over the **Edge browser** icon on the taskbar and select the InPrivate Session that’s displaying **Allan’s** calendar. Select the meeting on Allan's calendar and verify that Beth has accepted meeting request.
 
 18. Create another meeting request with a subject of **Test 2**. Add **Beth
     Burke** as a meeting attendee again, then select **Scheduling Assistant**.  

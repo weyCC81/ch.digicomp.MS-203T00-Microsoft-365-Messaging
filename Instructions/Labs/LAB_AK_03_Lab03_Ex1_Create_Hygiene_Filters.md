@@ -134,7 +134,7 @@ Therefore, when you create the malware policy later in this task and you attempt
 
     4. At the command prompt, type the following command and press Enter:
 
-   		Connect-exchangeonline
+   		    Connect-exchangeonline
 
     5.  A **Microsoft 365 Sign in** window will appear. Enter in the username for
     the **Mod Administrator** account provided by your learning provider
@@ -144,12 +144,9 @@ Therefore, when you create the malware policy later in this task and you attempt
     provided by your learning provider, and then select **Sign in**. It may take
     a moment to sign in before it returns a command prompt.
 
-    7.  At the command prompt, type the following command and press Enter (**Note:**
-    This command may fail the first time. If it fails, re-run this step until it
-    returns a successful result (the command prompt appears with no errors);
-    testing shows that it sometimes takes two attempts):
+    7.  At the command prompt, type the following command and press Enter:
 
-		Enable-OrganizationCustomization
+		      Enable-OrganizationCustomization
 
     8.  Close the PowerShell window.
 
@@ -165,7 +162,6 @@ Therefore, when you create the malware policy later in this task and you attempt
     continue. It may take a minute for your organization settings to be updated.
 
 26. Leave your browser open for the next task.
-
 
 ## Task 2 - Create a Connection Filter
 

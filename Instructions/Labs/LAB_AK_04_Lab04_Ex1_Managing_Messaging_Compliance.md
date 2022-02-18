@@ -189,12 +189,12 @@ numbers, and ABA routing numbers.
     options below it.
 
 21. In the options that appear, verify the **Block users from accessing shared
-    SharePoint, OneDrive, and Teams content** option is selected, and then under
-    it, select the **Block everyone. Only the content owner, the last modifier
-    and the site admin will continue to have access** option.
-
+    SharePoint, OneDrive, and Teams files** option is selected, and then verify
+    **Block everyone** is selected.
+    
 22. Scroll down on the **Create rule** window to the **User notifications**
-    group. Select the toggle button to turn **ON** user notifications.
+    group. Select the toggle button to turn **ON** user notifications and toggle
+    the check box next to **Notify users in Office 365 service with a policy tip**.   
 
 23. Under the **Email notifications** group, select the **Notify these people**
     option.
@@ -639,7 +639,7 @@ creating a Retention label through the Security and Compliance portal.
 
 8.  On the **Define retention settings** page, configure these settings as follows:
 
-    -   Retention period: **Custom – 0 years 0 months 30 Days**
+    -   Retention period: **Custom – 0 years 1 months 0 Days**
 
     -   Start the retention period based on: **When items were created**
 
@@ -655,7 +655,7 @@ creating a Retention label through the Security and Compliance portal.
     the **Information governance** window will display your new **30-day
     delete** label.
 
-12. Once the retention label has been created, you have the option of publishing the label, we will do that in the next task.  On the **Your retention label is created** screen select **Just save the label for now** and select **Done**.
+12. Once the retention label has been created, you have the option of publishing the label, we will do that in the next task. On the **Your retention label is created** screen select **Do nothing** and select **Done**.
 
 ## Task 7: Creating a Retention Label Policy
 
@@ -683,16 +683,18 @@ previously created.
     button at the top of window. This will initiate the **Publish labels**
     wizard that walks you through the steps of publishing a label.
 
-4.  On the **Choose a label** page, select the **30-day delete** checkbox, and select **Add**, then select **Next**.
+4.  On the **Choose a label to publish** page, select **Next**. 
+  
+5.  On the **Choose the type of retention policy to create** page, select **Static**, and then select **Next**.
 
-5.  On the **Choose locations** page, select the **All locations. Includes
+6.  On the **Choose locations** page, select the **All locations. Includes
     content in Exchange email, Office 365 groups, OneDrive and SharePoint
     documents** option and then select **Next**.
 
-6.  On the **Name your policy** page, enter **30-day delete policy** in the
+7.  On the **Name your policy** page, enter **30-day delete policy** in the
     **Name** field. Leave the **Description** field blank and select **Next**.
 
-7.  On the **Review you settings** page, review your settings and if any require
+8.  On the **Review you settings** page, review your settings and if any require
     correction, select the corresponding **Edit** option to fix the setting.
     When all settings are correct, select **Submit**.  
     ‎  
@@ -700,10 +702,10 @@ previously created.
     day to propagate a new retention label policy throughout the system once the
     policy is published.
 
-8.  Once the retention label policy has been created, select **Done** in the **Your policy was created** page. The policy will be displayed in
+9.  Once the retention label policy has been created, select **Done** in the **Your policy was created** page. The policy will be displayed in
     the list of label policies on the **Information governance** window.
 
-9.  Leave your browser and all tabs open and proceed to the next task.
+10.  Leave your browser and all tabs open and proceed to the next task.
 
 ## Task 8: Creating an eDiscovery Case
 
@@ -771,11 +773,10 @@ since you completed Task 1 and then perform this task again.
 
 11. Select **Save.**
 
-12. On the **eDiscovery** window, in the list of cases, select the **Open**
-    button that appears next to **AlexWilber-case01.**
+12. On the **eDiscovery** window, in the list of cases, double-click **AlexWilber-case01.**
 
 13. A new tab will open in your browser that displays this case. On the menu bar
-    at the top of the page, select the **Holds** tab.
+    at the top of the page, select the **Hold** tab.
 
 14. In the **Holds** tab for this case, select the **+Create** button. This will
     initiate a **Create a new hold** wizard that walks you through the steps to
@@ -792,7 +793,7 @@ since you completed Task 1 and then perform this task again.
 16. In the **Choose locations** page, to the right of the **Exchange email**
     location, select **Choose users, groups, or teams.**
 
-17. In the **Edit locations** page, under **Exchange email**, select the
+17. In the **Edit locations** page, under **Exchange mailboxes**, select the
     **Choose users, groups, or teams** button.
 
 18. In the **Edit locations** page, select **Choose users, groups, or teams**, enter **Alex** in the **Search** field that
@@ -801,7 +802,7 @@ since you completed Task 1 and then perform this task again.
     Alex. Scroll to the bottom of the **Edit locations** pane to view the search
     results.
 
-19. Select the check box next to **Alex Wilber** and then select the **Choose**
+19. Select the check box next to **Alex Wilber** and then select the **Done**
     button at the bottom of the window.
 
 20. On the **Edit locations** page, select **Done**.
@@ -825,9 +826,9 @@ since you completed Task 1 and then perform this task again.
 
 27. On the **Review your settings** page, review the settings and if any need to
     be adjusted, select **Edit** next to the setting and make the necessary correction.
-    Once all settings are correct, select **Create this hold**.
+    Once all settings are correct, select **Submit**.
 
-28. In the **AlexW** pane, select **Close**.  
+28. In the **AlexW** pane, select **Done**.  
     ‎  
     ‎**Note:** You have just placed a hold on Alex Wilber’s account that will
     retain any emails that contain **Sensitive, Confidential, Secret** anywhere
@@ -839,7 +840,7 @@ since you completed Task 1 and then perform this task again.
     You will now create a new search that checks for emails that contain
     **Sensitive, Confidential, Secret** in the email and in the Subject line.
 
-30. In the **Searches** tab, select the **+Guided Search** button. This will
+30. In the **Searches** tab, select the **+ New Search** button. This will
     initiate a **New search** wizard that walks you through the steps to create
     a new search.
 
@@ -849,7 +850,7 @@ since you completed Task 1 and then perform this task again.
 
 32. In the **Locations** page, select the **Specific locations** option and then
     select the **Select all** toggle switch that appears to the right of
-    **Exchange email** to turn it **On.** Select **Next**.
+    **Exchange mailboxes** to turn it **On.** Select **Next**.
 
 33. In the **Condition card** page, in the **Enter keywords** field, enter the
     following: **Sensitive, Confidential, Secret**
@@ -865,7 +866,7 @@ since you completed Task 1 and then perform this task again.
     In the **Type subject** field, enter the following: **Sensitive,
     Confidential, Secret**
 
-37. Select **Finish**. This initiates the search. It may take several minutes
+37. Select **Next** and **Submit**. This initiates the search. It may take several minutes
     for the Search to complete.
 
 38. Review the search results. Because Nestor was not assigned the eDiscovery Manager role, he is unable to view the search results. Therefore, the following message should appear at the top of the screen: **To preview search results, please ask your Compliance admin to grant you Preview permission.**

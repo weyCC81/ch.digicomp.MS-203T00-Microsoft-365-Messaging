@@ -194,31 +194,35 @@ Planner, and PowerBI, all of which allows teams to seamlessly work together.
 
     -   Enter **Patti** in the **Owners** field. In the drop-down menu that
         appears, select **Patti Fernandez**.
+        
+    -   Select **Add (2)**. 
 
     -   Select **Next**.
 
-8.  In the **Edit settings** page, enter **sales** in the **Group email
+8.  In the **Add members** page, select **Next**.
+
+9.  In the **Edit settings** page, enter **sales** in the **Group email
     address** field.
 
-9.  Under the **Privacy** section, select the **Private** option.
+10.  Under the **Privacy** section, select the **Private** option.
 
-10. Under the **Add Microsoft Teams to your group** section, verify the **Create
+11. Under the **Add Microsoft Teams to your group** section, verify the **Create
     a team for this group** check box is selected (select it if need be).
 
-11. Select **Next**.
+12. Select **Next**.
 
-12. In the **Review and finish adding group** page, review the content that you
+13. In the **Review and finish adding group** page, review the content that you
     entered. If everything is correct, select **Create group**; otherwise,
     select **Back** and fix anything that needs correction (or select **Edit**
     under the specific area that needs adjustment).
 
-13. On the **New group created** page, note the comment at the top of the page
+14. On the **New group created** page, note the comment at the top of the page
     that it may take 5 minutes for the new group to appear in the list of
     groups.
 
     Select **Close**. This returns you to the **Groups** page.
 
-14. If the new Sales group does not appear in the **Groups** list, wait a minute
+15. If the new Sales group does not appear in the **Groups** list, wait a minute
     or so and then select **Refresh** on the menu bar. If the Sales group still
     does not appear, then refresh the page every minute or so until it does.
 
@@ -228,32 +232,32 @@ Planner, and PowerBI, all of which allows teams to seamlessly work together.
     the Groups list; whereas Microsoft 365 groups and Security groups usually
     take just a matter of minutes to appear.
 
-15. You’re now ready to add members to the Sales group. In the list of **Active
+16. You’re now ready to add members to the Sales group. In the list of **Active
     groups**, select the **Sales** group.
 
-16. In the **Sales** pane that appears, the **General** tab is displayed by
+17. In the **Sales** pane that appears, the **General** tab is displayed by
     default. Select the **Members** tab.
 
-17. Under the **Owners** section, you can see the two owners (Allan and Patti),
+18. Under the **Owners** section, you can see the two owners (Allan and Patti),
     but you can also see that there are no members. Under the **Members**
     section, select **View all and manage members** to add members to the group.
 
-18. In the **Sales** group window, select **+ Add members**. This displays the
+19. In the **Sales** group window, select **+ Add members**. This displays the
     list of current Microsoft 365 users.
 
-19. In the list of users, select the check boxes for **Diego Siciliani** and
+20. In the list of users, select the check boxes for **Diego Siciliani** and
     **Lynne Robbins**, and then scroll to the bottom and select **Add (2)**.
 
-20. In the **Members** window, verify that Diego and Lynne appear as members and select the left arrow to return to the **Sales** properties window.
+21. In the **Members** window, verify that Diego and Lynne appear as members and select the left arrow to return to the **Sales** properties window.
 
-21. On the **Sales** window, Diego and Lynne should now appear as members of the
+22. On the **Sales** window, Diego and Lynne should now appear as members of the
     group. If they do not appear, select the **Refresh** icon in the upper
     right-hand corner of the screen.  
       
     Once Lynn and Diego appear as members of the group, select the **X** in the
     upper right-hand corner to close the window.
 
-22. On the **Active groups** window, note the difference between the
+23. On the **Active groups** window, note the difference between the
     **Marketing** distribution list that you added in the prior task and the
     **Sales** group that you added in this task.
 
@@ -267,24 +271,24 @@ Planner, and PowerBI, all of which allows teams to seamlessly work together.
     To further elaborate on this difference, select the **Sales** group in the
     list of groups.
 
-23. In the **Sales** group window that appears, note the four tabs that appear
+24. In the **Sales** group window that appears, note the four tabs that appear
     at the top – General, Members, Settings, and Microsoft Teams. Select the
     **Microsoft Teams** tab.
 
-24. In the **Microsoft Teams** tab, note that you have the option to navigate to
+25. In the **Microsoft Teams** tab, note that you have the option to navigate to
     the **Microsoft Teams admin center** to manage your Teams settings. Select
     the **X** in the upper right-hand corner of the **Sales** window to close
     it.
 
-25. In the **Active groups** window, select the **Marketing** group.
+26. In the **Groups** window, select the **Distribution list** tab, select the **Marketing** group.
 
-26. In the **Marketing** group window, note that a **Microsoft Teams** tab does
+27. In the **Marketing** group window, note that a **Microsoft Teams** tab does
     not appear. This is because when you added the group through the EAC, it did
     not provide an option to create a team for this group in Microsoft Teams.  
       
     Select the **X** in the upper right-hand corner of the **Marketing** window
     to close it.
 
-27. Leave your browser and all the tabs open for the next exercise.
+28. Leave your browser and all the tabs open for the next exercise.
 
 # End of Lab 7

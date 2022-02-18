@@ -200,9 +200,9 @@ Holly’s pilot project.
     log in now.
 
 2.  The **Exchange admin center** for Exchange Online should still be open in
-    your Edge browser. In the left-hand navigation pane, select **recipients.**
+    your Edge browser. In the left-hand navigation pane, select **Classic Exchange admin center**.
 
-3.  On the **recipients** page, the **mailboxes** tab should be selected by
+3.  On the **Welcome** page, select **recipients**. The **mailboxes** tab should be selected by
     default; if not, then select it now.
 
 4.  The prior task indicated that by default, all user mailboxes are assigned
