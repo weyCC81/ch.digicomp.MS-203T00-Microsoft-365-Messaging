@@ -335,14 +335,13 @@ for future tasks in this exercise.
     the corresponding domain name field below this **“By verifying…”** option
     (where xxxCustomDomainxxx.xxx is the lab hosting provider’s custom domain
     name); if not, you should enter this \***.xxxCustomDomainxxx.xxx** now.
-    Select **Save**.
 
 23. Close the connector window.
 
 24. Leave the two Exchange admin center tabs open in your Edge browser session
     and proceed to the next task.  
+    
     ‎
-
 ## Task 3: Prepare for testing by creating on-premises user mailboxes
 
 In this task, you will remain in your Exchange Server (LON-EX1) VM, navigate to
@@ -357,11 +356,19 @@ deployment.
     (EAC) tabs open from the earlier tasks in this exercise – one for the
     on-premises EAC and one for the EAC for Exchange Online.
 
-    -   One EAC tab should be titled **send connectors – Microsoft Exchange**. This is the on-premises EAC. Select this tab and note that in the left-hand side of the blue bar at the top of the page, it displays **Enterprise** and **Office 365**. This will help you identify this as the on-premises EAC.
+    -   One EAC tab should be titled **send connectors – Microsoft Exchange**. 
+        This is the on-premises EAC. Select this tab and note that in the 
+        left-hand side of the blue bar at the top of the page, it displays 
+        **Enterprise** and **Office 365**. This will help you identify this as 
+        the on-premises EAC.
 
-    -   The second EAC tab should be titled **Exchange admin center**. This is the EAC for Exchange Online. Select this tab and note that it does not include the blue bar with the Enterprise and Office 365 options. This will help you identify this as the EAC for Exchange Online.
+    -   The second EAC tab should be titled **Exchange admin center**. 
+        This is the EAC for Exchange Online. Select this tab and note that 
+        it does not include the blue bar with the Enterprise and Office 365 options. 
+        This will help you identify this as the EAC for Exchange Online.
 
-    Select the **send connectors – Microsoft Exchange** tab to display the on-premises EAC.
+        Select the **send connectors – Microsoft Exchange** tab to display the 
+        on-premises EAC.
 
 3.  In the on-premises **Exchange admin center**, select **recipients** in the
     left-hand navigation pane. The **mailboxes** tab at the top of the page is
@@ -549,11 +556,13 @@ will fail.**
     page. Select **Validate**.
 
 20. Once the validation is complete, select **Close**. On the **Validation
+
     Result** page, the validation will either be successful, or it will have
     failed. Perform the appropriate steps below depending on which result you
     receive.
 
 21. If the validation was successful, the two validation tasks should be
+
     displayed: **checking connectivity to the IP address** and **sending a test
     email to an on-premises user mailbox within this IP address**. The status of
     both tasks should be **Succeeded**.  
