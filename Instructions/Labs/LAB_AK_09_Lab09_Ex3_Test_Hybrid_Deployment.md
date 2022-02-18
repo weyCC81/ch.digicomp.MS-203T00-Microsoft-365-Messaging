@@ -184,7 +184,7 @@ is delivered. This situation provides the basis for the Final Assessment lab.
     -   the email you sent from Allan Yoo to Alex Wilber that was received into
         Alex’s Junk Email folder (note the **Status** of this email, which is
         **FilteredAsSpam**)
-    
+
 22. Close this **Exchange admin center** tab (for the New Exchange admin center) in your Edge browser.
 
 23. In the Edge browser session, close the tab displaying Allan Yoo’s Outlook
