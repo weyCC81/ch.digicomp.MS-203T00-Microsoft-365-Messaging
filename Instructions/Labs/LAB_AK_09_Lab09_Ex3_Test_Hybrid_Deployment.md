@@ -1,4 +1,4 @@
-# Module 12 - Lab 10 - Exercise 2 - Test your Hybrid Deployment
+# Module 9 - Lab 9 - Exercise 3 - Test your Hybrid Deployment
 
 In the prior exercise, you configured Adatum’s Exchange environment for a hybrid
 deployment. In this exercise, you will test your new hybrid deployment. This
