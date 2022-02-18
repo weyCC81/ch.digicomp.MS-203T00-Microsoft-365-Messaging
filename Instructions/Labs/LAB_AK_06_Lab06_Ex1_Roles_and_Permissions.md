@@ -28,8 +28,10 @@ then assign two specific administrators to this role.
     with a password of **Pa55w.rd**.
 
 2.  The Microsoft Edge browser may still be open from Lab 4 where you were
-    logged into Microsoft 365 as a user other than the MOD Administrator and you had Compliance center open. Log out of Microsoft 365 and log back in as the MOD Administrator account. 
-      
+    logged into Microsoft 365 as a user other than the MOD Administrator
+    and you had Compliance center open. Log out of Microsoft 365 and log 
+    back in as the MOD Administrator account. 
+
 3.  Close all tabs in the Edge browser except for the **Sign out** tab.
 
 4.  ‎On the **Sign out** tab, enter the following URL in the address bar:
