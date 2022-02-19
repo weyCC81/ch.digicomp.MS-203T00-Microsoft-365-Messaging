@@ -1,4 +1,4 @@
-# Module 8 - Lab 7 - Exercise 2 - Create Groups
+# Module 7 - Lab 7 - Exercise 2 - Create Groups
 
 In this exercise, you will continue in your role as Holly Dickson, Adatum’s
 Messaging Administrator. As part of her pilot project for deploying Microsoft
@@ -232,8 +232,7 @@ Planner, and PowerBI, all of which allows teams to seamlessly work together.
     the Groups list; whereas Microsoft 365 groups and Security groups usually
     take just a matter of minutes to appear.
 
-16. You’re now ready to add members to the Sales group. In the list of **Active
-    groups**, select the **Sales** group.
+16. You’re now ready to add members to the Sales group. In the list of **Active teams & groups**, select the **Sales** group.
 
 17. In the **Sales** pane that appears, the **General** tab is displayed by
     default. Select the **Members** tab.
