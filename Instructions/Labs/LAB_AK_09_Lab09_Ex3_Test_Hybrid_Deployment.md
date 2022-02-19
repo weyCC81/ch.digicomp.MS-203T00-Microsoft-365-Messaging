@@ -1,4 +1,4 @@
-# Module 12 - Lab 10 - Exercise 2 - Test your Hybrid Deployment
+# Module 9 - Lab 9 - Exercise 3 - Test your Hybrid Deployment
 
 In the prior exercise, you configured Adatum’s Exchange environment for a hybrid
 deployment. In this exercise, you will test your new hybrid deployment. This
@@ -148,7 +148,7 @@ is delivered. This situation provides the basis for the Final Assessment lab.
 16. There is another test that you can perform to validate that your connector
     worked properly, even though the validation may have failed. This test is a message trace. 
     
-    Select the **connectors – Microsoft Exchange** tab in your Edge browser to display the EAC for
+    Select the **Exchange Admin Center** tab in your Edge browser to display the EAC for
     Exchange Online.
     
 17. If you recall from an earlier lab in this course, the Message Trace functionality has been moved from the classic EAC to the **New Exchange admin
@@ -184,8 +184,6 @@ is delivered. This situation provides the basis for the Final Assessment lab.
     -   the email you sent from Allan Yoo to Alex Wilber that was received into
         Alex’s Junk Email folder (note the **Status** of this email, which is
         **FilteredAsSpam**)
-
-    -   the reply that you sent from Alex Wilber back to Allan Yoo
 
 22. Close this **Exchange admin center** tab (for the New Exchange admin center) in your Edge browser.
 
