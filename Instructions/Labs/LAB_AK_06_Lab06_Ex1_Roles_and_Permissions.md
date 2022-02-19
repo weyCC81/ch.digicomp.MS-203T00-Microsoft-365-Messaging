@@ -1,4 +1,4 @@
-# Module 7 - Lab 6 - Exercise 1 - Manage Roles and Permission Policies
+# Module 6 - Lab 6 - Exercise 1 - Manage Roles and Permission Policies
 
 In this exercise you will continue in your role as Holly Dickson, Adatum’s
 Messaging Administrator. Holly has been tasked with managing Microsoft 365 admin
@@ -27,15 +27,10 @@ then assign two specific administrators to this role.
 1.  Switch to the LON-CL1 VM and if necessary, log in as the **Administrator**
     with a password of **Pa55w.rd**.
 
-2.  The Microsoft Edge browser should still be open from Lab 4 where you were
-    logged into Microsoft 365 as Allan Deyoung and you had the Office 365
-    Security & Compliance center open. You must log out of Microsoft 365 as
-    Allan and log back in as the MOD Administrator account so that Holly can
-    manage the Exchange admin roles and permissions.  
-      
-    On the **Office 365 Security & Compliance** center tab, select Allan’s
-    picture in the upper right-hand corner of the screen, and in the menu that
-    appears, select **Sign out**.
+2.  The Microsoft Edge browser may still be open from Lab 4 where you were
+    logged into Microsoft 365 as a user other than the MOD Administrator
+    and you had Compliance center open. Log out of Microsoft 365 and log 
+    back in as the MOD Administrator account. 
 
 3.  Close all tabs in the Edge browser except for the **Sign out** tab.
 
