@@ -218,12 +218,6 @@ malware. Microsoft 365 has built-in malware and spam filtering capabilities that
 help protect inbound and outbound messages from malicious software and help
 protect users from receiving spam messages.
 
-For Microsoft 365 customers whose mailboxes are hosted in Microsoft Exchange
-Online, their email messages are automatically protected against spam and
-malware. Microsoft 365 has built-in malware and spam filtering capabilities that
-help protect inbound and outbound messages from malicious software and help
-protect users from receiving spam messages.
-
 As Adatum’s Messaging Administrator, Holly doesn't need to set up or maintain
 the filtering technologies, which are enabled by default. However, she can make
 company-specific filtering customizations in the Exchange admin center. She has
