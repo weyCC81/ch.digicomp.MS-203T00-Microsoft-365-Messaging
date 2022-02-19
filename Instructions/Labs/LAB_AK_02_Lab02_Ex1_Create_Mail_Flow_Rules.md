@@ -66,8 +66,8 @@ checks for sensitive information in emails sent from inside the organization.
     select **Show All** to display all the navigation menu options.
 
 10. On the left-hand navigation bar, in the **Admin centers** section, select
-    **Exchange**. This opens the classic Exchange admin center for Exchange
-    Online.
+    **Exchange**. This opens the new Exchange admin center for Exchange
+    Online. Select **Classic Exchange admin center** on the lower left menu.
 
 11. In the **Exchange admin center**, in the left-hand navigation
     pane, select **mail flow.**
