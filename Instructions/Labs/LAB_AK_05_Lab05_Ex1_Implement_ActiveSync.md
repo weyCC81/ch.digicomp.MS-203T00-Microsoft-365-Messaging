@@ -1,4 +1,4 @@
-# Module 6 – Lab 5 - Exercise 1 - Implement ActiveSync
+# Module 5 – Lab 5 - Exercise 1 - Implement ActiveSync
 
 In this lab you will be guided through the process of enabling and disabling
 Exchange ActiveSync. ActiveSync is a client protocol that enables users to
