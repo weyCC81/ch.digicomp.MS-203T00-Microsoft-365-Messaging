@@ -96,7 +96,7 @@ numbers, and ABA routing numbers.
 3.  In the **Microsoft 365 compliance** portal, in the left-hand navigation
     pane, select **Policies.**
 
-4.  On the **Policies** page, under the **Data** section, select **Data loss
+4.  On the **Policies** page, under the **Solutions** section, select **Data loss
     prevention**.
 
 5.  On the **Data loss prevention** page, navigate to the **Policies** tab, then select **+Create policy** in the menu bar. This
@@ -194,7 +194,7 @@ numbers, and ABA routing numbers.
     
 22. Scroll down on the **Create rule** window to the **User notifications**
     group. Select the toggle button to turn **ON** user notifications and toggle
-    the check box next to **Notify users in Office 365 service with a policy tip**.   
+    the check box next to **Use notifications to inform your users and help educate them on the proper use of sensitive info**.   
 
 23. Under the **Email notifications** group, select the **Notify these people**
     option.
@@ -234,7 +234,7 @@ numbers, and ABA routing numbers.
 31. Scroll to the bottom of the **Create rule** window, select the drop-down
     arrow in the **Priority** field and select **1**.
 
-32. Select **Save**.
+32. Select **Save**. If you are prompted to add a named entity select **No**.
 
 33. This returns you to the **Customize advanced DLP rules** page. Select
     **Next**.
@@ -437,26 +437,16 @@ in the New EAC.
     the **Last 2 days** (actually, you can select any value greater than 1 day).
 
 14. Under the **Report type** section, select the **Extended report** option and
-    then select **Next**.
+    then select **Save**.
 
-15. On the **Prepare message trace report** page, review the information for the
-    report you just configured.  
-      
-    Select the **Prepare report** button at the bottom of the pane.
-
-16. On the **Your request has been submitted** page, review the information and
-    then select **Close**.
-
-17. On the **New message trace** window, select **Save**.
-
-18. In the dialog box that appears, change the **Name** of the report to
+15. In the dialog box that appears, change the **Name** of the report to
     **Messages sent to Alex Wilber in the past day**, select **Save**, and then
     select **Done**.
 
-19. In the **New message trace** pane, select the **X** in the upper right-hand
+16. In the **New message trace** pane, select the **X** in the upper right-hand
     corner to close the pane.
 
-20. On the **Message trace** window, note how the **Custom queries** tab is now
+17. On the **Message trace** window, note how the **Custom queries** tab is now
     displayed, and it includes the **Messages sent to Alex Wilber in the past
     day** query that you just created. Holly has now created a custom query that
     she can run at any time in the future.  
@@ -761,7 +751,7 @@ since you completed Task 1 and then perform this task again.
     by your lab hosting provider and then select **Sign in**.
 
 8.  On the **Office 365 Security &amp; Compliance** center, select **eDiscovery** in the left-hand
-    navigation pane, and then in the expanded group select **eDiscovery.**
+    navigation pane, and then in the expanded group select **eDiscovery.** This will redirect to the **Microsoft 365 compliance** admin center. 
 
 9.  In the **eDiscovery** pane, select the **+Create a case** button.
 
@@ -773,7 +763,7 @@ since you completed Task 1 and then perform this task again.
 
 11. Select **Save.**
 
-12. On the **eDiscovery** window, in the list of cases, double-click **AlexWilber-case01.**
+12. On the **eDiscovery** window, in the list of cases, select **AlexWilber-case01.**
 
 13. A new tab will open in your browser that displays this case. On the menu bar
     at the top of the page, select the **Hold** tab.
@@ -866,7 +856,7 @@ since you completed Task 1 and then perform this task again.
     In the **Type subject** field, enter the following: **Sensitive,
     Confidential, Secret**
 
-37. Select **Next** and **Submit**. This initiates the search. It may take several minutes
+37. Select **Next**, **Submit** and **Done**. This initiates the search. It may take several minutes
     for the Search to complete.
 
 38. Review the search results. Because Nestor was not assigned the eDiscovery Manager role, he is unable to view the search results. Therefore, the following message should appear at the top of the screen: **To preview search results, please ask your Compliance admin to grant you Preview permission.**
