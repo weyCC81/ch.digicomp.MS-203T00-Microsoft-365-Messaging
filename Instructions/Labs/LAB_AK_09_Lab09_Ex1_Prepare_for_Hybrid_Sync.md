@@ -646,8 +646,7 @@ users’ email addresses from \@adatum.com to \@ xxxUPNxxx.xxxCustomDomainxxx.xx
     VM environments, you just have to right-click at the command prompt to both
     paste in the copied command AND run it.
 
-    ‎Set-ADForest -identity adatum.com -UPNSuffixes
-    \@{replace="xxxUPNxxx.xxxCustomDomainxxx.xxx"}
+    `Set-ADForest -identity adatum.com -UPNSuffixes @{replace="xxxUPNxxx.xxxCustomDomainxxx.xxx"}`
 
 8.  Copy the following command from Notepad, paste it into PowerShell at the
     command prompt, and then run it.  
@@ -655,9 +654,7 @@ users’ email addresses from \@adatum.com to \@ xxxUPNxxx.xxxCustomDomainxxx.xx
     ‎This command changes all existing adatum.com accounts to the new UPN
     \@xxxUPNxxx.xxxCustomDomainxxx.xxx domain:  
     ‎  
-    ‎‎Get-ADUser -Filter \* -Properties SamAccountName \| ForEach-Object {
-    Set-ADUser \$\_ -UserPrincipalName (\$_.SamAccountName +
-    "\@xxxUPNxxx.xxxCustomDomainxxx.xxx" )}
+    `Get-ADUser -Filter * -Properties SamAccountName | ForEach-Object {Set-ADUser $_ -UserPrincipalName ($_.SamAccountName + "@xxxUPNxxx.xxxCustomDomainxxx.xxx" )}`
 
 9.  Wait for PowerShell to complete the prior command and return to the command
     prompt, and then close the Windows PowerShell window.
@@ -745,40 +742,35 @@ To save you from having to manually type in the commands (which are quite length
     ‎This command will add a new send connector with a wildcard (asterisk) to
     accept all emails from any domain:  
     ‎  
-    ‎New-SendConnector -Name "To Internet" -AddressSpaces "\*"
+    `New-SendConnector -Name "To Internet" -AddressSpaces "*"`
 
 6.  Copy the following command from Notepad, paste it into the Exchange
     Management Shell at the command prompt, and then run it. This command will
     add the accepted xxxUPNxxx.xxxCustomDomainxxx.xxx domain as a Micro, set it
     as a trusted domain, and assign it the Alias of A.Datum:
 
-    New-AcceptedDomain -DomainName "xxxUPNxxx.xxxCustomDomainxxx.xxx"
-    -DomainType Authoritative -Name "A.Datum"
+    `New-AcceptedDomain -DomainName "xxxUPNxxx.xxxCustomDomainxxx.xxx" -DomainType Authoritative -Name "A.Datum"`
 
 7.  Copy the following command from Notepad, paste it into the Exchange
     Management Shell at the command prompt, and then run it. This command will
     set the default email policy for every user to have its primary email
     address as the accepted domain of xxxUPNxxx.xxxCustomDomainxxx.xxx:
 
-    Set-EmailAddressPolicy -Identity "Default Policy"
-    -EnabledPrimarySMTPAddressTemplate
-    "SMTP:%m\@xxxUPNxxx.xxxCustomDomainxxx.xxx"
+    `Set-EmailAddressPolicy -Identity "Default Policy" -EnabledPrimarySMTPAddressTemplate "SMTP:%m@xxxUPNxxx.xxxCustomDomainxxx.xxx"`
 
 8.  Copy the following command from Notepad, paste it into the Exchange
     Management Shell at the command prompt, and then run it. This command will
     update the default email policy that was just changed in the previous
     command:
 
-    Update-EmailAddressPolicy -Identity "Default Policy"
+    `Update-EmailAddressPolicy -Identity "Default Policy"`
 
 9.  Copy the following command from Notepad, paste it into the Exchange
     Management Shell at the command prompt, and then run it. This command will
     set the internal and external address for the OWA Virtual Directory to
     https://xxxUPNxxx.xxxCustomDomainxxx.xxx/OWA:
 
-    Set-OwaVirtualDirectory -Identity "LON-EX1\\OWA (Default Web Site)"
-    -ExternalUrl https://xxxUPNxxx.xxxCustomDomainxxx.xxx/OWA -InternalUrl
-    https://xxxUPNxxx.xxxCustomDomainxxx.xxx/OWA  
+    `Set-OwaVirtualDirectory -Identity "LON-EX1\OWA (Default Web Site)" -ExternalUrl https://xxxUPNxxx.xxxCustomDomainxxx.xxx/OWA -InternalUrl https://xxxUPNxxx.xxxCustomDomainxxx.xxx/OWA`
     ‎  
     ‎**NOTE:** Ignore the warning that’s displayed. This warning is addressed
     when you run the next command.
@@ -788,29 +780,21 @@ To save you from having to manually type in the commands (which are quite length
     set the internal and external address for the ECP Virtual Directory to
     https://xxxUPNxxx.xxxCustomDomainxxx.xxx/ECP:
 
-    Set-EcpVirtualDirectory -Identity "LON-EX1\\ECP (Default Web Site)"
-    -ExternalUrl https://xxxUPNxxx.xxxCustomDomainxxx.xxx/ECP -InternalUrl
-    https://xxxUPNxxx.xxxCustomDomainxxx.xxx/ECP
+    `Set-EcpVirtualDirectory -Identity "LON-EX1\ECP (Default Web Site)" -ExternalUrl https://xxxUPNxxx.xxxCustomDomainxxx.xxx/ECP -InternalUrl https://xxxUPNxxx.xxxCustomDomainxxx.xxx/ECP`
 
 11. Copy the following command from Notepad, paste it into the Exchange
     Management Shell at the command prompt, and then run it. This command will
     set the internal and external address for the Active Sync Virtual Directory
     to https://xxxUPNxxx.xxxCustomDomainxxx.xxx/Microsoft-Server-Activesync:
 
-    Set-ActivesyncVirtualDirectory -Identity
-    "LON-EX1\\Microsoft-Server-ActiveSync (Default Web Site)" -ExternalUrl
-    https://xxxUPNxxx.xxxCustomDomainxxx.xxx/Microsoft-Server-Activesync
-    -InternalUrl
-    https://xxxUPNxxx.xxxCustomDomainxxx.xxx/Microsoft-Server-Activesync
+    `Set-ActivesyncVirtualDirectory -Identity "LON-EX1\Microsoft-Server-ActiveSync (Default Web Site)" -ExternalUrl https://xxxUPNxxx.xxxCustomDomainxxx.xxx/Microsoft-Server-Activesync -InternalUrl https://xxxUPNxxx.xxxCustomDomainxxx.xxx/Microsoft-Server-Activesync`
 
 12. Copy the following command from Notepad, paste it into the Exchange
     Management Shell at the command prompt, and then run it. This command will
     set the internal and external address for the Web Services Virtual Directory
     to https://xxxUPNxxx.xxxCustomDomainxxx.xxx/ews/exchange.asmx:
 
-    Set-WebServicesVirtualDirectory -Identity "LON-EX1\\EWS (Default Web Site)"
-    -ExternalUrl https://xxxUPNxxx.xxxCustomDomainxxx.xxx/ews/exchange.asmx
-    -InternalUrl https://xxxUPNxxx.xxxCustomDomainxxx.xxx/ews/exchange.asmx  
+    `Set-WebServicesVirtualDirectory -Identity "LON-EX1\EWS (Default Web Site)" -ExternalUrl https://xxxUPNxxx.xxxCustomDomainxxx.xxx/ews/exchange.asmx -InternalUrl https://xxxUPNxxx.xxxCustomDomainxxx.xxx/ews/exchange.asmx`
     ‎  
     ‎**NOTE:** This command takes a little time to process once you hit Enter. After several seconds (possibly up to 10-20 seconds), you will receive a prompt that indicates the InternalURL parameter can’t be resolved. At the prompt, enter **A** for **Yes to All** to continue and then press **Enter**.
 
@@ -819,9 +803,7 @@ To save you from having to manually type in the commands (which are quite length
     set the internal and external address for the OAB Virtual Directory to
     https://xxxUPNxxx.xxxCustomDomainxxx.xxx /OAB:
 
-    Set-OabVirtualDirectory -Identity "LON-EX1\\OAB (Default Web Site)"
-    -ExternalUrl https://xxxUPNxxx.xxxCustomDomainxxx.xxx/OAB -InternalUrl
-    https://xxxUPNxxx.xxxCustomDomainxxx.xxx/OAB
+    `Set-OabVirtualDirectory -Identity "LON-EX1\OAB (Default Web Site)" -ExternalUrl https://xxxUPNxxx.xxxCustomDomainxxx.xxx/OAB -InternalUrl https://xxxUPNxxx.xxxCustomDomainxxx.xxx/OAB`
 
 14. Copy the following command from Notepad, paste it into the Exchange
     Management Shell at the command prompt, and then run it. This command will
@@ -830,17 +812,13 @@ To save you from having to manually type in the commands (which are quite length
     method to NTLM and to require external clients to use SSL to make the
     connection:
 
-    Set-OutlookAnywhere -Identity "LON-EX1\\Rpc (Default Web Site)"
-    -ExternalHostname xxxUPNxxx.xxxCustomDomainxxx.xxx
-    -ExternalClientsRequireSsl \$true -ExternalClientAuthenticationMethod NTLM
-    -InternalHostname xxxUPNxxx.xxxCustomDomainxxx.xxx
-    -InternalClientsRequireSsl \$true -InternalClientAuthenticationMethod NTLM
+    `Set-OutlookAnywhere -Identity "LON-EX1\Rpc (Default Web Site)" -ExternalHostname xxxUPNxxx.xxxCustomDomainxxx.xxx -ExternalClientsRequireSsl $true -ExternalClientAuthenticationMethod NTLM -InternalHostname xxxUPNxxx.xxxCustomDomainxxx.xxx -InternalClientsRequireSsl $true -InternalClientAuthenticationMethod NTLM`
 
 15. Copy the following command from Notepad, paste it into the Exchange
     Management Shell at the command prompt, and then run it. This command will
     set the Outlook certificate to \*.xxxCustomDomainxxx.xxx:
 
-    Set-OutlookProvider EXPR -CertPrincipalName:\*.xxxCustomDomainxxx.xxx  
+    `Set-OutlookProvider EXPR -CertPrincipalName:*.xxxCustomDomainxxx.xxx`
     ‎
 
 16. Close your Exchange Management Shell window.
