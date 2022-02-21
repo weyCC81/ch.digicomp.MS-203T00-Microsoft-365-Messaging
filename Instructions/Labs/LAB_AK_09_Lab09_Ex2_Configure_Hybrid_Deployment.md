@@ -648,4 +648,4 @@ will fail.**
 
 26. Leave your browser and all its tabs open and proceed to the next exercise.
 
-# Proceed to Lab 10 - Exercise 2
+# Proceed to Lab 9 - Exercise 3
