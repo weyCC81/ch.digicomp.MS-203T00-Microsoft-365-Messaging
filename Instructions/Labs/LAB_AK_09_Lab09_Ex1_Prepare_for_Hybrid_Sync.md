@@ -1125,4 +1125,4 @@ accounts to the new accepted domain in Microsoft 365.
 26. Leave your Edge browser and all tabs open as it will be used in the next
     lab.
 
-# End of Lab 9
+# Proceed to Lab 9 - Exercise 2
