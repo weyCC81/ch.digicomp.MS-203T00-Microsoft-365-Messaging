@@ -1,4 +1,4 @@
-# INF99X: Sample Course
+# MS-203T00: Microsoft 365 Messaging
 
 - **[Download Latest Student Handbook and AllFiles Content](../../releases/latest)**
 - **Are you a MCT?** - Have a look at our [GitHub User Guide for MCTs](https://microsoftlearning.github.io/MCT-User-Guide/)
