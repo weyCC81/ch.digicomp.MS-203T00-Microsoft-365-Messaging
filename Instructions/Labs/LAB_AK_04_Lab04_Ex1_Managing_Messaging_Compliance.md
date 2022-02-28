@@ -581,7 +581,7 @@ active MRM policies in Adatum’s Exchange environment.
 8.  At the command prompt, run the following command to display all the
     Retention Policies that are active in your environment:  
       
-    `‎Get-RetentionPolicy | out-Gridview`  
+    ‎`Get-RetentionPolicy | out-Gridview`  
     ‎  
     ‎**Note:** This command opens a separate window that displays the active
     retention policies. After reviewing the policies, select the **X** in the
