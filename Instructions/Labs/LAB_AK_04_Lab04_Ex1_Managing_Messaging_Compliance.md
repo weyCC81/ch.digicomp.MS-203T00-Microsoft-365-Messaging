@@ -96,8 +96,8 @@ numbers, and ABA routing numbers.
 3.  In the **Microsoft 365 compliance** portal, in the left-hand navigation
     pane, select **Policies.**
 
-4.  On the **Policies** page, under the **Solutions** section, select **Data loss
-    prevention**.
+4.  On the **Policies** page, under the **Data** section, select **Data loss
+    prevention**. Alternatively **Data loss prevention** can be also accessed from the left-hand navigation menu under the **Solutions**.
 
 5.  On the **Data loss prevention** page, navigate to the **Policies** tab, then select **+Create policy** in the menu bar. This
     initiates the **Create policy** wizard.
