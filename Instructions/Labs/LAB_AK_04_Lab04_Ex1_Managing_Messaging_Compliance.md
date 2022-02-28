@@ -565,7 +565,7 @@ active MRM policies in Adatum’s Exchange environment.
     ‎  
     ‎**Note:** If you closed PowerShell after running it in the earlier task, you
     will receive a **Sign in** dialog box to enter your credentials. Enter
-    **admin\@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the unique
+    **admin@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the unique
     tenant prefix provided by your lab hosting provider) and your tenant admin
     password. If your PowerShell session was still open, then you should not
     receive this **Sign in** window.  
