@@ -298,7 +298,7 @@ is active.
     ‎ `$UserCredential = Get-Credential`  
     ‎  
     ‎**Note:** This will open a dialog box to enter your credentials. Enter
-    **admin\@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant
+    **admin@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant
     prefix provided by your lab hosting provider) in the **User name** field and
     enter your tenant email password in the **Password** field. Select **OK**.
 
