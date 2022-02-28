@@ -824,7 +824,7 @@ since you completed Task 1 and then perform this task again.
     retain any emails that contain **Sensitive, Confidential, Secret** anywhere
     in the email as well as in the Subject line.
 
-29. In the **AlexWilber-case01 \&gt; Core ED \&gt; Hold** page, select the
+29. In the **Core eDiscovery \&gt; AlexWilber-case01** page, select the
     **Searches** tab at the top of the page.  
       
     You will now create a new search that checks for emails that contain
