@@ -421,7 +421,7 @@ in the New EAC.
     sent from a specific domain. By default, the query will select messages sent
     from all Adatum user accounts in its Microsoft 365 tenant; that is, from all
     user accounts whose primary domain matches Adatum’s tenant of
-    **\@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the unique tenant
+    **@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the unique tenant
     prefix provided by your lab hosting provider). Therefore, do NOT change this
     value.  
     ‎  
