@@ -780,7 +780,7 @@ since you completed Task 1 and then perform this task again.
     **AlexW** in the **Name** field, leave the **Description** blank, and then
     select **Next**.
 
-16. In the **Choose locations** page, to the right of the **Exchange email**
+16. In the **Choose locations** page, Make sure the **Microsoft Mailboxes** is turned **on** if not select the toggle to **On** then to the right of the **Exchange Mailboxes**
     location, select **Choose users, groups, or teams.**
 
 17. In the **Edit locations** page, under **Exchange mailboxes**, select the
