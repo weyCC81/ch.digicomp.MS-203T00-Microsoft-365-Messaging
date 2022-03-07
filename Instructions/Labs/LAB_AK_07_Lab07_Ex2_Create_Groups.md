@@ -279,7 +279,7 @@ Planner, and PowerBI, all of which allows teams to seamlessly work together.
     the **X** in the upper right-hand corner of the **Sales** window to close
     it.
 
-26. In the **Groups** window, select the **Distribution list** tab, select the **Marketing** group.
+26. In the **Active teams and groups** window, select the **Distribution list** tab, select the **Marketing** group.
 
 27. In the **Marketing** group window, note that a **Microsoft Teams** tab does
     not appear. This is because when you added the group through the EAC, it did
