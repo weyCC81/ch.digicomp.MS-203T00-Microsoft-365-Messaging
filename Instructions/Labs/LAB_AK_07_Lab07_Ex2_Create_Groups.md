@@ -176,7 +176,7 @@ Planner, and PowerBI, all of which allows teams to seamlessly work together.
 3.  In the **Microsoft 365 admin center**, select **Groups** in the left-hand
     navigation pane, and then in the expanded group select **Active Groups**.
 
-4.  In the **Active Groups** window, select **Add a group** on the menu bar.
+4.  In the **Active teams & groups** window, select **Add a group** on the menu bar.
     This initiates the **Add a group** wizard.
 
 5.  In the **Choose a group type** page, select **Microsoft 365 (recommended)**
