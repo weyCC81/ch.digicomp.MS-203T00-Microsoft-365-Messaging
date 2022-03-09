@@ -97,7 +97,7 @@ numbers, and ABA routing numbers.
     pane, select **Policies.**
 
 4.  On the **Policies** page, under the **Data** section, select **Data loss
-    prevention**. Alternatively **Data loss prevention** can be also accessed from the left-hand navigation menu under the **Solutions**.
+    prevention**. 
 
 5.  On the **Data loss prevention** page, navigate to the **Policies** tab, then select **+Create policy** in the menu bar. This
     initiates the **Create policy** wizard.
