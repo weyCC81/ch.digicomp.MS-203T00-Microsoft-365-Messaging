@@ -361,7 +361,7 @@ in the New EAC.
 2.  In Edge browser, if you still have tabs open for the **Microsoft Office
     Home** page and the **Microsoft 365 admin center**, then proceed to the next
     step; otherwise, navigate to **https://portal.office.com**, log in as
-    **admin\@xxxxxZZZZZZ.onmicrosoft.com** with the tenant email password, and
+    **admin@xxxxxZZZZZZ.onmicrosoft.com** with the tenant email password, and
     then select **Admin**.
 
 3.  Select the **Microsoft Office Home** tab and then select **Outlook** to open
