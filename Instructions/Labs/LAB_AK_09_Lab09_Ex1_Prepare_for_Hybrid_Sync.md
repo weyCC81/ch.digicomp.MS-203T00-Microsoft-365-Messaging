@@ -187,7 +187,7 @@ locate the UPN name.
     the **Microsoft Edge** icon on your taskbar and enter the following URL in
     the address bar: **https://portal.office.com.**
 
-6.  On the **Sign in** page, enter **admin\@xxxxxZZZZZZ.onmicrosoft.com** (where
+6.  On the **Sign in** page, enter **admin@xxxxxZZZZZZ.onmicrosoft.com** (where
     xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider), and
     then enter the tenant email password provided by your lab hosting provider
     on the **Enter password** page. Select **Sign in.**
