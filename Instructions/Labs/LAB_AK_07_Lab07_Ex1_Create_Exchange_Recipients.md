@@ -63,7 +63,7 @@ herself the Exchange Admin role. You will perform this task in the LON-CL1 VM.
         lab hosting provider).
 
         After configuring this field, Holly’s username should appear as:
-        **Holly\@xxxxxZZZZZZ.onmicrosoft.com**
+        **Holly@xxxxxZZZZZZ.onmicrosoft.com**
 
     -   Clear (uncheck) the **Automatically create a password** 
 
