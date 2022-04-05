@@ -342,7 +342,7 @@ for future tasks in this exercise.
     and proceed to the next task.  
     
     ‎
-## Task 3: Prepare for testing by creating on-premises user mailboxes
+## Task 3: Create on-premises user mailboxes for testing
 
 In this task, you will remain in your Exchange Server (LON-EX1) VM, navigate to
 the on-premises Exchange admin center, and then create on-premises mailboxes for
