@@ -76,7 +76,7 @@ propagated, and you will be able to create an eDiscovery case.
 
 9.  Leave your browser open and proceed to the next task.
 
-## Task 2: Creating a Custom DLP policy
+## Task 2: Create a Custom DLP policy
 
 In this task your you will create a custom DLP Policy that prevents financial
 data from being sent out externally or internally. This policy will prevent
@@ -260,7 +260,7 @@ numbers, and ABA routing numbers.
     fully operational. Therefore, you cannot test the policy at this time to
     validate that it is working properly.
 
-## Task 3: Confirming the Status of the Custom DLP policy
+## Task 3: Confirm the Status of the Custom DLP policy
 
 In the prior task, you created a custom DLP policy. The task also indicated that
 it can take up to 24 hours for the policy to become active (i.e. to propagate
@@ -330,7 +330,7 @@ is active.
 8.  Leave your Edge browser open and proceed to the next task.  
     ‎
 
-## Task 4: Performing a Message Trace
+## Task 4: Perform a Message Trace
 
 In this task, Holly Dickson plans to test Microsoft 365’s message tracing
 functionality. Message traces are used to track and monitor where the message
@@ -535,7 +535,7 @@ in the New EAC.
     **Microsoft 365 admin center** tab. Close all other tabs and proceed to the
     next task.
 
-## Task 5: Reviewing Active MRM Policies with PowerShell
+## Task 5: Review Active MRM Policies with PowerShell
 
 In this task you will run a series of Windows PowerShell commands to review the
 active MRM policies in Adatum’s Exchange environment.
@@ -606,7 +606,7 @@ active MRM policies in Adatum’s Exchange environment.
     
 10. Close the Windows PowerShell window.
 
-## Task 6: Creating a Retention Label
+## Task 6: Create a Retention Label
 
 In your role as Holly Dickson, Adatum’s Messaging Administrator, you will
 continue with your task of reviewing Microsoft 365’s compliance tools by
@@ -657,7 +657,7 @@ creating a Retention label through the Security and Compliance portal.
 
 12. Once the retention label has been created, you have the option of publishing the label, we will do that in the next task. On the **Your retention label is created** screen select **Do nothing** and select **Done**.
 
-## Task 7: Creating a Retention Label Policy
+## Task 7: Create a Retention Label Policy
 
 ‎In the prior task, you created a Retention Label. In this task, you will create
 a Retention Label Policy and assign it to the Retention Label that you
@@ -707,7 +707,7 @@ previously created.
 
 10.  Leave your browser and all tabs open and proceed to the next task.
 
-## Task 8: Creating an eDiscovery Case
+## Task 8: Create an eDiscovery Case
 
 In your role as Holly Dickson, Adatum’s Messaging Administrator, you want to
 continue in your pilot project that examines Microsoft 365’s compliance
