@@ -173,7 +173,7 @@ numbers, and ABA routing numbers.
 
     -   **U.S. Driver’s License Number**
 
-    -   **U.S. Individual Taxpayer Identification Number (ITN)**
+    -   **U.S. Individual Taxpayer Identification Number (ITIN)**
 
     -   **U.S. Social Security Number (SSN)**
 
