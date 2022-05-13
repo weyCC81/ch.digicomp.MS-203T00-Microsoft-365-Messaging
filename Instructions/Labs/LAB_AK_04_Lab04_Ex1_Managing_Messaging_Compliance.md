@@ -613,8 +613,7 @@ creating a Retention label through the Security and Compliance portal.
     pane, select **Catalog**.
 
 4.  On the **Solution catalog** page, in the **Information protection &
-    governance** section, select the **View** button under **Information
-    governance**.
+    governance** section, select the **View** button under **Data lifecycle management**.
 
 5.  In the **Information governance** window, select **Open solution**.
 
