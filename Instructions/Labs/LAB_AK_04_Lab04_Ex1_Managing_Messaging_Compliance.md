@@ -833,7 +833,7 @@ since you completed Task 1 and then perform this task again.
     initiate a **New search** wizard that walks you through the steps to create
     a new search.
 
-31. In the **New search** window, in the **Name your search** page, enter
+31. In the **New search** window, in the **Name and description** page, enter
     **Confidential search** in the **Name** field, leave the **Description**
     field blank, and then select **Next**.
 
