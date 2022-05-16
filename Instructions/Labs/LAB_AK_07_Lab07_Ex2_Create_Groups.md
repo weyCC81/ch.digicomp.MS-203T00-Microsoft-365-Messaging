@@ -187,13 +187,7 @@ Planner, and PowerBI, all of which allows teams to seamlessly work together.
     **Description** field. Select **Next**.
 
 7.  In the **Assign owners** page, you will assign Allan Deyoung and Patti
-    Fernandez as owners of this group.
-
-    -   Enter **Allan** in the **Owners** field. In the drop-down menu that
-        appears, select **Allan Deyoung**.
-
-    -   Enter **Patti** in the **Owners** field. In the drop-down menu that
-        appears, select **Patti Fernandez**.
+    Fernandez as owners of this group by selecting **+ Assign owners**. Select **Allan Deyoung** and **Patti Fernandez** from list of users.
         
     -   Select **Add (2)**. 
 
