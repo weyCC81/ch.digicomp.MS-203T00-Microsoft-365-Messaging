@@ -782,9 +782,6 @@ since you completed Task 1 and then perform this task again.
 
 16. In the **Choose locations** page, Make sure the toggle switch for **Exchange mailboxes** is turned **On** then to the right of the **Exchange Mailboxes** under the included column, select **Choose users, groups, or teams.**.
 
-17. In the **Edit locations** page, under **Exchange mailboxes**, select the
-    **Choose users, groups, or teams** button.
-
 18. In the **Edit locations** page, select **Choose users, groups, or teams**, enter **Alex** in the **Search** field that
     appears and select the **Search** (magnifying glass) icon to the right of
     the field. This will initiate a search of all users whose name starts with
