@@ -53,8 +53,7 @@ then assign two specific administrators to this role.
 8.  In the **Exchange admin center** tab, in the left-hand navigation pane,
     select **Roles.**
 
-9.  At the top of the **Roles** page, the **admin roles** tab should be
-    displayed by default; if not, then select it now.
+9.  Then in the expanded group select **admin roles**.
 
 10. The **admin roles** window displays the existing role groups. Each of these
     groups has one or more roles assigned to it.  
