@@ -841,7 +841,7 @@ since you completed Task 1 and then perform this task again.
     select the **Select all** toggle switch that appears to the right of
     **Exchange mailboxes** to turn it **On.** Select **Next**.
 
-33. In the **Condition card** page, in the **Enter keywords** field, enter the
+33. In the **Define your search conditions** page, in the **Enter keywords** field, enter the
     following: **Sensitive, Confidential, Secret**
 
 34. Select **+Add conditions.**
