@@ -256,7 +256,7 @@ Planner, and PowerBI, all of which allows teams to seamlessly work together.
     Once Lynn and Diego appear as members of the group, select the **X** in the
     upper right-hand corner to close the window.
 
-23. On the **Active groups** window, note the difference between the
+23. On the **Active teams and groups** window, note the difference between the
     **Marketing** distribution list that you added in the prior task and the
     **Sales** group that you added in this task.
 
