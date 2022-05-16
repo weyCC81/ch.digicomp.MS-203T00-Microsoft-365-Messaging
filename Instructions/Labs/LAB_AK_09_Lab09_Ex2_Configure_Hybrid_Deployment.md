@@ -490,7 +490,7 @@ will fail.**
     LON-EX1).
 
 7.  With the **Outbound** connector highlighted, select the **trash can
-    (Remove)** icon on the menu bar.
+    (Delete)** icon on the menu bar.
 
 8.  On the warning dialog box, select **Confirm** to confirm that you want to
     delete this outbound connector. This will delete the outbound connector,
