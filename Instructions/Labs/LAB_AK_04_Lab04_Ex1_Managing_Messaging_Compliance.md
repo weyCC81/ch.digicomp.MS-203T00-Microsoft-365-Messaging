@@ -794,8 +794,6 @@ since you completed Task 1 and then perform this task again.
 19. Select the check box next to **Alex Wilber** and then select the **Done**
     button at the bottom of the window.
 
-20. On the **Edit locations** page, select **Done**.
-
 21. On the **Choose locations** page, select **Next**.
 
 22. On the **Query conditions** page, in the **Enter keywords** field, enter the
