@@ -656,18 +656,17 @@ previously created.
 1.  You should still be logged into LON-CL1 from the prior task; if necessary,
     log in as the **Administrator** with a password of **Pa55w.rd**.
 
-2.  In your **Edge browser**, you should still have the **Information
-    governance** page open from the previous task. This page should be
+2.  In your **Edge browser**, you should still have the **Data lifecycle management** page open from the previous task. This page should be
     displaying the **Labels** tab, and in the list of labels, it should display
     the **30-day delete** label that you just created.  
       
     Once you create a label, your next step is to publish it. You can either
     publish multiple labels at one time by selecting the **Publish labels**
     option on the menu bar, or you can publish a specific label by selecting the
-    label and then publishing just that label, then select **Choose labels**.  
+    label and then publishing just that label.  
       
     In this task, you will publish a specific label; therefore, in the list of
-    labels, select the **30-day delete** label.
+    labels, select the **30-day delete** label by putting check in circle and not clicking on the name iteself and select Publish labels.
 
 3.  In the **30-day delete** window that appears, select the **Publish labels**
     button at the top of window. This will initiate the **Publish labels**
