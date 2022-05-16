@@ -99,7 +99,7 @@ access the Exchange admin center for Exchange Online.
 
 7.  In the **new distribution list** page, enter **Marketing** in the **Name**, **Alias**, and **Email address** fields, enter **This is the Marketing team** in the **Notes** field.
      
-8.  In the **Assign owners** page, **MOD Administrator** should be listed by default
+8.  In the **Owners** page, **MOD Administrator** should be listed by default
 
 9. In the **Add members** page, do not add any members yet, you will do this in a later step.
 
