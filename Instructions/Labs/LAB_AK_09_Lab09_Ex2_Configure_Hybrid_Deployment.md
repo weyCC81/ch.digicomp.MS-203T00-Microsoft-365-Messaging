@@ -555,7 +555,7 @@ will fail.**
 19. Allan’s email address should now appear on the **Validate email**
     page. Select **Validate**.
 
-20. Once the validation is complete, select **Close**. On the **Validation
+20. On the **Validation
 
     Result** page, the validation will either be successful, or it will have
     failed. Perform the appropriate steps below depending on which result you
