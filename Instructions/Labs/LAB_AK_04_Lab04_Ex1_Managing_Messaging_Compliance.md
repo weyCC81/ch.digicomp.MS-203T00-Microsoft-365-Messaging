@@ -785,10 +785,9 @@ since you completed Task 1 and then perform this task again.
 17. In the **Edit locations** page, under **Exchange mailboxes**, select the
     **Choose users, groups, or teams** button.
 
-18. In the **Edit locations** page, select **Choose users, groups, or teams**, enter **Alex** in the **Search** field that
-    appears and select the **Search** (magnifying glass) icon to the right of
-    the field. This will initiate a search of all users whose name starts with
-    Alex. Scroll to the bottom of the **Edit locations** pane to view the search
+18. In the **Exchange mailboxes** page, enter **Alex** in the **Search** field that
+    appears. This will initiate a search of all users whose name starts with
+    Alex. Scroll to the bottom of the **Exchange mailboxes** pane to view the search
     results.
 
 19. Select the check box next to **Alex Wilber** and then select the **Done**
