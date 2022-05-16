@@ -126,7 +126,7 @@ herself the Exchange Admin role. You will perform this task in the LON-CL1 VM.
 17. In the **Exchange Admin Center**, in the left-hand navigation pane, select
     **recipients.**
 
-18. On the **recipients** page, the **mailboxes** tab is displayed by default.
+18. Then in the expanded group select **mailboxes**.
     In the list of recipient mailboxes, you should see the Exchange Online
     mailbox that was automatically created for Holly when you created her
     Microsoft 365 user account.
