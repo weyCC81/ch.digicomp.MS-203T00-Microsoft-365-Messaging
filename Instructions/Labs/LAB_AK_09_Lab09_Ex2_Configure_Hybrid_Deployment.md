@@ -312,8 +312,7 @@ for future tasks in this exercise.
     accepted domain is:** setting, select the **Internal relay** option, select
     **Save**, and then close the window.
 
-19. On the **mail flow** page, select the **connectors** tab at the top of the
-    page.  
+19. On the **mail flow** pane, select **Connectors**.  
     ‎  
     ‎**Note:** There are several differences between the on-premises EAC and the
     EAC for Exchange Online. In the on-premises EAC, the
