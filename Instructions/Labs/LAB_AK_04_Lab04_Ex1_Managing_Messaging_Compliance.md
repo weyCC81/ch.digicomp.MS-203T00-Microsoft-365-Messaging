@@ -669,8 +669,7 @@ previously created.
     In this task, you will publish a specific label; therefore, in the list of
     labels, select the **30-day delete** label.
 
-3.  In the **30-day delete** window that appears, select the **Publish labels**
-    button at the top of window. This will initiate the **Publish labels**
+3.  This will initiate the **Publish labels**
     wizard that walks you through the steps of publishing a label.
 
 4.  On the **Choose a label to publish** page, select **Next**. 
