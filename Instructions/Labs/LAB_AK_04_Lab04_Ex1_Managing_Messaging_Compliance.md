@@ -692,8 +692,8 @@ previously created.
     day to propagate a new retention label policy throughout the system once the
     policy is published.
 
-9.  Once the retention label policy has been created, select **Done** in the **Your policy was created** page. The policy will be displayed in
-    the list of label policies on the **Information governance** window.
+9.  Once the retention label policy has been created, select **Done** in the **Your retention label was published** page. The policy will be displayed in
+    the list of label policies on the **Data lifecycle management** window.
 
 10.  Leave your browser and all tabs open and proceed to the next task.
 
