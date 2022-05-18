@@ -37,11 +37,11 @@ Therefore, when you create the malware policy later in this task and you attempt
 3.  In the **Microsoft 365 admin center**, in the left-hand navigation pane under **Admin centers**, select **Security**. This opens **Microsoft 365 Defender** in a new tab.
 
 4.  In the **Microsoft 365 Defender** portal, scroll down to the last section in the left-hand
-    navigation pane and select **Permissions & roles**.
+    navigation pane and select **Permissions**.
 
-5.  In the **Permissions & roles** page, under the **Email & collaboration roles** group, select **Roles**. 
+5.  In the **Permissions** page, under the **Email & collaboration roles** group, select **Roles**. 
 
-6. In the **Permissions & roles \> Permissions** page, enter **org** in the **Search** field
+6. In the **Permissions > Permissions** page, enter **org** in the **Search** field
     and then select the magnifying glass icon. This is a quick way to display
     the Organization Management role group so that you don’t have to scroll
     through a list of roles to find it.
