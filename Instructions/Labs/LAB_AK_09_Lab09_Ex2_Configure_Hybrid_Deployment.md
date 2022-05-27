@@ -301,7 +301,7 @@ for future tasks in this exercise.
 15. In the **Exchange admin center** for Exchange Online, in the left-hand
     navigation pane, select **mail flow**.
 
-16. Then **Accepted domains**.
+16. Then select the **Accepted domains** tab.
 
 17. In the list of accepted domains, select the
     **xxxUPNxxx.xxxCustomDomainxxx.xxx** domain (this is the accepted domain
