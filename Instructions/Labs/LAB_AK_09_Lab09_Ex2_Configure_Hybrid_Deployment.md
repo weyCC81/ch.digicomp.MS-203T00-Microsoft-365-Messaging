@@ -477,7 +477,7 @@ will fail.**
 4.  In the **Exchange admin center** for Exchange Online, in the left-hand
     navigation pane, select **mail flow**.
 
-5.  Then **Connectors**.
+5.  Then select the **Connectors** tab.
 
 6.  You will begin by deleting the existing Outbound connector. The list of
     connectors currently displays an Inbound and Outbound connector. Select the
