@@ -303,9 +303,8 @@ by focusing on the language of the email and the location of the email's origin.
     -   Prepend subject line with this text: enter **WARNING: This message
         contains potential spam!**
 
-    -   Enable end-user spam notifications: select this check box
+    -   Enable spam safety tips: select this check box
 
-    -   Send end-user spam notifications every (days): **5**
 
 9.  Select **Save** to update the settings, and then select **Close** to close
     the **Anti-spam inbound policy (Default)** pane.
