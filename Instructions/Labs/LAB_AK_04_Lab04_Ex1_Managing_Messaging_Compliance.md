@@ -684,7 +684,7 @@ previously created.
 7.  On the **Name your policy** page, enter **30-day delete policy** in the
     **Name** field. Leave the **Description** field blank and select **Next**.
 
-8.  On the **Review you settings** page, review your settings and if any require
+8.  On the **Finish** page, review your settings and if any require
     correction, select the corresponding **Edit** option to fix the setting.
     When all settings are correct, select **Submit**.  
     ‎  
