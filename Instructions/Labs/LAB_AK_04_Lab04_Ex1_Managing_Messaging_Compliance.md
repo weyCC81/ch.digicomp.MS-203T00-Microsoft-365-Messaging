@@ -850,7 +850,7 @@ since you completed Task 1 and then perform this task again.
     pane and select the **Subject** check box (not the Subject/Title) and then
     select **Add.**
 
-36. On the **Condition card** page, in the **Subject** section, select the
+36. On the **Define your search conditions** page, in the **Subject** section, select the
     drop-down arrow in the first operator field and select **Contains any of**.
     In the **Type subject** field, enter the following: **Sensitive,
     Confidential, Secret**
