@@ -241,7 +241,7 @@ Planner, and PowerBI, all of which allows teams to seamlessly work together.
     but you can also see that there are no members. Under the **Members**
     section, select **View all and manage members** to add members to the group.
 
-19. In the **Sales** group window, select **+ Add members**. This displays the
+19. In the **Members** window, select **+ Add members**. This displays the
     list of current Microsoft 365 users.
 
 20. In the list of users, select the check boxes for **Diego Siciliani** and
