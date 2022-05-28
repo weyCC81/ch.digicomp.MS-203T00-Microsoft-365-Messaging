@@ -101,7 +101,7 @@ access the Exchange admin center for Exchange Online.
      
 8.  In the **Assign owners** page, **MOD Administrator** should be listed by default
 
-9. In the **Add members** page, do not add any members yet, you will do this in a later step.
+9. In the **Members** page, do not add any members yet, you will do this in a later step.
 
 10.  This will be a closed group, so select the **Closed** option for both the **Choose whether owner approval is required to join the group** setting, and **Choose whether the group is open to leave** setting then select **Save**.
 
