@@ -817,7 +817,7 @@ since you completed Task 1 and then perform this task again.
     be adjusted, select **Edit** next to the setting and make the necessary correction.
     Once all settings are correct, select **Submit**.
 
-28. In the **AlexW** pane, select **Done**.  
+28. Select **Done**.  
     ‎  
     ‎**Note:** You have just placed a hold on Alex Wilber’s account that will
     retain any emails that contain **Sensitive, Confidential, Secret** anywhere
