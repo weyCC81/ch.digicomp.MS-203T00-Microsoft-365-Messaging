@@ -804,8 +804,7 @@ since you completed Task 1 and then perform this task again.
 23. Select **+Add conditions**.
 
 24. On the **Add conditions** pane that appears, scroll to the bottom of the
-    pane and select the **Subject** check box (not the Subject/Title) and then
-    select **Add.**
+    pane and select **Subject** (not the Subject/Title).
 
 25. On the **Query conditions** page, in the **Subject** section, select the
     drop-down arrow in the first operator field and select **Contains any of**.
