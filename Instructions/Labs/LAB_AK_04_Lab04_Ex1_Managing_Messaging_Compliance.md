@@ -847,8 +847,7 @@ since you completed Task 1 and then perform this task again.
 34. Select **+Add conditions.**
 
 35. On the **Add conditions** pane that appears, scroll to the bottom of the
-    pane and select the **Subject** check box (not the Subject/Title) and then
-    select **Add.**
+    pane and select **Subject** (not the Subject/Title).
 
 36. On the **Define your search conditions** page, in the **Subject** section, select the
     drop-down arrow in the first operator field and select **Contains any of**.
