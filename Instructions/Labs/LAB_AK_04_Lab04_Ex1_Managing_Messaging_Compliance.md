@@ -616,7 +616,7 @@ creating a Retention label through the Security and Compliance portal.
     governance** section, select the **View** button under **Information
     governance**.
 
-5.  In the **Information governance** window, select **Open solution**.
+5.  In the **Data lifecycle management** window, select **Open solution**.
 
 6.  In the **Data lifecycle management** window, the **Labels** tab at the top of
     the page is displayed by default. In this tab, select +**Create a label**
