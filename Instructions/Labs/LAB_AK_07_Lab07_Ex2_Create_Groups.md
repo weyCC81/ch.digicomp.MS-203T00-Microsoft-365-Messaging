@@ -139,7 +139,6 @@ access the Exchange admin center for Exchange Online.
 
 19. In the pane that appears, on the list of Microsoft 365 user accounts that appears,
     select **Joni Sherman**, while holding the **CTL** key select **Megan Bowen** and **Nestor Wilke** and select **add**, then select **OK**.
-    members of the group, and then select **Save changes**.
 
 20. Verify the **Members** page includes **Joni Sherman**, **Megan Bowen**, and **Nestor Wilke** and select **Save**. Then select **OK** in the confirmation window.
 
