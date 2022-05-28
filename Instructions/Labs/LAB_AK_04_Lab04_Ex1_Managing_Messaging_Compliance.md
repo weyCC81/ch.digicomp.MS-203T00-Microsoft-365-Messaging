@@ -838,7 +838,7 @@ since you completed Task 1 and then perform this task again.
     field blank, and then select **Next**.
 
 32. In the **Locations** page, select the **Specific locations** option and then
-    select the **Select all** toggle switch that appears to the right of
+    select the toggle switch that appears to the left of
     **Exchange mailboxes** to turn it **On.** Select **Next**.
 
 33. In the **Define your search conditions** page, in the **Enter keywords** field, enter the
