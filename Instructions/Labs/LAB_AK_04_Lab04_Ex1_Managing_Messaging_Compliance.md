@@ -641,9 +641,7 @@ creating a Retention label through the Security and Compliance portal.
     require correction, select the corresponding **Edit** option to fix the
     setting. When all settings are correct, select **Create label**.
 
-11. It will take a minute or two to create the retention label, at which point
-    the **Information governance** window will display your new **30-day
-    delete** label.
+11. It will take a minute or two to create the retention label.
 
 12. Once the retention label has been created, you have the option of publishing the label, we will do that in the next task. On the **Your retention label is created** screen select **Do nothing** and select **Done**.
 
