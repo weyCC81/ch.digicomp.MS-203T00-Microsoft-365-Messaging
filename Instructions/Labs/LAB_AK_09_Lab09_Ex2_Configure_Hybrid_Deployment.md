@@ -301,8 +301,7 @@ for future tasks in this exercise.
 15. In the **Exchange admin center** for Exchange Online, in the left-hand
     navigation pane, select **mail flow**.
 
-16. By default, the **rules** tab is displayed at the top of the page. Select
-    the **accepted domains** tab.
+16. Then select the **Accepted domains** tab.
 
 17. In the list of accepted domains, select the
     **xxxUPNxxx.xxxCustomDomainxxx.xxx** domain (this is the accepted domain
@@ -312,8 +311,7 @@ for future tasks in this exercise.
     accepted domain is:** setting, select the **Internal relay** option, select
     **Save**, and then close the window.
 
-19. On the **mail flow** page, select the **connectors** tab at the top of the
-    page.  
+19. On the **mail flow** pane, select **Connectors**.  
     ‎  
     ‎**Note:** There are several differences between the on-premises EAC and the
     EAC for Exchange Online. In the on-premises EAC, the
@@ -477,7 +475,7 @@ will fail.**
 4.  In the **Exchange admin center** for Exchange Online, in the left-hand
     navigation pane, select **mail flow**.
 
-5.  Select the **connectors** tab at the top of the page.
+5.  Then select the **Connectors** tab.
 
 6.  You will begin by deleting the existing Outbound connector. The list of
     connectors currently displays an Inbound and Outbound connector. Select the
@@ -490,7 +488,7 @@ will fail.**
     LON-EX1).
 
 7.  With the **Outbound** connector highlighted, select the **trash can
-    (Remove)** icon on the menu bar.
+    (Delete)** icon on the menu bar.
 
 8.  On the warning dialog box, select **Confirm** to confirm that you want to
     delete this outbound connector. This will delete the outbound connector,
@@ -555,9 +553,7 @@ will fail.**
 19. Allan’s email address should now appear on the **Validate email**
     page. Select **Validate**.
 
-20. Once the validation is complete, select **Close**. On the **Validation
-
-    Result** page, the validation will either be successful, or it will have
+20. On the **Validation Result** page, the validation will either be successful, or it will have
     failed. Perform the appropriate steps below depending on which result you
     receive.
 

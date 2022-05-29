@@ -173,7 +173,7 @@ numbers, and ABA routing numbers.
 
     -   **U.S. Driver’s License Number**
 
-    -   **U.S. Individual Taxpayer Identification Number (ITN)**
+    -   **U.S. Individual Taxpayer Identification Number (ITIN)**
 
     -   **U.S. Social Security Number (SSN)**
 
@@ -613,12 +613,11 @@ creating a Retention label through the Security and Compliance portal.
     pane, select **Catalog**.
 
 4.  On the **Solution catalog** page, in the **Information protection &
-    governance** section, select the **View** button under **Information
-    governance**.
+    governance** section, select the **View** button under **Data lifecycle management**.
 
-5.  In the **Information governance** window, select **Open solution**.
+5.  In the **Data lifecycle management** window, select **Open solution**.
 
-6.  In the **Information governance** window, the **Labels** tab at the top of
+6.  In the **Data lifecycle management** window, the **Labels** tab at the top of
     the page is displayed by default. In this tab, select +**Create a label**
     that appears on the menu bar. This initiates the **Create a label** wizard.
 
@@ -641,9 +640,7 @@ creating a Retention label through the Security and Compliance portal.
     require correction, select the corresponding **Edit** option to fix the
     setting. When all settings are correct, select **Create label**.
 
-11. It will take a minute or two to create the retention label, at which point
-    the **Information governance** window will display your new **30-day
-    delete** label.
+11. It will take a minute or two to create the retention label.
 
 12. Once the retention label has been created, you have the option of publishing the label, we will do that in the next task. On the **Your retention label is created** screen select **Do nothing** and select **Done**.
 
@@ -656,21 +653,19 @@ previously created.
 1.  You should still be logged into LON-CL1 from the prior task; if necessary,
     log in as the **Administrator** with a password of **Pa55w.rd**.
 
-2.  In your **Edge browser**, you should still have the **Information
-    governance** page open from the previous task. This page should be
+2.  In your **Edge browser**, you should still have the **Data lifecycle management** page open from the previous task. This page should be
     displaying the **Labels** tab, and in the list of labels, it should display
     the **30-day delete** label that you just created.  
       
     Once you create a label, your next step is to publish it. You can either
     publish multiple labels at one time by selecting the **Publish labels**
     option on the menu bar, or you can publish a specific label by selecting the
-    label and then publishing just that label, then select **Choose labels**.  
+    label and then publishing just that label.  
       
     In this task, you will publish a specific label; therefore, in the list of
-    labels, select the **30-day delete** label.
+    labels, check the **30-day delete** label that you just created and then select Publish labels.
 
-3.  In the **30-day delete** window that appears, select the **Publish labels**
-    button at the top of window. This will initiate the **Publish labels**
+3.  This will initiate the **Publish labels**
     wizard that walks you through the steps of publishing a label.
 
 4.  On the **Choose a label to publish** page, select **Next**. 
@@ -684,7 +679,7 @@ previously created.
 7.  On the **Name your policy** page, enter **30-day delete policy** in the
     **Name** field. Leave the **Description** field blank and select **Next**.
 
-8.  On the **Review you settings** page, review your settings and if any require
+8.  On the **Finish** page, review your settings and if any require
     correction, select the corresponding **Edit** option to fix the setting.
     When all settings are correct, select **Submit**.  
     ‎  
@@ -692,8 +687,8 @@ previously created.
     day to propagate a new retention label policy throughout the system once the
     policy is published.
 
-9.  Once the retention label policy has been created, select **Done** in the **Your policy was created** page. The policy will be displayed in
-    the list of label policies on the **Information governance** window.
+9.  Once the retention label policy has been created, select **Done** in the **Your retention label was published** page. The policy will be displayed in
+    the list of label policies on the **Data lifecycle management** window.
 
 10.  Leave your browser and all tabs open and proceed to the next task.
 
@@ -782,16 +777,16 @@ since you completed Task 1 and then perform this task again.
 
 16. In the **Choose locations** page, Make sure the toggle switch for **Exchange mailboxes** is turned **On** then to the right of the **Exchange Mailboxes** under the included column, select **Choose users, groups, or teams.**.
 
-18. In the **Edit locations** page, select **Choose users, groups, or teams**, enter **Alex** in the **Search** field that
-    appears and select the **Search** (magnifying glass) icon to the right of
-    the field. This will initiate a search of all users whose name starts with
-    Alex. Scroll to the bottom of the **Edit locations** pane to view the search
+17. In the **Edit locations** page, under **Exchange mailboxes**, select the
+    **Choose users, groups, or teams** button.
+
+18. In the **Exchange mailboxes** page, enter **Alex** in the **Search** field that
+    appears. This will initiate a search of all users whose name starts with
+    Alex. Scroll to the bottom of the **Exchange mailboxes** pane to view the search
     results.
 
 19. Select the check box next to **Alex Wilber** and then select the **Done**
     button at the bottom of the window.
-
-20. On the **Edit locations** page, select **Done**.
 
 21. On the **Choose locations** page, select **Next**.
 
@@ -801,8 +796,7 @@ since you completed Task 1 and then perform this task again.
 23. Select **+Add conditions**.
 
 24. On the **Add conditions** pane that appears, scroll to the bottom of the
-    pane and select the **Subject** check box (not the Subject/Title) and then
-    select **Add.**
+    pane and select **Subject** (not the Subject/Title).
 
 25. On the **Query conditions** page, in the **Subject** section, select the
     drop-down arrow in the first operator field and select **Contains any of**.
@@ -814,7 +808,7 @@ since you completed Task 1 and then perform this task again.
     be adjusted, select **Edit** next to the setting and make the necessary correction.
     Once all settings are correct, select **Submit**.
 
-28. In the **AlexW** pane, select **Done**.  
+28. Select **Done**.  
     ‎  
     ‎**Note:** You have just placed a hold on Alex Wilber’s account that will
     retain any emails that contain **Sensitive, Confidential, Secret** anywhere
@@ -830,24 +824,23 @@ since you completed Task 1 and then perform this task again.
     initiate a **New search** wizard that walks you through the steps to create
     a new search.
 
-31. In the **New search** window, in the **Name your search** page, enter
+31. In the **New search** window, in the **Name and description** page, enter
     **Confidential search** in the **Name** field, leave the **Description**
     field blank, and then select **Next**.
 
 32. In the **Locations** page, select the **Specific locations** option and then
-    select the **Select all** toggle switch that appears to the right of
+    select the toggle switch that appears to the left of
     **Exchange mailboxes** to turn it **On.** Select **Next**.
 
-33. In the **Condition card** page, in the **Enter keywords** field, enter the
+33. In the **Define your search conditions** page, in the **Enter keywords** field, enter the
     following: **Sensitive, Confidential, Secret**
 
 34. Select **+Add conditions.**
 
 35. On the **Add conditions** pane that appears, scroll to the bottom of the
-    pane and select the **Subject** check box (not the Subject/Title) and then
-    select **Add.**
+    pane and select **Subject** (not the Subject/Title).
 
-36. On the **Condition card** page, in the **Subject** section, select the
+36. On the **Define your search conditions** page, in the **Subject** section, select the
     drop-down arrow in the first operator field and select **Contains any of**.
     In the **Type subject** field, enter the following: **Sensitive,
     Confidential, Secret**

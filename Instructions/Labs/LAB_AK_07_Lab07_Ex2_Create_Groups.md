@@ -99,9 +99,9 @@ access the Exchange admin center for Exchange Online.
 
 7.  In the **new distribution list** page, enter **Marketing** in the **Name**, **Alias**, and **Email address** fields, enter **This is the Marketing team** in the **Notes** field.
      
-8.  In the **Assign owners** page, **MOD Administrator** should be listed by default
+8.  In the **Owners** page, **MOD Administrator** should be listed by default
 
-9. In the **Add members** page, do not add any members yet, you will do this in a later step.
+9. In the **Members** page, do not add any members yet, you will do this in a later step.
 
 10.  This will be a closed group, so select the **Closed** option for both the **Choose whether owner approval is required to join the group** setting, and **Choose whether the group is open to leave** setting then select **Save**.
 
@@ -139,7 +139,6 @@ access the Exchange admin center for Exchange Online.
 
 19. In the pane that appears, on the list of Microsoft 365 user accounts that appears,
     select **Joni Sherman**, while holding the **CTL** key select **Megan Bowen** and **Nestor Wilke** and select **add**, then select **OK**.
-    members of the group, and then select **Save changes**.
 
 20. Verify the **Members** page includes **Joni Sherman**, **Megan Bowen**, and **Nestor Wilke** and select **Save**. Then select **OK** in the confirmation window.
 
@@ -187,13 +186,7 @@ Planner, and PowerBI, all of which allows teams to seamlessly work together.
     **Description** field. Select **Next**.
 
 7.  In the **Assign owners** page, you will assign Allan Deyoung and Patti
-    Fernandez as owners of this group.
-
-    -   Enter **Allan** in the **Owners** field. In the drop-down menu that
-        appears, select **Allan Deyoung**.
-
-    -   Enter **Patti** in the **Owners** field. In the drop-down menu that
-        appears, select **Patti Fernandez**.
+    Fernandez as owners of this group by selecting **+ Assign owners**. Select **Allan Deyoung** and **Patti Fernandez** from list of users.
         
     -   Select **Add (2)**. 
 
@@ -241,7 +234,7 @@ Planner, and PowerBI, all of which allows teams to seamlessly work together.
     but you can also see that there are no members. Under the **Members**
     section, select **View all and manage members** to add members to the group.
 
-19. In the **Sales** group window, select **+ Add members**. This displays the
+19. In the **Members** window, select **+ Add members**. This displays the
     list of current Microsoft 365 users.
 
 20. In the list of users, select the check boxes for **Diego Siciliani** and
@@ -256,7 +249,7 @@ Planner, and PowerBI, all of which allows teams to seamlessly work together.
     Once Lynn and Diego appear as members of the group, select the **X** in the
     upper right-hand corner to close the window.
 
-23. On the **Active groups** window, note the difference between the
+23. On the **Active teams and groups** window, note the difference between the
     **Marketing** distribution list that you added in the prior task and the
     **Sales** group that you added in this task.
 
