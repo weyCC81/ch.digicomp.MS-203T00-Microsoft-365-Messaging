@@ -10,14 +10,14 @@ that assist you with managing message compliance.
 
 ## Task 1: Prepare for eDiscovery
 
-One of the significant security and compliance tools available in Microsoft 365
+One of the significant Microsoft Purview compliance portal tools available in Microsoft 365
 is the ability to perform eDiscovery searches on information gathered in the
 system. In the final task in this exercise, you will create an eDiscovery case
 that searches email messages for sensitive data. Once you create the case and
 perform a search associated with the case, you will attempt to view the search
 results.  
 ‎  
-‎eDiscovery cases can oftentimes hold sensitive information that may not be suitable for every administrator to review. To support this scenario, some Microsoft 365 administrator roles provide permission for users to create cases, but they do not include permission to view the search results. For example, a Compliance administrator can create an eDiscovery case and run an eDiscovery search, but unless the user is also assigned the new eDiscovery Manager role in the Security and Compliance center, he or she will be unable to view the search results. You will create this scenario in this lab excerise to verify this eDiscovery permission design. 
+‎eDiscovery cases can oftentimes hold sensitive information that may not be suitable for every administrator to review. To support this scenario, some Microsoft 365 administrator roles provide permission for users to create cases, but they do not include permission to view the search results. For example, a Compliance administrator can create an eDiscovery case and run an eDiscovery search, but unless the user is also assigned the new eDiscovery Manager role in the Microsoft Purview compliance portal, he or she will be unable to view the search results. You will create this scenario in this lab excerise to verify this eDiscovery permission design. 
 
 In this task you will assign Nestor Wilke the Compliance administrator role. While this will enable Nestor to create an eDiscovery case for compliance purposes, it will not allow him to view the results of the corresponding search. To view the corresponding search results, Nestor would need to be assigned the eDiscovery Manager role. 
 
@@ -93,7 +93,7 @@ numbers, and ABA routing numbers.
     display all the navigation menu options, and then under the **Admin
     centers** section, select **Compliance.**
 
-3.  In the **Microsoft 365 compliance** portal, in the left-hand navigation
+3.  In the **Microsoft Purview** compliance portal, in the left-hand navigation
     pane, select **Policies.**
 
 4.  On the **Policies** page, under the **Data** section, select **Data loss
@@ -303,7 +303,7 @@ is active.
     enter your tenant email password in the **Password** field. Select **OK**.
 
 5.  At the command prompts, run the following two commands to establish your
-    connection to the Security and Compliance center: ‎  
+    connection to the Compliance portal: ‎  
       
     `‎$Session = New-PSSession -ConfigurationName Microsoft.Exchange
     -ConnectionUri
@@ -600,7 +600,7 @@ active MRM policies in Adatum’s Exchange environment.
 
 In your role as Holly Dickson, Adatum’s Messaging Administrator, you will
 continue with your task of reviewing Microsoft 365’s compliance tools by
-creating a Retention label through the Security and Compliance portal.
+creating a Retention label through the Microsoft Purview compliance portal.
 
 1.  You should still be logged into LON-CL1 from the prior task; if necessary,
     log in as the **Administrator** with a password of **Pa55w.rd**.
@@ -609,7 +609,7 @@ creating a Retention label through the Security and Compliance portal.
     then in the left-hand navigation pane under **Admin centers**, select
     **Compliance.**
 
-3.  In the **Microsoft 365 compliance** center, in the left-hand navigation
+3.  In the **Microsoft Purview** compliance portal, in the left-hand navigation
     pane, select **Catalog**.
 
 4.  On the **Solution catalog** page, in the **Information protection &
@@ -696,10 +696,10 @@ previously created.
 
 In your role as Holly Dickson, Adatum’s Messaging Administrator, you want to
 continue in your pilot project that examines Microsoft 365’s compliance
-functionality. In this task, you will create an eDiscovery case that searches
+functionality. In this task, you will create an eDiscovery (Standard) case that searches
 for confidential information being disseminated through email.
 
-Because eDiscovery cases can oftentimes hold sensitive information that may not be suitable for every administrator to review, many organizations want to control who has permission to view eDiscovery search results. To support this scenario, some Microsoft 365 administrator roles provide permission for users to create eDiscovery cases, but they do not include permission to view the search results. Only the new eDiscovery Manager role that is assigned in the Security and Compliance center provides permission to view search results. 
+Because eDiscovery cases can oftentimes hold sensitive information that may not be suitable for every administrator to review, many organizations want to control who has permission to view eDiscovery search results. To support this scenario, some Microsoft 365 administrator roles provide permission for users to create eDiscovery cases, but they do not include permission to view the search results. Only the new eDiscovery Manager role that is assigned in the Microsoft Purview compliance portal provides permission to view search results. 
 
 Back in Task 1, you assigned the Compliance administrator role to Nestor
 Wilke. While a Compliance admin can create an eDiscovery case and
@@ -729,12 +729,12 @@ since you completed Task 1 and then perform this task again.
     signed out.
 
 4.  In your Edge browser, enter the following URL in the address bar to go
-    directly to the Office 365 Security & Compliance center (Note: While you
+    directly to the Microsoft Purview compliance portal (Note: While you
     could have logged into the Office 365 Home page and then navigated to the
-    Microsoft 365 admin center and then to the Security and Compliance center
+    Microsoft 365 admin center and then to the Microsoft Purview compliance portal
     just as you did in the prior lab, this approach will give you experience
-    navigating directly to the Security and Compliance center):
-    **https://protection.office.com**
+    navigating directly to the Compliance portal):
+    **https://compliance.microsoft.com**
 
 5.  In the **Pick an account** window, select **Use another account**.
 
@@ -745,10 +745,10 @@ since you completed Task 1 and then perform this task again.
 7.  In the **Enter password** window, enter the tenant email password provided
     by your lab hosting provider and then select **Sign in**.
 
-8.  On the **Office 365 Security &amp; Compliance** center, select **eDiscovery** in the left-hand
-    navigation pane, and then in the expanded group select **eDiscovery.** This will redirect to the **Microsoft 365 compliance** admin center. 
+8.  In the **Microsoft Purview** compliance portal, select **eDiscovery** in the left-hand
+    navigation pane, and then in the expanded group select **Standard**. 
 
-9.  In the **eDiscovery** pane, select the **+Create a case** button.
+9.  In the **eDiscovery (Standard)** pane, select the **+Create a case** button.
 
 10. In the **New case** pane that appears, enter **AlexWilber-case01** in the
     **Case name** field.  
@@ -758,20 +758,20 @@ since you completed Task 1 and then perform this task again.
 
 11. Select **Save.**
 
-12. On the **eDiscovery** window, in the list of cases, select **AlexWilber-case01.**
+12. In the **eDiscovery (Standard)** window, in the list of cases, select **AlexWilber-case01.**
 
 13. A new tab will open in your browser that displays this case. On the menu bar
     at the top of the page, select the **Hold** tab.
 
-14. In the **Holds** tab for this case, select the **+Create** button. This will
-    initiate a **Create a new hold** wizard that walks you through the steps to
+14. In the **Hold** tab for this case, select the **+Create** button. This will
+    initiate the **New Hold** wizard that walks you through the steps to
     create a new hold.  
       
     You will begin by placing a hold on Alex Wilber’s account that will retain
     any emails that contain **Sensitive, Confidential, Secret** anywhere in the
     email as well as in the Subject line.
 
-15. In the **Create a new hold** window, in the **Name your hold** page, enter
+15. In the **New Hold** window, in the **Name your hold** page, enter
     **AlexW** in the **Name** field, leave the **Description** blank, and then
     select **Next**.
 
@@ -790,7 +790,7 @@ since you completed Task 1 and then perform this task again.
 
 21. On the **Choose locations** page, select **Next**.
 
-22. On the **Query conditions** page, in the **Enter keywords** field, enter the
+22. On the **Query** page, in the **Enter keywords** field, enter the
     following: **Sensitive, Confidential, Secret**
 
 23. Select **+Add conditions**.
@@ -798,7 +798,7 @@ since you completed Task 1 and then perform this task again.
 24. On the **Add conditions** pane that appears, scroll to the bottom of the
     pane and select **Subject** (not the Subject/Title).
 
-25. On the **Query conditions** page, in the **Subject** section, select the
+25. On the **Query** page, in the **Subject** section, select the
     drop-down arrow in the first operator field and select **Contains any of**.
     In the **Type subject** field, enter the following: **Sensitive, Confidential, Secret**
 
@@ -814,7 +814,7 @@ since you completed Task 1 and then perform this task again.
     retain any emails that contain **Sensitive, Confidential, Secret** anywhere
     in the email as well as in the Subject line.
 
-29. In the **Core eDiscovery &gt; AlexWilber-case01** page, select the
+29. In the **eDiscovery (Standard) &gt; AlexWilber-case01** page, select the
     **Searches** tab at the top of the page.  
       
     You will now create a new search that checks for emails that contain
