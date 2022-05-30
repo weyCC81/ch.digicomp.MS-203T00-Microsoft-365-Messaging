@@ -304,16 +304,13 @@ is active.
 
 5.  At the command prompts, run the following two commands to establish your
     connection to the Compliance portal:
-    ‎  
-    
-    `$Session = New-PSSession -ConfigurationName Microsoft.Exchange
-    -ConnectionUri
+   
+    `$Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri
     https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential
     $UserCredential -Authentication Basic -AllowRedirection`
-
+   
     `Import-PSSession $Session -DisableNameChecking`  
-    ‎
-
+    
 6.  At the command prompt, run the following command to display the Distribution
     Status of the DLP policy that you created in the prior task titled **U.S.
     PII Policy:**  
