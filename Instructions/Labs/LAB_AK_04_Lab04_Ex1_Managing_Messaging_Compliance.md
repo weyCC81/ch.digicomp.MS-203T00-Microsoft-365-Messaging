@@ -303,9 +303,10 @@ is active.
     enter your tenant email password in the **Password** field. Select **OK**.
 
 5.  At the command prompts, run the following two commands to establish your
-    connection to the Compliance portal: ‎  
-      
-    `‎$Session = New-PSSession -ConfigurationName Microsoft.Exchange
+    connection to the Compliance portal:
+    ‎  
+    
+    `$Session = New-PSSession -ConfigurationName Microsoft.Exchange
     -ConnectionUri
     https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential
     $UserCredential -Authentication Basic -AllowRedirection`
