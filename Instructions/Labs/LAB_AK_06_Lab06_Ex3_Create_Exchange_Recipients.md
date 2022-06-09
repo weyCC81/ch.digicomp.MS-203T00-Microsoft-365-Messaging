@@ -1,4 +1,4 @@
-# Module 7 – Lab 7 - Exercise 1 – Create Exchange Recipients
+# Module 7 – Lab 6 - Exercise 3 – Create Exchange Recipients
 
 Adatum Corporation plans to create a hybrid Exchange deployment. They have
 Exchange Server 2019 and their on-premises user mailboxes installed on their
