@@ -1,4 +1,4 @@
-# Module 9 - Lab 9 - Exercise 4 – Final Assessment
+# Module 8 - Lab 7 - Exercise 4 – Final Assessment
 
 In this exercise, you will continue in your role as Holly Dickson, Adatum’s Messaging Administrator. You have been tasked with resolving a messaging issue in Adatum’s newly configured hybrid deployment. 
 
