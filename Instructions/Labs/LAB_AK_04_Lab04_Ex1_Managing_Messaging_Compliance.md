@@ -4,13 +4,12 @@ In this lab you will continue in your role as Holly Dickson, Adatum's Messaging
 Administrator. Holly has been tasked with maintaining message traffic and
 reducing the number of undeliverable emails in Adatum’s messaging environment.
 
-To complete this task, you will create data loss prevention policies and conduct
-message tracing to familiarize yourself with the tools provided by Microsoft 365
+In this task, you will conduct a message trace and create an eDiscovery (standard) case to familiarize yourself with the tools provided by Microsoft 365
 that assist you with managing message compliance.
 
 ## Task 1: Prepare for eDiscovery
 
-One of the significant Microsoft Purview compliance portal tools available in Microsoft 365
+One of the significant Microsoft Purview tools available in Microsoft 365
 is the ability to perform eDiscovery searches on information gathered in the
 system. In the final task in this exercise, you will create an eDiscovery case
 that searches email messages for sensitive data. Once you create the case and
@@ -22,8 +21,8 @@ results.
 In this task you will assign Nestor Wilke the Compliance administrator role. While this will enable Nestor to create an eDiscovery case for compliance purposes, it will not allow him to view the results of the corresponding search. To view the corresponding search results, Nestor would need to be assigned the eDiscovery Manager role. 
 
 **Warning:** The reason you will assign Nestor the Compliance administrator role now in Task 1 rather
-than later in Task 8 when you log in as Nestor is that it takes roughly 60 minutes for role assignments to fully propagate through
-the system. So hopefully by the time you get to Task 8, the role will be fully
+than later in Task 6 when you log in as Nestor is that it can take roughly 60 minutes for role assignments to fully propagate through
+the system. So hopefully by the time you get to Task 6, the role will be fully
 propagated, and you will be able to create an eDiscovery case.
 
 1.  You should still be logged into LON-CL1 as the **Administrator** with a
@@ -74,261 +73,9 @@ propagated, and you will be able to create an eDiscovery case.
 8.  Select the **X** in the upper right corner of the **Manage roles** pane to
     close it.
 
-9.  Leave your browser open and proceed to the next task.
+9.  Leave your browser open and proceed to the next task.   
 
-## Task 2: Create a Custom DLP policy
-
-In this task your you will create a custom DLP Policy that prevents financial
-data from being sent out externally or internally. This policy will prevent
-users from sending emails that include credit card numbers, bank account
-numbers, and ABA routing numbers.
-
-1.  You should still be logged into LON-CL1 from the prior task; if necessary,
-    log in as the **Administrator** with a password of **Pa55w.rd**.
-
-2.  In your Edge browser, you should still have the **Microsoft 365 admin
-    center** open from the prior task.
-
-    In the left-hand navigation pane, select **Show All** (if necessary) to
-    display all the navigation menu options, and then under the **Admin
-    centers** section, select **Compliance.**
-
-3.  In the **Microsoft Purview** compliance portal, in the left-hand navigation
-    pane, select **Policies.**
-
-4.  On the **Policies** page, under the **Data** section, select **Data loss
-    prevention**. 
-
-5.  On the **Data loss prevention** page, navigate to the **Policies** tab, then select **+Create policy** in the menu bar. This
-    initiates the **Create policy** wizard.
-
-6.  In the **Start with a template or create a custom policy** page, the
-    **Categories** column displays four major template groups, including
-    Financial, Medical and health, Privacy, and Custom.  
-    ‎  
-    ‎Select **Financial**.
-
-7.  In the **Templates** column, scroll down and select **U.S. Financial Data**
-    (be careful and do not select U.K. Financial Data).
-
-8.  Read the information provided in the **U.S. Financial Data** column that
-    describes this template, and then select **Next.**
-
-9.  In the **Name your DLP policy** window, the template name of **U.S.
-    Financial Data** is entered by default in the **Name** field, and a default
-    description is entered in the **Description** field.
-
-    While this DLP policy uses the U.S. Financial Data template, Holly wants to
-    change the name to a more accurate value, since you will be modifying the
-    rule that is created from this template to check for non-financial data as
-    well (such as Driver’s License Number and Passport Number).
-
-    Change the value in the **Name** field to **U.S. PII Policy.**  
-      
-    **Note:** PII stands for Personally Identifiable Information. It’s a common
-    IT industry acronym for the type of personal information tracked in this
-    policy.  
-      
-    Select **Next**.
-
-10. On the **Choose locations to apply the policy** page, all the existing
-    locations are turned **ON**. You only want the **Exchange email** location
-    to be turned **ON**, so select the toggle switches for the remaining
-    locations to turn them **OFF**, and then select **Next.**
-
-11. On the **Define policy settings** page, the default option only includes the
-    following default settings: Credit Card Number, U.S. Bank Account Number,
-    and ABA Routing Number.  
-    ‎  
-    ‎However, Adatum also wants to include U.S. Driver’s License Number, U.S.
-    Social Security Number (SSN), U.S. / U.K. Passport Number, and U.S.
-    Individual Taxpayer Identification Number (ITIN) in this DLP policy.
-
-    To include these additional settings in this DLP policy, select the **Create
-    or customize advanced DLP rules** option and then select **Next**.
-
-12. In the **Customize advanced DLP rules** page, select **+Create rule**.
-
-13. In the **Create rule** window, enter **Sensitive Data** in the **Name**
-    field.
-
-14. Under the **Conditions** group, select **+Add condition**.
-
-15. In the menu that appears, select **Content contains.**
-
-16. In the **Content contains** group and under the field that displays
-    **Default**, select **Add**, and then in the drop-down menu that appears,
-    select **Sensitive info types**.
-
-17. In the **Sensitive info types** window, select the check boxes for the
-    following types of information:
-
-    -   **ABA Routing Number**
-
-    -   **Credit Card Number**
-
-    -   **U.S. / U.K. Passport Number**
-
-    -   **U.S. Bank Account Number**
-
-    -   **U.S. Driver’s License Number**
-
-    -   **U.S. Individual Taxpayer Identification Number (ITIN)**
-
-    -   **U.S. Social Security Number (SSN)**
-
-18. Select **Add**.
-
-19. This returns you to the **Create rule** window. Scroll down and under the
-    **Actions** group, select **+Add an action**. In the menu that appears,
-    select **Restrict access or encrypt the content in Microsoft 365
-    locations**.
-
-20. In the **Actions** group, select the check box next to the **Restrict access
-    or encrypt the content in Microsoft 365 locations** option; this enables two
-    options below it.
-
-21. In the options that appear, verify the **Block users from accessing shared
-    SharePoint, OneDrive, and Teams files** option is selected, and then verify
-    **Block everyone** is selected.
-    
-22. Scroll down on the **Create rule** window to the **User notifications**
-    group. Select the toggle button to turn **ON** user notifications and toggle
-    the check box next to **Use notifications to inform your users and help educate them on the proper use of sensitive info**.   
-
-23. Under the **Email notifications** group, select the **Notify these people**
-    option.
-
-24. Under the **Notify these people** option, only **The person who sent,
-    shared, or modified the content** check box is selected. Select the other
-    two check boxes as well (**Owner of the SharePoint site or OneDrive
-    account**, and **Owner of the SharePoint site or OneDrive content**).
-
-25. Under the **Send the email to these additional people** group, select **Add
-    or remove people**.
-
-26. In the **Add or remove people** window that appears, select **MOD
-    Administrator** from the list of users and then select **Add**.
-
-27. This returns you to the **Create rule** window. Below the **Add or remove
-    people** option that you previously selected are two check boxes, one to
-    **Customize the email text** and the other to **Customize the email
-    subject**.
-
-    Select the **Customize the email text** check box.
-
-28. Copy the following text and paste it into the field that appears below the
-    **Customize the email text** check box:
-
-    **WARNING: This email contains sensitive personal and/or corporate
-    information that is not allowed to be included in emails. Please remove the
-    sensitive information. Thank you.**
-
-29. In the **Create rule** window, scroll down to the **Incident reports**
-    section. Select the drop-down arrow in the **Use this severity level in
-    admin alerts and reports** field and select **High**.
-
-30. Select the toggle button for the **Send an alert to admins when a rule match
-    occurs** option to turn it **On**.
-
-31. Scroll to the bottom of the **Create rule** window, select the drop-down
-    arrow in the **Priority** field and select **1**.
-
-32. Select **Save**. If you are prompted to add a named entity select **No**.
-
-33. This returns you to the **Customize advanced DLP rules** page. Select
-    **Next**.
-
-34. On the **Test or turn on the policy page**, select the **Turn it on
-    right away** option and then select **Next**.
-
-35. On the **Review your policy and create it** page, review all your settings.
-    If any setting needs correction, select **Back** as many times as needed to
-    return to the page that requires correction, make your updates, and then
-    select **Next** as needed to bring you back to this page.
-
-    Once everything on this **Review your policy and create it** page is
-    correct, select **Submit**.
-
-36. On the **New policy created** window, select **Done**.
-
-37. In the **Data loss prevention** window, the new policy that you just created
-    should be displayed in the list of data loss prevention policies.  
-    ‎  
-    ‎**IMPORTANT:** Although the status of the policy is **Enabled**, it can take
-    up to 24 hours for the policy to propagate through the system and become
-    fully operational. Therefore, you cannot test the policy at this time to
-    validate that it is working properly.
-
-## Task 3: Confirm the Status of the Custom DLP policy
-
-In the prior task, you created a custom DLP policy. The task also indicated that
-it can take up to 24 hours for the policy to become active (i.e. to propagate
-through the system and become fully operational). In this task, you will learn
-how to use PowerShell to check the progress of the policy to determine when it
-is active.
-
-1.  You should still be logged into LON-CL1 from the prior task; if necessary,
-    log in as the **Administrator** with a password of **Pa55w.rd**.
-
-2.  Select the magnifying glass on the taskbar at the bottom of the screen and
-    enter **Powershell** in the Search box. In the menu that appears,
-    right-click on **Windows PowerShell** (do NOT select Windows PowerShell ISE)
-    and select **Run as administrator**.  
-      
-    Maximize your Windows PowerShell window.
-
-3.  At the command prompt, run the following command to change the PowerShell
-    execution policy for your Windows computer:  
-    ‎  
-    ‎**Note:** Instead of typing each command, it will be quicker to copy each
-    command and paste it into PowerShell at the command prompt. Copy and pasting
-    the commands will also avoid any errors that can occur when typing in the
-    commands, especially with the longer commands. Your instructor will guide
-    you on how to copy and paste text into your particular VM environment.  
-    ‎  
-    ‎`Set-ExecutionPolicy RemoteSigned`  
-    ‎  
-    ‎**Note:** You will be prompted as to whether you want to change the
-    execution policy. Enter **A** for **Yes to All.**
-
-4.  At the command prompt, run the following command to prompt you for your user
-    credentials:  
-    ‎  
-    ‎ `$UserCredential = Get-Credential`  
-    ‎  
-    ‎**Note:** This will open a dialog box to enter your credentials. Enter
-    **admin@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant
-    prefix provided by your lab hosting provider) in the **User name** field and
-    enter your tenant email password in the **Password** field. Select **OK**.
-
-5.  At the command prompts, run the following two commands to establish your
-    connection to the Compliance portal:
-   
-    `$Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri
-    https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential
-    $UserCredential -Authentication Basic -AllowRedirection`
-   
-    `Import-PSSession $Session -DisableNameChecking`  
-    
-6.  At the command prompt, run the following command to display the Distribution
-    Status of the DLP policy that you created in the prior task titled **U.S.
-    PII Policy:**  
-      
-    `Get-DlpCompliancePolicy "U.S. PII Policy"| select DistributionStatus`  
-      
-    **Note:** At this moment, the **Distribution Status** of the DLP policy
-    should be **Pending**, since it can take up to 24 hours before the policy
-    becomes fully operational. In a real-world environment, you should check the
-    status from time to time to verify when the Distribution Status changes to
-    **Success**, which indicates the policy is active.
-
-7.  Minimize the Windows PowerShell window as you will use it in a later task.
-
-8.  Leave your Edge browser open and proceed to the next task.  
-    ‎
-
-## Task 4: Perform a Message Trace
+## Task 2: Perform a Message Trace
 
 In this task, Holly Dickson plans to test Microsoft 365’s message tracing
 functionality. Message traces are used to track and monitor where the message
@@ -523,7 +270,7 @@ in the New EAC.
     **Microsoft 365 admin center** tab. Close all other tabs and proceed to the
     next task.
 
-## Task 5: Review Active MRM Policies with PowerShell
+## Task 3: Review Active MRM Policies with PowerShell
 
 In this task you will run a series of Windows PowerShell commands to review the
 active MRM policies in Adatum’s Exchange environment.
@@ -531,12 +278,12 @@ active MRM policies in Adatum’s Exchange environment.
 1.  You should still be logged into LON-CL1 from the prior task; if necessary,
     log in as the **Administrator** with a password of **Pa55w.rd**.
 
-2.  The **Windows PowerShell** console should still be open from the earlier
-    task in which you verified the status of your custom DLP policy; if so, then
-    select the **PowerShell** icon on the taskbar to maximize the window.  
-    ‎  
-    ‎If you closed the PowerShell window in the earlier task, then repeat the
-    steps you performed previously to open an elevated instance of PowerShell.
+2.  Select the magnifying glass on the taskbar at the bottom of the screen and
+    enter **Powershell** in the Search box. In the menu that appears,
+    right-click on **Windows PowerShell** (do NOT select Windows PowerShell ISE)
+    and select **Run as administrator**.  
+      
+    Maximize your Windows PowerShell window.
 
 3.  In **Windows PowerShell**, run the following command at the command prompt
     to install the new Exchange Online module:  
@@ -594,7 +341,7 @@ active MRM policies in Adatum’s Exchange environment.
     
 10. Close the Windows PowerShell window.
 
-## Task 6: Create a Retention Label
+## Task 4: Create a Retention Label
 
 In your role as Holly Dickson, Adatum’s Messaging Administrator, you will
 continue with your task of reviewing Microsoft 365’s compliance tools by
@@ -642,7 +389,7 @@ creating a Retention label through the Microsoft Purview compliance portal.
 
 12. Once the retention label has been created, you have the option of publishing the label, we will do that in the next task. On the **Your retention label is created** screen select **Do nothing** and select **Done**.
 
-## Task 7: Create a Retention Label Policy
+## Task 5: Create a Retention Label Policy
 
 ‎In the prior task, you created a Retention Label. In this task, you will create
 a Retention Label Policy and assign it to the Retention Label that you
@@ -690,7 +437,7 @@ previously created.
 
 10.  Leave your browser and all tabs open and proceed to the next task.
 
-## Task 8: Create an eDiscovery Case
+## Task 6: Create an eDiscovery Case
 
 In your role as Holly Dickson, Adatum’s Messaging Administrator, you want to
 continue in your pilot project that examines Microsoft 365’s compliance
