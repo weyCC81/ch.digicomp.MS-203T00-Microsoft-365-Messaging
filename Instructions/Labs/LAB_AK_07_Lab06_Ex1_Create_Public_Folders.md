@@ -1,4 +1,4 @@
-# Module 8 - Lab 8 - Exercise 1 - Create Public Folders
+# Module 7 - Lab 6 - Exercise 1 - Create Public Folders
 
 Holly Dickson wants to continue reviewing the messaging functionality in
 Microsoft 365, and more specifically, the use of public folders. In this lab,
