@@ -1,4 +1,4 @@
-# Module 6 - Lab 6 - Exercise 1 - Manage Roles and Permission Policies
+# Module 6 - Lab 5 - Exercise 1 - Manage Roles and Permission Policies
 
 In this exercise you will continue in your role as Holly Dickson, Adatum’s
 Messaging Administrator. Holly has been tasked with managing Microsoft 365 admin
