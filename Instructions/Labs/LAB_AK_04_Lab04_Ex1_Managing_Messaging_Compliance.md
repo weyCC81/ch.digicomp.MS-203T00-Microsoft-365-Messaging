@@ -634,7 +634,7 @@ creating a Retention label through the Microsoft Purview compliance portal.
 
 9.  Select **Next**.
 
-10. On the **Review your settings** page, review your settings and if any
+10. On the **Review and finish** page, review your settings and if any
     require correction, select the corresponding **Edit** option to fix the
     setting. When all settings are correct, select **Create label**.
 
