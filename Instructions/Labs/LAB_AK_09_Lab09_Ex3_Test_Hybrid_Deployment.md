@@ -383,7 +383,7 @@ This task will verify whether your connectors are correctly set up.
     along with his mailbox.  
     ‎  
     ‎Create a new test email and send it to **Beth Burke**. Beth’s email address
-    is **Beth\@xxxUPNxxx.xxxCustomDomainxxx.xxx** (where xxxUPNxxx is your
+    is **Beth@xxxUPNxxx.xxxCustomDomainxxx.xxx** (where xxxUPNxxx is your
     unique UPN Name and xxxCustomDomainxxx.xxx is the accepted domain).
 
 8.  At this point, you must log into Beth Burke’s on-premises mailbox to verify
