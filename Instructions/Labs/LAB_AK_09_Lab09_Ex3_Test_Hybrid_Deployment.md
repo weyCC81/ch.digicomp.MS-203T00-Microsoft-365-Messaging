@@ -244,7 +244,7 @@ data secure.
 
 14.  On the **Check endpoint setup status** page, you will see **endpoint is saving...**, once completed you will see **new endpoint Hybrid Migration created**, then select next. 
 
-        **IMPORTANT:** If this step fails, ensure that you entered the details correctly from stepa #12 and #13. The email address we input in step #12 should also be an active on-premises mailbox, if this mailbox has already been migrated the autodiscover chech will fail to confirm the MRS proxy server. If you continue to fail, by default a migration endpoint named **Hydbrid Migration Endpoint - EWS (Default Web Site)** should already exist. Instead of creating the Endpoint Manually, you can go back to step #11 and select this Migration Endpoint and skip to step #15. 
+        **IMPORTANT:** If this step fails, ensure that you entered the details correctly from steps #12 and #13. The email address we input in step #12 should also be an active on-premises mailbox, if this mailbox has already been migrated the autodiscover chech will fail to confirm the MRS proxy server. If you continue to fail, by default a migration endpoint named **Hydbrid Migration Endpoint - EWS (Default Web Site)** should already exist. Instead of creating the Endpoint Manually, you can go back to step #11 and select this Migration Endpoint and skip to step #15. 
 
 15.  On the **Add user mailboxes** page, select **Manually add users to migrate** and search for **Allan@xxxUPNxxx.xxxCustomDomainxxx.xxx** (where xxxUPNxxx is the           unique UPN Name and xxxCustomDomainxxx.xxx is the custom domain name, both of which were provided by your lab hosting provider), Once Allan's mailbox is added select next.
 
