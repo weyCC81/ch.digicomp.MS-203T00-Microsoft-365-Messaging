@@ -193,7 +193,7 @@ is delivered. This situation provides the basis for the Final Assessment lab.
 ## Task 2: Migrate an on-premises mailbox to test your connectors
 
 In this task, you will log into your Exchange Server (EX1) VM, open the
-on-premises Exchange admin center, and migrate Allan Yoo’s on-premises mailbox
+New Exchange Online admin center, and migrate Allan Yoo’s on-premises mailbox
 (along with his mail) to Microsoft 365. The purpose of this task is to verify
 whether your connectors are correctly set up and to provide a level of
 simplicity for the user.
@@ -214,89 +214,51 @@ data secure.
     Select the **send connectors – Microsoft Exchange** tab to display the on-premises EAC.
 
 3.  In the on-premises **Exchange admin center**, in the left-hand navigation
-    pane, select **recipients**, which displays the **mailboxes** tab by
-    default. In the list of mailboxes, select **Allan Yoo**.
+    pane, select **servers**, then select the **virtual directories** tab.
 
-4.  In the **Allan Yoo** details pane on the right, scroll down to the bottom,
-    and under the **Move Mailbox** section, select **To Exchange Online**.  
-    ‎  
-    ‎**Important:** Prior to installing your hybrid Exchange deployment, if you
-    looked at this **Move Mailbox** section for any of the on-premises
-    mailboxes, you would not see the **To Exchange Online** option. However,
-    once you install the hybrid deployment, the **To Exchange Online** option
-    should appear for any of the on-premises mailboxes. If you do not see **To
-    Exchange Online** under the **Move Mailbox** section, then the browser needs
-    to be refreshed; in other words, you must close the tabs on your browser,
-    then close the browser itself, and then re-open it. If you must do this,
-    then start the on-premises **Exchange admin center**, log in as
-    **adatum\\Administrator** with a password of **Pa55w.rd**, navigate to
-    **recipients** and the **mailboxes** tab, and then select **Allan Yoo’s**
-    mailbox. This time you should see the **To Exchange Online** option, which
-    you should select.
+4.  In the **virtual directories** tab, you should see a list of virtual directories you created earlier on in this lab (Excersie 1 step 4). Find and select the **EWS (Default Web Site)** entry you created and select the pencil icon to edit.
 
-5.  In the **information** pop-up screen, select **sign in to Office 365**.
+5.  In the new page that opens, you should be on the general tabl be default, ensure that the last option, **Enable MRS Proxy endpoint**, is enabled (marked by a check box), then select **Save**.
 
-6.  If the **new migration batch** window appears, then proceed to the next
-    step; otherwise, if a **critical error** dialog window appears, then perform
-    the following steps:
+6.  Switch over to the **new Exchange Online admin center** which should still be open from the previous excersise, in the left hand navigation pane, select **Migration**.
 
-    -   In the dialog window displaying the critical error message, select
-        **OK.**
+7.  On the **Migration batches** page that opens up, select **Add migration batch**.
 
-    -   In the EAC, select **hybrid** on the left-hand navigation pane and then
-        on the **setup** page, select the **modify** button. If an information
-        pop-up window appears, select **sign in to Office 365**, and then sign
-        in if required (if the sign in used your MOD Administrator credentials,
-        then a sign in window will not appear).
+8.  The Migration wizzard should open up and you will be displayed with the **Add migration batch** page. Under the **Give migration batch a unique name** field enter **Migrating Allan Yoo**, then in the **Select the mailbox migration path** field select **migration to Exchange online**, and then select next.
 
-    -   In the blue heading line above **Exchange admin center** at the top of
-        the window, it displays **Enterprise** and **Office 365**. Note the
-        arrow is pointing to which EAC currently being displayed. Ensure that
-        **Enterprise** (on-premises) is selected before you continue to the next
-        step.  
-        ‎  
-        ‎If it is not selected at the top, close your browser and start again at
-        step 1 of this task. However, if **Enterprise** is selected, then repeat
-        steps 3 and 4, and then continue with the next step.
+9.  On the **Select the migration type** page, under the **Select Migration type** field select **Remote move migration**, and then select next.
 
-7.  In the **new migration batch** window, if a sign in page appears (if it does
-    not appear, then skip to the next step/**try in internet explorer**), enter **adatum\\Administrator** in
-    the **Account with privileges (domain\\user name)** field, enter
-    **Pa55w.rd** in the **Password of account with privileges** field, and then
-    select **Next**.
+10.  On the **Prerequisites for remote migration page** select next.
 
-8.  On the **Confirm the migration endpoint** page, the **Remote MRS proxy
-    server** should be set to **xxxUPNxxx.xxxCustomDomainxxx.xxx** by default,
-    so simply select **Next.**  
-    ‎
+11.  On the **set a migration endpoint** field select **Create a new migration endpoint**, and then select next.
 
-9.  On the **Move configuration** page, enter **Migrating Allan Yoo** in the
-    **New migration batch name** field, verify that
-    **xxxxxZZZZZZ.mail.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix
-    provided by the lab hosting provider) is entered in the **Target delivery
-    domain** field, and then select **Next**.
+        The migration endpoint contains the connection settings for an on-premises Exchange server that is running the MRS proxy service, which is required to perform remote move migrations to and from Exchange Online. Since this is your first migration, we will proceed with the steps of creating a migration endpoint that could be used for future mailbox migrations from Exchange On-premises to Exchange Online.
 
-10. On the **Start the batch** page, under the **Please select the preferred
-    option to complete the batch** section at the bottom of the page, select the
-    **Automatically complete the migration batch** option and then select
-    **new.**
+12.  The next page that opens up should display the **On-premises account credentials** page where we have to fill in several settings:
+     - under the **Migration Endpoint name** field enter **Hybrid Migration**, this name can be whatever you'd like in the real world to identify the Migration Endpoint configuration moving forward.
+     - Under **Account with privileges** field enter **Adatum/Admim**.
+     - Under the **password of account with privileges** field enter **Pa55w.rd**.
+     - under the **Email address** field enter Allen Yoo's email address **Allan@xxxUPNxxx.xxxCustomDomainxxx.xxx** (where xxxUPNxxx is the unique UPN Name and xxxCustomDomainxxx.xxx is the custom domain name, both of which were provided by your lab hosting provider), and then select next.
 
-11. On the **Information** pop-up windows that indicates **Saving completed
-    successfully**, select **OK**.
+13.  On the **confirm the migration endpoint** page, under the **Remote MRS Proxy server** field enter **xxxUPNxxx.xxxCustomDomainxxx.xxx** (where xxxUPNxxx is the unique UPN Name and xxxCustomDomainxxx.xxx is the custom domain name, both of which were provided by your lab hosting provider). Leave both **maximum concurrent migrations** and **maximum concurrent incremental syncs** at their default values, and then select next.
 
-12. On the **information** pop-up window that asks **Do you want to go to the
-    migration dashboard to see the status of your migration batch?** select
-    **Yes**.
+14.  On the **Check endpoint setup status** page, you will see **endpoint is saving...**, once completed you will see **new endpoint Hybrid Migration created**, then select next. 
 
-13. On the **migration** page, monitor the status of the migration. The
-    **Status** column will begin by displaying **Syncing,** and eventually it
-    will change to **Completed**.  
-    ‎  
-    ‎ **IMPORTANT:** Migrating an on-premises mailbox to Microsoft 365 can take
-    up to an hour to complete. Therefore, once you have finished this task,
-    proceed to the Final Assessment lab. Once you have finished the final
-    assessment, return to this lab exercise and perform Task 3 to test the newly
-    migrated mailbox.
+        **IMPORTANT:** If this step fails, ensure that you entered the details correctly from steps #12 and #13. The email address we input in step #12 should also be an active on-premises mailbox, if this mailbox has already been migrated the autodiscover chech will fail to confirm the MRS proxy server. If you continue to fail, by default a migration endpoint named **Hydbrid Migration Endpoint - EWS (Default Web Site)** should already exist. Instead of creating the Endpoint Manually, you can go back to step #11 and select this Migration Endpoint and skip to step #15. 
+
+15.  On the **Add user mailboxes** page, select **Manually add users to migrate** and search for **Allan@xxxUPNxxx.xxxCustomDomainxxx.xxx** (where xxxUPNxxx is the           unique UPN Name and xxxCustomDomainxxx.xxx is the custom domain name, both of which were provided by your lab hosting provider), Once Allan's mailbox is added select next.
+
+16.  On the **Move configuration** page, under the **Target delivery domain** there should only be one option to choose from, select **xxxxxZZZZZZ.mail.onmicrosoft.com**     (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider), and select Next.
+
+17.  On the **schedule batch migration** page, set the **start the migration by** option to **Automatically start the batch** and the **End the migration batch by** to       **Automatically complete the migration batch**. The default admin account populated in the first field can be left for sending reports to. Once finished select save.
+
+        In the real world, you would rarely be migrating a users mailbox durring business hours. However, for the purposes of this lab we want to start and finish this migration immediately. On this page, you would be able set delayed starts and completions for your batch migration to match business needs.
+
+18.  on the **status** page, wait until you see **batch creation successful!**, then select done.
+
+20.  After selecting done, you will be brought to the **Migration batches** page within the **new Exchange admin center** where you can monitor the status of the of the      migration. The Status column will begin by displaying Syncing, and eventually it will change to Completed.
+   
+        **IMPORTANT:** Migrating an on-premises mailbox to Microsoft 365 can take up to an hour to complete. Therefore, once you have finished this task, proceed to the      Final Assessment lab. Once you have finished the final assessment, return to this lab exercise and perform Task 3 to test the newly migrated mailbox.
 
 ## Task 3: Test the newly migrated mailbox
 
