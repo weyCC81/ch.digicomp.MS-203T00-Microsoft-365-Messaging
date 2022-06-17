@@ -115,8 +115,7 @@ group. In this task, you are going to add a user to a role group.
     log in now.
 
 2.  The **Exchange admin center** for Exchange Online should still be open in
-    your Edge browser. You should still be on the **permissions** page, which
-    should be displaying the **admin roles** tab from the prior task.  
+    your Edge browser, which should be displaying the **admin roles** tab from the prior task.  
       
     In the list of admin role groups, select the **Discovery Management** role
     group.
