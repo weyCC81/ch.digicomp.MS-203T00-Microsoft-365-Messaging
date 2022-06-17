@@ -75,7 +75,7 @@ is delivered. This situation provides the basis for the Final Assessment lab.
     ‎  
     ‎You should now send an email from Allan’s on-premises mailbox to Alex
     Wilber’s Microsoft 365 mailbox. Select **New** in the ribbon, and in the
-    email’s **To** address line, enter **alexw\@xxxxxZZZZZZ.onmicrosoft.com**
+    email’s **To** address line, enter **alexw@xxxxxZZZZZZ.onmicrosoft.com**
     (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting
     provider).
 
