@@ -103,7 +103,7 @@ is delivered. This situation provides the basis for the Final Assessment lab.
     **https://portal.office.com**  
     ‎
 
-8.  In the **Sign in** window, enter **alexw\@xxxxxZZZZZZ.onmicrosoft.com**
+8.  In the **Sign in** window, enter **alexw@xxxxxZZZZZZ.onmicrosoft.com**
     (where xxxxZZZZZZ is the tenant prefix provided by your lab hosting
     provider) and then select **Next.**
 
