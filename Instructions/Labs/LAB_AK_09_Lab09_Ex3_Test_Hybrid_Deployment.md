@@ -328,7 +328,7 @@ This task will verify whether your connectors are correctly set up.
 4.  On the **Sign out** tab in the InPrivate Browsing session, browse to
     **https://outlook.office365.com.** On the **Pick an account** window, select
     **Use another account.** On the **Sign in** window, enter
-    **Allan\@xxxUPNxxx.xxxCustomDomainxxx.xxx** (where xxxUPNxxx is your unique
+    **Allan@xxxUPNxxx.xxxCustomDomainxxx.xxx** (where xxxUPNxxx is your unique
     UPN Name and xxxCustomDomainxxx.xxx is the accepted domain) and then select
     **Next**. On the **Enter password** window, enter **Pa55w.rd** and then
     select **Sign in**.
