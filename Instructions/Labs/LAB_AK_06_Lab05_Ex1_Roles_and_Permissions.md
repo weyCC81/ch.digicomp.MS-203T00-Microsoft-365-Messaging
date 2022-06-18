@@ -114,10 +114,7 @@ group. In this task, you are going to add a user to a role group.
     with a password of **Pa55w.rd**; however, if the log-in screen appears, then
     log in now.
 
-2.  The **Exchange admin center** for Exchange Online should still be open in
-    your Edge browser, which should be displaying the **admin roles** tab from the prior task.  
-      
-    In the list of admin role groups, select the **Discovery Management** role
+2.  The **Exchange admin center** for Exchange Online should still be open in your Edge browser, which should be displaying the **admin roles** tab from the prior task. In the list of admin role groups, select the **Discovery Management** role
     group.
 
 3.  The **Discovery Management** pane will open. Select the **Assigned** tab.
