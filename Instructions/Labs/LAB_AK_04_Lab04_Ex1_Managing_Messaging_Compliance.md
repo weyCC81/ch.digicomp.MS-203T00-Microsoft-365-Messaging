@@ -15,8 +15,8 @@ system. In the final task in this exercise, you will create an eDiscovery case
 that searches email messages for sensitive data. Once you create the case and
 perform a search associated with the case, you will attempt to view the search
 results.
-‎  
-‎eDiscovery cases can oftentimes hold sensitive information that may not be suitable for every administrator to review. To support this scenario, some Microsoft 365 administrator roles provide permission for users to create cases, but they do not include permission to view the search results. For example, a Compliance administrator can create an eDiscovery case and run an eDiscovery search, but unless the user is also assigned the new eDiscovery Manager role in the Microsoft Purview compliance portal, he or she will be unable to view the search results. You will create this scenario in this lab excerise to verify this eDiscovery permission design. 
+ 
+eDiscovery cases can oftentimes hold sensitive information that may not be suitable for every administrator to review. To support this scenario, some Microsoft 365 administrator roles provide permission for users to create cases, but they do not include permission to view the search results. For example, a Compliance administrator can create an eDiscovery case and run an eDiscovery search, but unless the user is also assigned the new eDiscovery Manager role in the Microsoft Purview compliance portal, he or she will be unable to view the search results. You will create this scenario in this lab excerise to verify this eDiscovery permission design. 
 
 In this task you will assign Nestor Wilke the Compliance administrator role. While this will enable Nestor to create an eDiscovery case for compliance purposes, it will not allow him to view the results of the corresponding search. To view the corresponding search results, Nestor would need to be assigned the eDiscovery Manager role. 
 
@@ -169,8 +169,8 @@ in the New EAC.
     **@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the unique tenant
     prefix provided by your lab hosting provider). Therefore, do NOT change this
     value.  
-    ‎  
-    ‎- You can customize the **Recipients** field to search for messages that
+
+     - You can customize the **Recipients** field to search for messages that
     were sent to specific users. By default, the query will select messages sent
     to all recipients. However, Holly wants to modify the query to only select
     messages sent to Alex Wilber. Therefore, enter **Alex** in the
@@ -241,8 +241,8 @@ in the New EAC.
     notice this in the **notification bell** that appears at the top right of
     the screen (it will display a number that indicates the number of
     notifications you have).  
-    ‎  
-    ‎When you see a 1 in the notification bell, select the bell to display the
+    
+    When you see a 1 in the notification bell, select the bell to display the
     **Notifications** pane. In the **Notifications** pane, select the email
     entry.
 
@@ -255,11 +255,8 @@ in the New EAC.
 28. As the system attempts to open the report, it will display a notification
     bar that asks whether you want to open or save the .csv file associated with
     the report. Select **Save.**  
-    ‎  
-    ‎This file contains all corresponding information from the email, including
-    but not limited to: SCL, Number of hops, source IP address, what connector
-    used, delivery priority. Most of the information will be located in the
-    custom data column.  
+      
+    This file contains all corresponding information from the email, including but not limited to: SCL, Number of hops, source IP address, what connector used, delivery priority. Most of the information will be located in the custom data column.  
       
     Congratulation! You have just verified the message trace report was created,
     the MOD Administrator was notified in an email that the report was complete,
