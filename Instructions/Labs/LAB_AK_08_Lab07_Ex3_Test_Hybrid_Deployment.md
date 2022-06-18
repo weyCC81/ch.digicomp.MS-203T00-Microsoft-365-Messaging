@@ -75,7 +75,7 @@ is delivered. This situation provides the basis for the Final Assessment lab.
     ‎  
     ‎You should now send an email from Allan’s on-premises mailbox to Alex
     Wilber’s Microsoft 365 mailbox. Select **New** in the ribbon, and in the
-    email’s **To** address line, enter **alexw\@xxxxxZZZZZZ.onmicrosoft.com**
+    email’s **To** address line, enter **alexw@xxxxxZZZZZZ.onmicrosoft.com**
     (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting
     provider).
 
@@ -103,7 +103,8 @@ is delivered. This situation provides the basis for the Final Assessment lab.
     **https://portal.office.com**  
     ‎
 
-8.  In the **Sign in** window, enter **alexw\@xxxxxZZZZZZ.onmicrosoft.com**
+
+8.  In the **Sign in** window, enter **alexw@xxxxxZZZZZZ.onmicrosoft.com**
     (where xxxxZZZZZZ is the tenant prefix provided by your lab hosting
     provider) and then select **Next.**
 
@@ -328,7 +329,8 @@ This task will verify whether your connectors are correctly set up.
 4.  On the **Sign out** tab in the InPrivate Browsing session, browse to
     **https://outlook.office365.com.** On the **Pick an account** window, select
     **Use another account.** On the **Sign in** window, enter
-    **Allan\@xxxUPNxxx.xxxCustomDomainxxx.xxx** (where xxxUPNxxx is your unique
+    **Allan@xxxUPNxxx.xxxCustomDomainxxx.xxx** (where xxxUPNxxx is your unique
+
     UPN Name and xxxCustomDomainxxx.xxx is the accepted domain) and then select
     **Next**. On the **Enter password** window, enter **Pa55w.rd** and then
     select **Sign in**.
@@ -345,7 +347,7 @@ This task will verify whether your connectors are correctly set up.
     along with his mailbox.  
     ‎  
     ‎Create a new test email and send it to **Beth Burke**. Beth’s email address
-    is **Beth\@xxxUPNxxx.xxxCustomDomainxxx.xxx** (where xxxUPNxxx is your
+    is **Beth@xxxUPNxxx.xxxCustomDomainxxx.xxx** (where xxxUPNxxx is your
     unique UPN Name and xxxCustomDomainxxx.xxx is the accepted domain).
 
 8.  At this point, you must log into Beth Burke’s on-premises mailbox to verify

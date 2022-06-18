@@ -606,8 +606,8 @@ will fail.**
     and then select **sign in**. If necessary, select your Language and Time
     Zone and select **Save**.
 
-25. In Allan’s Inbox, you may or may not see an email from
-    **O365ConnectorValidation\@xxxUPNxxx.xxxCustomDomainxxx.xxx**.
+25. In Allan’s Inbox, you may or may not see an email from **O365ConnectorValidation@xxxUPNxxx.xxxCustomDomainxxx.xxx**.
+
 
     -   If you see this email, then open it. The message in the email indicates
         it was sent from Office 365 to check that an email could be delivered

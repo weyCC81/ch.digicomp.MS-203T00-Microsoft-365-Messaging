@@ -32,8 +32,7 @@ herself the Exchange Admin role. You will perform this task in the LON-CL1 VM.
     You should also be logged in as the MOD Administrator. If so, then proceed
     to the next step. However, if you closed your browser at the end of the
     prior lab, then navigate to the **Office 365 home** page, log in as
-    **admin\@xxxxxZZZZZZ.onmicrosoft.com,** and then navigate to the **Microsoft
-    365 admin center.**
+    **admin@xxxxxZZZZZZ.onmicrosoft.com,** and then navigate to the **Microsoft 365 admin center.**
 
 3.  In the **Microsoft 365 admin center**, select **Users** in the left-hand
     navigation pane, and then in the expanded group select **Active Users.**
