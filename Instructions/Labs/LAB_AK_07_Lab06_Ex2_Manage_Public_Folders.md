@@ -1,4 +1,4 @@
-# Module 8 - Lab 8 - Exercise 2 - Manage Public Folders
+# Module 7 - Lab 6 - Exercise 2 - Manage Public Folders
 
 In the prior exercise, Holly Dickson logged into the Exchange admin center for
 Exchange Online on LON-CL1 and created a Microsoft 365 public folder mailbox and
