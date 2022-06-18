@@ -1,4 +1,4 @@
-# Module 9 - Lab 9 - Exercise 2 - Configure Your Hybrid Deployment
+# Module 8 - Lab 7 - Exercise 2 - Configure Your Hybrid Deployment
 
 In this lab you will continue in your role as Holly Dickson, Adatum’s Messaging
 Administrator. Adatum has decided to transition from their current on-premises
