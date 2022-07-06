@@ -183,30 +183,38 @@ locate the UPN name.
 4.  Minimize your Windows PowerShell window (do NOT close it as you will use it
     later).
 
-5.  You will now access the **Microsoft 365 admin center** from LON-DC1. Select
+5. Switch to **LON-EX1**
+
+6. Open **PowerShell** as and Administrator and run the following command:
+
+	`dnscmd /zoneadd xxxUPNxxx.xxxCustomDomainxxx.xxx /Secondary 10.0.0.4`
+
+7. Return back to **LON-DC1**  
+
+8.  You will now access the **Microsoft 365 admin center** from LON-DC1. Select
     the **Microsoft Edge** icon on your taskbar and enter the following URL in
     the address bar: **https://portal.office.com.**
 
-6.  On the **Sign in** page, enter **admin@xxxxxZZZZZZ.onmicrosoft.com** (where
+9.  On the **Sign in** page, enter **admin@xxxxxZZZZZZ.onmicrosoft.com** (where
     xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider), and
     then enter the tenant email password provided by your lab hosting provider
     on the **Enter password** page. Select **Sign in.**
 
-7.  On the **Stay signed in?** window, select the **Don’t show this again**
+10.  On the **Stay signed in?** window, select the **Don’t show this again**
     check box and then select **Yes.**
 
-8.  If a **Get your work done with Office 365** window appears, select the **X**
+11.  If a **Get your work done with Office 365** window appears, select the **X**
     in the upper right-hand corner to close it.
 
-9.  In the **Office 365 home** page, in the column of Microsoft 365 app icons on
+12.  In the **Office 365 home** page, in the column of Microsoft 365 app icons on
     the left-side of the screen, select the **Admin** icon to navigate to the
     **Microsoft 365 admin center**.
 
-10. In the **Microsoft 365 admin center**, in the left-hand navigation bar,
+13. In the **Microsoft 365 admin center**, in the left-hand navigation bar,
     select **Show all,** select **Settings**, and then under the **Settings**
     group select **Domains**.
 
-11. On the **Domains** page, note that in the list of domains, only the
+14. On the **Domains** page, note that in the list of domains, only the
     **xxxxxZZZZZZ.onmicrosoft.com** domain appears. The existing on-premises
     **adatum.com** domain does not appear in the list of Microsoft 365 domains.
 
@@ -214,18 +222,18 @@ locate the UPN name.
     bar that appears above the list of domains; this will start the **Add
     domain** wizard.
 
-12. In the **Add a domain** page, in the **Domain name** field, enter your
+15. In the **Add a domain** page, in the **Domain name** field, enter your
     domain name in the form of **xxxUPNxxx.xxxCustomDomainxxx.xxx** (where
     xxxUPNxxx is the unique UPN name provided by your lab hosting provider, and
     xxxCustomDomainxxx.xxx is your lab hosting provider's domain name), and then
     select the **Use this domain** button at the bottom of the page.
 
-13. In the **How do you want to verify your domain?** page, you must select a
+16. In the **How do you want to verify your domain?** page, you must select a
     verification method to prove you own the domain. For this lab, select the
     **Add a TXT record to the domain's DNS records** option and then select
     **Continue**.
 
-14. On the **Verify you own this domain** page, you must copy the **TXT value**
+17. On the **Verify you own this domain** page, you must copy the **TXT value**
     (NOT the TXT name) so that you can configure the domain later on in DNS
     Manager.
 
@@ -244,38 +252,46 @@ locate the UPN name.
     select the **Verify** button so that you can complete the process of adding
     this domain in the Microsoft 365 admin center.
 
-15. Before you can verify you own this domain in the **Add domain** wizard, you
+18. Before you can verify you own this domain in the **Add domain** wizard, you
     must first add a DNS record for this domain in Server Manager. Select the
     **Server Manager** icon that appears in your taskbar at the bottom of the
     page. Maximize the Server Manager window if necessary.
 
-16. In **Server Manager Dashboard,** select **Tools** in the top right corner of
+19. In **Server Manager Dashboard,** select **Tools** in the top right corner of
     the window. In the drop-down menu that appears, select **DNS**, which will
     open **DNS Manager**. Maximize the DNS Manager window.
 
-17. In the **DNS Manager** window, in the **File Explorer** section in the
+20. In the **DNS Manager** window, in the **File Explorer** section in the
     left-hand column, under **LON-DC1** expand the **Forward Lookup Zones**
     folder and then select the **xxxUPNxxx.xxxCustomDomainxxx.xxx** zone that
     you previously added in Windows PowerShell (where xxxUPNxxx is the unique
     UPN name provided by your lab hosting provider and xxxCustomDomainxxx.xxx is
     your lab hosting provider's domain name).
 
-18. Right-click on this **xxxUPNxxx.xxxCustomDomainxxx.xxx** zone, and in the
+21. Right-click on this **xxxUPNxxx.xxxCustomDomainxxx.xxx** and click **Properties.**
+
+22. Click the **Zone Transfers** tab, and check the box to **Allow zone transfers.**
+
+23. Tick the option **Only to the following servers** and click **Edit.**
+
+24. In the **IP Address** enter **10.0.0.6** and click **OK** twice.
+
+25. Right-click on this **xxxUPNxxx.xxxCustomDomainxxx.xxx** zone, and in the
     menu that appears, select **Other New Records...**
 
-19. In the **Resource Record Type** window that appears, in the **Select a
+26. In the **Resource Record Type** window that appears, in the **Select a
     resource record type** field, scroll down and select **Text (TXT),** and
     then select the **Create Record...** button at the bottom of the window.
 
-20. In the **New Resource Record** box, in the **Text (TXT)** tab, leave the
+27. In the **New Resource Record** box, in the **Text (TXT)** tab, leave the
     **Record name** field blank. However, right-click in the **Text** field and
     select **Paste** from the menu that appears. This will paste in the TXT
     valued of **MS=msXXXXXXXX** that you copied to the clipboard when you were
     in the Microsoft 365 admin center.
 
-21. Select **OK** to create the record.
+28. Select **OK** to create the record.
 
-22. In the **Resource Record Type** window, select **Done**. Note how this Text
+29. In the **Resource Record Type** window, select **Done**. Note how this Text
     (TXT) record appears in the details pane on the right for the
     xxxUPNxxx.xxxCustomDomainxxx.xxx domain that you previously created.
 
@@ -283,7 +299,17 @@ locate the UPN name.
     it in a later step in this task. Minimize the **Server Manager** window as
     well.
 
-23. You are now ready to return to the Microsoft 365 admin center and resume
+30. Switch back to **LON-EX1** and from **Server Manager** open **DNS**.
+
+31. Expand **Forward Lookup Zones** and click your **Custom Domain, xxxUPNxxx.xxxCustomDomainxxx.xxx** to verify the TXT file has has transfered from **LON-DC1**.
+
+    > Note: It may take several minutes for the record to appear.  You can refresh and reload the zone to force it to update.  Wait until the TXT file appears before proceeding. It may be helpful to close and open **DNS Manager**. 
+    
+    >[!Alert] **If the TXT record does not appear Complete the Same Zone Transfer steps on DC-1 that you did on EX-1 except use 10.0.0.5 instead of 10.0.0.6 so the DC-1 and EX-1 can talk to each other**. 
+
+32. When the TXT appears, switch back to **LON-DC1**
+
+33. You are now ready to return to the Microsoft 365 admin center and resume
     adding the domain record. If you’ll recall, when you were earlier adding the
     domain in the Microsoft 365 admin center, you indicated that you wanted to
     verify the domain using a TXT record. At that point you had to switch to DNS
@@ -296,7 +322,7 @@ locate the UPN name.
     **Add domain** wizard. The **TXT name** should display your UPN name
     (xxxUPNxxx) and the **TXT value** should display your MS=msXXXXXXXX value.
 
-24. Scroll to the bottom of the window and select **Verify.**
+34. Scroll to the bottom of the window and select **Verify.**
 
     **Note:** If you selected **Verify** in the prior step when you copied the
     TXT value just to see the error that you would receive, the **Verify**
@@ -319,10 +345,10 @@ locate the UPN name.
     configuring the domain to make sure you don’t run into similar issues at
     this step in the process.
 
-25. If your Text (TXT) record was successfully verified, the **How do you want
+35. If your Text (TXT) record was successfully verified, the **How do you want
     to connect to your domain?** window will appear. Select **Continue**.
 
-26. In the **Add DNS records** window, it enables you to add DNS records for
+36. In the **Add DNS records** window, it enables you to add DNS records for
     three services that DNS supports - Exchange and Exchange Online Protection,
     Skype for Business, and Intune and Mobile Device Management for Microsoft
     365. **Exchange and Exchange Online Protection** is displayed by default and its
@@ -339,7 +365,7 @@ locate the UPN name.
     **Do NOT select either of the other two check boxes.** We had you select
     **Advanced Options** just to see where you would select these other two services in the event you would need to do so in your real-world deployment.
  
-27. Under the **Exchange and Exchange Online Protection** service, the
+37. Under the **Exchange and Exchange Online Protection** service, the
     description indicates that three DNS records are needed for it to work properly:
     a Mail Exchanger (MX) record, an Alias (CNAME) record, and an additional
     Text (TXT) record. You must now switch back and forth between this **Add DNS
@@ -357,7 +383,11 @@ locate the UPN name.
     Then select the arrow (**\>**) in the **CNAME Records** section and the
     **TXT Records** section. All three record types should now be expanded.
 
-28. You will begin by adding the **MX record** required by the **Exchange and
+    > [!alert] At each stage of the verification process described below, after entering the value on **LON-DC1**, you should verify in **DNS Manager** on **LON-EX1** that the new entry has appeared there before returning to **LON-DC1** to continue with the verification process.
+    >
+    > It may take several minutes for the record to appear.  To speed the process you can right-click the Custom DNS zone on **LON-EX1** and select **Transfer new copy of zone from Master** and then select **Refresh**. Wait until the new entry appears before proceeding.
+
+38. You will begin by adding the **MX record** required by the **Exchange and
     Exchange Online Protection** service.
 
     -   In the **MX Records** section, under the **Points to address or value**
@@ -409,7 +439,7 @@ locate the UPN name.
         then review the record to ensure you entered the proper information,
         make any necessary corrections, and then select **Continue** again.
 
-29. Once a check mark appears next to **MX Records**, you must perform the
+39. Once a check mark appears next to **MX Records**, you must perform the
     following steps to add the **CNAME record** required by Exchange and
     Exchange Online Protection service.
 
@@ -479,7 +509,7 @@ locate the UPN name.
         the proper information, make any necessary corrections, and then select
         **Continue** again.
 
-30. Once a check mark appears next to **CNAME Records**, you will finish by
+40. Once a check mark appears next to **CNAME Records**, you will finish by
     adding the **TXT record** required by Exchange and Exchange Online
     Protection service.
 
@@ -509,13 +539,13 @@ locate the UPN name.
 
     -   On the **Resource Record Type** window, select **Done**.
 
-31. In **DNS Manager**, you should now see the TXT record that you originally
+41. In **DNS Manager**, you should now see the TXT record that you originally
     created to verify the domain, along with the MX, CNAME, and TXT records that
     you created for the Exchange service to work within this domain.
 
     Minimize the DNS Manager window.
 
-32. This should return you to the **Add DNS records** window in your Edge
+42. This should return you to the **Add DNS records** window in your Edge
     browser. Select **Continue** to complete the new domain setup. If you
     selected **Continue** after adding the MX and CNAME records, and if each
     validated successfully, then only the TXT record will be validated at this
@@ -537,13 +567,41 @@ locate the UPN name.
     this process until all three records have successfully validated and the
     **Domain setup is complete** page appears.
 
-33. Once the domain setup process is complete and the three DNS records
+43. Once the domain setup process is complete and the three DNS records
     validated successfully for the **Exchange and Exchange Online Protection**
     service, the **Domains** page will be displayed. Verify the **Domain
     status** for your new domain is **Healthy**.
 
-34. Remain logged into the LON-DC1 VM with both **Microsoft Edge** and **Windows
+44. Remain logged into the LON-DC1 VM with both **Microsoft Edge** and **Windows
     PowerShell** left open for the next task.
+
+45. To complete the domain setup process, you must add an **A record** for this domain in DNS Manager. An **A record** connects the domain name to an IP address so that web browsers can find the website. In the next lab, you will validate the Outbound connector to connect Microsoft 365 to your email server. If you do not create an **A record**, the validation will fail and you will be unable to send external emails to your on-premises mailboxes.  
+
+    - On the taskbar at the bottom of the page, select the **DNS Manager** icon.
+
+    - In **DNS Manager**, under **Forward Lookup Zones**, right-click the **xxxUPNxxx.xxxCustomDomainxxx.xxx** domain and select **New Host (A or AAAA)...**
+
+    - In the **New Host** window that appears, leave the **Name** field blank. In the **IP address** field, enter the IP address for your parent domain that was provided by your lab hosting provider 
+
+    - Select **Add Host**, and then select **OK** in the dialog box indicating the host record was successfully created.
+
+    - In the **New Host** window, select **Done**. The **Host (A)** record should now be displayed along with the other DNS records that you created for this domain.
+
+46. Create another record for your internal clients to resolve your **Custom Domain**
+
+    - On the taskbar at the bottom of the page, select the **DNS Manager** icon.
+
+    - In **DNS Manager**, under **Forward Lookup Zones**, right-click the **xxxUPNxxx.xxxCustomDomainxxx.xxx** domain and select **New Host (A or AAAA)...**
+
+    - In the **New Host** window that appears, leave the **Name** field blank. In the **IP address** field, enter the IP address **10.0.0.5**
+
+    - Select **Add Host**, and then select **OK** in the dialog box indicating the host record was successfully created.
+
+    - In the **New Host** window, select **Done**. The **Host (A)** record should now be displayed along with the other DNS records that you created for this domain.
+
+47. Close DNS Manager.
+
+48. Remain logged into the LON-DC1 VM with both **Internet Explorer** and **Windows PowerShell** left open for the next task. 
 
 ## Task 3: Configure the UPN name for custom domain
 
