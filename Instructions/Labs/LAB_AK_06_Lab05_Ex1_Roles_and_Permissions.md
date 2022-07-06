@@ -247,4 +247,4 @@ Holly’s pilot project.
 
 15. Leave the Edge browser and all tabs open and proceed to the next lab.
 
-# End of Lab 6
+# End of Lab 5
