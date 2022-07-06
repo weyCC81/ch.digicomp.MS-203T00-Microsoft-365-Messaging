@@ -1161,4 +1161,4 @@ accounts to the new accepted domain in Microsoft 365.
 26. Leave your Edge browser and all tabs open as it will be used in the next
     lab.
 
-# Proceed to Lab 9 - Exercise 2
+# Proceed to Lab 7 - Exercise 2
