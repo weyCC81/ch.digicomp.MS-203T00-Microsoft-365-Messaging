@@ -644,4 +644,4 @@ will fail.**
 
 26. Leave your browser and all its tabs open and proceed to the next exercise.
 
-# Proceed to Lab 9 - Exercise 3
+# Proceed to Lab 7 - Exercise 3

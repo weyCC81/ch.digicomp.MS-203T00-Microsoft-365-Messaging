@@ -81,4 +81,4 @@ the next lab exercise).
 6.  Leave all browser tabs open and proceed to the next lab exercise, where you
     will enable mail settings for this **Test PF1** public folder.
 
-# Proceed to Lab 8 - Exercise 2
+# Proceed to Lab 6 - Exercise 2

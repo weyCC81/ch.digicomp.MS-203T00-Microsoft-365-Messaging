@@ -283,4 +283,4 @@ Planner, and PowerBI, all of which allows teams to seamlessly work together.
 
 28. Leave your browser and all the tabs open for the next exercise.
 
-# End of Lab 7
+# End of Lab 6

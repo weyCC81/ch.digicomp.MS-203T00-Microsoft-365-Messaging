@@ -126,4 +126,4 @@ In this task, you will manage the permissions for the Test PF1 public folder.
 
 10. Leave all browser tabs open and proceed to the next lab.
 
-# End of Lab 8
+# Proceed to Lab 6 - Exercise 3
