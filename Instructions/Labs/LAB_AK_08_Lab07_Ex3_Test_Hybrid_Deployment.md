@@ -237,7 +237,7 @@ data secure.
 
 12.  The next page that opens up should display the **On-premises account credentials** page where we have to fill in several settings:
      - under the **Migration Endpoint name** field enter **Hybrid Migration**, this name can be whatever you'd like in the real world to identify the Migration Endpoint configuration moving forward.
-     - Under **Account with privileges** field enter **Adatum\Administrator.**.
+     - Under **Account with privileges** field enter **Adatum\Administrator**.
      - Under the **password of account with privileges** field enter **Pa55w.rd**.
      - under the **Email address** field enter Allen Yoo's email address **Allan@xxxUPNxxx.xxxCustomDomainxxx.xxx** (where xxxUPNxxx is the unique UPN Name and xxxCustomDomainxxx.xxx is the custom domain name, both of which were provided by your lab hosting provider), and then select next.
 
