@@ -1,5 +1,6 @@
 # Module 1 – Lab 1 – Lab Introduction
 
+
 Adatum Corporation runs their legacy applications (such as Microsoft Exchange Server 2019) in an on-premises deployment. However, they recently subscribed to Microsoft 365, thereby creating a hybrid deployment in which they must synchronize their on-premises and cloud deployments. 
 
 Throughout the labs in this course, you will take on the persona of Holly Dickson, Adatum's Messaging Administrator. You have been tasked with integrating Adatum's on-premises Exchange environment with Microsoft 365 and Exchange Online. Adatum's project team has decided to implement Microsoft 365 in a pilot project that will not only provide them with experience using the product, but also enable them to match their messaging requirements with the Microsoft 365 feature set.
