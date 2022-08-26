@@ -126,7 +126,7 @@ Adatum has Microsoft Exchange Server 2019 installed on the Exchange Server VM (L
 
 16. Leave the **Port** at **25**, and then select **Save**. Note how the Network adapter binding for this new receive connector now points to this IP address and port number.   
 ‎  
-‎**Note:** By updating this network adapter binding, all email sent from the Internet and from IP address 172.16.0.11 through port 25 will be received by this new connector, which in turn will send it to Adatum's Exchange Server. 
+‎**Note:** By updating this network adapter binding, all email sent from the Internet and from IP address **172.16.0.11** through port 25 will be received by this new connector, which in turn will send it to Adatum's Exchange Server. 
 
 17. Select **Finish**. Your new receive connector should appear in the list of receive connectors.
 
