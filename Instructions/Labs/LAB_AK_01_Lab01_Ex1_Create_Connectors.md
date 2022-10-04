@@ -14,35 +14,37 @@ In your lab environment, your lab hosting provider has already:
 - Created a custom Microsoft 365 domain in Microsoft Azure
 - Created the DNS records in Microsoft Azure that are required to support the custom domain and the selected Microsoft 365 services
 
-1. On LON-CL1, you must open an elevated instance of **Windows PowerShell**. Select the magnifying glass (Search) icon on the taskbar
+1. On **LON-CL1**, you must select **Ctrl+Alt+Delete** to log in (your instructor will guide you on how to find this option in your VM environment). Log into LON-CL1 as the local Adatum administrator account that was created by your lab hosting provider (**Administrator**) with the password **Pa55w.rd**. 
+
+2. Once logged into **LON-CL1**, open an elevated instance of **Windows PowerShell**. Select the magnifying glass (Search) icon on the taskbar
    at the bottom of the screen ad type **powershell** in the Search box that appears. In the list of search results, right-click on **Windows
    PowerShell** (do NOT select Windows PowerShell ISE) and select **Run as administrator** in the drop-down menu.
 
- 2.  Maximize your PowerShell window. In Windows PowerShell, at the command prompt, type the following command and press Enter:
+ 3.  Maximize your PowerShell window. In Windows PowerShell, at the command prompt, type the following command and press Enter:
  
          Install-Module -name Exchangeonlinemanagement
 
- 3. You might be prompted "NuGet provider is required to continue", enter [Y] Yes [N] No [S] Suspend [?], enter **Y** to select **[Y] Yes**
+ 4. You might be prompted "NuGet provider is required to continue", enter [Y] Yes [N] No [S] Suspend [?], enter **Y** to select **[Y] Yes**
  
- 4. If you are prompted to confirm whether you want to install the module from an untrusted repository (PSGallery), enter **A** to select **[A] Yes to
+ 5. If you are prompted to confirm whether you want to install the module from an untrusted repository (PSGallery), enter **A** to select **[A] Yes to
     All.**
 
- 5. At the command prompt, type the following command and press Enter:
+ 6. At the command prompt, type the following command and press Enter:
 
 
         Connect-exchangeonline
 
- 6.  A **Microsoft 365 Sign in** window will appear. Enter in the username for the **Mod Administrator** account provided by your learning provider
+ 7.  A **Microsoft 365 Sign in** window will appear. Enter in the username for the **Mod Administrator** account provided by your learning provider
     (admin@M365xZZZZZZ.onmicrosoft.com) and then select **Next**.
 
- 7.  In the **Enter password** window, enter the password for this admin account provided by your learning provider, and then select **Sign in**. It may take
+ 8.  In the **Enter password** window, enter the password for this admin account provided by your learning provider, and then select **Sign in**. It may take
     a moment to sign in before it returns a command prompt.
 
- 8.  At the command prompt, type the following command and press Enter:
+ 9.  At the command prompt, type the following command and press Enter:
 
          get-mailbox 
  
- 9.  Close the PowerShell window.
+ 10.  Close the PowerShell window.
 
 
 ## Exercise 1 - Create Connectors
@@ -118,7 +120,7 @@ Adatum has Microsoft Exchange Server 2019 installed on the Exchange Server VM (L
 ‎  
 ‎Select **OK** to close the **Error** message.
 
-13. This returns you to the **Network adapter bindings** window. Select the **pencil (edit)** icon on the menu bar to edit the IP address and port number that will be linked to your new receive connector.
+13. This returns you to the **New receive connector** window. Select the **pencil (edit)** icon on the menu bar to edit the IP address and port number that will be linked to your new receive connector.
 
 14. In the **edit IP address** window, under the **Address** field, select the **Specify an IPv4 address or an IPv6 address** option. 
 
@@ -140,7 +142,7 @@ You will now create a custom send connector in Adatum’s on-premises Exchange S
 
 1. You should still be logged into LON-EX1 as the **Administrator** with a password of **Pa55w.rd**; however, if the log-in page appears, then log in now.
 
-2. In your Edge browser session, the on-premises **Exchange admin center** should still be open; if not, then perform the same steps that you did in the prior task to open it now.
+2. In your Edge browser session, the on-premises **Exchange admin center** should still be open; if not, then perform the same steps that you did in task 2 (steps 3-5) to open it now.
 
 3. In the **Exchange admin center**, you should still be displaying the **receive connectors** tab on the **mail flow** page from the prior task. In the list of tabs at the top of the page, select the **send connectors** tab.
 
