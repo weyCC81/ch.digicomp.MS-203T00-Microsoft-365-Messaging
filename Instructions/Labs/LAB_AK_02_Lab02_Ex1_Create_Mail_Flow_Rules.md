@@ -66,99 +66,86 @@ checks for sensitive information in emails sent from inside the organization.
     select **Show All** to display all the navigation menu options.
 
 10. On the left-hand navigation bar, in the **Admin centers** section, select
-    **Exchange**. This opens the new Exchange admin center for Exchange
-    Online. Select **Classic Exchange admin center** on the lower left menu.
+    **Exchange**. 
 
 11. In the **Exchange admin center**, in the left-hand navigation
-    pane, select **mail flow.**
-
-12. At the top of the page, the **rules** tab displays by default. Stay in this
+    pane, under **Mail flow**, slect the **rules** tab. Stay in this
     tab.
 
-13. The first mail flow rule that you create will check for emails sent from
+    **Note:** As of fall '22, the new modernized Rules page is still being rolled out. If after you select into the **Rules** tab you see an information flash stating **The Rules page will be updated to a new modernized version soon..** select **Try it now** to switch to the new experiance.
+
+12. The first mail flow rule that you create will check for emails sent from
     inside the organization that have sensitive words in the email subject line
-    or body. Select the **plus sign (+)** icon in the menu bar, and in the
+    or body. Select the **+ Add a rule** icon in the menu bar, and in the
     drop-down menu that appears, select **Modify messages.**
 
-14. In the **new rule** window that appears, enter **Sensitive material** in the
+13. In the **New Transport rule** wizard that appears, under **Set rule conditions** enter **Sensitive material** in the
     **Name** field.
 
-15. Note that by default, you can only enter one condition (the **Apply this
-    rule if…** field). Since this rule requires multiple conditions, select
-    **More options...** that appears at the bottom of the window. This displays
-    an **add condition** button that enables you to enter multiple conditions
-    and actions.
+14. At the bottum of the **Set rule condition** select the hyperlink for **Show all rule conditions.**  
 
-16. To add the first condition, select the drop-down arrow in the **Apply this
-    rule if…** field. In the drop-down menu that appears, hover your mouse over
-    **The subject or body…**. In the menu that appears, select **subject or body
-    includes any of these words.**
+15. In the **Set the rule if** drop down menu, select **The subject or body**.
+    
+     A new drop down menu will be displayed on the right. From this drop down, select **Subject or body includes any of these words.**
 
-17. This opens a **specify words or phrases** window. In the text field, enter
-    **secret** and select the **plus (+) sign**.
+16. In the **specify words or phrases** window that appears, type **secret** in the text field and then select **Add**
 
-18. In the text field, enter **classified** and select the plus sign, then
-    repeat this step and enter **sensitive**.
+17. Repeat the steps above for the words **classified** and **sensitive**.
 
-19. The three words should display below the text field. Select **OK**.
+18. The three words should display below the text field. Once completed, select **Save**.
 
-20. In the **new rule** window, the three words should display to the right of
-    the **The subject or body includes…** condition. Click on **more options** 
-    at the bottom then select the **add condition** button to add another condition.
+19. This brings you back to the **Set rule conditions** window. To the right of the **subject or body includes any of...** field, select the (**+**) button.
 
-21. Select the drop-down arrow in the second condition field that appears (Note
-    how this creates a Boolean **And** condition). Hover your mouse over **The
-    sender…** and in the menu that appears, select **is external/internal**.
+20. This creates a Boolean **And** condition. In the drop down menu below **And**, select **The
+    sender**. in the new drop down menu that appears to the right, select **is external/internal**.
 
-22. In the **select sender location** window, select the drop-down arrow, select
-    **Inside the organization**, and then select **OK**.
+21. In the **select sender location** window that appear, select
+    **Inside the organization**, and then select **Save**.
 
-23. Select the drop-down arrow in the **Do the following…** field. Hover your
-    mouse over **Redirect the message to…** and in the menu that appears, select
+22. In the **Do the following** drop down menu, select **Redirect the message to** and in the drop down menu that appears on the right, select
     **hosted quarantine.**
 
-24. Select the **add action** button to add another action.
+23. Select the (**+**) button to add another action.
 
-25. Select the drop-down arrow in the second action field that appears. Hover
-    your mouse over **Apply a disclaimer to the message…** and in the menu that
-    appears, select **append a disclaimer.**
+24. In the drop-down menu under the second action field that appears, select **Apply a disclaimer to the message** and in the drop down menu that
+    appears on the right, select **append a disclaimer.**
 
-26. To the right of the second action field that displays **Append the
-    disclaimer…,** select **Enter text.**
+25. Underneath the **Apply a disclaimer to the message** drop down menu select **Enter text.**
 
-27. In the **specify disclaimer text** window, enter the following message in
+26. In the **specify disclaimer text** window, enter the following message in
     the field: **This message contains sensitive material that can harm the
     company or your team.**
 
-28. Select **OK.**
+27. Select **Save.**
 
-29. To the right of the second action field that displays **Append the
-    disclaimer…,** select **Select one.**
+28. Underneath the **Apply a disclaimer to the message** drop down menu select **Select one.**
 
-30. In the **specify fallback action** window, **Wrap** displays as the default
+29. In the **specify fallback action** window, **Wrap** displays as the default
     fallback option. This is the option you want to select as the fallback
     option (Wrap means if the disclaimer cannot be inserted into the original
     email, it will attach the message to a new disclaimer email) so select
-    **OK**.
+    **Save**.
 
-31. Scroll down in the **new rule** window and under the **Properties of this
-    rule** section, verify the **Audit this rule with severity level:** checkbox
-    is selected. If it’s not checked, then select it now.
+30. Leave the **Except if** condition as the default setting, and then select **Next.**
 
-32. Select the severity level drop-down arrow and select **Medium**.
+31. In the **Set rule settings** window that appears select the following settings:
 
-33. In the **Choose a mode for this rule:** option, select **Enforce**.
+    - **Priority**: 0
+    - **Rule Mode**: Endorce
+    - **Severity**: Medium
+    <br></br>
 
-34. Select **Save.**
+32. Leave all other settings as default and then select **Next**.
 
-35. This returns you to the **rules** tab in the Exchange admin center. The new
-    **Sensitive material** rule should display in the list of rules. This rule
-    should be selected, and a **Sensitive material** pane should appear on the
-    right that displays the conditions and actions of this rule. Verify the
-    conditions and actions are correct; if corrections are needed, select the
-    **pencil (Edit)** icon in the menu bar and make the necessary corrections.
+33. in the **Review and finish** page, Verify the rule conditions and settings are correct; if corrections are needed, select the **Edit rule conditions** or **Edit rule settings** and make the necessary corrections. Once you have verified the conditions and rules are correct, select **Finish**.
 
-36. Leave the Exchange Admin Center open to the **rules** tab on the **mail
+    It may take up to a minute to create the rule, once **Transport rule created successfully** displayed, select **Done**.
+
+34. You will now be brought back to the **Rules** page. Notice the rule for **Sensitive material** shows a status of **Disabled**.
+
+    Select the word **Disabled** which will open up a new window for **Sensitive material**. Under **Enable or disable rule** select the slider button so that it shows **Enabled** and then close the window by selecting **X** in the upper right hand corner.
+
+35. Leave the Exchange Admin Center open to the **rules** tab on the **mail
     flow** page and proceed to the next task.
 
 ## Task 2 - Create first Mail Flow rule for attachments
