@@ -22,7 +22,7 @@ In your lab environment, your lab hosting provider has already:
 
  3.  Maximize your PowerShell window. In Windows PowerShell, at the command prompt, type the following command and press Enter:
  
-         Install-Module -name Exchangeonlinemanagement
+      `Install-Module -Name ExchangeOnlineManagement`
 
  4. You might be prompted "NuGet provider is required to continue", enter [Y] Yes [N] No [S] Suspend [?], enter **Y** to select **[Y] Yes**
  
@@ -32,7 +32,7 @@ In your lab environment, your lab hosting provider has already:
  6. At the command prompt, type the following command and press Enter:
 
 
-        Connect-exchangeonline
+     `Connect-ExchangeOnline`
 
  7.  A **Microsoft 365 Sign in** window will appear. Enter in the username for the **Mod Administrator** account provided by your learning provider
     (admin@M365xZZZZZZ.onmicrosoft.com) and then select **Next**.
@@ -42,7 +42,7 @@ In your lab environment, your lab hosting provider has already:
 
  9.  At the command prompt, type the following command and press Enter:
 
-         get-mailbox 
+      `get-mailbox` 
  
  10.  Close the PowerShell window.
 
