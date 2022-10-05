@@ -47,8 +47,8 @@ propagated, and you will be able to create an eDiscovery case.
 
 4.  In the **Active users** window, select **Nestor Wilke’s** account.
 
-    **Note:** Select Nestor’s name; do not select the circle to the left of his
-    name. The circle with the check mark is typically used for selecting
+    **Note:** Select Nestor’s name; do not select the Check box to the left of his
+    name. The check boxes are typically used for selecting
     multiple users when you want to perform one of the user-related actions on
     the menu bar that appears above the list of users, such as **Manage product
     licenses** and **Manage roles**. Selecting a user’s name opens a detail pane
@@ -67,7 +67,7 @@ propagated, and you will be able to create an eDiscovery case.
     down and select **Show all by category**.
 
 7.  In the list of roles that are sorted by category, scroll down to the
-    **Security & Compliance** category, select **Compliance admin**, and
+    **Security & Compliance** category, select **Compliance Administrator**, and
     then select **Save changes**.
 
 8.  Select the **X** in the upper right corner of the **Manage roles** pane to
@@ -142,18 +142,18 @@ in the New EAC.
     select **Show all** (if necessary) and under **Admin centers,** select
     **Exchange**.
 
-9.  The Message Trace functionality has been moved to the **New Exchange admin
-    center**. Therefore, in the (classic) **Exchange admin center**, in the
-    left-hand navigation pane, select **New Exchange admin center.**
-
-10. In the (New) **Exchange admin center**, in the left-hand navigation pane,
+9. In the **Exchange admin center**, in the left-hand navigation pane,
     select **Mail flow** and then select **Message trace**.
 
-11. On the **Message trace** page, the **Default queries** tab at the top of the
+    **Note:** The Message Trace functionality has been moved to the **New Exchange admin
+    center**. Therefore, if you're on the (classic) **Exchange admin center**, in the
+    left-hand navigation pane, select **New Exchange admin center.**
+
+10. On the **Message trace** page, the **Default queries** tab at the top of the
     page is displayed by default. In the list of queries and reports in this
     tab, select **Messages sent from my primary domain in the last day.**
 
-12. In the **New message trace** pane that appears, the default values for the
+11. In the **New message trace** pane that appears, the default values for the
     **Messages sent from my primary domain in the last day** query are
     displayed. You can control which messages are selected based on who sent and
     received the messages and how many days ago the messages were sent.  
@@ -177,22 +177,21 @@ in the New EAC.
     **Recipients** field, and then in the menu of users that appears, select
     **Alex Wilber.**
 
-13. To avoid issues with the starting time for the search, on the **Time range**
+12. To avoid issues with the starting time for the search, on the **Time range**
     slider tool, drag the slider to the left so that it specifies sometime in
     the **Last 2 days** (actually, you can select any value greater than 1 day).
 
-14. Under the **Report type** section, select the **Extended report** option and
+13. Under the **Report type** section, select the **Extended report** option and
     then select **Save**.
 
-15. In the dialog box that appears, change the **Name** of the report to
+14. In the dialog box that appears, change the **Name** of the report to
     **Messages sent to Alex Wilber in the past day**, select **Save**, and then
     select **Done**.
 
-16. In the **New message trace** pane, select the **X** in the upper right-hand
+15. In the **New message trace** pane, select the **X** in the upper right-hand
     corner to close the pane.
 
-17. On the **Message trace** window, note how the **Custom queries** tab is now
-    displayed, and it includes the **Messages sent to Alex Wilber in the past
+16. On the **Message trace** window, select the **Custom queries** tab. Note how it includes the **Messages sent to Alex Wilber in the past
     day** query that you just created. Holly has now created a custom query that
     she can run at any time in the future.  
       
@@ -200,13 +199,13 @@ in the New EAC.
     Alex Wilber in the past day** query (select the **Name** and not the circle
     with the check mark to the left of the name).
 
-21. In the **New message trace** window, note how the query values are prefilled
+17. In the **New message trace** window, note how the query values are prefilled
     for you. Select **Next**.
 
-22. On the **Prepare message trace report** pane, select the **Prepare report**
+18. On the **Prepare message trace report** pane, select the **Prepare report**
     button at the bottom of the window.
 
-23. On the **Your request has been submitted** pane, review the information on
+19. On the **Your request has been submitted** pane, review the information on
     the page, including the following messages:  
       
     **You can check progress at any time from the “Downloadable reports” section
@@ -215,29 +214,21 @@ in the New EAC.
     **When the report is ready to download the email below will be notified:**
     <admin@xxxxxZZZZZZ.onmicrosoft.com>  
       
-    Select **Close.**
+    Select  the **X** at the top right hand corner of the window to close.
 
-24. Close the **New message trace** window.
+20. Close the **New message trace** window.
 
-25. On the **Message trace** page, the **Downloadable reports** tab will be
+21. On the **Message trace** page, the **Downloadable reports** tab will be
     displayed. This will display the **Message trace report** that you just ran.
     Note that its **Status** will initially be **Not started**.  
       
     Select the **Refresh** icon on the address bar every minute or so to check
     on the report’s status (the status should transition from **Not started** to
-    **In progress** to **Complete**).  
+    **In progress** to **Complete**).   
       
-    **Note:** Refreshing the page will cause it to display the **Default
-    queries** tab; therefore, each time you refresh the page, you must select
-    the **Downloadable reports** tab to check the report status.  
-      
-    **WARNING:** In the testing of this lab, the message trace report sometimes
-    took up to an hour or more to complete. If the report does not finish after
-    a few minutes, review the remaining steps in this task so that you can see
-    what you would have done, and then perform the final step in this task
-    before proceeding to the next task.
+     >[!Alert] **In the testing of this lab, the message trace report sometimes took up to an hour or more to complete. If the report does not finish after a few minutes, review the remaining steps in this task so that you can see what you would have done, and then perform the final step in this task before proceeding to the next task.**
 
-26. You will receive a notification once the report is complete. You should
+22. You will receive a notification once the report is complete. You should
     notice this in the **notification bell** that appears at the top right of
     the screen (it will display a number that indicates the number of
     notifications you have).  
@@ -246,13 +237,13 @@ in the New EAC.
     **Notifications** pane. In the **Notifications** pane, select the email
     entry.
 
-27. The query that you created was designed to send an email to the MOD
+23. The query that you created was designed to send an email to the MOD
     Administrator that included a link to the Message trace report. In the email
     window that appears, in the middle of the email you should see a statement
     that says **You can access the report here** (where “**here**” is
     hyperlinked). Select this hyperlinked “**here**” to view the results.
 
-28. As the system attempts to open the report, it will display a notification
+24. As the system attempts to open the report, it will display a notification
     bar that asks whether you want to open or save the .csv file associated with
     the report. Select **Save.**  
       
@@ -263,7 +254,7 @@ in the New EAC.
     and the CSV file with the report results was made available for downloaded
     by the MOD Administrator.
 
-29. In your Edge browser, leave the **Office 365 Home** tab open, as well as the
+25. In your Edge browser, leave the **Office 365 Home** tab open, as well as the
     **Microsoft 365 admin center** tab. Close all other tabs and proceed to the
     next task.
 
@@ -303,7 +294,7 @@ active MRM policies in Adatum’s Exchange environment.
 6.  At the command prompt, run the following command to connect you to the
     Exchange admin center for Exchange Online:  
     ‎  
-    ‎`Connect-ExchangeOnline -Credential $UserCredential -ShowProgress $true`  
+    ‎`Connect-ExchangeOnline` 
     ‎  
     ‎**Note:** If you closed PowerShell after running it in the earlier task, you
     will receive a **Sign in** dialog box to enter your credentials. Enter
@@ -333,8 +324,7 @@ active MRM policies in Adatum’s Exchange environment.
 9.  At the command prompt, run the following command to display all the
     retention policy tags that are associated to the Default MRM Policy:  
       
-    `(Get-RetentionPolicy "Default MRM Policy").RetentionPolicyTagLinks |
-    Format-Table name`  
+    `(Get-RetentionPolicy "Default MRM Policy").RetentionPolicyTagLinks | Format-Table name`  
     
 10. Close the Windows PowerShell window.
 
@@ -359,30 +349,29 @@ creating a Retention label through the Microsoft Purview compliance portal.
 
 5.  In the **Data lifecycle management** window, select **Open solution**.
 
-6.  In the **Data lifecycle management** window, the **Labels** tab at the top of
-    the page is displayed by default. In this tab, select +**Create a label**
-    that appears on the menu bar. This initiates the **Create a label** wizard.
+6.  In the **Data lifecycle management** window, select the **Labels** tab in the menu bar. In this tab, select +**Create a label**
+    that appears on the menu bar. This initiates the **Create  retention label** wizard.
 
-7.  On the **Name your label** page, enter **30-day delete** in the **Name**
+7.  On the **Name your retention label** page, enter **30-day delete** in the **Name**
     field, and enter **This label will delete email after 30 days** in the
     **Description for admins** field. Copy this description and paste it into
     the **Description for users** field. Select **Next**.
 
-8.  On the **Define retention settings** page, configure these settings as follows:
+8.  On the **Define label settings** page, select **Enforce actions after a specific period** and then select **Next.**
 
-    -   Retention period: **Custom – 0 years 1 months 0 Days**
+9.  On the **Define the period** page, configure these settings as follows and then select **Next**:
 
-    -   Start the retention period based on: **When items were created**
+    -   how long is the period: **Custom – 0 years 1 months 0 Days**
 
-    -   At the end of the retention period: **Delete items automatically**
+    -   When should the period begin?: **When items were created**
 
-9.  Select **Next**.
+10. On the **Choose what happens after the period** page, select **Delete items automatically** and then select **Next.**
 
-10. On the **Review your settings** page, review your settings and if any
+11. On the **Review and finish** page, review your settings and if any
     require correction, select the corresponding **Edit** option to fix the
     setting. When all settings are correct, select **Create label**.
 
-11. It will take a minute or two to create the retention label.
+    **Note:** It will take a minute or two to create the retention label.
 
 12. Once the retention label has been created, you have the option of publishing the label, we will do that in the next task. On the **Your retention label is created** screen select **Do nothing** and select **Done**.
 
@@ -405,9 +394,9 @@ previously created.
     label and then publishing just that label.  
       
     In this task, you will publish a specific label; therefore, in the list of
-    labels, check the **30-day delete** label that you just created and then select Publish labels.
+    labels, check the **30-day delete** label that you just created and then select **Publish labels.**
 
-3.  This will initiate the **Publish labels**
+3.  This will initiate the **Publish labels so users can apply them to their account**
     wizard that walks you through the steps of publishing a label.
 
 4.  On the **Choose a label to publish** page, select **Next**. 
@@ -426,7 +415,7 @@ previously created.
     When all settings are correct, select **Submit**.  
     ‎  
     ‎**Important:** Note the warning message that indicates it can take up to 1
-    day to propagate a new retention label policy throughout the system once the
+    week to propagate a new retention label policy throughout the system once the
     policy is published.
 
 9.  Once the retention label policy has been created, select **Done** in the **Your retention label was published** page. The policy will be displayed in
@@ -434,7 +423,7 @@ previously created.
 
 10.  Leave your browser and all tabs open and proceed to the next task.
 
-## Task 6: Create an eDiscovery Case
+## Task 6: Create an eDiscovery (Standard) Case
 
 In your role as Holly Dickson, Adatum’s Messaging Administrator, you want to
 continue in your pilot project that examines Microsoft 365’s compliance
