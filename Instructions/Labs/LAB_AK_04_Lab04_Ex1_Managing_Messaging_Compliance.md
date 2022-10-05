@@ -482,7 +482,7 @@ since you completed Task 1 and then perform this task again.
 9.  In the **eDiscovery (Standard)** pane, select the **+Create a case** button.
 
 10. In the **New case** pane that appears, enter **AlexWilber-case01** in the
-    **Case name** field.  
+    **Name** field.  
       
     In the **Case description** field enter (copy and paste) the following
     description: **This case searches for emails to Alex Wilber that include confidential information**.
@@ -491,7 +491,7 @@ since you completed Task 1 and then perform this task again.
 
 12. In the **eDiscovery (Standard)** window, in the list of cases, select **AlexWilber-case01.**
 
-13. A new tab will open in your browser that displays this case. On the menu bar
+13. A new window will open in your browser that displays this case. On the menu bar
     at the top of the page, select the **Hold** tab.
 
 14. In the **Hold** tab for this case, select the **+Create** button. This will
@@ -508,9 +508,6 @@ since you completed Task 1 and then perform this task again.
 
 16. In the **Choose locations** page, Make sure the toggle switch for **Exchange mailboxes** is turned **On** then to the right of the **Exchange Mailboxes** under the included column, select **Choose users, groups, or teams.**.
 
-17. In the **Edit locations** page, under **Exchange mailboxes**, select the
-    **Choose users, groups, or teams** button.
-
 18. In the **Exchange mailboxes** page, enter **Alex** in the **Search** field that
     appears. This will initiate a search of all users whose name starts with
     Alex. Scroll to the bottom of the **Exchange mailboxes** pane to view the search
@@ -526,8 +523,7 @@ since you completed Task 1 and then perform this task again.
 
 23. Select **+Add conditions**.
 
-24. On the **Add conditions** pane that appears, scroll to the bottom of the
-    pane and select **Subject** (not the Subject/Title).
+24. in the menu that appears, select **Subject** (not the Subject/Title).
 
 25. On the **Query** page, in the **Subject** section, select the
     drop-down arrow in the first operator field and select **Contains any of**.
@@ -539,11 +535,13 @@ since you completed Task 1 and then perform this task again.
     be adjusted, select **Edit** next to the setting and make the necessary correction.
     Once all settings are correct, select **Submit**.
 
-28. Select **Done**.  
+28. Select **Submit**.  
     ‎  
     ‎**Note:** You have just placed a hold on Alex Wilber’s account that will
     retain any emails that contain **Sensitive, Confidential, Secret** anywhere
     in the email as well as in the Subject line.
+
+29. Once prompted with **Succeeded** select **Done** to close out of the **New Hold** wizard.
 
 29. In the **eDiscovery (Standard) &gt; AlexWilber-case01** page, select the
     **Searches** tab at the top of the page.  
@@ -568,8 +566,7 @@ since you completed Task 1 and then perform this task again.
 
 34. Select **+Add conditions.**
 
-35. On the **Add conditions** pane that appears, scroll to the bottom of the
-    pane and select **Subject** (not the Subject/Title).
+35. In the menue that appears, select **Subject** (not the Subject/Title).
 
 36. On the **Define your search conditions** page, in the **Subject** section, select the
     drop-down arrow in the first operator field and select **Contains any of**.
@@ -579,8 +576,13 @@ since you completed Task 1 and then perform this task again.
 37. Select **Next**, **Submit** and **Done**. This initiates the search. It may take several minutes
     for the Search to complete.
 
-38. Review the search results. Because Nestor was not assigned the eDiscovery Manager role, he is unable to view the search results. Therefore, the following message should appear at the top of the screen: **To preview search results, please ask your Compliance admin to grant you Preview permission.**
+38. In the **eDiscovery (Standard) &gt; AlexWilber-case01** page, the **Searches** tab should already be Selected. select the new search that was just created and a new pane for **Confidential search** will be dispalyed. 
 
+39. In the **Confidential Search** pane, select **Review sample**.
+
+    Because Nestor was not assigned the eDiscovery Manager role, he is unable to view the search results. Therefore, you will be prompted with an error stating: **You can't preview search results because you're note assigned the Preview role. If you're a member of the Organization Management role group, you can go to the Permissions page and add yourself as a member of the eDiscovery Manager role group. Otherwise, contact your admin.**
+
+    Select **OK** and then select **Close** to exit out of the **Confidential search** pane.
 39. Leave the Edge browser open and proceed to the next lab.
 
 # End of Lab 4
