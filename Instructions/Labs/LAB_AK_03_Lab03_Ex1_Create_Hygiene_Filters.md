@@ -280,7 +280,7 @@ by focusing on the language of the email and the location of the email's origin.
 		Enter a letter and then select a country with the letter in it that you
         want to filter. Repeat this step for a couple of countries.
 
-6.  Select **Save**.
+6.  Leave all other settings as default, and the select **Save**.
 
 7.  This returns you to the **Anti-spam inbound policy (Default)** pane. Scroll
     to the bottom of the **Actions** section and select the **Edit actions**
@@ -296,7 +296,7 @@ by focusing on the language of the email and the location of the email's origin.
 
     -   High confidence phishing email: **Quarantine message**
 
-    -   Bulk: **Move message to Junk Email folder**
+    -   Bulk complaint level (BCL) met or exceeded: **Move message to Junk Email folder**
 
     -   Retain spam in quarantine for this many days: **10**
 
