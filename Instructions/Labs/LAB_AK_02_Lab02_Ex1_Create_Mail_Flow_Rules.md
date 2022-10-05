@@ -72,7 +72,7 @@ checks for sensitive information in emails sent from inside the organization.
     pane, under **Mail flow**, slect the **rules** tab. Stay in this
     tab.
 
-    **Note:** As of fall '22, the new modernized Rules page is still being rolled out. If after you select into the **Rules** tab you see an information flash stating **The Rules page will be updated to a new modernized version soon..** select **Try it now** to switch to the new experiance.
+     >[!Alert]  As of October 2022, the new modernized Rules page is still being rolled out. If after you select into the **Rules** tab you see an information flash stating **The Rules page will be updated to a new modernized version soon..** select **Try it now** to switch to the new experiance.
 
 12. The first mail flow rule that you create will check for emails sent from
     inside the organization that have sensitive words in the email subject line
@@ -82,7 +82,7 @@ checks for sensitive information in emails sent from inside the organization.
 13. In the **New Transport rule** wizard that appears, under **Set rule conditions** enter **Sensitive material** in the
     **Name** field.
 
-14. At the bottum of the **Set rule condition** select the hyperlink for **Show all rule conditions.**  
+14. At the bottum of the **Set rule conditions** page, select the hyperlink for **Show all rule conditions.**  
 
 15. In the **Set the rule if** drop down menu, select **The subject or body**.
     
@@ -97,9 +97,9 @@ checks for sensitive information in emails sent from inside the organization.
 19. This brings you back to the **Set rule conditions** window. To the right of the **subject or body includes any of...** field, select the (**+**) button.
 
 20. This creates a Boolean **And** condition. In the drop down menu below **And**, select **The
-    sender**. in the new drop down menu that appears to the right, select **is external/internal**.
+    sender**. In the new drop down menu that appears to the right, select **is external/internal**.
 
-21. In the **select sender location** window that appear, select
+21. In the **select sender location** window that appears, select
     **Inside the organization**, and then select **Save**.
 
 22. In the **Do the following** drop down menu, select **Redirect the message to** and in the drop down menu that appears on the right, select
@@ -120,30 +120,28 @@ checks for sensitive information in emails sent from inside the organization.
 
 28. Underneath the **Apply a disclaimer to the message** drop down menu select **Select one.**
 
-29. In the **specify fallback action** window, **Wrap** displays as the default
-    fallback option. This is the option you want to select as the fallback
-    option (Wrap means if the disclaimer cannot be inserted into the original
-    email, it will attach the message to a new disclaimer email) so select
-    **Save**.
+29. In the **specify fallback action** window that appears, select **Wrap** (Wrap means if the disclaimer cannot be inserted into the original email, it will attach the message to a new disclaimer email) and then select **Save**.
 
 30. Leave the **Except if** condition as the default setting, and then select **Next.**
 
 31. In the **Set rule settings** window that appears select the following settings:
 
     - **Priority**: 0
-    - **Rule Mode**: Endorce
+    - **Rule Mode**: Enforce
     - **Severity**: Medium
     <br></br>
 
 32. Leave all other settings as default and then select **Next**.
 
-33. in the **Review and finish** page, Verify the rule conditions and settings are correct; if corrections are needed, select the **Edit rule conditions** or **Edit rule settings** and make the necessary corrections. Once you have verified the conditions and rules are correct, select **Finish**.
+33. in the **Review and finish** page, Verify the rule conditions and settings are correct. If corrections are needed, select the **Edit rule conditions** or **Edit rule settings** and make the necessary corrections. Once you have verified the conditions and rules are correct, select **Finish**.
 
-    It may take up to a minute to create the rule, once **Transport rule created successfully** displayed, select **Done**.
+    It may take up to a minute to create the rule. Once **Transport rule created successfully** is displayed, select **Done**.
 
-34. You will now be brought back to the **Rules** page. Notice the rule for **Sensitive material** shows a status of **Disabled**.
+34. You will now be brought back to the **Rules** page. Notice the rule **Sensitive material** shows a status of **Disabled**.
 
-    Select the word **Disabled** which will open up a new window for **Sensitive material**. Under **Enable or disable rule** select the slider button so that it shows **Enabled** and then close the window by selecting **X** in the upper right hand corner.
+    Select the word **Disabled** which will open up a new window for the **Sensitive material** rule settings. Under **Enable or disable rule** select the slider button so that it shows **Enabled** and then close the window by selecting **X** in the upper right hand corner.
+
+    **Note:** After enabling the rule, it may take up to a minute for the rule to refresh and display as enabled.
 
 35. Leave the Exchange Admin Center open to the **rules** tab on the **mail
     flow** page and proceed to the next task.
@@ -181,68 +179,62 @@ This task will create the first rule; the next task will create the second rule.
 
 3.  In this task, you will create a mail flow rule that checks for emails that
     contain attachments that cannot be scanned. In the **rules** tab, select the
-    **plus (+) sign** icon in the menu bar and in the drop-down menu, select
+    **+ Add a rule** icon in the menu bar and in the drop-down menu, select
     **Modify messages.**
 
-4.  In the **new rule** window, enter **Attachments could not be scanned** in
-    the **Name** field.
+4.  In the **New Transport rule** wizard that appears, under **Set rule conditions** enter **Attachments could not be scanned** in the
+    **Name** field.
 
-5.  Select drop-down arrow in the **Apply this rule if…** field. In the menu
-    that appears, review the available options. Note that in the default list of
-    menu options, the only attachment-related option is **Any attachment’s
-    content includes**; there is no option related to the status of an
-    attachment. Therefore, select inside the field to collapse the menu and then scroll down
-    in the **new rule** window and select **More options…**
+5.  At the bottum of the **Set rule conditions** page, select the hyperlink for **Show all rule conditions.** 
 
-6.  Scroll up to the top of the window. Select the drop-down arrow in the
-    **Apply this rule if…** field. Hover your mouse over **Any attachment…** and
-    in the menu that appears, select **content can’t be inspected.**
+6.  Select drop-down arrow in the **Set the rule if** field. In the menu
+    that appears, select **Any attachment**.
 
-7.  Select the drop-down arrow in the **Do the following…** field. Hover your
-    mouse over **Redirect the message to…** and in the menu that appears, select
+7.  In the the new drop-down menu that appears to the right of
+    **Set the rule if**, select **content can’t be inspected.**
+
+8.  In the drop-down menu under **Do the following**, select **Redirect the message to** and in the drop down menu that appears on the right, select
     **hosted quarantine.**
 
-8.  Select the **add action** button to add another action.
+9.  Select the **(+)** button to the right of **hosted quarantine** to add an new action.
 
-9.  Select the drop-down arrow in the second action field that appears. Hover
-    your mouse over **Apply a disclaimer to the message…** and in the menu that
-    appears, select **append a disclaimer.**
+10.  This creates a Boolean **And** condition. In the drop down menu below **And**, select **Apply a disclaimer to the message**. In the new drop down menu that appears to the right, select **append a disclaimer.**
 
-10. To the right of the second action field that displays **Append the
-    disclaimer…,** select **Enter text.**
+11. Underneath the **Apply a disclaimer to the message** drop down menu select **Enter text.**
 
-11. In the **specify disclaimer text** window, enter the following message in
+12. In the **specify disclaimer text** window, enter the following message in
     the field: **Attachments in this message were not scanned.**
 
-12. Select **OK.**
+13. Select **Save.**
 
-13. To the right of the second action field that displays **Append the
-    disclaimer…,** select **Select one.**
+14. Underneath the **Apply a disclaimer to the message** drop down menu select **Select one.**
 
-14. In the **specify fallback action** window, **Wrap** is displayed as the
-    default fallback option. This is the option you want to select as the
-    fallback option, so select **OK**.
+15. In the **specify fallback action** window that appears, select **Wrap** and then select **Save**.
 
-15. Scroll down in the **new rule** window and under the **Properties of this
-    rule** section, verify the **Audit this rule with severity level:** checkbox
-    is selected. If it’s not checked, then select it now.
+16. Leave the **Except if** condition as the default setting, and then select **Next.**
 
-16. Select the severity level drop-down arrow and select **Medium**.
+17. In the **Set rule settings** window that appears select the following settings:
 
-17. In the **Choose a mode for this rule:** option, select **Enforce**.
+    - **Priority**: 1
+    - **Rule Mode**: Enforce
+    - **Severity**: Medium
+    <br></br>
 
-18. Select **Save.**
+18. Leave all other settings as default and then select **Next**.
 
-19. This returns you to the **rules** tab in the Exchange admin center. The new
-    **Attachments could not be scanned** rule should be displayed in the list of
-    rules. This rule should be selected, and an **Attachments could not be
-    scanned** pane should appear that displays the conditions and actions of
-    this rule. Verify the conditions and actions are correct; if any corrections
-    are needed, select the **pencil (Edit)** icon in the menu bar and make the
-    necessary corrections.
+19. in the **Review and finish** page, Verify the rule conditions and settings are correct. If corrections are needed, select the **Edit rule conditions** or **Edit rule settings** and make the necessary corrections. Once you have verified the conditions and rules are correct, select **Finish**.
 
-20. Leave the Exchange Admin Center open to the mail flow page and proceed to
-    the next task.
+    It may take up to a minute to create the rule. Once **Transport rule created successfully** is displayed, select **Done**.
+
+20. You will now be brought back to the **Rules** page. Notice the rule **Attachments could not be scanned** shows a status of **Disabled**.
+
+    Select the word **Disabled** which will open up a new window for the **Attachments could not be scanned** rule settings. Under **Enable or disable rule** select the slider button so that it shows **Enabled** and then close the window by selecting **X** in the upper right hand corner.
+
+    **Note:** After enabling the rule, it may take up to a minute for the rule to refresh and display as enabled.
+
+21. Leave the Exchange Admin Center open to the **rules** tab on the **mail
+    flow** page and proceed to the next task.
+
 
 ## Task 3 - Create second Mail Flow rule for attachments
 
@@ -263,68 +255,62 @@ Boolean OR fashion.
     select the **rules** tab.
 
 3.  You will now create a mail flow rule that checks for emails that contain
-    attachments where the scanning of the attachments didn’t finish. In the
-    **rules** tab, select the **plus (+) sign** icon in the menu bar and in the
-    drop-down menu that appears, select **Modify messages.**
+    attachments where the scanning of the attachments didn’t finish. In the **rules** tab, select the
+    **+ Add a rule** icon in the menu bar and in the drop-down menu, select
+    **Modify messages.**
 
-4.  In the **new rule** window, enter **Attachment scanning did not complete**
-    in the **Name** field.
+4.  In the **New Transport rule** wizard that appears, under **Set rule conditions** enter **Attachment scanning did not complete** in the
+    **Name** field.
 
-5.  Scroll down and select **more options.** The reason you must select **More
-    options** at this point in the process is that you want to apply this rule
-    if an attachment was not scanned or the scanning didn’t finish. However, as
-    you saw in the prior task, those attachment options are not available in the
-    initial **Apply this rule if…** condition field. You must select **More
-    options** to see the attachment conditions.
+5.  At the bottum of the **Set rule conditions** page, select the hyperlink for **Show all rule conditions.** 
 
-6.  Scroll up to the top of the window. Select the drop-down arrow in the
-    **Apply this rule if…** field. Hover your mouse over **Any attachment…** and
-    in the menu that appears, select **didn’t complete scanning.**
+6.  Select drop-down arrow in the **Set the rule if** field. In the menu
+    that appears, select **Any attachment**.
 
-7.  Select the drop-down arrow in the **Do the following…** field. Hover your
-    mouse over **Redirect the message to…** and in the menu that appears, select
+7.  In the the new drop-down menu that appears to the right of
+    **Set the rule if**, select **didn't complete scanning.**
+
+8.  In the drop-down menu under **Do the following**, select **Redirect the message to** and in the drop down menu that appears on the right, select
     **hosted quarantine.**
 
-8.  Select the **add action** button to add another action.
+9.  Select the **(+)** button to the right of **hosted quarantine** to add an new action.
 
-9.  Select the drop-down arrow in the second action field that appears. Hover
-    your mouse over **Apply a disclaimer to the message…** and in the menu that
-    appears, select **append a disclaimer.**
+10.  This creates a Boolean **And** condition. In the drop down menu below **And**, select **Apply a disclaimer to the message**. In the new drop down menu that appears to the right, select **append a disclaimer.**
 
-10. To the right of the second action field that displays **Append the
-    disclaimer…,** select **Enter text.**
+11. Underneath the **Apply a disclaimer to the message** drop down menu select **Enter text.**
 
-11. In the **specify disclaimer text** window, enter the following message in
+12. In the **specify disclaimer text** window, enter the following message in
     the field: **Scanning of attachments in this message did not complete.**
 
-12. Select **OK.**
+13. Select **Save.**
 
-13. To the right of the second action field that displays **Append the
-    disclaimer…,** select **Select one.**
+14. Underneath the **Apply a disclaimer to the message** drop down menu select **Select one.**
 
-14. In the **specify fallback action** window, **Wrap** is displayed as the
-    default fallback option. This is the option you want to select as the
-    fallback option, so select **OK**.
+15. In the **specify fallback action** window that appears, select **Wrap** and then select **Save**.
 
-15. Scroll down in the **new rule** window and under the **Properties of this
-    rule** section, verify the **Audit this rule with severity level:** checkbox
-    is selected. If it’s not checked, then select it now.
+16. Leave the **Except if** condition as the default setting, and then select **Next.**
 
-16. Select the severity level drop-down arrow and select **Medium**.
+17. In the **Set rule settings** window that appears select the following settings:
 
-17. In the **Choose a mode for this rule:** option, select **Enforce**.
+    - **Priority**: 2
+    - **Rule Mode**: Enforce
+    - **Severity**: Medium
+    <br></br>
 
-18. Select **Save.**
+18. Leave all other settings as default and then select **Next**.
 
-19. This returns you to the **rules** tab in the Exchange admin center. The new
-    **Attachment scanning did not complete** rule should be displayed in the
-    list of rules. This rule should be selected, and an **Attachment scanning
-    did not complete** pane should appear that displays the conditions and
-    actions of this rule. Verify the conditions and actions are correct; if any
-    corrections are needed, select the **pencil (Edit)** icon in the menu bar
-    and make the necessary corrections.
+19. in the **Review and finish** page, Verify the rule conditions and settings are correct. If corrections are needed, select the **Edit rule conditions** or **Edit rule settings** and make the necessary corrections. Once you have verified the conditions and rules are correct, select **Finish**.
 
-20. Leave the Exchange Admin Center open and proceed to the next task.
+    It may take up to a minute to create the rule. Once **Transport rule created successfully** is displayed, select **Done**.
+
+20. You will now be brought back to the **Rules** page. Notice the rule **Attachment scanning did not complete** shows a status of **Disabled**.
+
+    Select the word **Disabled** which will open up a new window for the **Attachment scanning did not complete** rule settings. Under **Enable or disable rule** select the slider button so that it shows **Enabled** and then close the window by selecting **X** in the upper right hand corner.
+
+    **Note:** After enabling the rule, it may take up to a minute for the rule to refresh and display as enabled.
+
+21. Leave the Exchange Admin Center open to the **rules** tab on the **mail
+    flow** page and proceed to the next task.
 
 ## Task 4 – Create Mail Flow rule restricting email size
 
@@ -352,48 +338,49 @@ address this issue by creating a mail flow rule that restricts email size.
     center**, then select **mail flow** in the left-hand navigation pane and
     select the **rules** tab.
 
-3.  You will now create a mail flow rule that checks the size of emails and
-    restricts those that exceed a specific size. In the **rules** tab, select
-    the **plus (+) sign** icon in the menu bar and in the drop-down menu that
-    appears, select **Filter messages by size.**
+3.  You will now create a mail flow rule that checks the size of emails and restricts those that exceed a specific size. In the **rules** tab, select the
+    **+ Add a rule** icon in the menu bar and in the drop-down menu, select
+    **Filter messages by size.**
 
-4.  In the **new rule** window, enter **Email size restriction** in the **Name**
-    field.
+4.  In the **New Transport rule** wizard that appears, enter **Email size restriction** in the
+    **Name** field.
 
-5.  Select the drop-down arrow in the **Apply this rule if…** field. Hover your
-    mouse over **The message…** and in the menu that appears, select **size is
-    greater than or equal to.**
+5.  Notice the two fields under **Set the rule if** are already populated with **The message** and **Size is greater than or equal to** by default. These are the correct settings for the purpose of this excersise, however if they are not pre-populated please set them accordingly. 
 
-6.  To the right of this condition field that displays **The message size is
-    greater than or equal to…**, select **Enter text**.
+6.  Underneath the **Set the rule if** conditions, select **Enter text.**
 
-7.  In the **specify size (KB)** window, enter **1024** and then select **OK**.
+7.  In the **specify size (kb)** window that appears, enter the text: **1024** and then select **Save**
 
-8.  Select the drop-down arrow in the **Do the following…** field. Hover your
-    mouse over **Block the message...** and in the menu that appears, select
-    **reject the message and include an explanation**.
+8.  In the drop-down menu under **Do the following**, select **Block the message** and in the drop down menu that appears on the right, select
+    **reject the message and include an explanation.**
 
-9.  In the **specify rejection reason** window that appears, enter the following
-    text: **Your message exceeds the size limit. Please adjust the message size
+9.  in the **specify rejection reason** window that appears, enter the following text: **Your message exceeds the size limit. Please adjust the message size
     or compress the email content and send it as a zipped file.**
 
-10. Select **OK.**
+10. Select **Save**
 
-11. Scroll down to the **Choose a mode for this rule:** option and select
-    **Enforce**.
+16. Leave the **Except if** condition as the default setting, and then select **Next.**
 
-12. Select **Save.**
+17. In the **Set rule settings** window that appears select the following settings:
 
-13. This returns you to the **rules** tab in the Exchange admin center. The new
-    **Email size restriction** rule should be displayed in the list of rules.
-    This rule should be selected, and an **Email size restriction** pane should
-    appear that displays the conditions and actions of this rule. Verify the
-    conditions and actions are correct; if any corrections are needed, select
-    the **pencil (Edit)** icon in the menu bar and make the necessary
-    corrections.
+    - **Priority**: 3
+    - **Rule Mode**: Enforce
+    <br></br>
 
-14. Leave the Exchange Admin Center open to the mail flow page and proceed to
-    the next lab.
+18. Leave all other settings as default and then select **Next**.
+
+19. in the **Review and finish** page, Verify the rule conditions and settings are correct. If corrections are needed, select the **Edit rule conditions** or **Edit rule settings** and make the necessary corrections. Once you have verified the conditions and rules are correct, select **Finish**.
+
+    It may take up to a minute to create the rule. Once **Transport rule created successfully** is displayed, select **Done**.
+
+20. You will now be brought back to the **Rules** page. Notice the rule **Email size restriction** shows a status of **Disabled**.
+
+    Select the word **Disabled** which will open up a new window for the **Email size restriction** rule settings. Under **Enable or disable rule** select the slider button so that it shows **Enabled** and then close the window by selecting **X** in the upper right hand corner.
+
+    **Note:** After enabling the rule, it may take up to a minute for the rule to refresh and display as enabled.
+
+21. Leave the Exchange Admin Center open to the **rules** tab on the **mail
+    flow** page and proceed to the next task.
 
 
 # End of Lab 2
