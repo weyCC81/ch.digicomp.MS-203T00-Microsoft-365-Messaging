@@ -543,46 +543,47 @@ since you completed Task 1 and then perform this task again.
 
 29. Once prompted with **Succeeded** select **Done** to close out of the **New Hold** wizard.
 
-29. In the **eDiscovery (Standard) &gt; AlexWilber-case01** page, select the
+30. In the **eDiscovery (Standard) &gt; AlexWilber-case01** page, select the
     **Searches** tab at the top of the page.  
       
     You will now create a new search that checks for emails that contain
     **Sensitive, Confidential, Secret** in the email and in the Subject line.
 
-30. In the **Searches** tab, select the **+ New Search** button. This will
+31. In the **Searches** tab, select the **+ New Search** button. This will
     initiate a **New search** wizard that walks you through the steps to create
     a new search.
 
-31. In the **New search** window, in the **Name and description** page, enter
+32. In the **New search** window, in the **Name and description** page, enter
     **Confidential search** in the **Name** field, leave the **Description**
     field blank, and then select **Next**.
 
-32. In the **Locations** page, select the **Specific locations** option and then
+33. In the **Locations** page, select the **Specific locations** option and then
     select the toggle switch that appears to the left of
     **Exchange mailboxes** to turn it **On.** Select **Next**.
 
-33. In the **Define your search conditions** page, in the **Enter keywords** field, enter the
+34. In the **Define your search conditions** page, in the **Enter keywords** field, enter the
     following: **Sensitive, Confidential, Secret**
 
-34. Select **+Add conditions.**
+35. Select **+Add conditions.**
 
-35. In the menue that appears, select **Subject** (not the Subject/Title).
+36. In the menue that appears, select **Subject** (not the Subject/Title).
 
-36. On the **Define your search conditions** page, in the **Subject** section, select the
+37. On the **Define your search conditions** page, in the **Subject** section, select the
     drop-down arrow in the first operator field and select **Contains any of**.
     In the **Type subject** field, enter the following: **Sensitive,
     Confidential, Secret**
 
-37. Select **Next**, **Submit** and **Done**. This initiates the search. It may take several minutes
+38. Select **Next**, **Submit** and **Done**. This initiates the search. It may take several minutes
     for the Search to complete.
 
-38. In the **eDiscovery (Standard) &gt; AlexWilber-case01** page, the **Searches** tab should already be Selected. select the new search that was just created and a new pane for **Confidential search** will be dispalyed. 
+39. In the **eDiscovery (Standard) &gt; AlexWilber-case01** page, the **Searches** tab should already be Selected. select the new search that was just created and a new pane for **Confidential search** will be dispalyed. 
 
-39. In the **Confidential Search** pane, select **Review sample**.
+40. In the **Confidential Search** pane, select **Review sample**.
 
     Because Nestor was not assigned the eDiscovery Manager role, he is unable to view the search results. Therefore, you will be prompted with an error stating: **You can't preview search results because you're note assigned the Preview role. If you're a member of the Organization Management role group, you can go to the Permissions page and add yourself as a member of the eDiscovery Manager role group. Otherwise, contact your admin.**
 
     Select **OK** and then select **Close** to exit out of the **Confidential search** pane.
-39. Leave the Edge browser open and proceed to the next lab.
+    
+41. Leave the Edge browser open and proceed to the next lab.
 
 # End of Lab 4
