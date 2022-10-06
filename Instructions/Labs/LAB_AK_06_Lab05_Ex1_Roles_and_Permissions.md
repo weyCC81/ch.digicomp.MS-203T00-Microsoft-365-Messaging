@@ -152,7 +152,7 @@ group. In this task, you are going to add a user to a role group.
 
 8. Leave the Exchange Admin Center open in your Edge browser and proceed to the next task.
 
-## Task 3 -Create an Outlook on the web policy
+## Task 3 - Create an Outlook on the web policy
 
 In Exchange Online, Outlook on the web mailbox policies control the availability of settings and features in Outlook on the web (formerly known as Outlook Web App). A mailbox can only have one Outlook on the web mailbox policy applied to it. You can create different policies for different types of users in your Exchange Online organization.
 
@@ -194,7 +194,7 @@ assigned to several test users in Holly’s pilot project.
 
 11. Leave the Edge browser and all tabs open and proceed to the next exercise.
 
-## Task 4: Assign an Outlook on the web policy to a user mailbox
+## Task 4 - Assign an Outlook on the web policy to a user mailbox
 
 Assigning an Outlook on the web mailbox policy to an Exchange Online mailbox
 controls the Outlook on the web (formerly known as Outlook Web App, or OWA)
