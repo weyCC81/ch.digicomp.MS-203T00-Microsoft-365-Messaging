@@ -34,7 +34,7 @@ then assign two specific administrators to this role.
 
 3. Close all tabs in the Edge browser except for the **Sign out** tab.
 
-4. ‎On the **Sign out** tab, enter the following URL in the address bar:
+4. On the **Sign out** tab, enter the following URL in the address bar:
     **<https://portal.office.com>**
 
 5. On the **Pick an account** window, select
@@ -64,8 +64,8 @@ then assign two specific administrators to this role.
     group, which includes the roles and members that have been assigned to it.
     In this task, you are going to create a custom role group and then assign
     multiple roles to it, as well as several existing members.  
-    ‎  
-    ‎Select the **Add role group** icon on the menu bar to create a new role
+  
+    Select the **Add role group** icon on the menu bar to create a new role
     group.
 
 11. In the **add role group** window, enter **Application Impersonation** in the
@@ -156,7 +156,7 @@ group. In this task, you are going to add a user to a role group.
 
 In Exchange Online, Outlook on the web mailbox policies control the availability of settings and features in Outlook on the web (formerly known as Outlook Web App). A mailbox can only have one Outlook on the web mailbox policy applied to it. You can create different policies for different types of users in your Exchange Online organization.
 
-**Note:** All mailbox policies set for Outlook on the web will also affect the new Outlook for Windows. 
+**Note:** All mailbox policies set for Outlook on the web will also affect the new Outlook for Windows.
 
 In this task, you will create a new Outlook Web policy that will later be
 assigned to several test users in Holly’s pilot project.
@@ -222,13 +222,13 @@ Holly’s pilot project.
     user account mailboxes that were created by your lab hosting provider,
     select **Joni Sherman**.
 
-5. With **Joni Sherman's** mailbox selected, click the pencil (edit) icon in the menu bar. 
+5. With **Joni Sherman's** mailbox selected, click the pencil (edit) icon in the menu bar.
 
-6. A new browser window will open titles **Edit User Mailbox - Profile 1 - Microsoft Edge**. Select **Mailbox Features** from the list of properties. 
+6. A new browser window will open titles **Edit User Mailbox - Profile 1 - Microsoft Edge**. Select **Mailbox Features** from the list of properties.
 
     **Note:** A warning may display stating **The user Hasn't logged on to the mailbox 'JoniS'.** Select **OK** to close it.
 
-    Scroll down to the **Email connectivity** section and under **Outlook on the web: Enabled**, select **View details**. 
+    Scroll down to the **Email connectivity** section and under **Outlook on the web: Enabled**, select **View details**.
 
 7. Notice that **OwaMailboxPolicy-Default** is displayed. Select **Cancel** and then **Cancel** again to return to the **mailboxes** tab in the EAC.
 
@@ -263,4 +263,4 @@ Holly’s pilot project.
 
 17. Leave the Edge browser and all tabs open and proceed to the next lab.
 
-# End of Lab 5
+## End of Lab 5
