@@ -152,22 +152,21 @@ group. In this task, you are going to add a user to a role group.
 
 8. Leave the Exchange Admin Center open in your Edge browser and proceed to the next task.
 
-## Task 3 -Create an Outlook Web App Policy
+## Task 3 -Create an Outlook on the web policy
 
-A mobile device mailbox policy allows you to apply a common set of security and
-mobile device settings to a group of users. You can create multiple mobile
-device mailbox policies. Each recipient in your organization must have a mobile
-device mailbox policy assigned to them. When you install Microsoft Exchange
-Server 2013 or later, a default mobile device mailbox policy is created, and new
-users are automatically assigned this policy.
+In Exchange Online, Outlook on the web mailbox policies control the availability of settings and features in Outlook on the web (formerly known as Outlook Web App). A mailbox can only have one Outlook on the web mailbox policy applied to it. You can create different policies for different types of users in your Exchange Online organization.
 
-In this task, you will create a new Outlook Web App policy that will later be
+**Note:** All mailbox policies set for Outlook on the web will also affect the new Outlook for Windows. 
+
+In this task, you will create a new Outlook Web policy that will later be
 assigned to several test users in Holly’s pilot project.
 
 1. You should still be logged into LON-CL1 as the **Administrator** account
     with a password of **Pa55w.rd**; however, if the log-in screen appears, then
     log in now.
 2. In the **Exchange admin center** select the **Classic Exchange Admin center**.
+
+    **Note:** Currently, the process for creating a new Outlook on the web policy still relies on the classic EAC. However, the latest version this feature is in development and these lab steps will be updated to reflect the new steps once released.
   
 3. In the **Classic Exchange Admin Center**, select the **permissions** section. Then select the **Outlook Web
     App policies** tab.
@@ -195,7 +194,7 @@ assigned to several test users in Holly’s pilot project.
 
 11. Leave the Edge browser and all tabs open and proceed to the next exercise.
 
-## Task 4: Assign an Outlook Web App Policy to a user mailbox
+## Task 4: Assign an Outlook on the web policy to a user mailbox
 
 Assigning an Outlook on the web mailbox policy to an Exchange Online mailbox
 controls the Outlook on the web (formerly known as Outlook Web App, or OWA)
@@ -203,7 +202,7 @@ experience for the user. You can apply Outlook on the web mailbox policies to
 one or more mailboxes or remove the policy assignments in the Exchange admin
 center (EAC) or Exchange Online PowerShell.
 
-In this task, you are going to assign the Outlook Web App policy that you
+In this task, you are going to assign the Outlook on the web policy that you
 created in the prior task to the mailboxes of three Adatum users who are part of
 Holly’s pilot project.
 
@@ -223,50 +222,45 @@ Holly’s pilot project.
     user account mailboxes that were created by your lab hosting provider,
     select **Joni Sherman**.
 
-5. In the **Joni Sherman** detail pane on the right, scroll to the bottom of
-    the pane and in the **Email Connectivity** section, select **View details**.
+5. With **Joni Sherman's** mailbox selected, click the pencil (edit) icon in the menu bar. 
 
-6. An **Outlook Web App mailbox policy** window should appear that displays the
-    Outlook Web App policy that was assigned to this mailbox. Verify the
-    **OwaMailboxPolicy-Default** policy appears, and then select **Cancel**.
+6. A new browser window will open titles **Edit User Mailbox - Profile 1 - Microsoft Edge**. Select **Mailbox Features** from the list of properties. 
 
-    - You will now assign the Outlook Web App mailbox policy that you created
-        in the prior task to the mailboxes of three users who are participating
-        in Adatum’s pilot project.  
+    **Note:** A warning may display stating **The user Hasn't logged on to the mailbox 'JoniS'.** Select **OK** to close it.
 
-        In the list of mailboxes, select **Diego Siciliani** and then hold down
-        the CTRL key and select **Joni Sherman** and then **Patti Fernandez.**
+    Scroll down to the **Email connectivity** section and under **Outlook on the web: Enabled**, select **View details**. 
 
-7. By selecting multiple users, a **Bulk Edit** pane appears on the right side
-    of the screen. Scroll down in this pane to the **Outlook on the web**
-    section and then select **Assign a policy**.
+7. Notice that **OwaMailboxPolicy-Default** is displayed. Select **Cancel** and then **Cancel** again to return to the **mailboxes** tab in the EAC.
 
-8. In the **bulk assign Outlook Web App policy** window that opens, select
-    **Browse.**
+8. You will now assign the Outlook Web App mailbox policy that you created in the prior task to the mailboxes of three users who are participating in Adatum’s pilot project. In the list of mailboxes, select **Diego Siciliani** and then hold down the CTRL key and select **Joni Sherman** and then **Patti Fernandez.**
 
-9. A window appears that displays the list of Outlook on the Web App Policies.
+9. By selecting multiple users, a **Bulk Edit** pane appears on the right side of the screen. Scroll down in this pane to the **Outlook on the web** section and then select **Assign a policy**.
+
+10. In the **bulk assign Outlook Web App policy** window that opens, select **Browse.**
+
+11. A window appears that displays the list of Outlook on the Web App Policies.
     Select the **Test OWA Mailbox policy** that you created in the prior task
     and then select **OK**.
 
-10. In the **bulk assign Outlook Web App policy** window, select **Save** to
+12. In the **bulk assign Outlook Web App policy** window, select **Save** to
     apply this policy to all three user mailboxes.
 
-11. Select **OK** once the information is successfully saved.
+13. Select **OK** once the information is successfully saved.
 
-12. You should now verify the **Test OWA Mailbox policy** was applied to the
+14. You should now verify the **Test OWA Mailbox policy** was applied to the
     users’ mailboxes. You will use Joni’s mailbox for this test. In the list of
     mailboxes, select **Joni Sherman**.
 
-13. In the **Joni Sherman** detail pane on the right, scroll down to the bottom
+15. In the **Joni Sherman** detail pane on the right, scroll down to the bottom
     of the pane and in the **Email Connectivity** section, select **View
     details**.
 
-14. An **Outlook Web App mailbox policy** window should appear that displays the
+16. An **Outlook Web App mailbox policy** window should appear that displays the
     Outlook Web App policy that was assigned to this mailbox. Recall in the
     earlier step that Joni was originally assigned the
     **OwaMailboxPolicy-Default** policy. You should now verify that Joni is
     assigned the **Test OWA Mailbox policy**. Select **Cancel**.
 
-15. Leave the Edge browser and all tabs open and proceed to the next lab.
+17. Leave the Edge browser and all tabs open and proceed to the next lab.
 
 # End of Lab 5
