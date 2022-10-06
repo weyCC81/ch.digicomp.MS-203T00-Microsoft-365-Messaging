@@ -196,3 +196,5 @@ herself the Exchange Admin role. You will perform this task in the LON-CL1 VM.
     **Note:** You may need to refresh your browser several times before Holly's exchange mailbox is displayed.
 
 19. Leave your Edge browser open and proceed to the next exercise.
+
+# Proceed to Lab 6 - Exercise 2
