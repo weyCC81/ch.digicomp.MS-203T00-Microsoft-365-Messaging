@@ -24,39 +24,39 @@ applied to the email.
 
 Therefore, when you create the malware policy later in this task and you attempt to save the filter, you may receive a Client Error that indicates an error occurred when creating the policy. This error occurs because the Organization Management permissions haven’t fully propagated through the system for the MOD Administrator. To work around this, you will be provided with PowerShell instructions that will enable you to customize organization management objects.
 
-1.  You should still be logged into LON-CL1 as the **Administrator** with a
+1. You should still be logged into LON-CL1 as the **Administrator** with a
     password of **Pa55w.rd**; however, if the log-in page appears, then log in
     now.
 
-2.  In your **Edge** browser, you should still have a tab open for the
+2. In your **Edge** browser, you should still have a tab open for the
     **Microsoft 365 admin center**. If so, then select this tab and proceed to
     the next step; otherwise, navigate to the **Office 365 home** page, log in
     as your tenant admin account, navigate to the **Microsoft 365 admin
     center**, and then in the left-hand navigation pane, select **Show all**.
-    
-3.  In the **Microsoft 365 admin center**, in the left-hand navigation pane under **Admin centers**, select **Security**. This opens **Microsoft 365 Defender** in a new tab.
 
-4.  In the **Microsoft 365 Defender** portal, scroll down to the last section in the left-hand
+3. In the **Microsoft 365 admin center**, in the left-hand navigation pane under **Admin centers**, select **Security**. This opens **Microsoft 365 Defender** in a new tab.
+
+4. In the **Microsoft 365 Defender** portal, scroll down to the last section in the left-hand
     navigation pane and select **Permissions**.
 
-5.  In the **Permissions** page, under the **Email & collaboration roles** group, select **Roles**. 
+5. In the **Permissions** page, under the **Email & collaboration roles** group, select **Roles**.
 
 6. In the **Permissions > Permissions** page, enter **org** in the **Search** field
     and then select the magnifying glass icon. This is a quick way to display
     the Organization Management role group so that you don’t have to scroll
     through a list of roles to find it.
-    
+
     The search will display the **Organization Management** role, which is the
     only role starting with **org**. Select the check box next to this role to
     display the details for this role group.
 
-7.  In the **Organization Management** pane that appears on the right, scroll
+7. In the **Organization Management** pane that appears on the right, scroll
     down to the **Members** section at the bottom of the pane. To the right of the
     **Members** section, select **Edit**.
 
-8.  On the **Editing Choose members** page, select **Choose members**.
+8. On the **Editing Choose members** page, select **Choose members**.
 
-9.  On the **Choose members** page, select the **+Add** button.
+9. On the **Choose members** page, select the **+Add** button.
 
 10. In the **Choose which members to add from the list below** field, enter **MOD**. This will display all accounts starting with MOD. Select the check box next to **MOD Administrator** and then select the **Add** button.
 
@@ -92,9 +92,8 @@ Therefore, when you create the malware policy later in this task and you attempt
 21. On the **Protection settings** page, under the **Protection settings**
     group, select the check boxes for the following settings:
 
-    -   **Enable the common attachments filter** (if it’s not already selected)
-
-    -   **Enable zero-hour auto purge for malware (recommended)**.
+    - **Enable the common attachments filter** (if it’s not already selected)
+    - **Enable zero-hour auto purge for malware (recommended)**.
 
 22. In the **Notification** section, do not select any of the notification
     options since this filter will not generate any notifications. Select **Next**.
@@ -106,7 +105,7 @@ Therefore, when you create the malware policy later in this task and you attempt
 
 24. If the anti-malware policy was successfully created, then skip to the next
     step.  
-    
+
     However, if you receive a **Client Error** dialog box that indicates an
     error occurred when creating the policy, then the permissions assigned to
     Holly through the Organization Management role haven’t fully propagated
@@ -116,14 +115,14 @@ Therefore, when you create the malware policy later in this task and you attempt
     management objects. Once you’ve completed these steps, you will resubmit the
     **Review** page to save the malware policy that you just created.
 
-    1.  On LON-CL1, you must open an elevated instance of **Windows
+    1. On LON-CL1, you must open an elevated instance of **Windows
         PowerShell**. Select the magnifying glass (Search) icon on the taskbar
         at the bottom of the screen ad type **powershell** in the Search box
         that appears. In the list of search results, right-click on **Windows
         PowerShell** (do NOT select Windows PowerShell ISE) and select **Run as
         administrator** in the drop-down menu.
 
-    2.  Maximize your PowerShell window. In Windows PowerShell, at the command
+    2. Maximize your PowerShell window. In Windows PowerShell, at the command
         prompt, type the following command and press Enter:
 
         `Install-Module -name Exchangeonlinemanagement`
@@ -136,28 +135,28 @@ Therefore, when you create the malware policy later in this task and you attempt
 
         `Connect-ExchangeOnline`
 
-    5.  A **Microsoft 365 Sign in** window will appear. Enter in the username for
+    5. A **Microsoft 365 Sign in** window will appear. Enter in the username for
     the **Mod Administrator** account provided by your learning provider
     (admin@M365xZZZZZZ.onmicrosoft.com) and then select **Next**.
 
-    6.  In the **Enter password** window, enter the password for this admin account
+    6. In the **Enter password** window, enter the password for this admin account
     provided by your learning provider, and then select **Sign in**. It may take
     a moment to sign in before it returns a command prompt.
 
-    7.  At the command prompt, type the following command and press Enter:
+    7. At the command prompt, type the following command and press Enter:
 
-		`Enable-OrganizationCustomization`
+        `Enable-OrganizationCustomization`
 
-    8.  Close the PowerShell window.
+    8. Close the PowerShell window.
 
-    9.  Return to your **Edge** browser and the **Review** page for your new
+    9. Return to your **Edge** browser and the **Review** page for your new
     anti-malware policy. Select **Submit** to resubmit your anti-malware policy.
     This time the policy should be successfully saved.
 
-25.  On the **Created new anti-malware policy** page, it indicates the new policy
-    has been created and will go into effect immediately. Select **Done.** <br/>
+25. On the **Created new anti-malware policy** page, it indicates the new policy
+    has been created and will go into effect immediately. Select **Done.**
 
-   		**Note**: If a dialog box appears with a message that
+     **Note**: If a dialog box appears with a message that
     indicates your organization settings need to be updated, select **Yes** to
     continue. It may take a minute for your organization settings to be updated.
 
@@ -170,14 +169,14 @@ allowed IP address and a blocked IP address. Any messages originating from the
 allowed IP address will always be accepted, and any messages originating from
 the blocked IP address will always be blocked.
 
-1.  You should still be logged into Microsoft 365 as the MOD Administrator after completing the prior task. Your Edge browser should still be in the **Microsoft 365 Defender** portal on the **Policies & rules > Threat policies > Anti-malware** window. 
+1. You should still be logged into Microsoft 365 as the MOD Administrator after completing the prior task. Your Edge browser should still be in the **Microsoft 365 Defender** portal on the **Policies & rules > Threat policies > Anti-malware** window.
 
-2.  In the the **Policies & rules > Threat policies > Anti-malware** thread at the top of the page, select **Threat policies**.
+2. In the the **Policies & rules > Threat policies > Anti-malware** thread at the top of the page, select **Threat policies**.
 
-3.  In the **Threat policies** window, under the **Policies** section, select
+3. In the **Threat policies** window, under the **Policies** section, select
     **Anti-spam**.
 
-4.  The **Policies & rules > Threat policies > Anti-spam policies** window displays a list of
+4. The **Policies & rules > Threat policies > Anti-spam policies** window displays a list of
     default **Anti-spam policies** that control how messages are handled by
     Microsoft 365 anti-spam policies.
 
@@ -185,7 +184,7 @@ the blocked IP address will always be blocked.
     This displays the current settings for this default spam filter in the
     right-hand pane.
 
-5.  In the **Connection filter policy (Default)** pane, the **Connection
+5. In the **Connection filter policy (Default)** pane, the **Connection
     filtering** section displays options regarding which IP Addresses may send
     messages to your environment and what IP addresses will be blocked from
     sending messages.
@@ -196,19 +195,18 @@ the blocked IP address will always be blocked.
     this lab, simply review the fact that you can create allowed and blocked
     lists of IP addresses.
 
-6.  At the bottom of the **Connection filtering** section, select the **Edit
+6. At the bottom of the **Connection filtering** section, select the **Edit
     connection filter policy** link.
 
-7.  In the **Connection filter policy (Default)** pane, select the **Turn on
+7. In the **Connection filter policy (Default)** pane, select the **Turn on
     safe list** check box. This is a best practice that enables for your tenant the most common third-party sources of trusted senders that Microsoft
     subscribes to. Selecting this check box skips spam filtering on messages
     sent from these senders, ensuring they are never mistakenly marked as spam.
 
-8.  Select **Save** to save this filter, and then select **Close** once the
+8. Select **Save** to save this filter, and then select **Close** once the
     changes are successfully saved.
 
 9. Leave your Edge browser open to the **Microsoft 365 Defender** portal for the next task.
-
 
 ## Task 3 - Create a Spam Filter
 
@@ -224,91 +222,90 @@ company-specific filtering customizations in the Exchange admin center. She has
 decided to test this out by configuring a spam policy to grant or deny an email
 by focusing on the language of the email and the location of the email's origin.
 
-1.  In the **Microsoft 365 Defender** portal, the **Policies & rules > Threat policies > Anti-spam policies** window should still be displayed after having completed
+1. In the **Microsoft 365 Defender** portal, the **Policies & rules > Threat policies > Anti-spam policies** window should still be displayed after having completed
     the prior task.
 
     In the list of anti-spam policies, select the **Anti-spam inbound policy (Default)**.
 
-2.  In the **Anti-spam inbound policy (Default)** pane that appears, take a
+2. In the **Anti-spam inbound policy (Default)** pane that appears, take a
     moment and review the policy settings that are available in this filter.
     There are three sections of settings – **Bulk email threshold & spam
     properties**, **Actions**, and **Allowed and blocked senders and domains**.
 
-3.  Once you’ve finished reviewing these settings, scroll to the bottom of the
+3. Once you’ve finished reviewing these settings, scroll to the bottom of the
     **Bulk email threshold & spam properties** section and select the **Edit
     spam threshold and properties** link.
 
-4.  In the **Spam threshold and properties** pane that appears, the **Bulk email
+4. In the **Spam threshold and properties** pane that appears, the **Bulk email
     threshold** at the top of the pane is set to **7** by default. Drag the slider to the left on the slider bar and change this value
     to **5.**
 
-5.  Under the **Mark as spam** section, update the following settings:
+5. Under the **Mark as spam** section, update the following settings:
 
-    -   Empty messages: **Off**
+    - Empty messages: **Off**
 
-    -   Embedded tags in HTML: **On**
+    - Embedded tags in HTML: **On**
 
-    -   JavaScript or VBScript in HTML: **On**
+    - JavaScript or VBScript in HTML: **On**
 
-    -   SPF record hard fail: **On**
+    - SPF record hard fail: **On**
 
-    -   Sender ID filtering hard fail: **On**
+    - Sender ID filtering hard fail: **On**
 
     **Note:** These next two settings allow you to automatically tag messages
         as spam when they originate from countries/regions that are to be
         avoided or distrusted, as well as messages written in specific languages.
-   
-    -   Contains specific languages: **On**  
+
+    - Contains specific languages: **On**  
 
         You should already know the languages that you want to filter. In the
         blank field that appears below the **Contains specific languages**
         field, enter the first letter of a language that you want to filter.
         This will display all languages that start with that letter (as well as
         any languages that contain that letter within the name of the language).
-                
+
         Enter a letter and then select a language with the letter in it that you
         want to filter. Repeat this step for a couple of languages.
 
-    -   From these countries: **On**
+    - From these countries: **On**
 
-		You should already know the countries that you want to filter. In the
+      You should already know the countries that you want to filter. In the
         blank field that appears below the **From these countries** field, enter
         the first letter of a country that you want to filter. This will display
         all countries that start with that letter (as well as any countries that
         contain that letter within the name of the language).
 
-		Enter a letter and then select a country with the letter in it that you
+      Enter a letter and then select a country with the letter in it that you
         want to filter. Repeat this step for a couple of countries.
 
-6.  Leave all other settings as default, and the select **Save**.
+6. Leave all other settings as default, and the select **Save**.
 
-7.  This returns you to the **Anti-spam inbound policy (Default)** pane. Scroll
+7. This returns you to the **Anti-spam inbound policy (Default)** pane. Scroll
     to the bottom of the **Actions** section and select the **Edit actions**
-    link. ‎
+    link.
 
-8.  In the **Actions** pane, update the following settings:
+8. In the **Actions** pane, update the following settings:
 
-    -   Spam: **Move message to Junk Email folder**
+    - Spam: **Move message to Junk Email folder**
 
-    -   High confidence spam: **Prepend subject line with text**
+    - High confidence spam: **Prepend subject line with text**
 
-    -   Phishing email: **Quarantine message**
+    - Phishing email: **Quarantine message**
 
-    -   High confidence phishing email: **Quarantine message**
+    - High confidence phishing email: **Quarantine message**
 
-    -   Bulk complaint level (BCL) met or exceeded: **Move message to Junk Email folder**
+    - Bulk complaint level (BCL) met or exceeded: **Move message to Junk Email folder**
 
-    -   Retain spam in quarantine for this many days: **10**
+    - Retain spam in quarantine for this many days: **10**
 
-    -   Prepend subject line with this text: enter **WARNING: This message
+    - Prepend subject line with this text: enter **WARNING: This message
         contains potential spam!**
 
-    -   Enable spam safety tips: select this check box
+    - Enable spam safety tips: select this check box
 
-
-9.  Select **Save** to update the settings, and then select **Close** to close
+9. Select **Save** to update the settings, and then select **Close** to close
     the **Anti-spam inbound policy (Default)** pane.
 
-10.  In your Edge browser, leave the **Office 365 Home** tab open as well as the **Microsoft 365 admin center** tab. Close all other tabs and proceed to the next lab.
+10. In your Edge browser, leave the **Office 365 Home** tab open as well as the **Microsoft 365 admin center** tab. Close all other tabs and proceed to the next lab.
 
-# End of Lab 3
+## End of Lab 3
