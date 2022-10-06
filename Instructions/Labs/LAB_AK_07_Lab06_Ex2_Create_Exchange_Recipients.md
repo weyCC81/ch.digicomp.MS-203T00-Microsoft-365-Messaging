@@ -197,4 +197,4 @@ herself the Exchange Admin role. You will perform this task in the LON-CL1 VM.
 
 19. Leave your Edge browser open and proceed to the next exercise.
 
-# Proceed to Lab 6 - Exercise 2
+# Proceed to Lab 6 - Exercise 3
