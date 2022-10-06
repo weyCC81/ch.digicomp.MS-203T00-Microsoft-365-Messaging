@@ -242,7 +242,7 @@ Planner, and PowerBI, all of which allows teams to seamlessly work together.
 
 18. Under the **Owners** section, you can see the two owners (Allan and Patti).
 
-19. In the **Members** section, select **Add members**. 
+19. In the **Members** section, select **Add members**.
 
 20. In the **Search by name or email address** field, type and select the following user names (one at a time). Once finished, select **Add (2)**
 
@@ -269,4 +269,4 @@ Planner, and PowerBI, all of which allows teams to seamlessly work together.
 
 24. Leave your browser and all the tabs open for the next exercise.
 
-# End of Lab 6
+## End of Lab 6
