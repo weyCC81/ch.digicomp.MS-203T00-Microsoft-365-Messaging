@@ -581,7 +581,7 @@ locate the UPN name.
 
     - In **DNS Manager**, under **Forward Lookup Zones**, right-click the **xxxUPNxxx.xxxCustomDomainxxx.xxx** domain and select **New Host (A or AAAA)...**
 
-    - In the **New Host** window that appears, leave the **Name** field blank. In the **IP address** field, enter the IP address for your parent domain that was provided by your lab hosting provider 
+    - In the **New Host** window that appears, leave the **Name** field blank. In the **IP address** field, enter the IP address for your parent domain that was provided by your lab hosting provider (for example, 64.64.221.224).
 
     - Select **Add Host**, and then select **OK** in the dialog box indicating the host record was successfully created.
 
