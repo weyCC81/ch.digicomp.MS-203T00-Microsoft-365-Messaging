@@ -125,7 +125,7 @@ Therefore, when you create the malware policy later in this task and you attempt
     2. Maximize your PowerShell window. In Windows PowerShell, at the command
         prompt, type the following command and press Enter:
 
-        `Install-Module -name Exchangeonlinemanagement`
+        `Install-Module -name ExchangeOnlineManagement`
 
     3. If you are prompted to confirm whether you want to install the module from
     an untrusted repository (PSGallery), enter **A** to select **[A] Yes to
