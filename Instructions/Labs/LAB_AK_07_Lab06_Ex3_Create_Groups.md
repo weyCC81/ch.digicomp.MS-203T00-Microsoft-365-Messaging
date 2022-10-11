@@ -150,7 +150,7 @@ access the Exchange admin center for Exchange Online.
     - **Megan Bowen**
     - **Nestor Wilke**
 
-23. Verify the **Members** page includes **Joni Sherman**, **Megan Bowen**, and **Nestor Wilke**. Then select **X** in the top right hand corner to exit clost the pane.
+23. Verify the **Members** page includes **Joni Sherman**, **Megan Bowen**, and **Nestor Wilke**. Then select **X** in the top right hand corner to exit close the pane.
 
 24. Leave your browser and all the tabs open and proceed to the next task.
 
