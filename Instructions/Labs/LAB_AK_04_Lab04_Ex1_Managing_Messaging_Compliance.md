@@ -314,7 +314,7 @@ active MRM policies in Adatum’s Exchange environment.
 8. At the command prompt, run the following command to display all the
     Retention Policies that are active in your environment:  
 
-    `Get-RetentionPolicy | out-Gridview`  
+    `Get-RetentionPolicy | out-GridView`  
 
      **Note:** This command opens a separate window that displays the active
     retention policies. After reviewing the policies, select the **X** in the
@@ -566,7 +566,7 @@ since you completed Task 1 and then perform this task again.
 
 33. Select **+Add conditions.**
 
-34. In the menue that appears, select **Subject** (not the Subject/Title).
+34. In the menu that appears, select **Subject** (not the Subject/Title).
 
 35. On the **Define your search conditions** page, in the **Subject** section, select the
     drop-down arrow in the first operator field and select **Contains any of**.
@@ -576,7 +576,7 @@ since you completed Task 1 and then perform this task again.
 36. Select **Next**, **Submit** and **Done**. This initiates the search. It may take several minutes
     for the Search to complete.
 
-37. In the **eDiscovery (Standard) &gt; AlexWilber-case01** page, the **Searches** tab should already be Selected. select the new search that was just created and a new pane for **Confidential search** will be dispalyed.
+37. In the **eDiscovery (Standard) &gt; AlexWilber-case01** page, the **Searches** tab should already be Selected. select the new search that was just created and a new pane for **Confidential search** will be displayed.
 
 38. In the **Confidential Search** pane, select **Review sample**.
 
