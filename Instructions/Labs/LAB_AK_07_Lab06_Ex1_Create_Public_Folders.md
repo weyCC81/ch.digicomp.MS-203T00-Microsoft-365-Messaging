@@ -106,7 +106,7 @@ In this task, you will manage several settings for the Test PF1 public folder.
 
 2. In the **Exchange admin center**, you should still be in the **public folders** page.
 
-3. On the **public folders** page, the **Test PF1** record that you updated inthe prior task should be highlighted.  
+3. On the **public folders** page, the **Test PF1** record that you updated in the prior task should be highlighted.  
 
     **Important:** If you closed the EAC tab at the end of the prior task and
     had to navigate to this page in the prior step, then select the **Test PF1**
