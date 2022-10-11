@@ -1,4 +1,4 @@
-# Module 7 - Lab 6 - Exercise 3 - Create Groups
+# Lab 6 - Exercise 3 - Create Groups
 
 In this exercise, you will continue in your role as Holly Dickson, Adatum’s
 Messaging Administrator. As part of her pilot project for deploying Microsoft
