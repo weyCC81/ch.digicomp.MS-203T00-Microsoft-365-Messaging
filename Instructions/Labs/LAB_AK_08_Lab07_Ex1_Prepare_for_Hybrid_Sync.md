@@ -11,18 +11,18 @@ To complete this task, you must first prepare Azure Active Directory to support
 the hybrid synchronization between Exchange on-premises and Exchange Online.
 This will require that you:
 
--   Configure your lab environment to support local mail transport
+- Configure your lab environment to support local mail transport
 
--   Add an accepted domain to your Azure AD forest
+- Add an accepted domain to your Azure AD forest
 
--   Configure the UPN Name for the new domain
+- Configure the UPN Name for the new domain
 
--   Configure Exchange to use the new domain
+- Configure Exchange to use the new domain
 
--   Enable directory synchronization by installing and running the Microsoft
+- Enable directory synchronization by installing and running the Microsoft
     Azure Active Directory Connect tool
 
--   Perform a Full Synchronization to migrate Adatum’s on-premises user accounts
+- Perform a Full Synchronization to migrate Adatum’s on-premises user accounts
     to the new domain in Microsoft 365
 
 While your trial tenant has already been set up by your lab hosting provider,
@@ -46,28 +46,30 @@ performed to configure the hosted virtual machines used in this training lab so
 that email can be sent locally between on-premises and cloud users when testing
 your hybrid deployment.
 
-1.  Switch to **LON-EX1** and if necessary, log in as the **Administrator** account
+1. Switch to **LON-EX1** and if necessary, log in as the **Administrator** account
     with a password of **Pa55w.rd**.
 
-2.  If your Edge browser is still open from Lab 1, then minimize the browser now
+2. If your Edge browser is still open from Lab 1, then minimize the browser now
     (do not close it).
 
-3.  You need to open the **Network and Sharing Center**. To do so, select the
+3. You need to open the **Network and Sharing Center**. To do so, select the
     network icon on the right-side of the system tray at the bottom of the
     screen (which displays **Adatum.com Internet access**), and in the menu that
     appears, select **Open Network & Internet settings**.
 
-4.  In the **Settings** window, scroll to the bottom of the **Status** pane on
+4. In the **Settings** window, scroll to the bottom of the **Status** pane on
     the right and select **Network and Sharing Center**.
 
-5.  In the **Network and Sharing Center**, under the **View your active
+5. In the **Network and Sharing Center**, under the **View your active
     networks** group, select **Ethernet** (which appears to the right of
     **Connections**:).
 
-6.  In the **Ethernet Status** window, select the **Properties** button that
+    **WARNING:** select **Ethernet**, not **Ethernet 2**.
+
+6. In the **Ethernet Status** window, select the **Properties** button that
     appears at the bottom of the window.
 
-7.  In the **Ethernet Properties** window, select **Internet Protocol Version 4
+7. In the **Ethernet Properties** window, select **Internet Protocol Version 4
     (TCP/IPv4)** and then select the **Properties** button.  
     ‎  
     ‎**WARNING:** Do NOT select the check box for **Internet Protocol Version 4
@@ -75,12 +77,12 @@ your hybrid deployment.
     Simply select this item to highlight it so that you can update its
     properties.
 
-8.  The **Internet Protocol Version 4 (TCP/IPv4) Properties** window is already
+8. The **Internet Protocol Version 4 (TCP/IPv4) Properties** window is already
     set up to use an existing IP address. Since you are going to add an
     additional IP address, select the **Advanced** button in the bottom-right
     corner of the screen.
 
-9.  In the **Advanced TCP/IP Settings** window, in the **IP Settings** tab, it
+9. In the **Advanced TCP/IP Settings** window, in the **IP Settings** tab, it
     displays two groups: **IP addresses** and **Default gateways**.
 
     Under the **IP addresses** group, select the **Add…** button.
@@ -123,7 +125,7 @@ In this task, you will gain experience adding this domain to Adatum' Microsoft
 365 deployment. When you add a domain to Microsoft 365, it's called an accepted,
 or custom domain. Custom domains allow companies to have their own branding on
 emails and accounts so that customers can verify who is emailing them (for
-example, \@contoso.com). When a company adds a new domain to Microsoft 365, it
+example, \@Contoso.com). When a company adds a new domain to Microsoft 365, it
 must also maintain the DNS records that are necessary to support the services
 required by the company for the new domain.
 
@@ -141,8 +143,7 @@ from the process.
 
 That being said, for the purpose of this lab, you will be asked to manually
 create the necessary DNS records required by this new custom domain. In the
-other Microsoft 365 training courses that use a custom domain (such as MS-101T00
-and MS-030T00), the custom domain and its DNS records will be added into
+other Microsoft 365 training courses that use a custom domain (such as MS-101T00), the custom domain and its DNS records will be added into
 Adatum's Microsoft 365 deployment by the lab hosting provider, who will take on
 the role of the third-party domain registrar for Adatum. However, this MS-203T00
 training course will task you with adding the domain and creating its required
@@ -159,10 +160,10 @@ lab hosting provider's custom domain name. Your instructor will provide you with
 your lab hosting's provider's custom domain name as well as show you how to
 locate the UPN name.
 
-1.  Switch to **LON-DC1** and, if necessary, log in as **Administrator** and
+1. Switch to **LON-DC1** and, if necessary, log in as **Administrator** and
     password **Pa55w.rd**.
 
-2.  You must now open **Windows PowerShell**. Select the magnifying glass
+2. You must now open **Windows PowerShell**. Select the magnifying glass
     (Search) icon on the taskbar at the bottom of the screen and type
     **powershell** in the Search box that appears.
 
@@ -170,7 +171,7 @@ locate the UPN name.
     select Windows PowerShell ISE) and select **Run as administrator** in the
     drop-down menu that appears. Maximize your PowerShell window.
 
-3.  At the command prompt, you should run the following command to create a new
+3. At the command prompt, you should run the following command to create a new
     zone in your on-premises DNS:
 
     **IMPORTANT:** Before you run the following command, remember to replace
@@ -180,33 +181,33 @@ locate the UPN name.
 
     `dnscmd /zoneadd xxxUPNxxx.xxxCustomDomainxxx.xxx /DsPrimary`
 
-4.  Minimize your Windows PowerShell window (do NOT close it as you will use it
+4. Minimize your Windows PowerShell window (do NOT close it as you will use it
     later).
 
 5. Switch to **LON-EX1**
 
 6. Open **PowerShell** as and Administrator and run the following command:
 
-	`dnscmd /zoneadd xxxUPNxxx.xxxCustomDomainxxx.xxx /Secondary 10.0.0.4`
+     `dnscmd /zoneadd xxxUPNxxx.xxxCustomDomainxxx.xxx /Secondary 10.0.0.4`
 
 7. Return back to **LON-DC1**  
 
-8.  You will now access the **Microsoft 365 admin center** from LON-DC1. Select
+8. You will now access the **Microsoft 365 admin center** from LON-DC1. Select
     the **Microsoft Edge** icon on your taskbar and enter the following URL in
-    the address bar: **https://portal.office.com.**
+    the address bar: **<https://portal.office.com>.**
 
-9.  On the **Sign in** page, enter **admin@xxxxxZZZZZZ.onmicrosoft.com** (where
+9. On the **Sign in** page, enter **admin@xxxxxZZZZZZ.onmicrosoft.com** (where
     xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider), and
     then enter the tenant email password provided by your lab hosting provider
     on the **Enter password** page. Select **Sign in.**
 
-10.  On the **Stay signed in?** window, select the **Don’t show this again**
+10. On the **Stay signed in?** window, select the **Don’t show this again**
     check box and then select **Yes.**
 
-11.  If a **Get your work done with Office 365** window appears, select the **X**
+11. If a **Get your work done with Office 365** window appears, select the **X**
     in the upper right-hand corner to close it.
 
-12.  In the **Office 365 home** page, in the column of Microsoft 365 app icons on
+12. In the **Office 365 home** page, in the column of Microsoft 365 app icons on
     the left-side of the screen, select the **Admin** icon to navigate to the
     **Microsoft 365 admin center**.
 
@@ -228,7 +229,7 @@ locate the UPN name.
     xxxCustomDomainxxx.xxx is your lab hosting provider's domain name), and then
     select the **Use this domain** button at the bottom of the page.
 
-16. In the **How do you want to verify your domain?** page, you must select a
+16. In the **Verify you own your domain** page, you must select a
     verification method to prove you own the domain. For this lab, select the
     **Add a TXT record to the domain's DNS records** option and then select
     **Continue**.
@@ -274,7 +275,7 @@ locate the UPN name.
 
 23. Tick the option **Only to the following servers** and click **Edit.**
 
-24. In the **IP Address** enter **10.0.0.6** and click **OK** twice.
+24. In the **IP Address** enter **10.0.0.6** and click **OK**, **Apply** and then **OK** again4.
 
 25. Right-click on this **xxxUPNxxx.xxxCustomDomainxxx.xxx** zone, and in the
     menu that appears, select **Other New Records...**
@@ -301,11 +302,12 @@ locate the UPN name.
 
 30. Switch back to **LON-EX1** and from **Server Manager** open **DNS**.
 
-31. Expand **Forward Lookup Zones** and click your **Custom Domain, xxxUPNxxx.xxxCustomDomainxxx.xxx** to verify the TXT file has has transfered from **LON-DC1**.
+31. Expand **Forward Lookup Zones** and click your **Custom Domain, xxxUPNxxx.xxxCustomDomainxxx.xxx** to verify the TXT file has has transferred from **LON-DC1**.
 
-    > Note: It may take several minutes for the record to appear.  You can refresh and reload the zone to force it to update.  Wait until the TXT file appears before proceeding. It may be helpful to close and open **DNS Manager**. 
-    
-    >[!Alert] **If the TXT record does not appear Complete the Same Zone Transfer steps on DC-1 that you did on EX-1 except use 10.0.0.5 instead of 10.0.0.6 so the DC-1 and EX-1 can talk to each other**. 
+    > Note: It may take several minutes for the record to appear.  You can refresh and reload the zone to force it to update.  Wait until the TXT file appears before proceeding. It may be helpful to close and open **DNS Manager**, and if several minutes have passed you can Right-click on the **xxxUPNxxx.xxxCustomDomainxxx.xxx** zone, and in the
+    menu that appears, select **Transfer from master**.
+
+    >[!Alert] **If the TXT record does not appear Complete the Same Zone Transfer steps on DC-1 that you did on EX-1 except use 10.0.0.5 instead of 10.0.0.6 so the DC-1 and EX-1 can talk to each other**.
 
 32. When the TXT appears, switch back to **LON-DC1**
 
@@ -352,19 +354,19 @@ locate the UPN name.
     three services that DNS supports - Exchange and Exchange Online Protection,
     Skype for Business, and Intune and Mobile Device Management for Microsoft
     365. **Exchange and Exchange Online Protection** is displayed by default and its
-    check box is also selected by default. 
-    
+    check box is also selected by default.
+
     To see the other two services, select
     **Advanced Options**. Note that under **Advanced Options**, neither the
     **Skype for Business** nor the **Intune and Mobile Device Management for
     Microsoft 365** check boxes are selected.
 
     **Important:** Only the **Exchange and Exchange Online Protection** check box
-    should be selected for the purpose of this lab; this is sufficient for Adatum. 
-    
+    should be selected for the purpose of this lab; this is sufficient for Adatum.
+
     **Do NOT select either of the other two check boxes.** We had you select
     **Advanced Options** just to see where you would select these other two services in the event you would need to do so in your real-world deployment.
- 
+
 37. Under the **Exchange and Exchange Online Protection** service, the
     description indicates that three DNS records are needed for it to work properly:
     a Mail Exchanger (MX) record, an Alias (CNAME) record, and an additional
@@ -390,7 +392,7 @@ locate the UPN name.
 38. You will begin by adding the **MX record** required by the **Exchange and
     Exchange Online Protection** service.
 
-    -   In the **MX Records** section, under the **Points to address or value**
+    - In the **MX Records** section, under the **Points to address or value**
         column, select the copy icon that appears to the left of the expected
         value (for example,
         **xxxUPNxxx-xxxCustomDomainxxx-xxx.mail.protection.outlook.com**) to
@@ -398,10 +400,10 @@ locate the UPN name.
         **Allow access** to allow the webpage to copy the value to the
         clipboard.
 
-    -   You must now switch to DNS Manager. On the taskbar at the bottom of the
+    - You must now switch to DNS Manager. On the taskbar at the bottom of the
         page, select the **DNS Manager** icon.
 
-    -   In **DNS Manager**, under **Forward Lookup Zones**, the
+    - In **DNS Manager**, under **Forward Lookup Zones**, the
         **xxxUPNxxx.xxxCustomDomainxxx.xxx** domain should be selected from when
         you earlier left off. If not, select this zone now. You should see the
         **TXT** record that you created earlier. You must now create a **Mail
@@ -411,18 +413,18 @@ locate the UPN name.
         **xxxUPNxxx.xxxCustomDomainxxx.xxx** domain and select **New Mail
         Exchanger (MX)...**
 
-    -   In the **New Resource Record** window, in the **Mail Exchanger (MX)**
+    - In the **New Resource Record** window, in the **Mail Exchanger (MX)**
         tab, leave the **Host or child domain** field blank, but right-click in
         the **Fully qualified domain name (FQDN) of mail server** field and
         select **Paste** from the menu that appears. This will paste in the
         expected **Points to address or value** that you just copied to the clipboard.
 
-    -   Select **OK**. Note how this Mail Exchanger (MX) record appears in the
+    - Select **OK**. Note how this Mail Exchanger (MX) record appears in the
         details pane on the right for the xxxUPNxxx.xxxCustomDomainxxx.xxx
         domain that you previously created. Leave your DNS Manager window open
         as you will return to it in a later step in this task.
 
-    -   Switch back to the **Add DNS records** page in the Microsoft 365 admin
+    - Switch back to the **Add DNS records** page in the Microsoft 365 admin
         center by selecting the **Microsoft Edge** icon on the taskbar at the
         bottom of the page. At this point, you can either select **Continue** at
         the bottom of the **Add DNS records** page to verify the MX record that
@@ -443,7 +445,7 @@ locate the UPN name.
     following steps to add the **CNAME record** required by Exchange and
     Exchange Online Protection service.
 
-    -   On the **Add DNS records** page, in the **CNAME Records** section, under
+    - On the **Add DNS records** page, in the **CNAME Records** section, under
         the **Points to address or value** column, select the copy icon that
         appears to the left of the expected value (for example,
         autodiscover.outlook.com).
@@ -471,27 +473,27 @@ locate the UPN name.
         expected value for the **Points to address or value** column (for
         example, autodiscover.outlook.com).
 
-    -   On the taskbar at the bottom of the page, select the **DNS Manager**
+    - On the taskbar at the bottom of the page, select the **DNS Manager**
         icon.
 
-    -   In **DNS Manager**, under **Forward Lookup Zones**, right-click the
+    - In **DNS Manager**, under **Forward Lookup Zones**, right-click the
         **xxxUPNxxx.xxxCustomDomainxxx.xxx** domain and select **New Alias
         (CNAME)...**
 
-    -   In the **New Resource Record** window, enter **autodiscover** in the
+    - In the **New Resource Record** window, enter **autodiscover** in the
         **Alias name (uses parent domain if left blank)** field.
 
-    -   Right-click in the **Fully qualified domain name (FQDN) for target
+    - Right-click in the **Fully qualified domain name (FQDN) for target
         host** field and select **Paste** from the menu that appears. This will
         paste in the expected **Points to address or value** that you earlier
         copied to the clipboard.
 
-    -   Select **OK**. Note how this Alias (CNAME) record appears in the details
+    - Select **OK**. Note how this Alias (CNAME) record appears in the details
         pane on the right for the xxxUPNxxx.xxxCustomDomainxxx.xxx domain that
         you previously created. Leave your DNS Manager window open as you will
         return to it in a later step in this task.
 
-    -   Switch back to the **Add DNS records** page in the Microsoft 365 admin
+    - Switch back to the **Add DNS records** page in the Microsoft 365 admin
         center. On the taskbar at the bottom of the page, select the **Microsoft
         Edge** icon and select the **Microsoft 365 admin center** tab. At this
         point, you can either select **Continue** at the bottom of the **Add DNS
@@ -513,31 +515,31 @@ locate the UPN name.
     adding the **TXT record** required by Exchange and Exchange Online
     Protection service.
 
-    -   On the **Add DNS records** page, in the **TXT Records** section, under
+    - On the **Add DNS records** page, in the **TXT Records** section, under
         the **TXT value** column, select the copy icon that appears to the left
         of the expected value (for example, **v=spf1
         include:spf.protection.outlook.com -all**) to copy this value to the
         clipboard.
 
-    -   On the taskbar at the bottom of the page, select the **DNS Manager**
+    - On the taskbar at the bottom of the page, select the **DNS Manager**
         icon.
 
-    -   In **DNS Manager**, under **Forward Lookup Zones**, right-click the
+    - In **DNS Manager**, under **Forward Lookup Zones**, right-click the
         **xxxUPNxxx.xxxCustomDomainxxx.xxx** domain and select **Other New
         Records...**
 
-    -   In the **Resource Record Type** window that appears, in the **Select a
+    - In the **Resource Record Type** window that appears, in the **Select a
         resource record type** field, scroll down and select **Text (TXT),** and
         then select the **Create Record...** button at the bottom of the window.
 
-    -   In the **New Resource Record** window, in the **Text (TXT)** tab, leave
+    - In the **New Resource Record** window, in the **Text (TXT)** tab, leave
         the **Record name** field blank. However, right-click in the **Text**
         field and select **Paste** from the menu that appears. This will paste
         in the expected **TXT value** that you earlier copied to the clipboard.
 
-    -   Select **OK**.
+    - Select **OK**.
 
-    -   On the **Resource Record Type** window, select **Done**.
+    - On the **Resource Record Type** window, select **Done**.
 
 41. In **DNS Manager**, you should now see the TXT record that you originally
     created to verify the domain, along with the MX, CNAME, and TXT records that
@@ -581,7 +583,7 @@ locate the UPN name.
 
     - In **DNS Manager**, under **Forward Lookup Zones**, right-click the **xxxUPNxxx.xxxCustomDomainxxx.xxx** domain and select **New Host (A or AAAA)...**
 
-    - In the **New Host** window that appears, leave the **Name** field blank. In the **IP address** field, enter the IP address for your parent domain that was provided by your lab hosting provider 
+    - In the **New Host** window that appears, leave the **Name** field blank. In the **IP address** field, enter the IP address for your parent domain that was provided by your lab hosting provider (for example, 64.64.221.224).
 
     - Select **Add Host**, and then select **OK** in the dialog box indicating the host record was successfully created.
 
@@ -601,7 +603,7 @@ locate the UPN name.
 
 47. Close DNS Manager.
 
-48. Remain logged into the LON-DC1 VM with both **Internet Explorer** and **Windows PowerShell** left open for the next task. 
+48. Remain logged into the LON-DC1 VM with both **Internet Explorer** and **Windows PowerShell** left open for the next task.
 
 ## Task 3: Configure the UPN name for custom domain
 
@@ -638,12 +640,10 @@ For this lab, Adatum has purchased a new domain (provided by your lab hosting
 provider); therefore, it wants to change the domain name of all its on-premises
 users’ email addresses from \@adatum.com to \@ xxxUPNxxx.xxxCustomDomainxxx.xxx.
 
-1.  You should still be logged into LON-DC1 as the **Administrator** with a
+1. You should still be logged into LON-DC1 as the **Administrator** with a
     password of **Pa55w.rd**; if necessary, log in now.
 
-    **Note: your lab provider may have already updated the PowerShell commands in Steps 7 and 8 with the correct custom domain name so you can simply copy and paste the PowerShell commands.**
-
-2.  In this task, you will run two PowerShell commands. To save you from having
+2. In this task, you will run two PowerShell commands. To save you from having
     to manually type in the commands (which are quite lengthy) into PowerShell, you will copy the
     commands from these instructions and then paste them into Notepad. You will
     then use the "Replace" functionality in Notepad to find and replace the custom domain name placeholder in the commands with the
@@ -654,7 +654,7 @@ users’ email addresses from \@adatum.com to \@ xxxUPNxxx.xxxCustomDomainxxx.xx
     **note** in the Search field. In the menu that appears, select **Notepad**.
     Maximize the Notepad window once it opens.
 
-3.  While the PowerShell commands that you need to run are provided in steps 7
+3. While the PowerShell commands that you need to run are provided in steps 7
     and 8, it will be easier to copy these steps into Notepad, perform a
     **Replace** command to replace the custom domain name parameter with your
     actual new domain name, and then copy the commands in Notepad and paste them
@@ -663,16 +663,18 @@ users’ email addresses from \@adatum.com to \@ xxxUPNxxx.xxxCustomDomainxxx.xx
     ‎  
     ‎Therefore, copy the PowerShell commands from **steps 7 and 8** below and
     paste them into Notepad.
-    
+
     **Hint:** To simplify this process, copy all the text for
     steps 7 and 8 and not just the PowerShell commands; that way you can do one
     Copy statement rather than two Copy statements of just the PowerShell
     commands.
 
-4.  Once you have copied steps 7 and 8 into Notepad, select **Edit** on the
+    **Note:** your lab provider may have already updated the PowerShell commands in Steps 7 and 8 with the correct custom domain name so you can simply copy and paste the PowerShell commands.
+
+4. Once you have copied steps 7 and 8 into Notepad, select **Edit** on the
     Notepad menu bar and then select **Replace**.
 
-5.  In the **Replace** window, copy **xxxUPNxxx.xxxCustomDomainxxx.xxx** and
+5. In the **Replace** window, copy **xxxUPNxxx.xxxCustomDomainxxx.xxx** and
     paste it into the **Find what** field. In the **Replace with** field, enter
     the new domain you previously added, select **Replace all**, and then close
     the **Replace** window.  
@@ -681,12 +683,12 @@ users’ email addresses from \@adatum.com to \@ xxxUPNxxx.xxxCustomDomainxxx.xx
     were updated by replacing **xxxUPNxxx.xxxCustomDomainxxx.xxx** with the new
     accepted domain name. Verify you spelled the new domain name correctly.
 
-6.  If **Windows PowerShell** is still open, then select the **Windows
+6. If **Windows PowerShell** is still open, then select the **Windows
     PowerShell** icon on your taskbar; otherwise, you must open and elevated
     instance of **Windows PowerShell** just as you did earlier (remember to
     **Run as administrator)**.
 
-7.  You will now begin the process of copying each of the PowerShell commands
+7. You will now begin the process of copying each of the PowerShell commands
     (from this step through step 8) from Notepad and pasting them one at a time into
     Windows PowerShell and then running them.  
     ‎  
@@ -706,7 +708,7 @@ users’ email addresses from \@adatum.com to \@ xxxUPNxxx.xxxCustomDomainxxx.xx
 
     `Set-ADForest -identity adatum.com -UPNSuffixes @{replace="xxxUPNxxx.xxxCustomDomainxxx.xxx"}`
 
-8.  Copy the following command from Notepad, paste it into PowerShell at the
+8. Copy the following command from Notepad, paste it into PowerShell at the
     command prompt, and then run it.  
     ‎  
     ‎This command changes all existing adatum.com accounts to the new UPN
@@ -714,7 +716,7 @@ users’ email addresses from \@adatum.com to \@ xxxUPNxxx.xxxCustomDomainxxx.xx
     ‎  
     `Get-ADUser -Filter * -Properties SamAccountName | ForEach-Object {Set-ADUser $_ -UserPrincipalName ($_.SamAccountName + "@xxxUPNxxx.xxxCustomDomainxxx.xxx" )}`
 
-9.  Wait for PowerShell to complete the prior command and return to the command
+9. Wait for PowerShell to complete the prior command and return to the command
     prompt, and then close the Windows PowerShell window.
 
 10. Close Notepad (do not save the untitled document).
@@ -732,11 +734,11 @@ Exchange Admin Center. In the prior task, you ran the PowerShell commands in Win
 
 To save you from having to manually type in the commands (which are quite lengthy) into the Exchange Management Shell, you will copy the commands from these instructions and then paste them into Notepad, just as you did in the prior task. You will then use the "Replace" functionality in Notepad to find and replace the custom domain name placeholder in the commands with the actual domain name, and then you will copy and paste each command from Notepad into the Exchange Management Shell.
 
-1.  Switch to **LON-EX1** and, if necessary, log in as the **Administrator**
+1. Switch to **LON-EX1** and, if necessary, log in as the **Administrator**
     with a password of **Pa55w.rd**. If you had to log in and the **Server
     Manager** application automatically opened, then close it now.
 
-2.  In this task, you will enter a series of Exchange-specific PowerShell
+2. In this task, you will enter a series of Exchange-specific PowerShell
     commands through the **Exchange Management Shell**. These commands will
     enable your on-premises Exchange environment for the new
     **xxxUPNxxx.xxxCustomDomainxxx.xxx** accepted domain.  
@@ -752,10 +754,10 @@ To save you from having to manually type in the commands (which are quite length
     of text that can be copy and pasted at one time into a VM. If this occurs
     within your VM environment, you may have to copy and paste steps 5-15 in
     chunks to get all 11 steps copied into Notepad.
-    
+
     **Note: your lab provider may have already updated the PowerShell commands in Steps 5-15 with the correct custom domain name so you can simply copy and paste the PowerShell commands.**
 
-3.  In the prior task, after you copied the two steps into Notepad, you did one
+3. In the prior task, after you copied the two steps into Notepad, you did one
     mass replace on xxxUPNxxx.xxxCustomDomainxxx.xxx. However, in this task, one
     of the commands just references xxxCustomDomainxxx.xxx and not the xxxUPNxxx
     UPN name, so in this task, you should replace each portion of the domain
@@ -764,19 +766,19 @@ To save you from having to manually type in the commands (which are quite length
     ‎After copying the commands from steps 5-15 into Notepad, perform the
     following two (2) **Replace** commands in Notepad:
 
-    -   Replace all instances of **xxxUPNxxx** with the **UPN Name** provided by
+    - Replace all instances of **xxxUPNxxx** with the **UPN Name** provided by
         your lab hosting provider.
 
-    -   Replace all instances of **xxxCustomDomainxxx.xxx** with the accepted
+    - Replace all instances of **xxxCustomDomainxxx.xxx** with the accepted
         domain provided by your lab hosting provider.
 
-    -   **Important:** Review the Notepad document and verify that all instances
+    - **Important:** Review the Notepad document and verify that all instances
         of xxxUPNxxx have been replaced with your UPN Name, and all instances of
         xxxCustomDomainxxxx.xxx have been replaced with your new domain name.
 
-    -   Close the **Replace** window.
+    - Close the **Replace** window.
 
-4.  To open the **Exchange Management Shell**, select the Windows icon on the
+4. To open the **Exchange Management Shell**, select the Windows icon on the
     bottom left corner of the taskbar, and then in the menu select **Microsoft
     Exchange Server 2019** to expand this program group, and then in the group,
     select **Exchange Management Shell**.
@@ -784,7 +786,7 @@ To save you from having to manually type in the commands (which are quite length
     Maximize the **Exchange Management Shell** window once it opens. Wait for
     the command prompt to appear before proceeding.
 
-5.  You will now begin the process of copying each of the PowerShell commands in
+5. You will now begin the process of copying each of the PowerShell commands in
     Notepad and then pasting and running them in the Exchange Management Shell.  
     ‎  
     ‎Select the **Notepad** icon on the taskbar, and in your Notepad document,
@@ -802,31 +804,31 @@ To save you from having to manually type in the commands (which are quite length
     ‎  
     `New-SendConnector -Name "To Internet" -AddressSpaces "*"`
 
-6.  Copy the following command from Notepad, paste it into the Exchange
+6. Copy the following command from Notepad, paste it into the Exchange
     Management Shell at the command prompt, and then run it. This command will
     add the accepted xxxUPNxxx.xxxCustomDomainxxx.xxx domain as a Micro, set it
     as a trusted domain, and assign it the Alias of A.Datum:
 
     `New-AcceptedDomain -DomainName "xxxUPNxxx.xxxCustomDomainxxx.xxx" -DomainType Authoritative -Name "A.Datum"`
 
-7.  Copy the following command from Notepad, paste it into the Exchange
+7. Copy the following command from Notepad, paste it into the Exchange
     Management Shell at the command prompt, and then run it. This command will
     set the default email policy for every user to have its primary email
     address as the accepted domain of xxxUPNxxx.xxxCustomDomainxxx.xxx:
 
     `Set-EmailAddressPolicy -Identity "Default Policy" -EnabledPrimarySMTPAddressTemplate "SMTP:%m@xxxUPNxxx.xxxCustomDomainxxx.xxx"`
 
-8.  Copy the following command from Notepad, paste it into the Exchange
+8. Copy the following command from Notepad, paste it into the Exchange
     Management Shell at the command prompt, and then run it. This command will
     update the default email policy that was just changed in the previous
     command:
 
     `Update-EmailAddressPolicy -Identity "Default Policy"`
 
-9.  Copy the following command from Notepad, paste it into the Exchange
+9. Copy the following command from Notepad, paste it into the Exchange
     Management Shell at the command prompt, and then run it. This command will
     set the internal and external address for the OWA Virtual Directory to
-    https://xxxUPNxxx.xxxCustomDomainxxx.xxx/OWA:
+    <https://xxxUPNxxx.xxxCustomDomainxxx.xxx/OWA>:
 
     `Set-OwaVirtualDirectory -Identity "LON-EX1\OWA (Default Web Site)" -ExternalUrl https://xxxUPNxxx.xxxCustomDomainxxx.xxx/OWA -InternalUrl https://xxxUPNxxx.xxxCustomDomainxxx.xxx/OWA`
     ‎  
@@ -836,21 +838,21 @@ To save you from having to manually type in the commands (which are quite length
 10. Copy the following command from Notepad, paste it into the Exchange
     Management Shell at the command prompt, and then run it. This command will
     set the internal and external address for the ECP Virtual Directory to
-    https://xxxUPNxxx.xxxCustomDomainxxx.xxx/ECP:
+    <https://xxxUPNxxx.xxxCustomDomainxxx.xxx/ECP>:
 
     `Set-EcpVirtualDirectory -Identity "LON-EX1\ECP (Default Web Site)" -ExternalUrl https://xxxUPNxxx.xxxCustomDomainxxx.xxx/ECP -InternalUrl https://xxxUPNxxx.xxxCustomDomainxxx.xxx/ECP`
 
 11. Copy the following command from Notepad, paste it into the Exchange
     Management Shell at the command prompt, and then run it. This command will
     set the internal and external address for the Active Sync Virtual Directory
-    to https://xxxUPNxxx.xxxCustomDomainxxx.xxx/Microsoft-Server-Activesync:
+    to <https://xxxUPNxxx.xxxCustomDomainxxx.xxx/Microsoft-Server-Activesync>:
 
-    `Set-ActivesyncVirtualDirectory -Identity "LON-EX1\Microsoft-Server-ActiveSync (Default Web Site)" -ExternalUrl https://xxxUPNxxx.xxxCustomDomainxxx.xxx/Microsoft-Server-Activesync -InternalUrl https://xxxUPNxxx.xxxCustomDomainxxx.xxx/Microsoft-Server-Activesync`
+    `Set-ActiveSyncVirtualDirectory -Identity "LON-EX1\Microsoft-Server-ActiveSync (Default Web Site)" -ExternalUrl https://xxxUPNxxx.xxxCustomDomainxxx.xxx/Microsoft-Server-Activesync -InternalUrl https://xxxUPNxxx.xxxCustomDomainxxx.xxx/Microsoft-Server-Activesync`
 
 12. Copy the following command from Notepad, paste it into the Exchange
     Management Shell at the command prompt, and then run it. This command will
     set the internal and external address for the Web Services Virtual Directory
-    to https://xxxUPNxxx.xxxCustomDomainxxx.xxx/ews/exchange.asmx:
+    to <https://xxxUPNxxx.xxxCustomDomainxxx.xxx/ews/exchange.asmx>:
 
     `Set-WebServicesVirtualDirectory -Identity "LON-EX1\EWS (Default Web Site)" -ExternalUrl https://xxxUPNxxx.xxxCustomDomainxxx.xxx/ews/exchange.asmx -InternalUrl https://xxxUPNxxx.xxxCustomDomainxxx.xxx/ews/exchange.asmx`
     ‎  
@@ -859,7 +861,7 @@ To save you from having to manually type in the commands (which are quite length
 13. Copy the following command from Notepad, paste it into the Exchange
     Management Shell at the command prompt, and then run it. This command will
     set the internal and external address for the OAB Virtual Directory to
-    https://xxxUPNxxx.xxxCustomDomainxxx.xxx /OAB:
+    <https://xxxUPNxxx.xxxCustomDomainxxx.xxx> /OAB:
 
     `Set-OabVirtualDirectory -Identity "LON-EX1\OAB (Default Web Site)" -ExternalUrl https://xxxUPNxxx.xxxCustomDomainxxx.xxx/OAB -InternalUrl https://xxxUPNxxx.xxxCustomDomainxxx.xxx/OAB`
 
@@ -945,20 +947,20 @@ installation wizard to enable and configure directory synchronization. This will
 perform a full synchronization that migrates all of Adatum’s on-premises user
 accounts to the new accepted domain in Microsoft 365.
 
-1.  Switch to **LON-DC1** and, if necessary, log in as the **Administrator**
+1. Switch to **LON-DC1** and, if necessary, log in as the **Administrator**
     with a password of **Pa55w.rd**.
 
-2.  In your Edge browser session, the **Microsoft Office Home** tab and the
+2. In your Edge browser session, the **Microsoft Office Home** tab and the
     **Microsoft 365 admin center** tab should still be open; if not, then
     navigate to them now.  
     ‎  
     ‎Select the **Microsoft 365 admin center** tab, which should be displaying
     the **Domains** page.
 
-3.  In the **Microsoft 365 admin center**, in the left-hand navigation pane,
+3. In the **Microsoft 365 admin center**, in the left-hand navigation pane,
     select **Users**, and then select **Active users**.
 
-4.  You are now going to navigate to the **Microsoft Download Center** to
+4. You are now going to navigate to the **Microsoft Download Center** to
     download the **Azure AD Connect** tool.  
     ‎  
     ‎In the **Active users** window, on the menu bar, select the **ellipsis (More
@@ -974,20 +976,20 @@ accounts to the new accepted domain in Microsoft 365.
     navigate directly to the **Azure AD Connect** page in the **Microsoft
     Download Center** by opening a new tab in your Edge browser and entering the
     following URL in the address bar (if you navigate directly to this URL, you
-    can skip the next step): **https://www.microsoft.com/en-us/download/details.aspx?id=47594**
+    can skip the next step): **<https://www.microsoft.com/en-us/download/details.aspx?id=47594>**
 
-5.  In the **Azure Active Directory preparation** window, select **Go to the
+5. In the **Azure Active Directory preparation** window, select **Go to the
     Download center to get the Azure AD Connect tool**. This opens a new tab in
     your browser and takes you to the Microsoft Download Center.
 
-6.  In the **Microsoft Download Center**, scroll down to the **Microsoft Azure
+6. In the **Microsoft Download Center**, scroll down to the **Microsoft Azure
     Active Directory Connect** section and select the **Download** button.
 
-7.  The notification bar at the bottom of the
+7. The notification bar at the top of the
     page will display the status of the download operation. Once the download is complete, select **Open file** that appears below the **AzureADConnect.msi**
     file.
 
-8.  This initiates the installation of the **Microsoft Azure Active Directory
+8. This initiates the installation of the **Microsoft Azure Active Directory
     Connect Tool**.
 
     **Note:** After the wizard begins, the **Microsoft Azure AD Connect Tool**
@@ -998,7 +1000,7 @@ accounts to the new accepted domain in Microsoft 365.
     the **I agree to the license terms and privacy notice** check box and then
     select **Continue**.
 
-9.  On the **Express Settings** page, read the instruction regarding a single
+9. On the **Express Settings** page, read the instruction regarding a single
     Windows Server AD forest (which is the scenario in your VM lab environment)
     and then select **Use express settings**.
 
@@ -1033,7 +1035,7 @@ accounts to the new accepted domain in Microsoft 365.
 
 14. The installation will usually take 5 to 10 minutes to complete. On the
     **Configuration complete** window, verify you receive a message at the top
-    of the window indicating **Azure AD Connect configuration succeeded.**
+    of the window indicating **Azure AD Connect configuration succeeded. The synchronization process has been initiated**.
     Ignore the warning indicating the Active Directory Recycle Bin is not
     enabled for your forest. This recycle bin will not be needed for the
     purposes of this VM lab environment.  
@@ -1060,10 +1062,10 @@ accounts to the new accepted domain in Microsoft 365.
 19. In the bottom portion of the screen, a detail pane appears showing the
     detailed information for this operation that you just selected.
 
-    -   In the **Export Statistics** section, note the number of users that were
+    - In the **Export Statistics** section, note the number of users that were
         added and the number that were updated.
 
-    -   In the **Export Errors** section on the right, note the two errors that
+    - In the **Export Errors** section on the right, note the two errors that
         appear. Select the link for the first error that appears under the
         **Export Errors** column.
 
@@ -1072,22 +1074,22 @@ accounts to the new accepted domain in Microsoft 365.
         second error, which is an “add user” error for user **An Dung Dao**.
         Review this error and then close the window.
 
-    -   So why did synchronization fail for these two users? 
-        
+    - So why did synchronization fail for these two users?
+
         To find out, select the **DataValidationFailed** link for the first error (under the **2 Error(s)** column). In the window that appears, select the **Detail** button. The **Error Information** window that appears indicates Ngoc Bich Tran's on-premises user account has an invalid UPN, which in
         turn caused a UPN validation error during the synchronization process;
         therefore, Ngoc's on-premises user account was not synchronized to Microsoft 365 by the Azure AD Connect
-        tool. Select **Close** to close this window, and then select **Close** to close the Error Information window. 
-        
-        If you select the **DataValidationFailed** link for the second error and then select the **Detail** button, you will note that An Dung Dao experienced the same UPN validation error. 
+        tool. Select **Close** to close this window, and then select **Close** to close the Error Information window.
 
-    -   **IMPORTANT:** Because a synchronization had not been performed prior to
+        If you select the **DataValidationFailed** link for the second error and then select the **Detail** button, you will note that An Dung Dao experienced the same UPN validation error.
+
+    - **IMPORTANT:** Because a synchronization had not been performed prior to
         this, the initial synchronization was a **Full Synchronization** (see
         the **Profile Name** column in the **Connector Operations** pane at the
         top of the page). Because the synchronization process will continue to
         run automatically every 30 minutes, any subsequent synchronizations will
-        display **Delta Synchronization** as its **Profile Name**. 
-        
+        display **Delta Synchronization** as its **Profile Name**.
+
         If you leave the **Synchronization Service Manager** window open, after 30 minutes
         you will see that it attempts to synchronize the two users who were not
         synchronized during the initial synchronization. This operation will display as a
@@ -1108,8 +1110,8 @@ accounts to the new accepted domain in Microsoft 365.
 
 22. On the **Active users** page, note that all the existing Microsoft 365 user
     accounts are the predefined users that were created in your tenant by your
-    lab hosting provider. 
-    
+    lab hosting provider.
+
     Select **Refresh** on the menu bar to see all
     the on-premises user accounts that were migrated to the new accepted domain
     in Microsoft 365.  
@@ -1161,4 +1163,4 @@ accounts to the new accepted domain in Microsoft 365.
 26. Leave your Edge browser and all tabs open as it will be used in the next
     lab.
 
-# Proceed to Lab 7 - Exercise 2
+## Proceed to Lab 7 - Exercise 2
