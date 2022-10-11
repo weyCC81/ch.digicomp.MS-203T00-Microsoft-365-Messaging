@@ -69,10 +69,10 @@ checks for sensitive information in emails sent from inside the organization.
     **Exchange**.
 
 11. In the **Exchange admin center**, in the left-hand navigation
-    pane, under **Mail flow**, slect the **rules** tab. Stay in this
+    pane, under **Mail flow**, select the **rules** tab. Stay in this
     tab.
 
-     >[!Alert]  As of October 2022, the new modernized Rules page is still being rolled out. If after you select into the **Rules** tab you see an information flash stating **The Rules page will be updated to a new modernized version soon..** select **Try it now** to switch to the new experiance.
+     >[!Alert]  As of October 2022, the new modernized Rules page is still being rolled out. If after you select into the **Rules** tab you see an information flash stating **The Rules page will be updated to a new modernized version soon..** select **Try it now** to switch to the new experience.
 
 12. The first mail flow rule that you create will check for emails sent from
     inside the organization that have sensitive words in the email subject line
@@ -82,7 +82,7 @@ checks for sensitive information in emails sent from inside the organization.
 13. In the **New Transport rule** wizard that appears, under **Set rule conditions** enter **Sensitive material** in the
     **Name** field.
 
-14. At the bottum of the **Set rule conditions** page, select the hyperlink for **Show all rule conditions.**  
+14. At the bottom of the **Set rule conditions** page, select the hyperlink for **Show all rule conditions.**  
 
 15. In the **Set the rule if** drop down menu, select **The subject or body**.
 
@@ -184,7 +184,7 @@ This task will create the first rule; the next task will create the second rule.
 4. In the **New Transport rule** wizard that appears, under **Set rule conditions** enter **Attachments could not be scanned** in the
     **Name** field.
 
-5. At the bottum of the **Set rule conditions** page, select the hyperlink for **Show all rule conditions.**
+5. At the bottom of the **Set rule conditions** page, select the hyperlink for **Show all rule conditions.**
 
 6. Select drop-down arrow in the **Set the rule if** field. In the menu
     that appears, select **Any attachment**.
@@ -259,7 +259,7 @@ Boolean OR fashion.
 4. In the **New Transport rule** wizard that appears, under **Set rule conditions** enter **Attachment scanning did not complete** in the
     **Name** field.
 
-5. At the bottum of the **Set rule conditions** page, select the hyperlink for **Show all rule conditions.**
+5. At the bottom of the **Set rule conditions** page, select the hyperlink for **Show all rule conditions.**
 
 6. Select drop-down arrow in the **Set the rule if** field. In the menu
     that appears, select **Any attachment**.
@@ -340,7 +340,7 @@ address this issue by creating a mail flow rule that restricts email size.
 4. In the **New Transport rule** wizard that appears, enter **Email size restriction** in the
     **Name** field.
 
-5. Notice the two fields under **Set the rule if** are already populated with **The message** and **Size is greater than or equal to** by default. These are the correct settings for the purpose of this excersise, however if they are not pre-populated please set them accordingly.
+5. Notice the two fields under **Set the rule if** are already populated with **The message** and **Size is greater than or equal to** by default. These are the correct settings for the purpose of this exercise, however if they are not pre-populated please set them accordingly.
 
 6. Underneath the **Set the rule if** conditions, select **Enter text.**
 
