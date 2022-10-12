@@ -11,7 +11,7 @@ Exchange Server deployment as well as its new Microsoft 365 deployment. In this 
 **xxxxxZZZZZZ.onmicrosoft.com** domain (where xxxxxZZZZZZ is the tenant prefix
 provided by your lab hosting provider).
 
-## Task 1 - Create Recipient mailboxes (on-premises)
+## Task 1 - Create On-Premises Recipient Mailboxes
 
 In this task, you will create several recipient
 mailboxes in the on-premises Exchange admin center (EAC) on the Exchange Server
