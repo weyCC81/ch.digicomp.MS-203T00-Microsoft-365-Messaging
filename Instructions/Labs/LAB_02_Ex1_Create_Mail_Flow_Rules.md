@@ -72,8 +72,6 @@ checks for sensitive information in emails sent from inside the organization.
     pane, under **Mail flow**, select the **rules** tab. Stay in this
     tab.
 
-     >[!Alert]  As of October 2022, the new modernized Rules page is still being rolled out. If after you select into the **Rules** tab you see an information flash stating **The Rules page will be updated to a new modernized version soon..** select **Try it now** to switch to the new experience.
-
 12. The first mail flow rule that you create will check for emails sent from
     inside the organization that have sensitive words in the email subject line
     or body. Select the **+ Add a rule** icon in the menu bar, and in the
