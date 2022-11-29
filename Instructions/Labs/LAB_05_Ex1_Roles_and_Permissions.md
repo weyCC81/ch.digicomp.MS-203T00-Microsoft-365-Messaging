@@ -79,7 +79,7 @@ then assign two specific administrators to this role.
 
     Select **Next** to proceed.
 
-13. Under **Add permissions**section, either scroll or search for the following roles and select them:
+13. Under **Add permissions** section, either scroll or search for the following roles and select them:
 
     - **ApplicationImpersonation**
 
