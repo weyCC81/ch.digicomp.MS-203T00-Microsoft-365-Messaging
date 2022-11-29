@@ -39,7 +39,7 @@ mailboxes in the on-premises Exchange admin center (EAC) on the Exchange Server
     On the **mailboxes** tab, select the **plus (+) sign** icon and in the
     drop-down menu that appears, select **User mailbox.**
 
-6. In the **new user mailbox** window, enter **hollyD** in the **Alias** field.
+6. In the **new user mailbox** window, enter **HollyD** in the **Alias** field.
 
 7. Select the **New User** option.
 
@@ -88,7 +88,7 @@ Dickson, you are still logged into Microsoft 365 as the MOD Administrator
 account. Holly will create this user account for herself, and she will assign
 herself the Exchange Admin role. You will perform this task in the LON-CL1 VM.
 
-1. Switch to LON-CL1 were you should still be logged into as the **Administrator** account
+1. Switch to **LON-CL1** were you should still be logged into as the **Administrator** account
     with a password of **Pa55w.rd**; however, if the log-in screen appears, then
     log in now.
 
