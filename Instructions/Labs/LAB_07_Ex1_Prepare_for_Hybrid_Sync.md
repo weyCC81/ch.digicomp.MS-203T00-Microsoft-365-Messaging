@@ -186,7 +186,7 @@ locate the UPN name.
 
 5. Switch to **LON-EX1**
 
-6. Open **PowerShell** as and Administrator and run the following command:
+6. Open **PowerShell** as an Administrator and run the following command:
 
      `dnscmd /zoneadd xxxUPNxxx.xxxCustomDomainxxx.xxx /Secondary 10.0.0.4`
 
@@ -275,7 +275,7 @@ locate the UPN name.
 
 23. Tick the option **Only to the following servers** and click **Edit.**
 
-24. In the **IP Address** enter **10.0.0.6** and click **OK**, **Apply** and then **OK** again4.
+24. In the **IP Address** enter **10.0.0.6** and click **OK**, **Apply** and then **OK** again.
 
 25. Right-click on this **xxxUPNxxx.xxxCustomDomainxxx.xxx** zone, and in the
     menu that appears, select **Other New Records...**
@@ -302,7 +302,7 @@ locate the UPN name.
 
 30. Switch back to **LON-EX1** and from **Server Manager** open **DNS**.
 
-31. Expand **Forward Lookup Zones** and click your **Custom Domain, xxxUPNxxx.xxxCustomDomainxxx.xxx** to verify the TXT file has has transferred from **LON-DC1**.
+31. Expand **Forward Lookup Zones** and click your **Custom Domain, xxxUPNxxx.xxxCustomDomainxxx.xxx** to verify the TXT file has transferred from **LON-DC1**.
 
     > Note: It may take several minutes for the record to appear.  You can refresh and reload the zone to force it to update.  Wait until the TXT file appears before proceeding. It may be helpful to close and open **DNS Manager**, and if several minutes have passed you can Right-click on the **xxxUPNxxx.xxxCustomDomainxxx.xxx** zone, and in the
     menu that appears, select **Transfer from master**.
