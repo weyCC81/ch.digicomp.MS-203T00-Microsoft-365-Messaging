@@ -72,7 +72,7 @@ You should write down the following information (provided by your instructor) fo
 
 Adatum has Microsoft Exchange Server 2019 installed on the Exchange Server VM (LON-EX1). In this task, you will use the Exchange admin center for Exchange Server 2019 to create a custom receive connector for Adatum's on-premises Exchange deployment.
 
-1. Switch to the Exchange Server VM (LON-EX1) and log on as Adatum’s **Administrator** account with a password of **Pa55w.rd**.
+1. Switch to the **Exchange Server VM (LON-EX1)** and log on as Adatum’s **Administrator** account with a password of **Pa55w.rd**.
 
 2. After logging in, the **Server Manager** application will automatically open. Select the **X** in the upper-right corner of the screen to close it.
 
