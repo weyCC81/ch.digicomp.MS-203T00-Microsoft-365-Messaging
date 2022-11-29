@@ -82,7 +82,7 @@ checks for sensitive information in emails sent from inside the organization.
 
 14. At the bottom of the **Set rule conditions** page, select the hyperlink for **Show all rule conditions.**  
 
-15. In the **Set the rule if** drop down menu, select **The subject or body**.
+15. In the **Apply this rule if** drop down menu, select **The subject or body**.
 
      A new drop down menu will be displayed on the right. From this drop down, select **Subject or body includes any of these words.**
 
@@ -92,7 +92,7 @@ checks for sensitive information in emails sent from inside the organization.
 
 18. The three words should display below the text field. Once completed, select **Save**.
 
-19. This brings you back to the **Set rule conditions** window. To the right of the **subject or body includes any of...** field, select the (**+**) button.
+19. This brings you back to the **Set rule conditions** window. To the right of the **subject or body includes any of...** field, select the **(+)** button.
 
 20. This creates a Boolean **And** condition. In the drop down menu below **And**, select **The
     sender**. In the new drop down menu that appears to the right, select **is external/internal**.
@@ -103,7 +103,7 @@ checks for sensitive information in emails sent from inside the organization.
 22. In the **Do the following** drop down menu, select **Redirect the message to** and in the drop down menu that appears on the right, select
     **hosted quarantine.**
 
-23. Select the (**+**) button to add another action.
+23. Select the **(+)** button to add another action.
 
 24. In the drop-down menu under the second action field that appears, select **Apply a disclaimer to the message** and in the drop down menu that
     appears on the right, select **append a disclaimer.**
@@ -184,10 +184,10 @@ This task will create the first rule; the next task will create the second rule.
 
 5. At the bottom of the **Set rule conditions** page, select the hyperlink for **Show all rule conditions.**
 
-6. Select drop-down arrow in the **Set the rule if** field. In the menu
+6. Select drop-down arrow in the **Apply this rule if** field. In the menu
     that appears, select **Any attachment**.
 
-7. In the the new drop-down menu that appears to the right of
+7. In the new drop-down menu that appears to the right of
     **Set the rule if**, select **content can’t be inspected.**
 
 8. In the drop-down menu under **Do the following**, select **Redirect the message to** and in the drop down menu that appears on the right, select
@@ -259,11 +259,11 @@ Boolean OR fashion.
 
 5. At the bottom of the **Set rule conditions** page, select the hyperlink for **Show all rule conditions.**
 
-6. Select drop-down arrow in the **Set the rule if** field. In the menu
+6. Select drop-down arrow in the **Apply this rule if** field. In the menu
     that appears, select **Any attachment**.
 
-7. In the the new drop-down menu that appears to the right of
-    **Set the rule if**, select **didn't complete scanning.**
+7. In the new drop-down menu that appears to the right of
+    **Apply this rule if**, select **didn't complete scanning.**
 
 8. In the drop-down menu under **Do the following**, select **Redirect the message to** and in the drop down menu that appears on the right, select
     **hosted quarantine.**
@@ -338,9 +338,9 @@ address this issue by creating a mail flow rule that restricts email size.
 4. In the **New Transport rule** wizard that appears, enter **Email size restriction** in the
     **Name** field.
 
-5. Notice the two fields under **Set the rule if** are already populated with **The message** and **Size is greater than or equal to** by default. These are the correct settings for the purpose of this exercise, however if they are not pre-populated please set them accordingly.
+5. Notice the two fields under **Apply this rule if** are already populated with **The message** and **Size is greater than or equal to** by default. These are the correct settings for the purpose of this exercise, however if they are not pre-populated please set them accordingly.
 
-6. Underneath the **Set the rule if** conditions, select **Enter text.**
+6. Underneath the **Apply this rule if** conditions, select **Enter text.**
 
 7. In the **specify size (kb)** window that appears, enter the text: **1024** and then select **Save**
 
