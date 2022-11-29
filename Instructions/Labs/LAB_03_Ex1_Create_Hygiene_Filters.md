@@ -171,7 +171,7 @@ the blocked IP address will always be blocked.
 
 1. You should still be logged into Microsoft 365 as the MOD Administrator after completing the prior task. Your Edge browser should still be in the **Microsoft 365 Defender** portal on the **Policies & rules > Threat policies > Anti-malware** window.
 
-2. In the the **Policies & rules > Threat policies > Anti-malware** thread at the top of the page, select **Threat policies**.
+2. In the **Policies & rules > Threat policies > Anti-malware** thread at the top of the page, select **Threat policies**.
 
 3. In the **Threat policies** window, under the **Policies** section, select
     **Anti-spam**.
