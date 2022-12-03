@@ -238,7 +238,7 @@ Planner, and PowerBI, all of which allows teams to seamlessly work together.
 16. You’re now ready to add members to the Sales group. In the list of **Active teams & groups**, select the **Sales** group.
 
 17. In the **Sales** pane that appears, the **General** tab is displayed by
-    default. Select the **Members** tab.
+    default. Select the **Membership** tab.
 
 18. Under the **Owners** section, you can see the two owners (Allan and Patti).
 
