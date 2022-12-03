@@ -113,7 +113,7 @@ in the New EAC.
     **Outlook on the web** for the MOD Administrator’s account.
 
 4. You will begin by sending an email to Alex Wilber. In the upper left corner
-    of the screen, select **New message**.
+    of the screen, select **New mail**.
 
 5. In the message pane that appears on the right-side of the screen, enter the
     following information:
@@ -125,7 +125,7 @@ in the New EAC.
 
     - Message area: **This message will be used to test the message trace tool
         located in the new Exchange admin center when you search for the words
-        confidential, sensitive, and secret in emails.**  
+        confidential, sensitive and secret in emails.**  
 
         **Important:** In a later task, you will search for emails that include
         the words Confidential, Sensitive, and Secret. Therefore, enter (or copy
@@ -396,7 +396,7 @@ previously created.
     In this task, you will publish a specific label; therefore, in the list of
     labels, check the **30-day delete** label that you just created and then select **Publish labels.**
 
-3. This will initiate the **Publish labels so users can apply them to their account**
+3. This will initiate the **Publish labels so users can apply them to their content**
     wizard that walks you through the steps of publishing a label.
 
 4. On the **Choose a label to publish** page, select **Next**.
