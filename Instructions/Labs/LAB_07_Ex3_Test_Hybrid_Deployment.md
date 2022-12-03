@@ -236,17 +236,17 @@ data secure.
 
     **IMPORTANT:** If this step fails, ensure that you entered the details correctly on step #12. If you continue to fail, by default a migration endpoint named **Hybrid Migration Endpoint - EWS (Default Web Site)** should already exist. Instead of creating the Endpoint Manually, you can go back to step #11 and select this Migration Endpoint and skip to step #15.
 
-15. On the **Add user mailboxes** page, select **Manually add users to migrate** and search for **Allan@xxxUPNxxx.xxxCustomDomainxxx.xxx** (where xxxUPNxxx is the           unique UPN Name and xxxCustomDomainxxx.xxx is the custom domain name, both of which were provided by your lab hosting provider), Once Allan's mailbox is added select next.
+15. On the **Add user mailboxes** page, select **Manually add users to migrate** and search for **Allan@xxxUPNxxx.xxxCustomDomainxxx.xxx** (where xxxUPNxxx is the           unique UPN Name and xxxCustomDomainxxx.xxx is the custom domain name, both of which were provided by your lab hosting provider), Once Allan's mailbox is added select **Next**.
 
-16. On the **Move configuration** page, under the **Target delivery domain** there should only be one option to choose from, select **xxxxxZZZZZZ.mail.onmicrosoft.com**     (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider), and select Next.
+16. On the **Move configuration** page, under the **Target delivery domain** there should only be one option to choose from, select **xxxxxZZZZZZ.mail.onmicrosoft.com**     (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider), and select **Next**.
 
 17. On the **schedule batch migration** page, choose  **Automatically start the batch** and **Automatically complete the migration batch**.
 
-    The default admin account populated in the first field can be left for sending reports to. Once finished select save.
+    The default admin account populated in the first field can be left for sending reports to. Once finished select **Save**.
 
     In the real world, you would rarely be migrating a users mailbox during business hours. However, for the purposes of this lab we want to start and finish this migration immediately. On this page, you would be able set delayed starts and completions for your batch migration to match business needs.
 
-18. on the **status** page, wait until you see **batch creation successful!**, then select done.
+18. On the **status** page, wait until you see **batch creation successful!**, then select **Done**.
 
 19. After selecting done, you will be brought back to the **Migration batches** page within the **Exchange admin center** where you can monitor the status of the of the migration. The Status column will begin by displaying Syncing, and eventually it will change to Completed.
 
