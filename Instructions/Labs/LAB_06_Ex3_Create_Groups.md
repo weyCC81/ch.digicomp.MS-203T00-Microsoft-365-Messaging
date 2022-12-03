@@ -84,7 +84,7 @@ on-premises Exchange Server 2019 environment, she wants to add a distribution
 group in Microsoft 365. To avoid any confusion, Holly will switch to LON-CL1 to
 access the Exchange admin center for Exchange Online.
 
-1. Switch to LON-CL1 and if necessary, log in as the **Administrator** with a
+1. Switch to **LON-CL1** and if necessary, log in as the **Administrator** with a
     password of **Pa55w.rd.**
 
 2. In the Edge browser, you should still have the following tabs open from the
@@ -110,7 +110,7 @@ access the Exchange admin center for Exchange Online.
 
 9. Under **Add Members**, do not add any members yet, you will do this in a later step. Instead, select **Next**.
 
-10. Under **Edit settings**, type **Marketing** in the **Group email address field**.
+10. Under **Edit settings**, type **Marketing** in the **Group email address** field.
 
 11. This will be a closed group, so select the **Closed** option for both the **Joining the group** setting and **Leaving the group** setting. Then select **Next**.
 
@@ -219,7 +219,7 @@ Planner, and PowerBI, all of which allows teams to seamlessly work together.
     select **Back** and fix anything that needs correction (or select **Edit**
     under the specific area that needs adjustment).
 
-14. On the **New group created** page, note the comment at the top of the page
+14. On the **Sales group created** page, note the comment at the top of the page
     that it may take 5 minutes for the new group to appear in the list of
     groups.
 
