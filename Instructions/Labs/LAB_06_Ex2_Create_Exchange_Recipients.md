@@ -28,7 +28,7 @@ mailboxes in the on-premises Exchange admin center (EAC) on the Exchange Server
 
 3. This will open the **Edge** browser, which will display the sign-in page for
     the **Exchange admin center**. Sign into the EAC as
-    **adatum\\Administrator** and password **Pa55w.rd.**
+    **adatum\\Administrator** and password **Pa55w.rd**.
 
 4. In the **Exchange admin center**, in the left-hand navigation pane, select
     **recipients** if necessary (it should be selected by default).
