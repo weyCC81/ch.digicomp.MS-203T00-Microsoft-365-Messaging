@@ -63,6 +63,8 @@ Exchange Online. Running the HCW will create Adatum’s hybrid deployment.
 
     Select the first **configure** button to configure Adatum’s hybrid
     deployment.
+    
+    **Note:** as of December 2022, the first **configure** button may not be opening the installation file for the Hybrid Configuration Wizard (HCW). If you experiance this behavior, please navigate to **<https://aka.ms/hybridwizard>** and then proceed with steps 9+. 
 
 9. A new tab will open in your Edge browser, and in the **Open this file?**
     window that appears at the top of the page, select **Open**.
