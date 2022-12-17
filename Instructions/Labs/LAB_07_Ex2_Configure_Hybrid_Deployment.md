@@ -529,7 +529,7 @@ will fail.**
 16. On the **Security restrictions** page, accept the default settings (if necessary, select them):
 
     - Below the **Issued by a trusted certificate authority (CA)** option,
-        select the **And the subject name or subject alternative name (SAN)
+        select the **Add the subject name or subject alternative name (SAN)
         matches this domain name** check box, and then enter \***.
         xxxCustomDomainxxx.xxx** (where xxxCustomDomainxxx.xxx is your accepted
         domain name) in the domain name field that appears below this check box,
