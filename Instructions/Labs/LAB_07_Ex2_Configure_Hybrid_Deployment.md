@@ -307,7 +307,13 @@ for future tasks in this exercise.
 
 18. In the **xxxUPNxxx.xxxCustomDomainxxx.xxx** pane that opens, under the **This accepted domain is:** setting, select the **Internal relay** option, select
     **Save**, and then close the pane.
-
+    
+    **Important:** If you recieve the warning message **"Failed to update the accepted domain"** and an error stating **"Error executing cmdlet"**, connect to the Exchange Online Management Powershell Module and run the following CMDLET:
+    
+    `Get-AcceptedDomain -Identity "xxxUPNxxx.xxxCustomDomainxxx.xxx" | Set-AcceptedDomain -DomainType InternalRelay1`
+    
+    (where xxxUPNxxx is your unique UPN name assigned to your tenant by your lab hosting provider and xxxCustomDomainxxx.xxx is your lab hosting provider’s custom      domain)
+    
 19. in the **mail flow** expanded group, select **Connectors**.  
 
     **Note:** There are several differences between the on-premises EAC and the
