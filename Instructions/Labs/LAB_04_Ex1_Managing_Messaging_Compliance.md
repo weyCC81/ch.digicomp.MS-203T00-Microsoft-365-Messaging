@@ -580,7 +580,7 @@ since you completed Task 1 and then perform this task again.
 
 38. In the **Confidential Search** pane, select **Review sample**.
 
-    Because Nestor was not assigned the eDiscovery Manager role, he is unable to view the search results. Therefore, you will be prompted with an error stating: **You can't preview search results because you're note assigned the Preview role. If you're a member of the Organization Management role group, you can go to the Permissions page and add yourself as a member of the eDiscovery Manager role group. Otherwise, contact your admin.**
+    Because Nestor is not assigned to the eDiscovery Management role group, He is unable to view the search results and no messages will load. This is because the eDiscovery roles aren't assigned by default to the Organization Management role group, therefore it’s not a part of the Global admin role which nestor has been assigned. For more information on what permissions are available for eDiscovery as part of the Organization Management role group, see [RBAC roles related to eDiscovery]( https://learn.microsoft.com/microsoft-365/compliance/ediscovery-assign-permissions?view=o365-worldwide#rbac-roles-related-to-ediscovery?azure-portal=true).
 
     Select **OK** and then select **Close** to exit out of the **Confidential search** pane.
 
