@@ -123,7 +123,7 @@ Therefore, when you create the malware policy later in this task and you attempt
         administrator** in the drop-down menu.
 
     2. Maximize your PowerShell window. In Windows PowerShell, at the command
-        prompt, type the following command and press Enter:
+        prompt, type the following command and press **Enter**:
 
         `Install-Module -name ExchangeOnlineManagement`
 
@@ -131,7 +131,7 @@ Therefore, when you create the malware policy later in this task and you attempt
     an untrusted repository (PSGallery), enter **A** to select **[A] Yes to
     All.**
 
-    4. At the command prompt, type the following command and press Enter:
+    4. At the command prompt, type the following command and press **Enter**:
 
         `Connect-ExchangeOnline`
 
@@ -143,7 +143,7 @@ Therefore, when you create the malware policy later in this task and you attempt
     provided by your learning provider, and then select **Sign in**. It may take
     a moment to sign in before it returns a command prompt.
 
-    7. At the command prompt, type the following command and press Enter:
+    7. At the command prompt, type the following command and press **Enter**:
 
         `Enable-OrganizationCustomization`
 
