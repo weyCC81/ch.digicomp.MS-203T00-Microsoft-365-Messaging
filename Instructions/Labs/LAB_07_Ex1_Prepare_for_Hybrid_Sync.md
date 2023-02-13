@@ -796,7 +796,7 @@ To save you from having to manually type in the commands (which are quite length
     right-click on it, and select **Copy**, paste it into the Exchange
     Management Shell at the command prompt (right click on the command prompt
     and select **Paste;** Note – in some VM environments, just right-clicking at
-    the command prompt will paste in the copied command), and then press Enter
+    the command prompt will paste in the copied command), and then press **Enter**
     on your keyboard.  
     ‎  
     ‎This command will add a new send connector with a wildcard (asterisk) to
