@@ -24,7 +24,7 @@ multiple roles to it. In this task, you will create an admin role that allows an
 administrator to remotely access a mailbox without having the password. You will
 then assign two specific administrators to this role.
 
-1. Switch to the LON-CL1 VM and if necessary, log in as the **Administrator**
+1. Switch to the **LON-CL1** VM and if necessary, log in as the **Administrator**
     with a password of **Pa55w.rd**.
 
 2. The Microsoft Edge browser may still be open from Lab 4 where you were
@@ -103,7 +103,7 @@ then assign two specific administrators to this role.
 
 19. Next we will use Exchange PowerShell to add a 3rd role to the RoleGroup we just created. While still on LON-CL1, open an elevated instance of **Windows PowerShell**. Select the magnifying glass (Search) icon on the taskbar at the bottom of the screen ad type **powershell** in the Search box that appears. In the list of search results, right-click on **Windows PowerShell** (do NOT select Windows PowerShell ISE) and select **Run as administrator** in the drop-down menu.
 
-20. Maximize your PowerShell window. In Windows PowerShell, at the command prompt, type the following command and press Enter:
+20. Maximize your PowerShell window. In Windows PowerShell, at the command prompt, type the following command and press **Enter**:
 
     `Connect-ExchangeOnline`
 
@@ -115,11 +115,11 @@ then assign two specific administrators to this role.
     provided by your learning provider, and then select **Sign in**. It may take
     a moment to sign in before it returns a command prompt.
 
-23. You will now add the Role **UserApplication** to the **Application Impersonation** RoleGroup. At the command prompt, type the following command and press Enter:
+23. You will now add the Role **UserApplication** to the **Application Impersonation** RoleGroup. At the command prompt, type the following command and press **Enter**:
 
     `New-ManagementRoleAssignment -SecurityGroup "Application Impersonation" -Role UserApplication`
 
-24. To verify the new role was added successfully, type the following command and press enter:
+24. To verify the new role was added successfully, type the following command and press **Enter**:
 
     `Get-RoleGroup "Application Impersonation" | FL`
 
