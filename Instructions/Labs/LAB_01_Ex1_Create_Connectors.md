@@ -20,7 +20,7 @@ In your lab environment, your lab hosting provider has already:
    at the bottom of the screen ad type **powershell** in the Search box that appears. In the list of search results, right-click on **Windows
    PowerShell** (do NOT select Windows PowerShell ISE) and select **Run as administrator** in the drop-down menu.
 
-3. Maximize your PowerShell window. In Windows PowerShell, at the command prompt, type the following command and press Enter:
+3. Maximize your PowerShell window. In Windows PowerShell, at the command prompt, type the following command and press **Enter**:
 
       `Install-Module -Name ExchangeOnlineManagement`
 
@@ -29,7 +29,7 @@ In your lab environment, your lab hosting provider has already:
 5. If you are prompted to confirm whether you want to install the module from an untrusted repository (PSGallery), enter **A** to select **[A] Yes to
     All.**
 
-6. At the command prompt, type the following command and press Enter:
+6. At the command prompt, type the following command and press **Enter**:
 
      `Connect-ExchangeOnline`
 
@@ -39,7 +39,7 @@ In your lab environment, your lab hosting provider has already:
 8. In the **Enter password** window, enter the password for this admin account provided by your learning provider, and then select **Sign in**. It may take
     a moment to sign in before it returns a command prompt.
 
-9. At the command prompt, type the following command and press Enter:
+9. At the command prompt, type the following command and press **Enter**:
 
       `get-mailbox`
 
@@ -86,7 +86,7 @@ Adatum has Microsoft Exchange Server 2019 installed on the Exchange Server VM (L
 
      Select **Continue to localhost (unsafe)**.
 
-5. In the **Exchange Admin Center** log-in page, enter **adatum\Administrator** in the **Domain\user name** field and **Pa55w.rd** in the **Password** field, and then select **sign in**.
+5. In the **Exchange Admin Center** log-in page, enter **adatum\Administrator** in the **Domain\user name** field and **Pa55w.rd** in the **Password** field, and then select **Sign in**.
 
 6. In the **Exchange admin center**, in the left-hand navigation pane, select **mail flow.**
 
