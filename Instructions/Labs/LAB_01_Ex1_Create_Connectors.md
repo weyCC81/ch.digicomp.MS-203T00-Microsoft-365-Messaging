@@ -6,6 +6,11 @@ Throughout the labs in this course, you will take on the persona of Holly Dickso
 
 Your instructor will provide guidance on how to obtain your Microsoft 365 credentials in your lab-hosted environment. You will use these credentials throughout the remaining labs in this course.
 
+**WWL Tenants - Terms of Use**
+If you are being provided with a tenant as a part of an instructor-led training delivery, please note that the tenant is made available for the purpose of supporting the hands-on labs in the instructor-led training. 
+Tenants should not be shared or used for purposes outside of hands-on labs. The tenant used in this course is a trial tenant and cannot be used or accessed after the class is over and are not eligible for extension. 
+Tenants must not be converted to a paid subscription. Tenants obtained as a part of this course remain the property of Microsoft Corporation and we reserve the right to obtain access and repossess at any time. 
+
 In your lab environment, your lab hosting provider has already:
 
 - Deployed the trial tenant
@@ -13,6 +18,8 @@ In your lab environment, your lab hosting provider has already:
 - Created 9 additional user accounts
 - Created a custom Microsoft 365 domain in Microsoft Azure
 - Created the DNS records in Microsoft Azure that are required to support the custom domain and the selected Microsoft 365 services
+
+### Install the Exchange Online Management Module
 
 1. On **LON-CL1**, you must select **Ctrl+Alt+Delete** to log in (your instructor will guide you on how to find this option in your VM environment). Log into LON-CL1 as the local Adatum administrator account that was created by your lab hosting provider (**Administrator**) with the password **Pa55w.rd**.
 
