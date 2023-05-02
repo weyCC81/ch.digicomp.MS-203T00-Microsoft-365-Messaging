@@ -28,7 +28,7 @@ mailboxes in the on-premises Exchange admin center (EAC) on the Exchange Server
 
 3. This will open the **Edge** browser, which will display the sign-in page for
     the **Exchange admin center**. Sign into the EAC as
-    **adatum\\Administrator** and password **Pa55w.rd**.
+    **adatum\Administrator** and password **Pa55w.rd**.
 
 4. In the **Exchange admin center**, in the left-hand navigation pane, select
     **recipients** if necessary (it should be selected by default).
@@ -64,7 +64,17 @@ mailboxes in the on-premises Exchange admin center (EAC) on the Exchange Server
     prefilled with **Adatum.com**; this is Adatum’s on-premises domain. Leave
     this set to **Adatum.com**.
 
-15. Enter **User.pw1** in the **New password** and **Confirm password** fields.
+15. In the **New password** and **Confirm password** fields, type in a unique password.
+
+    **Note:** passwords must meet the following password requirments:
+    - Passwords can't contain the user's account name or parts of the user's full name that exceed two consecutive characters.
+    - Passwords must be at least six characters long.
+    - Passwords must contain characters from three of the following four categories: 
+         - Uppercase letters (A through Z).
+         - Lowercase letters (a through z)
+         - Numbers (0 through 9)
+         - the following non-alphabetic characters:  ~ ! @ # $ % ^ & * _ - + = ` | \ ( ) { } [ ] : ; " ' < > , . ? / 
+    <BR></br>
 
 16. Make sure the **Require password change on next logon** check box is
     unchecked; if necessary, uncheck it.
@@ -128,9 +138,7 @@ herself the Exchange Admin role. You will perform this task in the LON-CL1 VM.
         After configuring this field, Holly’s username should appear as:
         **Holly@xxxxxZZZZZZ.onmicrosoft.com**
 
-    - Clear (uncheck) the **Automatically create a password**
-
-    - Password: **User.pw1**
+    - Ensure the **Automatically create a password** option is enabled (checked)
 
     - Clear (uncheck) the **Require this user to change their password when
         they first sign in** check box
@@ -166,14 +174,7 @@ herself the Exchange Admin role. You will perform this task in the LON-CL1 VM.
     to be changed, select the appropriate **Edit** link and make the necessary
     changes. Otherwise, if everything is correct, select **Finish adding**.
 
-13. On the **Holly Dickson added to active users** page, select **Show** that
-    appears next to the string of asterisks for the **Password**. Verify that
-    the password is **User.pw1** and then select **Close.**
-
-    **Note:** If you accidentally entered a different password, then once you
-    return to the **Active Users** page, you must select the **Reset a
-    password** icon (the key icon that appears when you hover over Holly's
-    account) to change her password to the correct value.
+13. On the **Holly Dickson added to active users** page, note the unique password created automatically.
 
 14. You should now see Holly Dickson’s user account in the **Active users**
     list.
