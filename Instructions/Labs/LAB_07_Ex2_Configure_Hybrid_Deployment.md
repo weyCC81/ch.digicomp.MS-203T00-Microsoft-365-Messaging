@@ -22,6 +22,25 @@ Configuration Wizard on your Exchange Server (LON-EX1). Once your hybrid
 deployment is installed, you will then test your hybrid deployment in the next
 exercise to verify that it’s functioning properly.
 
+**IMPORTANT**: As of April 1st 2023, Remote PowerShell for Exchange online has been disabled for newly created tenants. At this point in time, this will cause a failure while running the Hybrid Configuration Wizard (HCW). To temporarily mitigate this issue, please perform the following steps. Once a new version of the HCW is released, we will update to the lab instructions accoringly. 
+
+1. In Microsoft Edge, open a new browser tab and navigate to the following URL: **https://aka.ms/PillarEXORPS**
+
+1. sign in if prompted
+
+1. After a few moments, a new window displaying **How can we help?** will appear pre-populated with **Diag: Enable RPS in EXO** displayed under **Tell us your problem so we can get you to the right help and support**.
+
+1. Select **Run Tests** to determine if RPS has been disabled for your tenant.
+
+1. **Running diagnostic tests** will display for a few moments (up to several minutes). If RPS has been disabled you will see a prompt similar to the screenshot below:
+
+    ![RPS Disabled Message](/Images/RPS_Disabled.jpg)
+
+1. To temporarily re-enable the RPS protocol, select the check-box to the left of **I acknowledge clicking 'Update settings' will make change(s) describded above to the tenant configuration** and then select **Update**.
+
+1. **Running diagnostic tests** will display again for a few moments and then a message stating **Exchange Online PowerSehll RPS will not be disabled until a later date** will be dispalyed. You can now close out of this Edge browser tab safely and proceed with the next steps in this task. 
+
+
 ## Task 1: Create Adatum’s Hybrid Exchange deployment
 
 In this task, you will download and install the Hybrid Configuration Wizard
@@ -51,25 +70,18 @@ Exchange Online. Running the HCW will create Adatum’s hybrid deployment.
     navigation pane and under **Admin centers**, select **Exchange**. This will
     open the EAC for Exchange Online.
 
-7. In the **Exchange admin center** for Exchange Online, select **Classic Exchange admin center** from the left-hand navigation pane, this will display the **dashboard** tab
-    in the left-hand navigation pane by default, which displays the
-    **Welcome** page.
+7. In the **Exchange admin center** for Exchange Online, select **Settings** from the left-hand navigation pane.
 
-    Scroll to the bottom of the **Welcome** page and select **setup** under **hybrid**.
+8. On the **settings* page, select **Hybrid setup**.
 
-8. On the **setup** page there are two **configure** buttons. The first button
-    configures an Exchange hybrid deployment, while the second button downloads the Exchange Online PowerShell module for supporting
-    Multi-factor authentication.  
-
-    Select the first **configure** button to configure Adatum’s hybrid
-    deployment.
-    
-    **Note:** as of December 2022, the first **configure** button may not be opening the installation file for the Hybrid Configuration Wizard (HCW). If you experiance this behavior, please navigate to **<https://aka.ms/hybridwizard>** and then proceed with steps 9+. 
+    On the **Hybrid setup** window that appears, select **Configure**.
 
 9. A new tab will open in your Edge browser, and in the **Open this file?**
     window that appears at the top of the page, select **Open**.
 
     This will initiate the **Application Install** wizard, which will download and install the Hybrid Configuration Wizard.
+        
+    **Note:** If a new tab isnt displayed with a prompt to download the HCW, you can download it directly by navigating to the following link: **<https://aka.ms/hybridwizard>** 
 
 10. If the wizard begins and a **Do you want to install this application?**
     window appears, then proceed to the next step.  

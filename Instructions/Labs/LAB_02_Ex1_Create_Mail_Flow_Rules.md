@@ -124,7 +124,6 @@ checks for sensitive information in emails sent from inside the organization.
 
 31. In the **Set rule settings** window that appears select the following settings:
 
-    - Priority: **0**
     - Rule Mode: **Enforce**
     - Severity: **Medium**
 
@@ -212,7 +211,6 @@ This task will create the first rule; the next task will create the second rule.
 
 17. In the **Set rule settings** window that appears select the following settings:
 
-    - Priority: **1**
     - Rule Mode: **Enforce**
     - Severity: **Medium**
 
@@ -287,7 +285,6 @@ Boolean OR fashion.
 
 17. In the **Set rule settings** window that appears select the following settings:
 
-    - Priority: **2**
     - Rule Mode: **Enforce**
 
 18. Leave all other settings as default and then select **Next**.
@@ -356,7 +353,6 @@ address this issue by creating a mail flow rule that restricts email size.
 
 12. In the **Set rule settings** window that appears select the following settings:
 
-    - Priority: **3**
     - Rule Mode: **Enforce**
 
 13. Leave all other settings as default and then select **Next**.

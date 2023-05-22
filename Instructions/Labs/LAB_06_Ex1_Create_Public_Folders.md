@@ -30,15 +30,16 @@ before you can create a public folder.
 
 3. In the **New Exchange admin center**, on the left-hand navigation pane, select **Public folders**.
 
-4. Then in the expanded group, select **Public folders mailboxes**.
+4. On the **Public folders** page, select the **Public folder mailboxes** tab.
 
-5. On the **Public folder mailboxes** page, select the **plus (+) sign** icon on the menu bar to add a new public folder mailbox.
+5. In the **Public folder mailboxes** tab, select **+ Add a public folder mailbox** to add a new public folder mailbox.
 
-6. In the **new public folder mailbox** window, enter **Test PF mailbox1** in
-    the **Name** field, select **Save**, and then select **OK** once the
-    information is successfully saved.
+6. In the **Add a public folder mailbox** window that appears, enter **Test PF mailbox1** in
+    the **Name** field and then select **Add**.
 
-7. This will return you to the **public folder mailboxes** page, which should
+    Once you see the message **Test PF mailbox1 will now appear in your list of public folder mailboxes** displayed, select the **X** icon in the top right hand corner to exit the window.
+
+7. This will return you to the **public folder mailboxes** tab, which should
     now display **Test PF mailbox1**.
 
 8. Leave all browser tabs open and proceed to the next task.
@@ -54,15 +55,15 @@ the next lab exercise).
 1. You should still be in LON-CL1 and you should be in the **Exchange admin
     center** tab in your browser.
 
-2. In the **Exchange admin center**, you should still be in the **public folder mailboxes** page after having completed the prior task.  
+2. In the **Exchange admin center**, you should still be on the **public folders** page with the **Public folder mailboxes** tab selected.  
 
-    Since you now want to create a public folder, in the EAC navigation pane select **Public folders** and then in the expanded group, select **Public folders** again.
+    Since you now want to create a public folder, on the **Public folders** page, select the **Public folders** tab.
 
-3. On the **Public folders** page, select the **plus (+) sign** icon to add a  new public folder.
+3. In the **Public folders** tab, select the **+ Add a public folder** to add a  new public folder.
 
-4. In the **new public folder** window, enter **Test PF1** in the **Name**
-    field, select **Save,** and then select **OK** once the information is
-    successfully saved.
+4. In the **Add a public folder** window that appears, enter **Test PF1** in the **Name** field and then select **Add**.
+
+    Once you see the message **Public folder Test PF1 is added** displayed, select the **X** icon in the top right hand corner to exit the window.
 
 5. This will return you to the **public folder** page, which should now display
     **Test PF1**.
@@ -80,22 +81,16 @@ receive email.
 
 2. In the Edge browser, you should still be in the **Exchange admin center** from the end of the prior task. Specifically, you should still be on the **public folders** page.
 
-3. On the **public folders** page, the **Test PF1** record that you created in the prior task should be highlighted.  
+3. On the **public folders** page with the **Public folders** tab selected, the **Test PF1** record that you created in the prior task should be highlighted.  
 
     **Important:** If you closed the EAC tab at the end of the prior task and had to navigate to this page in the prior step, then select the **Test PF1** row. Do not select the **Test PF1** hyperlink as this will open the **Test PF1** public folder window. Instead, select any other portion of the **Test PF1** row to simply highlight the record.
 
 4. By selecting the Test PF1 record, the properties for this public folder are
-    displayed in the detail pane on the right. Note the current **Mail
-    settings** for Test PF1 is set to Disabled. To enable mail for this public
-    folder, select **Enable**.
+    displayed in the detail pane on the right. Note that **Mail-enabled** is un-checked for Test PF1 (meaning mail flow on the public folder is disabled). To enable mail for this public folder, select the empy check-box to the left of **Mail-enabled** and then select **Save**.
 
-5. A **Warning** dialog box will appear that asks whether you want to enable
-    email for the selected public folders. Select **Yes**.
+5. A message stating **Your changes have succesfully been saved** should be displayed. You can now exit the public folder properties pane by selecting the **X** icon on the top right hand corner of the window.
 
-6. In the detail pane on the right, the **Mail settings** should now be
-    **Enabled.**
-
-7. Leave all browser tabs open and proceed to the next task.
+6. Leave all browser tabs open and proceed to the next task.
 
 ## Task 4 - Manage Public Folder Settings
 
@@ -108,39 +103,35 @@ In this task, you will manage several settings for the Test PF1 public folder.
 
 3. On the **public folders** page, the **Test PF1** record that you updated in the prior task should be highlighted.  
 
-    **Important:** If you closed the EAC tab at the end of the prior task and
-    had to navigate to this page in the prior step, then select the **Test PF1**
-    row. Do not select the **Test PF1** hyperlink as this will open the **Test
-    PF1** public folder window. Instead, select any other portion of the **Test
-    PF1** row to simply highlight the record.
+    **Important:** If you closed the EAC tab at the end of the prior task and had to navigate to this page in the prior step, then select the **Test PF1** row. Do not select the **Test PF1** hyperlink as this will open the **Test PF1** public folder window. Instead, select any other portion of the **Test PF1** row to simply highlight the record.
 
-4. With the **Test PF1** record highlighted in the public folder list, select
-    the **pencil (Edit)** icon in the menu bar to edit the record. This opens
-    the **Test PF1** properties window.
+4. By selecting the Test PF1 record, the properties for this public folder are displayed in the detail pane on the right.
 
-5. In the **Test PF1** properties window, the **general** tab in the left-hand
-    navigation pane is displayed by default. Review the fields in this tab and
-    note the value in the **Public folder mailbox** field; this indicates that
-    **Test PF1** was automatically assigned to the **Test PF mailbox1** that you
-    created in the first task in this exercise.
+5. In the **Test PF1** properties window, the **general** tab is displayed by default. Review the fields in this tab and note the value in the **Public folder mailbox** field; this indicates that **Test PF1** was automatically assigned to the **Test PF mailbox1** that you created in the first task in this exercise.
 
-6. In the **Test PF1** properties window, in the left-hand navigation pane,
-    select the **general mail properties** tab.
+6. In the **Test PF1** properties window, select the **Mail properties** tab.
 
-7. Change the value of the **Display Name** field to **First public folder.**
+    **Note**: The settings under **Mail properties** may be blank. continue to refresh the window until the settings are populated. It can take up to 10 minutes after Public folder creation. 
 
-8. Select the **Hide from Exchange address list** checkbox.  
+7. Under **Alias**, **TestPF1** should be displayed. Select the **Edit general mail properties** hyperlink. 
+
+   In the **Edit general mail properites** window that appears type **First public folder** under **Display name**, then select **Save changes**.
+
+   Once the message **Settings Updated** is displayed, select the back-arrow icon on the top left-hand corner. 
+
+8. With the **Mail properties** tab still selected, Select the **Hide from Exchange address list** checkbox and then select save.  
 
     **Note:** By selecting this check box, the public folder will not appear in
     Adatum’s address book and other address lists, but it will still receive
     email.
 
-9. In the left-hand navigation pane, select the **mail flow settings** tab.
+9. In the **Test PF1** properties window, select the **Other** tab.
 
-10. Under the **Display Name** field, select the **Require that all senders are
-    authenticated** check box.
+10. Under the **Message delivery restriction** field, select the **Manage message delivery restriction** hyperlink.
 
-11. Select **Save**. Once the settings have been saved, select **Close**.
+    In the **Message delivery restrictions** window that appears, select the **Require senders to be authenticated** check box.
+
+11. Select **Save changes**. Once the message **Settings updated** is displayed, select the **X** icon at the top-right hand corner to exit the **Test PF1** properties window.
 
 12. Leave all browser tabs open and proceed to the next task.
 
@@ -156,24 +147,20 @@ In this task, you will manage the permissions for the Test PF1 public folder.
 3. On the **public folders** page, the **Test PF1** record that you updated in the prior task should be highlighted.
 
 4. With the **Test PF1** record highlighted in the public folder list, a **Test
-    PF1** detail pane will be displayed on the right side of the screen. In the
-    detail pane, under **Folder permissions**, select **Manage**.
+    PF1** detail pane will be displayed on the right side of the screen. At the top of the window under where the public folder name is displayed, select **Folder permissions**.
 
-5. A **Test PF1** window will appear that enables you to add or remove users
-    who can access this public folder and edit its permissions. Select the
-    **plus (+) sign** icon to add users.
+5. A **Folder permissions** window will appear that enables you to add or remove users
+    who can access this public folder and edit its permissions. Select **+ Add permissions** to add users.
 
-6. In the **public folder permissions** window, select the **Browse** button to
-    the right of the **User** field, select **MOD Administrator**, and then select **OK**.
+6. In the **Add public folder permission** window that appears, under the **User** field, Type **MOD Admin** and then select **MOD Administrator** from the list of suggested results.
 
 7. Select the drop-down arrow in the **Permission level** field and select
     **Owner.**
 
-8. Select **Save** at the bottom of the **public folder permissions** window.
+8. Select **Save Changes** at the bottom of the **Add public folder permission** window.
 
-9. Select **Save** at the bottom of the **Test PF1** window. Once the settings
-    have been saved, select **Close**.
+9. Once the settings have been saved, select **X** icon at the top right-hand corner to exit.
 
-10. Leave all browser tabs open and proceed to the next lab.
+10. Leave all browser tabs open and proceed to the next lab. 
 
 ## Proceed to Lab 6 - Exercise 2
