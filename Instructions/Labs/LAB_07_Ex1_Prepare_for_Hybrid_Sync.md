@@ -35,6 +35,29 @@ Once you finish configuring Azure AD for hybrid synchronization in this lab, you
 will then set up Exchange for a hybrid deployment and then test your new
 deployment.
 
+**IMPORTANT**: As of April 1st 2023, Remote PowerShell for Exchange online has been disabled for newly created tenants. This will cause a failure while running the Hybrid Configuration Wizard (HCW) in Lab 7, Excersise 2, task 1. To temporarily mitigate this issue, please perform the steps below (we are running this at the beginning of lab 7 because re-enabling RPS can take some time to replicate throughout the tenant). Once a new version of the HCW is released, we will update to the lab instructions accoringly. 
+
+1. In Microsoft Edge, open a new browser tab and navigate to the following URL: **https://aka.ms/PillarEXORPS**
+
+1. If prompted to sign in, enter your tenant admin username
+    (admin\@xxxxxZZZZZZ.onmicrosoft.com, where xxxxxZZZZZZ is the tenant prefix
+    provided by your lab hosting provider) and select **Next**.  
+
+    In the **Enter password** window, enter the tenant admin password provided
+    by your lab hosting provider and then select **Sign in**.
+
+1. After a few moments, a new window displaying **How can we help?** will appear pre-populated with **Diag: Enable RPS in EXO** displayed under **Tell us your problem so we can get you to the right help and support**.
+
+1. Select **Run Tests** to determine if RPS has been disabled for your tenant.
+
+1. **Running diagnostic tests** will display for a few moments (up to several minutes). If RPS has been disabled you will see a prompt similar to the screenshot below:
+
+    ![RPS Disabled Message](/Images/RPS_Disabled.jpg)
+
+1. To temporarily re-enable the RPS protocol, select the check-box to the left of **I acknowledge clicking 'Update settings' will make change(s) describded above to the tenant configuration** and then select **Update**.
+
+1. **Running diagnostic tests** will display again for a few moments and then a message stating **Exchange Online PowerSehll RPS will not be disabled until a later date** will be dispalyed. You can now close out of this Edge browser tab safely and proceed with the next steps in this task. 
+
 ## Task 1: Configure your tenant to support local mail transport
 
 Before you begin setting up Adatum’s hybrid deployment, you must first configure
