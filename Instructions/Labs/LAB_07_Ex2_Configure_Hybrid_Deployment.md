@@ -26,7 +26,12 @@ exercise to verify that it’s functioning properly.
 
 1. In Microsoft Edge, open a new browser tab and navigate to the following URL: **https://aka.ms/PillarEXORPS**
 
-1. sign in if prompted
+1. If prompted to sign in, enter your tenant admin username
+    (admin\@xxxxxZZZZZZ.onmicrosoft.com, where xxxxxZZZZZZ is the tenant prefix
+    provided by your lab hosting provider) and select **Next**.  
+
+    In the **Enter password** window, enter the tenant admin password provided
+    by your lab hosting provider and then select **Sign in**.
 
 1. After a few moments, a new window displaying **How can we help?** will appear pre-populated with **Diag: Enable RPS in EXO** displayed under **Tell us your problem so we can get you to the right help and support**.
 
