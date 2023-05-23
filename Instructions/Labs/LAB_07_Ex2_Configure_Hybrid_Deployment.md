@@ -51,25 +51,18 @@ Exchange Online. Running the HCW will create Adatum’s hybrid deployment.
     navigation pane and under **Admin centers**, select **Exchange**. This will
     open the EAC for Exchange Online.
 
-7. In the **Exchange admin center** for Exchange Online, select **Classic Exchange admin center** from the left-hand navigation pane, this will display the **dashboard** tab
-    in the left-hand navigation pane by default, which displays the
-    **Welcome** page.
+7. In the **Exchange admin center** for Exchange Online, select **Settings** from the left-hand navigation pane.
 
-    Scroll to the bottom of the **Welcome** page and select **setup** under **hybrid**.
+8. On the **settings* page, select **Hybrid setup**.
 
-8. On the **setup** page there are two **configure** buttons. The first button
-    configures an Exchange hybrid deployment, while the second button downloads the Exchange Online PowerShell module for supporting
-    Multi-factor authentication.  
-
-    Select the first **configure** button to configure Adatum’s hybrid
-    deployment.
-    
-    **Note:** as of December 2022, the first **configure** button may not be opening the installation file for the Hybrid Configuration Wizard (HCW). If you experiance this behavior, please navigate to **<https://aka.ms/hybridwizard>** and then proceed with steps 9+. 
+    On the **Hybrid setup** window that appears, select **Configure**.
 
 9. A new tab will open in your Edge browser, and in the **Open this file?**
     window that appears at the top of the page, select **Open**.
 
     This will initiate the **Application Install** wizard, which will download and install the Hybrid Configuration Wizard.
+        
+    **Note:** If a new tab isnt displayed with a prompt to download the HCW, you can download it directly by navigating to the following link: **<https://aka.ms/hybridwizard>** 
 
 10. If the wizard begins and a **Do you want to install this application?**
     window appears, then proceed to the next step.  

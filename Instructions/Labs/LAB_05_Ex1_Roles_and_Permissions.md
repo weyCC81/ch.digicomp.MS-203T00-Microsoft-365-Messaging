@@ -90,7 +90,7 @@ then assign two specific administrators to this role.
 15. In the **Assign admins** window, in the **Members** section
     Enter the following then select the names:
 
-    - **Admin**
+    - **MOD Admin**
 
     - **Global Administrator** - TenantAdmins_-########## (where ########## represents
         the tenant number at the end of the TenantAdmins group)
