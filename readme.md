@@ -1,3 +1,5 @@
+**This course will be retiring on  **2023/10/31**.  Once course is retired, all GitHub repos will be removed. Thank you.**
+
 # MS-203T00: Microsoft 365 Messaging
 
 - **[Download Latest Student Handbook and AllFiles Content](../../releases/latest)**
