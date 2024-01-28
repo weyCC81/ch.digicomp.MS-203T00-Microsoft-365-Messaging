@@ -277,6 +277,8 @@ locate the UPN name.
 
 24. In the **IP Address** enter **10.0.0.6** and click **OK**, **Apply** and then **OK** again.
 
+    <mark> on LON-DC1, the student must create an extra DNS A-record for M365xzzzz.virsoftlabs.com with IP address 10.0.0.5, to ensure that on-prem users get name resolution to the local Exchange Server.</mark>
+
 25. Right-click on this **xxxUPNxxx.xxxCustomDomainxxx.xxx** zone, and in the
     menu that appears, select **Other New Records...**
 
@@ -653,6 +655,8 @@ users’ email addresses from \@adatum.com to \@ xxxUPNxxx.xxxCustomDomainxxx.xx
     ‎Select the **magnifying glass (Search)** icon on the taskbar and then enter
     **note** in the Search field. In the menu that appears, select **Notepad**.
     Maximize the Notepad window once it opens.
+
+    <mark>Skip the instructions related to text replacement in a Notepad file. The assigned custom domain name is already replaced inside the lab manuals on screen. </mark>
 
 3. While the PowerShell commands that you need to run are provided in steps 7
     and 8, it will be easier to copy these steps into Notepad, perform a

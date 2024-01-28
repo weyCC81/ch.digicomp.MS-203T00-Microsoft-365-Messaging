@@ -30,6 +30,8 @@ In your lab environment, your lab hosting provider has already:
 3. Maximize your PowerShell window. In Windows PowerShell, at the command prompt, type the following command and press **Enter**:
 
       `Install-Module -Name ExchangeOnlineManagement`
+      
+      <mark>Version 3.X.X vs Version 2.0.0</mark>
 
 4. You might be prompted "NuGet provider is required to continue", enter [Y] Yes [N] No [S] Suspend [?], enter **Y** to select **[Y] Yes**
 
@@ -74,6 +76,9 @@ You should write down the following information (provided by your instructor) fo
 
 - **Custom Domain name.** Your lab hosting provider has created a custom domain name for Adatum that you will use when adding a custom domain into Microsoft 365 in a later lab exercise. The domain name is in the format **xxxUPNxxx.xxxCustomDomainxxx.xxx.** You must replace **xxxUPNxxx** with the UPN name provided by your lab hosting provider, and you must replace **xxxCustomDomainxxx.xxx** with the lab hosting provider's domain name. For example, let's assume your lab hosting provider is Fabrikam Inc. If the UPN number it assigns to your tenant is AMPVU3a and its custom domain name is Fabrikam.us, then the domain name for your new custom domain would be AMPVU3a.fabrikam.us. Your instructor will provide you with your lab hosting provider's UPN number and custom domain name.  
 - **Network IP address.** Write down the IP Address value (this is the IP Address of your parent domain (for example, 64.64.206.13).
+
+    <mark>To obtain the public network IP address for the lab environment, run the following PowerShell command:</mark>
+    `Invoke-RestMethod  ipinfo.io/ip`
 
 ### Task 2 - Create a Custom Receive Connector
 
@@ -124,6 +129,8 @@ Adatum has Microsoft Exchange Server 2019 installed on the Exchange Server VM (L
     **IMPORTANT:** By selecting **Finish**, you will receive an **Error** message. You were purposely instructed to select **Finish** so that you can see this error, which indicates that the **Default Frontend LON-EX1** receive connector is already configured to accept all available IPv4 addresses (in other words, IP addresses 0.0.0.0 through 255.255.255.255) for Port 25. **Therefore, this new receive connector that you are creating must have a unique combination of IP address and port number that is different from any existing receive connectors.**
 
     Select **OK** to close the **Error** message.
+
+    <mark>You probably must add extra IP address 10.0.0.6 to LON-EX1 to allow inbound SMTP.</mark>
 
 13. This returns you to the **New receive connector** window. Select the **pencil (edit)** icon on the menu bar to edit the IP address and port number that will be linked to your new receive connector.
 

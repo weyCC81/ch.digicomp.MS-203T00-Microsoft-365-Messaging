@@ -95,6 +95,7 @@ Exchange Online. Running the HCW will create Adatum’s hybrid deployment.
   
     This starts the **Hybrid Configuration Wizard** (it can sometimes take up to
     a minute or so for the setup wizard to start, so please be patient).
+	<mark> New Version (since 24.01.2024):https://techcommunity.microsoft.com/t5/exchange-team-blog/hybrid-configuration-wizard-with-granular-configuration-feature/ba-p/4038690</mark>
 
 13. The wizard begins by trying to detect the on-premises Exchange Server. Wait
     for the server detection to complete, which then displays the **On-premises
