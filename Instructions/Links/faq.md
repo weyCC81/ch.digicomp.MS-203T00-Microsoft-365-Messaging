@@ -1,7 +1,5 @@
 # FAQ
 
-## Titles
-
 ### Microsoft Exchange: difference between backend (hub) and frontend
 
 In a Microsoft Exchange environment, the terms "backend" (Hub Transport) and "frontend" typically refer to different server roles or functionalities within the overall Exchange infrastructure. These roles play distinct parts in the messaging flow and overall architecture of an Exchange deployment. Here's a brief overview of each:
