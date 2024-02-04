@@ -195,10 +195,15 @@ New-MsolDomain –Name "M365xZZZZZZZZ.mail.onmicrosoft.com"
 ```
 
 > M365xZZZZZZZZ.mail.onmicrosoft.com --> Added over GUI, Exchange = not found
+>
 > M365xZZZZZZZZ.mail.onmicrosoft.com --> Msol = found, Exchange = not found, Not tried Enable DirSync
+>
 > M365xZZZZZZZZ.mail.onmicrosoft.com --> Msol = found, Exchange = not found, Try Enable DirSync
+>
 > M365xZZZZZZZZ.mail.onmicrosoft.com --> No Second Domain found, No Routing domain found
+>
 > Add M365xZZZZZZZZ.mail.onmicrosoft.com not working over hybrid wizard for 4x Tenant (#2401310050005586)
+>
 
 ```logs
 2024.01.31 20:38:59.965 WARNING 10310 [Client=UX, Activity=Tenant Data Retrieval, Thread=11] Coexistence domain NOT Found.
