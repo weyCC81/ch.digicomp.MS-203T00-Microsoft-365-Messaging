@@ -242,3 +242,14 @@ Set-RemoteDomain -Identity "Online Domain" -TargetDeliveryDomain $true
 ### Hybrid Wizard (PowerShell)
 
 <https://learn.microsoft.com/en-us/exchange/hybrid-configuration-wizard-choose-configuration-feature#update-coexistence-domain-in-exchange-server-accepted-domain-and-email-address-policy>
+
+
+### Find-MailboxDelegates (Mailbox Permission)
+
+> <https://github.com/microsoft/FastTrack/tree/master/scripts/Find-MailboxDelegates>
+
+
+
+### Search-MailboxAuditLog vs UnifiedAuditLog
+
+see [auditlog.ps1]
