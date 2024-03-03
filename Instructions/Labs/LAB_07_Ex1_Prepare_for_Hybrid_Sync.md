@@ -1,4 +1,4 @@
-# Lab 7 - Exercise 1 - Prepare Azure AD for Hybrid Synchronization
+# Lab 7 - Exercise 1 - Prepare Entra ID (Azure AD) for Hybrid Synchronization
 
 In this lab you will continue in your role as Holly Dickson, Adatum’s Messaging
 Administrator. Adatum has decided to transition from their current Microsoft
@@ -13,7 +13,7 @@ This will require that you:
 
 - Configure your lab environment to support local mail transport
 
-- Add an accepted domain to your Azure AD forest
+- Add an accepted domain to your Entra ID (Azure AD) forest
 
 - Configure the UPN Name for the new domain
 
@@ -31,7 +31,7 @@ hybrid synchronization before you create your hybrid deployment. You will do
 this by adding a custom, accepted domain to the Azure Active Directory forest
 and then configure Exchange to use the new accepted domain.
 
-Once you finish configuring Azure AD for hybrid synchronization in this lab, you
+Once you finish configuring Entra ID (Azure AD) for hybrid synchronization in this lab, you
 will then set up Exchange for a hybrid deployment and then test your new
 deployment.
 
@@ -610,11 +610,11 @@ locate the UPN name.
 ## Task 3: Configure the UPN name for custom domain
 
 In Active Directory, the default User Principal Name (UPN) suffix is the DNS
-name of the domain where the user account was created. The Azure AD Connect
+name of the domain where the user account was created. The Entra ID (Azure AD) Connect
 wizard uses the UserPrincipalName attribute, or it lets you specify the
 on-premises attribute (in a custom installation) to be used as the user
-principal name in Azure AD. This is the value that is used for signing into
-Azure AD.
+principal name in Entra ID (Azure AD). This is the value that is used for signing into
+Entra ID (Azure AD).
 
 If you recall, your VM environment was created by your lab hosting provider with
 an on-premises domain titled **adatum.com**. This domain included several
@@ -1008,7 +1008,7 @@ accounts to the new accepted domain in Microsoft 365.
     Windows Server AD forest (which is the scenario in your VM lab environment)
     and then select **Use express settings**.
 
-10. On the **Connect to Azure AD** window, you must enter the user credentials
+10. On the **Connect to Entra ID (Azure AD)** window, you must enter the user credentials
     for a Microsoft 365 user account that has been assigned the Microsoft 365
     Global Administrator role. Enter **admin\@xxxxxZZZZZZ.onmicrosoft.com**
     (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting
