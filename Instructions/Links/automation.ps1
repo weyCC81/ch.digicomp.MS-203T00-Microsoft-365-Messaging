@@ -33,7 +33,7 @@ Connect-ExchangeOnline -CertificateThumbprint E2A57AB8B90570394DE0BA8F63649E4A3D
 # --- Get-UnifiedGroup
 # with CAB limited Microsoft 365 Groups available!
 Get-UnifiedGroup
-Get-UnifiedGroup | Group GroupType
+Get-UnifiedGroup | Group-Object GroupType
 New-UnifiedGroup # Not supported
 
 

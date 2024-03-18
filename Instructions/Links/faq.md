@@ -1,5 +1,7 @@
 # FAQ
 
+## List
+
 ### Microsoft Exchange: difference between backend (hub) and frontend
 
 In a Microsoft Exchange environment, the terms "backend" (Hub Transport) and "frontend" typically refer to different server roles or functionalities within the overall Exchange infrastructure. These roles play distinct parts in the messaging flow and overall architecture of an Exchange deployment. Here's a brief overview of each:
@@ -243,13 +245,22 @@ Set-RemoteDomain -Identity "Online Domain" -TargetDeliveryDomain $true
 
 <https://learn.microsoft.com/en-us/exchange/hybrid-configuration-wizard-choose-configuration-feature#update-coexistence-domain-in-exchange-server-accepted-domain-and-email-address-policy>
 
-
 ### Find-MailboxDelegates (Mailbox Permission)
 
 > <https://github.com/microsoft/FastTrack/tree/master/scripts/Find-MailboxDelegates>
 
-
-
 ### Search-MailboxAuditLog vs UnifiedAuditLog
 
 see [auditlog.ps1]
+
+### Email security standards MTA-STS and TLS-RPT
+
+- General:
+  - <https://www.security.gov.uk/guidance/email-guidance/mta-sts/>
+  - <https://github.com/jklotzsche-msft/PS.MTA-STS/blob/main/README.md>
+- Azure Static Web Apps (up to 5 custom domains): <https://learn.microsoft.com/en-us/purview/enhancing-mail-flow-with-mta-sts?view=o365-worldwide#option-1-recommended-azure-static-web-app>
+- Azure Functions allow (up to 500 custom domains per app): <https://github.com/jklotzsche-msft/PS.MTA-STS/blob/main/docs/deployFunctionApp.md>
+- Cost:
+  - <https://azure.microsoft.com/en-us/free/open-source/#all-free-services>
+  - Azure Blob Storage (Azure Static Web Apps) - 12 Months free (includes SSL Certificate)
+  - Azure Functions (relays also on Storage) - Always free (excludes SSL Certificate)
